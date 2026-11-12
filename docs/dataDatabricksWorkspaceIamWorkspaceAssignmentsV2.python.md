@@ -4,7 +4,7 @@
 
 ### DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 <a name="DataDatabricksWorkspaceIamWorkspaceAssignmentsV2" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2 databricks_workspace_iam_workspace_assignments_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2 databricks_workspace_iam_workspace_assignments_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.Initializer"></a>
 
@@ -22,6 +22,7 @@ dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorks
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   page_size: typing.Union[int, float] = None,
+  parent: str = None,
   provider_config: DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig = None
 )
 ```
@@ -37,8 +38,9 @@ dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorks
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.Initializer.parameter.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#page_size DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.Initializer.parameter.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#page_size DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.Initializer.parameter.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#parent DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}. |
 
 ---
 
@@ -106,7 +108,15 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#page_size DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#page_size DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#page_size}.
+
+---
+
+##### `parent`<sup>Optional</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.Initializer.parameter.parent"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#parent DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#parent}.
 
 ---
 
@@ -114,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}.
 
 ---
 
@@ -142,6 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.putProviderConfig">put_provider_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.resetPageSize">reset_page_size</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.resetParent">reset_parent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.resetProviderConfig">reset_provider_config</a></code> | *No description.* |
 
 ---
@@ -398,7 +409,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}.
 
 ---
 
@@ -406,6 +417,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ```python
 def reset_page_size() -> None
+```
+
+##### `reset_parent` <a name="reset_parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.resetParent"></a>
+
+```python
+def reset_parent() -> None
 ```
 
 ##### `reset_provider_config` <a name="reset_provider_config" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.resetProviderConfig"></a>
@@ -528,7 +545,7 @@ The construct id used in the generated config for the DataDatabricksWorkspaceIam
 
 The id of the existing DataDatabricksWorkspaceIamWorkspaceAssignmentsV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -559,8 +576,10 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfigOutputReference">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.property.workspaceAssignments">workspace_assignments</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsList">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.property.pageSizeInput">page_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.property.parentInput">parent_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.property.providerConfigInput">provider_config_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.property.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.property.parent">parent</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -716,6 +735,16 @@ page_size_input: typing.Union[int, float]
 
 ---
 
+##### `parent_input`<sup>Optional</sup> <a name="parent_input" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.property.parentInput"></a>
+
+```python
+parent_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `provider_config_input`<sup>Optional</sup> <a name="provider_config_input" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.property.providerConfigInput"></a>
 
 ```python
@@ -733,6 +762,16 @@ page_size: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2.property.parent"></a>
+
+```python
+parent: str
+```
+
+- *Type:* str
 
 ---
 
@@ -772,6 +811,7 @@ dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorks
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   page_size: typing.Union[int, float] = None,
+  parent: str = None,
   provider_config: DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig = None
 )
 ```
@@ -787,8 +827,9 @@ dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorks
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2Config.property.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#page_size DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2Config.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2Config.property.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#page_size DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2Config.property.parent">parent</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#parent DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2Config.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}. |
 
 ---
 
@@ -870,7 +911,19 @@ page_size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#page_size DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#page_size DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#page_size}.
+
+---
+
+##### `parent`<sup>Optional</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2Config.property.parent"></a>
+
+```python
+parent: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#parent DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#parent}.
 
 ---
 
@@ -882,7 +935,7 @@ provider_config: DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}.
 
 ---
 
@@ -902,7 +955,7 @@ dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorks
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2ProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}. |
 
 ---
 
@@ -914,7 +967,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}.
 
 ---
 
@@ -926,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktn_provider_databricks import data_databricks_workspace_iam_workspace_assignments_v2
 
 dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments(
-  principal_id: typing.Union[int, float],
+  name: str,
   provider_config: DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfig = None
 )
 ```
@@ -935,20 +988,20 @@ dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorks
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments.property.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#principal_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfig">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#name DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfig">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}. |
 
 ---
 
-##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments.property.principalId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments.property.name"></a>
 
 ```python
-principal_id: typing.Union[int, float]
+name: str
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#principal_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#name DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#name}.
 
 ---
 
@@ -960,7 +1013,7 @@ provider_config: DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssign
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfig">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#provider_config DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#provider_config}.
 
 ---
 
@@ -980,7 +1033,7 @@ dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorks
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}. |
 
 ---
 
@@ -992,7 +1045,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}.
 
 ---
 
@@ -1733,7 +1786,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_workspace_assignments_v2#workspace_id DataDatabricksWorkspaceIamWorkspaceAssignmentsV2#workspace_id}.
 
 ---
 
@@ -1753,12 +1806,14 @@ def reset_provider_config() -> None
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.effectiveEntitlements">effective_entitlements</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.entitlements">entitlements</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.parent">parent</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.principalType">principal_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfigOutputReference">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.workspaceId">workspace_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.principalIdInput">principal_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.providerConfigInput">provider_config_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfig">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsProviderConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.principalId">principal_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments">DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignments</a></code> | *No description.* |
 
 ---
@@ -1817,6 +1872,26 @@ entitlements: typing.List[str]
 
 ---
 
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.parent"></a>
+
+```python
+parent: str
+```
+
+- *Type:* str
+
+---
+
+##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.principalId"></a>
+
+```python
+principal_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `principal_type`<sup>Required</sup> <a name="principal_type" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.principalType"></a>
 
 ```python
@@ -1847,13 +1922,13 @@ workspace_id: typing.Union[int, float]
 
 ---
 
-##### `principal_id_input`<sup>Optional</sup> <a name="principal_id_input" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.principalIdInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.nameInput"></a>
 
 ```python
-principal_id_input: typing.Union[int, float]
+name_input: str
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* str
 
 ---
 
@@ -1867,13 +1942,13 @@ provider_config_input: IResolvable | DataDatabricksWorkspaceIamWorkspaceAssignme
 
 ---
 
-##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.principalId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamWorkspaceAssignmentsV2.DataDatabricksWorkspaceIamWorkspaceAssignmentsV2WorkspaceAssignmentsOutputReference.property.name"></a>
 
 ```python
-principal_id: typing.Union[int, float]
+name: str
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* str
 
 ---
 

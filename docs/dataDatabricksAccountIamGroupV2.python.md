@@ -4,7 +4,7 @@
 
 ### DataDatabricksAccountIamGroupV2 <a name="DataDatabricksAccountIamGroupV2" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2 databricks_account_iam_group_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_group_v2 databricks_account_iam_group_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer"></a>
 
@@ -21,7 +21,7 @@ dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  group_id: str
+  name: str
 )
 ```
 
@@ -36,7 +36,7 @@ dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer.parameter.groupId">group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2#group_id DataDatabricksAccountIamGroupV2#group_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_group_v2#name DataDatabricksAccountIamGroupV2#name}. |
 
 ---
 
@@ -100,11 +100,11 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `group_id`<sup>Required</sup> <a name="group_id" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer.parameter.groupId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2#group_id DataDatabricksAccountIamGroupV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_group_v2#name DataDatabricksAccountIamGroupV2#name}.
 
 ---
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the DataDatabricksAccountIamGr
 
 The id of the existing DataDatabricksAccountIamGroupV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_group_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -517,9 +517,11 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.externalId">external_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupName">group_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupIdInput">group_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupId">group_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupName">group_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.parent">parent</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -665,6 +667,16 @@ external_id: str
 
 ---
 
+##### `group_id`<sup>Required</sup> <a name="group_id" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupId"></a>
+
+```python
+group_id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `group_name`<sup>Required</sup> <a name="group_name" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupName"></a>
 
 ```python
@@ -675,20 +687,30 @@ group_name: str
 
 ---
 
-##### `group_id_input`<sup>Optional</sup> <a name="group_id_input" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupIdInput"></a>
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.parent"></a>
 
 ```python
-group_id_input: str
+parent: str
 ```
 
 - *Type:* str
 
 ---
 
-##### `group_id`<sup>Required</sup> <a name="group_id" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupId"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.nameInput"></a>
 
 ```python
-group_id: str
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.name"></a>
+
+```python
+name: str
 ```
 
 - *Type:* str
@@ -730,7 +752,7 @@ dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  group_id: str
+  name: str
 )
 ```
 
@@ -745,7 +767,7 @@ dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config.property.groupId">group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2#group_id DataDatabricksAccountIamGroupV2#group_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_group_v2#name DataDatabricksAccountIamGroupV2#name}. |
 
 ---
 
@@ -819,15 +841,15 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `group_id`<sup>Required</sup> <a name="group_id" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config.property.groupId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config.property.name"></a>
 
 ```python
-group_id: str
+name: str
 ```
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2#group_id DataDatabricksAccountIamGroupV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_group_v2#name DataDatabricksAccountIamGroupV2#name}.
 
 ---
 

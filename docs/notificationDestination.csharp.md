@@ -4,7 +4,7 @@
 
 ### NotificationDestination <a name="NotificationDestination" id="@cdktn/provider-databricks.notificationDestination.NotificationDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination databricks_notification_destination}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination databricks_notification_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.notificationDestination.NotificationDestination.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the NotificationDestination to
 
 The id of the existing NotificationDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,10 +882,10 @@ new NotificationDestinationConfig {
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}. |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.config">Config</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigA">NotificationDestinationConfigA</a></code> | config block. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.destinationType">DestinationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#id NotificationDestination#id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.destinationType">DestinationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#id NotificationDestination#id}. |
 | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationProviderConfig">NotificationDestinationProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -968,7 +968,7 @@ public string DisplayName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#display_name NotificationDestination#display_name}.
 
 ---
 
@@ -982,7 +982,7 @@ public NotificationDestinationConfigA Config { get; set; }
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#config NotificationDestination#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#config NotificationDestination#config}
 
 ---
 
@@ -994,7 +994,7 @@ public string DestinationType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#destination_type NotificationDestination#destination_type}.
 
 ---
 
@@ -1006,7 +1006,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#id NotificationDestination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#id NotificationDestination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1023,7 +1023,7 @@ public NotificationDestinationProviderConfig ProviderConfig { get; set; }
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#provider_config NotificationDestination#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#provider_config NotificationDestination#provider_config}
 
 ---
 
@@ -1069,7 +1069,7 @@ public NotificationDestinationConfigDatabricksAppSlack DatabricksAppSlack { get;
 
 databricks_app_slack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#databricks_app_slack NotificationDestination#databricks_app_slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#databricks_app_slack NotificationDestination#databricks_app_slack}
 
 ---
 
@@ -1083,7 +1083,7 @@ public NotificationDestinationConfigDatabricksAppTeams DatabricksAppTeams { get;
 
 databricks_app_teams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#databricks_app_teams NotificationDestination#databricks_app_teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#databricks_app_teams NotificationDestination#databricks_app_teams}
 
 ---
 
@@ -1097,7 +1097,7 @@ public NotificationDestinationConfigEmail Email { get; set; }
 
 email block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#email NotificationDestination#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#email NotificationDestination#email}
 
 ---
 
@@ -1111,7 +1111,7 @@ public NotificationDestinationConfigGenericWebhook GenericWebhook { get; set; }
 
 generic_webhook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#generic_webhook NotificationDestination#generic_webhook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#generic_webhook NotificationDestination#generic_webhook}
 
 ---
 
@@ -1125,7 +1125,7 @@ public NotificationDestinationConfigMicrosoftTeams MicrosoftTeams { get; set; }
 
 microsoft_teams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#microsoft_teams NotificationDestination#microsoft_teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#microsoft_teams NotificationDestination#microsoft_teams}
 
 ---
 
@@ -1139,7 +1139,7 @@ public NotificationDestinationConfigPagerduty Pagerduty { get; set; }
 
 pagerduty block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#pagerduty NotificationDestination#pagerduty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#pagerduty NotificationDestination#pagerduty}
 
 ---
 
@@ -1153,7 +1153,7 @@ public NotificationDestinationConfigSlack Slack { get; set; }
 
 slack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#slack NotificationDestination#slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#slack NotificationDestination#slack}
 
 ---
 
@@ -1176,10 +1176,10 @@ new NotificationDestinationConfigDatabricksAppSlack {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.channelId">ChannelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.channelIdSet">ChannelIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.teamId">TeamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id NotificationDestination#team_id}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.teamIdSet">TeamIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id_set NotificationDestination#team_id_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.channelId">ChannelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.channelIdSet">ChannelIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.teamId">TeamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#team_id NotificationDestination#team_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppSlack.property.teamIdSet">TeamIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#team_id_set NotificationDestination#team_id_set}. |
 
 ---
 
@@ -1191,7 +1191,7 @@ public string ChannelId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}.
 
 ---
 
@@ -1203,7 +1203,7 @@ public bool|IResolvable ChannelIdSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}.
 
 ---
 
@@ -1215,7 +1215,7 @@ public string TeamId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id NotificationDestination#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#team_id NotificationDestination#team_id}.
 
 ---
 
@@ -1227,7 +1227,7 @@ public bool|IResolvable TeamIdSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id_set NotificationDestination#team_id_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#team_id_set NotificationDestination#team_id_set}.
 
 ---
 
@@ -1252,12 +1252,12 @@ new NotificationDestinationConfigDatabricksAppTeams {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.channelId">ChannelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.channelIdSet">ChannelIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.teamId">TeamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id NotificationDestination#team_id}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.teamIdSet">TeamIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id_set NotificationDestination#team_id_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.tenantId">TenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.tenantIdSet">TenantIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.channelId">ChannelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.channelIdSet">ChannelIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.teamId">TeamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#team_id NotificationDestination#team_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.teamIdSet">TeamIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#team_id_set NotificationDestination#team_id_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.tenantId">TenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigDatabricksAppTeams.property.tenantIdSet">TenantIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}. |
 
 ---
 
@@ -1269,7 +1269,7 @@ public string ChannelId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}.
 
 ---
 
@@ -1281,7 +1281,7 @@ public bool|IResolvable ChannelIdSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}.
 
 ---
 
@@ -1293,7 +1293,7 @@ public string TeamId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id NotificationDestination#team_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#team_id NotificationDestination#team_id}.
 
 ---
 
@@ -1305,7 +1305,7 @@ public bool|IResolvable TeamIdSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#team_id_set NotificationDestination#team_id_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#team_id_set NotificationDestination#team_id_set}.
 
 ---
 
@@ -1317,7 +1317,7 @@ public string TenantId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}.
 
 ---
 
@@ -1329,7 +1329,7 @@ public bool|IResolvable TenantIdSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}.
 
 ---
 
@@ -1349,7 +1349,7 @@ new NotificationDestinationConfigEmail {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigEmail.property.addresses">Addresses</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#addresses NotificationDestination#addresses}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigEmail.property.addresses">Addresses</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#addresses NotificationDestination#addresses}. |
 
 ---
 
@@ -1361,7 +1361,7 @@ public string[] Addresses { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#addresses NotificationDestination#addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#addresses NotificationDestination#addresses}.
 
 ---
 
@@ -1386,12 +1386,12 @@ new NotificationDestinationConfigGenericWebhook {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.password">Password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#password NotificationDestination#password}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.passwordSet">PasswordSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#password_set NotificationDestination#password_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url NotificationDestination#url}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.urlSet">UrlSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.username">Username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#username NotificationDestination#username}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.usernameSet">UsernameSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#username_set NotificationDestination#username_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.password">Password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#password NotificationDestination#password}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.passwordSet">PasswordSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#password_set NotificationDestination#password_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#url NotificationDestination#url}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.urlSet">UrlSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.username">Username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#username NotificationDestination#username}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigGenericWebhook.property.usernameSet">UsernameSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#username_set NotificationDestination#username_set}. |
 
 ---
 
@@ -1403,7 +1403,7 @@ public string Password { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#password NotificationDestination#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#password NotificationDestination#password}.
 
 ---
 
@@ -1415,7 +1415,7 @@ public bool|IResolvable PasswordSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#password_set NotificationDestination#password_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#password_set NotificationDestination#password_set}.
 
 ---
 
@@ -1427,7 +1427,7 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url NotificationDestination#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#url NotificationDestination#url}.
 
 ---
 
@@ -1439,7 +1439,7 @@ public bool|IResolvable UrlSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}.
 
 ---
 
@@ -1451,7 +1451,7 @@ public string Username { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#username NotificationDestination#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#username NotificationDestination#username}.
 
 ---
 
@@ -1463,7 +1463,7 @@ public bool|IResolvable UsernameSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#username_set NotificationDestination#username_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#username_set NotificationDestination#username_set}.
 
 ---
 
@@ -1492,16 +1492,16 @@ new NotificationDestinationConfigMicrosoftTeams {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.appId">AppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#app_id NotificationDestination#app_id}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.appIdSet">AppIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#app_id_set NotificationDestination#app_id_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.authSecret">AuthSecret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#auth_secret NotificationDestination#auth_secret}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.authSecretSet">AuthSecretSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#auth_secret_set NotificationDestination#auth_secret_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.channelUrl">ChannelUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_url NotificationDestination#channel_url}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.channelUrlSet">ChannelUrlSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_url_set NotificationDestination#channel_url_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.tenantId">TenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.tenantIdSet">TenantIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url NotificationDestination#url}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.urlSet">UrlSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.appId">AppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#app_id NotificationDestination#app_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.appIdSet">AppIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#app_id_set NotificationDestination#app_id_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.authSecret">AuthSecret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#auth_secret NotificationDestination#auth_secret}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.authSecretSet">AuthSecretSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#auth_secret_set NotificationDestination#auth_secret_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.channelUrl">ChannelUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_url NotificationDestination#channel_url}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.channelUrlSet">ChannelUrlSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_url_set NotificationDestination#channel_url_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.tenantId">TenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.tenantIdSet">TenantIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#url NotificationDestination#url}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigMicrosoftTeams.property.urlSet">UrlSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}. |
 
 ---
 
@@ -1513,7 +1513,7 @@ public string AppId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#app_id NotificationDestination#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#app_id NotificationDestination#app_id}.
 
 ---
 
@@ -1525,7 +1525,7 @@ public bool|IResolvable AppIdSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#app_id_set NotificationDestination#app_id_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#app_id_set NotificationDestination#app_id_set}.
 
 ---
 
@@ -1537,7 +1537,7 @@ public string AuthSecret { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#auth_secret NotificationDestination#auth_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#auth_secret NotificationDestination#auth_secret}.
 
 ---
 
@@ -1549,7 +1549,7 @@ public bool|IResolvable AuthSecretSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#auth_secret_set NotificationDestination#auth_secret_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#auth_secret_set NotificationDestination#auth_secret_set}.
 
 ---
 
@@ -1561,7 +1561,7 @@ public string ChannelUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_url NotificationDestination#channel_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_url NotificationDestination#channel_url}.
 
 ---
 
@@ -1573,7 +1573,7 @@ public bool|IResolvable ChannelUrlSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_url_set NotificationDestination#channel_url_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_url_set NotificationDestination#channel_url_set}.
 
 ---
 
@@ -1585,7 +1585,7 @@ public string TenantId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#tenant_id NotificationDestination#tenant_id}.
 
 ---
 
@@ -1597,7 +1597,7 @@ public bool|IResolvable TenantIdSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#tenant_id_set NotificationDestination#tenant_id_set}.
 
 ---
 
@@ -1609,7 +1609,7 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url NotificationDestination#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#url NotificationDestination#url}.
 
 ---
 
@@ -1621,7 +1621,7 @@ public bool|IResolvable UrlSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}.
 
 ---
 
@@ -1642,8 +1642,8 @@ new NotificationDestinationConfigPagerduty {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigPagerduty.property.integrationKey">IntegrationKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#integration_key NotificationDestination#integration_key}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigPagerduty.property.integrationKeySet">IntegrationKeySet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#integration_key_set NotificationDestination#integration_key_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigPagerduty.property.integrationKey">IntegrationKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#integration_key NotificationDestination#integration_key}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigPagerduty.property.integrationKeySet">IntegrationKeySet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#integration_key_set NotificationDestination#integration_key_set}. |
 
 ---
 
@@ -1655,7 +1655,7 @@ public string IntegrationKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#integration_key NotificationDestination#integration_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#integration_key NotificationDestination#integration_key}.
 
 ---
 
@@ -1667,7 +1667,7 @@ public bool|IResolvable IntegrationKeySet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#integration_key_set NotificationDestination#integration_key_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#integration_key_set NotificationDestination#integration_key_set}.
 
 ---
 
@@ -1692,12 +1692,12 @@ new NotificationDestinationConfigSlack {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.channelId">ChannelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.channelIdSet">ChannelIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.oauthToken">OauthToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#oauth_token NotificationDestination#oauth_token}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.oauthTokenSet">OauthTokenSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#oauth_token_set NotificationDestination#oauth_token_set}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url NotificationDestination#url}. |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.urlSet">UrlSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.channelId">ChannelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.channelIdSet">ChannelIdSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.oauthToken">OauthToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#oauth_token NotificationDestination#oauth_token}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.oauthTokenSet">OauthTokenSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#oauth_token_set NotificationDestination#oauth_token_set}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#url NotificationDestination#url}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationConfigSlack.property.urlSet">UrlSet</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}. |
 
 ---
 
@@ -1709,7 +1709,7 @@ public string ChannelId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_id NotificationDestination#channel_id}.
 
 ---
 
@@ -1721,7 +1721,7 @@ public bool|IResolvable ChannelIdSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#channel_id_set NotificationDestination#channel_id_set}.
 
 ---
 
@@ -1733,7 +1733,7 @@ public string OauthToken { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#oauth_token NotificationDestination#oauth_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#oauth_token NotificationDestination#oauth_token}.
 
 ---
 
@@ -1745,7 +1745,7 @@ public bool|IResolvable OauthTokenSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#oauth_token_set NotificationDestination#oauth_token_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#oauth_token_set NotificationDestination#oauth_token_set}.
 
 ---
 
@@ -1757,7 +1757,7 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url NotificationDestination#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#url NotificationDestination#url}.
 
 ---
 
@@ -1769,7 +1769,7 @@ public bool|IResolvable UrlSet { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#url_set NotificationDestination#url_set}.
 
 ---
 
@@ -1789,7 +1789,7 @@ new NotificationDestinationProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#workspace_id NotificationDestination#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.notificationDestination.NotificationDestinationProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#workspace_id NotificationDestination#workspace_id}. |
 
 ---
 
@@ -1801,7 +1801,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/notification_destination#workspace_id NotificationDestination#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/notification_destination#workspace_id NotificationDestination#workspace_id}.
 
 ---
 

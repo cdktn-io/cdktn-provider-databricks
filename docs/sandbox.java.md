@@ -4,7 +4,7 @@
 
 ### Sandbox <a name="Sandbox" id="@cdktn/provider-databricks.sandbox.Sandbox"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox databricks_sandbox}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox databricks_sandbox}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sandbox.Sandbox.Initializer"></a>
 
@@ -21,6 +21,7 @@ Sandbox.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .sandboxId(java.lang.String)
 //  .displayName(java.lang.String)
+//  .metadata(SandboxMetadata)
 //  .providerConfig(SandboxProviderConfig)
 //  .spec(SandboxSpec)
     .build();
@@ -37,10 +38,11 @@ Sandbox.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.Initializer.parameter.sandboxId">sandboxId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}. |
-| <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#display_name Sandbox#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig">SandboxProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#provider_config Sandbox#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec">SandboxSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#spec Sandbox#spec}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.Initializer.parameter.sandboxId">sandboxId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#display_name Sandbox#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadata">SandboxMetadata</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#metadata Sandbox#metadata}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig">SandboxProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#provider_config Sandbox#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec">SandboxSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#spec Sandbox#spec}. |
 
 ---
 
@@ -108,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}.
 
 ---
 
@@ -116,7 +118,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#display_name Sandbox#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#display_name Sandbox#display_name}.
+
+---
+
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-databricks.sandbox.Sandbox.Initializer.parameter.metadata"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxMetadata">SandboxMetadata</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#metadata Sandbox#metadata}.
 
 ---
 
@@ -124,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig">SandboxProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#provider_config Sandbox#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#provider_config Sandbox#provider_config}.
 
 ---
 
@@ -132,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxSpec">SandboxSpec</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#spec Sandbox#spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#spec Sandbox#spec}.
 
 ---
 
@@ -164,9 +174,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.putMetadata">putMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.putProviderConfig">putProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.putSpec">putSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.resetDisplayName">resetDisplayName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.resetMetadata">resetMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.resetProviderConfig">resetProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.resetSpec">resetSpec</a></code> | *No description.* |
 
@@ -483,6 +495,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putMetadata` <a name="putMetadata" id="@cdktn/provider-databricks.sandbox.Sandbox.putMetadata"></a>
+
+```java
+public void putMetadata(SandboxMetadata value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.sandbox.Sandbox.putMetadata.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxMetadata">SandboxMetadata</a>
+
+---
+
 ##### `putProviderConfig` <a name="putProviderConfig" id="@cdktn/provider-databricks.sandbox.Sandbox.putProviderConfig"></a>
 
 ```java
@@ -511,6 +535,12 @@ public void putSpec(SandboxSpec value)
 
 ```java
 public void resetDisplayName()
+```
+
+##### `resetMetadata` <a name="resetMetadata" id="@cdktn/provider-databricks.sandbox.Sandbox.resetMetadata"></a>
+
+```java
+public void resetMetadata()
 ```
 
 ##### `resetProviderConfig` <a name="resetProviderConfig" id="@cdktn/provider-databricks.sandbox.Sandbox.resetProviderConfig"></a>
@@ -628,7 +658,7 @@ The construct id used in the generated config for the Sandbox to import.
 
 The id of the existing Sandbox that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -659,12 +689,14 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference">SandboxMetadataOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfigOutputReference">SandboxProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecOutputReference">SandboxSpecOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.property.status">status</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxStatusOutputReference">SandboxStatusOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.property.metadataInput">metadataInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.sandbox.SandboxMetadata">SandboxMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.property.providerConfigInput">providerConfigInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig">SandboxProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.property.sandboxIdInput">sandboxIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.Sandbox.property.specInput">specInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.sandbox.SandboxSpec">SandboxSpec</a></code> | *No description.* |
@@ -825,6 +857,16 @@ public java.lang.String getCreateTime();
 
 ---
 
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-databricks.sandbox.Sandbox.property.metadata"></a>
+
+```java
+public SandboxMetadataOutputReference getMetadata();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference">SandboxMetadataOutputReference</a>
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.sandbox.Sandbox.property.name"></a>
 
 ```java
@@ -882,6 +924,16 @@ public java.lang.String getDisplayNameInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `metadataInput`<sup>Optional</sup> <a name="metadataInput" id="@cdktn/provider-databricks.sandbox.Sandbox.property.metadataInput"></a>
+
+```java
+public IResolvable|SandboxMetadata getMetadataInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-databricks.sandbox.SandboxMetadata">SandboxMetadata</a>
 
 ---
 
@@ -972,6 +1024,7 @@ SandboxConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .sandboxId(java.lang.String)
 //  .displayName(java.lang.String)
+//  .metadata(SandboxMetadata)
 //  .providerConfig(SandboxProviderConfig)
 //  .spec(SandboxSpec)
     .build();
@@ -988,10 +1041,11 @@ SandboxConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.sandboxId">sandboxId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}. |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#display_name Sandbox#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig">SandboxProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#provider_config Sandbox#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec">SandboxSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#spec Sandbox#spec}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.sandboxId">sandboxId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#display_name Sandbox#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadata">SandboxMetadata</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#metadata Sandbox#metadata}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig">SandboxProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#provider_config Sandbox#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxConfig.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec">SandboxSpec</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#spec Sandbox#spec}. |
 
 ---
 
@@ -1073,7 +1127,7 @@ public java.lang.String getSandboxId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#sandbox_id Sandbox#sandbox_id}.
 
 ---
 
@@ -1085,7 +1139,19 @@ public java.lang.String getDisplayName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#display_name Sandbox#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#display_name Sandbox#display_name}.
+
+---
+
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-databricks.sandbox.SandboxConfig.property.metadata"></a>
+
+```java
+public SandboxMetadata getMetadata();
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxMetadata">SandboxMetadata</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#metadata Sandbox#metadata}.
 
 ---
 
@@ -1097,7 +1163,7 @@ public SandboxProviderConfig getProviderConfig();
 
 - *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig">SandboxProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#provider_config Sandbox#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#provider_config Sandbox#provider_config}.
 
 ---
 
@@ -1109,7 +1175,39 @@ public SandboxSpec getSpec();
 
 - *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxSpec">SandboxSpec</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#spec Sandbox#spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#spec Sandbox#spec}.
+
+---
+
+### SandboxMetadata <a name="SandboxMetadata" id="@cdktn/provider-databricks.sandbox.SandboxMetadata"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.sandbox.SandboxMetadata.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.sandbox.SandboxMetadata;
+
+SandboxMetadata.builder()
+//  .customTags(java.util.Map<java.lang.String, java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadata.property.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#custom_tags Sandbox#custom_tags}. |
+
+---
+
+##### `customTags`<sup>Optional</sup> <a name="customTags" id="@cdktn/provider-databricks.sandbox.SandboxMetadata.property.customTags"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getCustomTags();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#custom_tags Sandbox#custom_tags}.
 
 ---
 
@@ -1129,7 +1227,7 @@ SandboxProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}. |
 
 ---
 
@@ -1141,7 +1239,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#workspace_id Sandbox#workspace_id}.
 
 ---
 
@@ -1162,8 +1260,8 @@ SandboxSpec.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec.property.compute">compute</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute">SandboxSpecCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#compute Sandbox#compute}. |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec.property.environment">environment</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironment">SandboxSpecEnvironment</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#environment Sandbox#environment}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec.property.compute">compute</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute">SandboxSpecCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#compute Sandbox#compute}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpec.property.environment">environment</a></code> | <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironment">SandboxSpecEnvironment</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#environment Sandbox#environment}. |
 
 ---
 
@@ -1175,7 +1273,7 @@ public SandboxSpecCompute getCompute();
 
 - *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute">SandboxSpecCompute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#compute Sandbox#compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#compute Sandbox#compute}.
 
 ---
 
@@ -1187,7 +1285,7 @@ public SandboxSpecEnvironment getEnvironment();
 
 - *Type:* <a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironment">SandboxSpecEnvironment</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#environment Sandbox#environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#environment Sandbox#environment}.
 
 ---
 
@@ -1207,7 +1305,7 @@ SandboxSpecCompute.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute.property.inactivityTimeout">inactivityTimeout</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecCompute.property.inactivityTimeout">inactivityTimeout</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}. |
 
 ---
 
@@ -1219,7 +1317,7 @@ public java.lang.String getInactivityTimeout();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#inactivity_timeout Sandbox#inactivity_timeout}.
 
 ---
 
@@ -1239,7 +1337,7 @@ SandboxSpecEnvironment.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironment.property.imageUri">imageUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#image_uri Sandbox#image_uri}. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxSpecEnvironment.property.imageUri">imageUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#image_uri Sandbox#image_uri}. |
 
 ---
 
@@ -1251,7 +1349,7 @@ public java.lang.String getImageUri();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/sandbox#image_uri Sandbox#image_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/sandbox#image_uri Sandbox#image_uri}.
 
 ---
 
@@ -1268,6 +1366,284 @@ SandboxStatus.builder()
 
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### SandboxMetadataOutputReference <a name="SandboxMetadataOutputReference" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.databricks.sandbox.SandboxMetadataOutputReference;
+
+new SandboxMetadataOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.resetCustomTags">resetCustomTags</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCustomTags` <a name="resetCustomTags" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.resetCustomTags"></a>
+
+```java
+public void resetCustomTags()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.property.customTagsInput">customTagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.property.customTags">customTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.sandbox.SandboxMetadata">SandboxMetadata</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `customTagsInput`<sup>Optional</sup> <a name="customTagsInput" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.property.customTagsInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getCustomTagsInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `customTags`<sup>Required</sup> <a name="customTags" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.property.customTags"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getCustomTags();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.sandbox.SandboxMetadataOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|SandboxMetadata getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-databricks.sandbox.SandboxMetadata">SandboxMetadata</a>
+
+---
+
 
 ### SandboxProviderConfigOutputReference <a name="SandboxProviderConfigOutputReference" id="@cdktn/provider-databricks.sandbox.SandboxProviderConfigOutputReference"></a>
 

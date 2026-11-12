@@ -4,7 +4,7 @@
 
 ### DataDatabricksWorkspaceIamServicePrincipalsV2 <a name="DataDatabricksWorkspaceIamServicePrincipalsV2" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2 databricks_workspace_iam_service_principals_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2 databricks_workspace_iam_service_principals_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.Initializer"></a>
 
@@ -71,6 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.putProviderConfig">PutProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.resetFilter">ResetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.resetPageSize">ResetPageSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.resetParent">ResetParent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.resetProviderConfig">ResetProviderConfig</a></code> | *No description.* |
 
 ---
@@ -312,6 +313,12 @@ func ResetFilter()
 func ResetPageSize()
 ```
 
+##### `ResetParent` <a name="ResetParent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.resetParent"></a>
+
+```go
+func ResetParent()
+```
+
 ##### `ResetProviderConfig` <a name="ResetProviderConfig" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.resetProviderConfig"></a>
 
 ```go
@@ -421,7 +428,7 @@ The construct id used in the generated config for the DataDatabricksWorkspaceIam
 
 The id of the existing DataDatabricksWorkspaceIamServicePrincipalsV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -453,9 +460,11 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.property.servicePrincipals">ServicePrincipals</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsList">DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.property.filterInput">FilterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.property.pageSizeInput">PageSizeInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.property.parentInput">ParentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.property.providerConfigInput">ProviderConfigInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.property.filter">Filter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.property.pageSize">PageSize</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.property.parent">Parent</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -621,6 +630,16 @@ func PageSizeInput() *f64
 
 ---
 
+##### `ParentInput`<sup>Optional</sup> <a name="ParentInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.property.parentInput"></a>
+
+```go
+func ParentInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ProviderConfigInput`<sup>Optional</sup> <a name="ProviderConfigInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.property.providerConfigInput"></a>
 
 ```go
@@ -648,6 +667,16 @@ func PageSize() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2.property.parent"></a>
+
+```go
+func Parent() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -688,6 +717,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadata
 	Provisioners: *[]interface{},
 	Filter: *string,
 	PageSize: *f64,
+	Parent: *string,
 	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ProviderConfig,
 }
 ```
@@ -703,9 +733,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2Config.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#filter DataDatabricksWorkspaceIamServicePrincipalsV2#filter}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2Config.property.pageSize">PageSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#page_size DataDatabricksWorkspaceIamServicePrincipalsV2#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2Config.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ProviderConfig">DataDatabricksWorkspaceIamServicePrincipalsV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalsV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2Config.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#filter DataDatabricksWorkspaceIamServicePrincipalsV2#filter}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2Config.property.pageSize">PageSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#page_size DataDatabricksWorkspaceIamServicePrincipalsV2#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2Config.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#parent DataDatabricksWorkspaceIamServicePrincipalsV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2Config.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ProviderConfig">DataDatabricksWorkspaceIamServicePrincipalsV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalsV2#provider_config}. |
 
 ---
 
@@ -787,7 +818,7 @@ Filter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#filter DataDatabricksWorkspaceIamServicePrincipalsV2#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#filter DataDatabricksWorkspaceIamServicePrincipalsV2#filter}.
 
 ---
 
@@ -799,7 +830,19 @@ PageSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#page_size DataDatabricksWorkspaceIamServicePrincipalsV2#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#page_size DataDatabricksWorkspaceIamServicePrincipalsV2#page_size}.
+
+---
+
+##### `Parent`<sup>Optional</sup> <a name="Parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2Config.property.parent"></a>
+
+```go
+Parent *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#parent DataDatabricksWorkspaceIamServicePrincipalsV2#parent}.
 
 ---
 
@@ -811,7 +854,7 @@ ProviderConfig DataDatabricksWorkspaceIamServicePrincipalsV2ProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ProviderConfig">DataDatabricksWorkspaceIamServicePrincipalsV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalsV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalsV2#provider_config}.
 
 ---
 
@@ -831,7 +874,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalsV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalsV2#workspace_id}. |
 
 ---
 
@@ -843,7 +886,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalsV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalsV2#workspace_id}.
 
 ---
 
@@ -855,7 +898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadatabricksworkspaceiamserviceprincipalsv2"
 
 &datadatabricksworkspaceiamserviceprincipalsv2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipals {
-	ServicePrincipalId: *string,
+	Name: *string,
 	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfig,
 }
 ```
@@ -864,20 +907,20 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipals.property.servicePrincipalId">ServicePrincipalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#service_principal_id DataDatabricksWorkspaceIamServicePrincipalsV2#service_principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipals.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfig">DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalsV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipals.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#name DataDatabricksWorkspaceIamServicePrincipalsV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipals.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfig">DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalsV2#provider_config}. |
 
 ---
 
-##### `ServicePrincipalId`<sup>Required</sup> <a name="ServicePrincipalId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipals.property.servicePrincipalId"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipals.property.name"></a>
 
 ```go
-ServicePrincipalId *string
+Name *string
 ```
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#service_principal_id DataDatabricksWorkspaceIamServicePrincipalsV2#service_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#name DataDatabricksWorkspaceIamServicePrincipalsV2#name}.
 
 ---
 
@@ -889,7 +932,7 @@ ProviderConfig DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsPro
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfig">DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalsV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalsV2#provider_config}.
 
 ---
 
@@ -909,7 +952,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalsV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalsV2#workspace_id}. |
 
 ---
 
@@ -921,7 +964,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principals_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalsV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principals_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalsV2#workspace_id}.
 
 ---
 
@@ -1618,10 +1661,12 @@ func ResetProviderConfig()
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.applicationId">ApplicationId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.externalId">ExternalId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.parent">Parent</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfigOutputReference">DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.providerConfigInput">ProviderConfigInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.servicePrincipalIdInput">ServicePrincipalIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.servicePrincipalId">ServicePrincipalId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.providerConfigInput">ProviderConfigInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipals">DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipals</a></code> | *No description.* |
 
 ---
@@ -1700,6 +1745,16 @@ func ExternalId() *string
 
 ---
 
+##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.parent"></a>
+
+```go
+func Parent() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ProviderConfig`<sup>Required</sup> <a name="ProviderConfig" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.providerConfig"></a>
 
 ```go
@@ -1707,6 +1762,26 @@ func ProviderConfig() DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrinci
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfigOutputReference">DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfigOutputReference</a>
+
+---
+
+##### `ServicePrincipalId`<sup>Required</sup> <a name="ServicePrincipalId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.servicePrincipalId"></a>
+
+```go
+func ServicePrincipalId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.nameInput"></a>
+
+```go
+func NameInput() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1720,20 +1795,10 @@ func ProviderConfigInput() interface{}
 
 ---
 
-##### `ServicePrincipalIdInput`<sup>Optional</sup> <a name="ServicePrincipalIdInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.servicePrincipalIdInput"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.name"></a>
 
 ```go
-func ServicePrincipalIdInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ServicePrincipalId`<sup>Required</sup> <a name="ServicePrincipalId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalsV2.DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsOutputReference.property.servicePrincipalId"></a>
-
-```go
-func ServicePrincipalId() *string
+func Name() *string
 ```
 
 - *Type:* *string

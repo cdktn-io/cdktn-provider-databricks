@@ -4,7 +4,7 @@
 
 ### DataQualityMonitor <a name="DataQualityMonitor" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor databricks_data_quality_monitor}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor databricks_data_quality_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitor.Initializer"></a>
 
@@ -549,7 +549,7 @@ The construct id used in the generated config for the DataQualityMonitor to impo
 
 The id of the existing DataQualityMonitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -863,6 +863,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqual
 
 &dataqualitymonitor.DataQualityMonitorAnomalyDetectionConfig {
 	ExcludedTableFullNames: *[]*string,
+	NotificationSettings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettings,
 }
 ```
 
@@ -870,7 +871,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqual
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfig.property.excludedTableFullNames">ExcludedTableFullNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#excluded_table_full_names DataQualityMonitor#excluded_table_full_names}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfig.property.excludedTableFullNames">ExcludedTableFullNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#excluded_table_full_names DataQualityMonitor#excluded_table_full_names}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfig.property.notificationSettings">NotificationSettings</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettings">DataQualityMonitorAnomalyDetectionConfigNotificationSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#notification_settings DataQualityMonitor#notification_settings}. |
 
 ---
 
@@ -882,7 +884,185 @@ ExcludedTableFullNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#excluded_table_full_names DataQualityMonitor#excluded_table_full_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#excluded_table_full_names DataQualityMonitor#excluded_table_full_names}.
+
+---
+
+##### `NotificationSettings`<sup>Optional</sup> <a name="NotificationSettings" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfig.property.notificationSettings"></a>
+
+```go
+NotificationSettings DataQualityMonitorAnomalyDetectionConfigNotificationSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettings">DataQualityMonitorAnomalyDetectionConfigNotificationSettings</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#notification_settings DataQualityMonitor#notification_settings}.
+
+---
+
+### DataQualityMonitorAnomalyDetectionConfigNotificationSettings <a name="DataQualityMonitorAnomalyDetectionConfigNotificationSettings" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettings.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqualitymonitor"
+
+&dataqualitymonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettings {
+	OnFailure: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure,
+	OnUnhealthyTable: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettings.property.onFailure">OnFailure</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure">DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#on_failure DataQualityMonitor#on_failure}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettings.property.onUnhealthyTable">OnUnhealthyTable</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable">DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#on_unhealthy_table DataQualityMonitor#on_unhealthy_table}. |
+
+---
+
+##### `OnFailure`<sup>Optional</sup> <a name="OnFailure" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettings.property.onFailure"></a>
+
+```go
+OnFailure DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure">DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#on_failure DataQualityMonitor#on_failure}.
+
+---
+
+##### `OnUnhealthyTable`<sup>Optional</sup> <a name="OnUnhealthyTable" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettings.property.onUnhealthyTable"></a>
+
+```go
+OnUnhealthyTable DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable">DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#on_unhealthy_table DataQualityMonitor#on_unhealthy_table}.
+
+---
+
+### DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure <a name="DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqualitymonitor"
+
+&dataqualitymonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure {
+	DestinationIds: *[]*string,
+	DestinationUserIds: *[]*f64,
+	EmailAddresses: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure.property.destinationIds">DestinationIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_ids DataQualityMonitor#destination_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure.property.destinationUserIds">DestinationUserIds</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_user_ids DataQualityMonitor#destination_user_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure.property.emailAddresses">EmailAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#email_addresses DataQualityMonitor#email_addresses}. |
+
+---
+
+##### `DestinationIds`<sup>Optional</sup> <a name="DestinationIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure.property.destinationIds"></a>
+
+```go
+DestinationIds *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_ids DataQualityMonitor#destination_ids}.
+
+---
+
+##### `DestinationUserIds`<sup>Optional</sup> <a name="DestinationUserIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure.property.destinationUserIds"></a>
+
+```go
+DestinationUserIds *[]*f64
+```
+
+- *Type:* *[]*f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_user_ids DataQualityMonitor#destination_user_ids}.
+
+---
+
+##### `EmailAddresses`<sup>Optional</sup> <a name="EmailAddresses" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure.property.emailAddresses"></a>
+
+```go
+EmailAddresses *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#email_addresses DataQualityMonitor#email_addresses}.
+
+---
+
+### DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable <a name="DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqualitymonitor"
+
+&dataqualitymonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable {
+	DestinationIds: *[]*string,
+	DestinationUserIds: *[]*f64,
+	EmailAddresses: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable.property.destinationIds">DestinationIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_ids DataQualityMonitor#destination_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable.property.destinationUserIds">DestinationUserIds</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_user_ids DataQualityMonitor#destination_user_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable.property.emailAddresses">EmailAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#email_addresses DataQualityMonitor#email_addresses}. |
+
+---
+
+##### `DestinationIds`<sup>Optional</sup> <a name="DestinationIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable.property.destinationIds"></a>
+
+```go
+DestinationIds *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_ids DataQualityMonitor#destination_ids}.
+
+---
+
+##### `DestinationUserIds`<sup>Optional</sup> <a name="DestinationUserIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable.property.destinationUserIds"></a>
+
+```go
+DestinationUserIds *[]*f64
+```
+
+- *Type:* *[]*f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_user_ids DataQualityMonitor#destination_user_ids}.
+
+---
+
+##### `EmailAddresses`<sup>Optional</sup> <a name="EmailAddresses" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable.property.emailAddresses"></a>
+
+```go
+EmailAddresses *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#email_addresses DataQualityMonitor#email_addresses}.
 
 ---
 
@@ -920,11 +1100,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqual
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorConfig.property.objectId">ObjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#object_id DataQualityMonitor#object_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorConfig.property.objectType">ObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#object_type DataQualityMonitor#object_type}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorConfig.property.anomalyDetectionConfig">AnomalyDetectionConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfig">DataQualityMonitorAnomalyDetectionConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#anomaly_detection_config DataQualityMonitor#anomaly_detection_config}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorConfig.property.dataProfilingConfig">DataProfilingConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig">DataQualityMonitorDataProfilingConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#data_profiling_config DataQualityMonitor#data_profiling_config}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorProviderConfig">DataQualityMonitorProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#provider_config DataQualityMonitor#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorConfig.property.objectId">ObjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#object_id DataQualityMonitor#object_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorConfig.property.objectType">ObjectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#object_type DataQualityMonitor#object_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorConfig.property.anomalyDetectionConfig">AnomalyDetectionConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfig">DataQualityMonitorAnomalyDetectionConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#anomaly_detection_config DataQualityMonitor#anomaly_detection_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorConfig.property.dataProfilingConfig">DataProfilingConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig">DataQualityMonitorDataProfilingConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#data_profiling_config DataQualityMonitor#data_profiling_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorProviderConfig">DataQualityMonitorProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#provider_config DataQualityMonitor#provider_config}. |
 
 ---
 
@@ -1006,7 +1186,7 @@ ObjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#object_id DataQualityMonitor#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#object_id DataQualityMonitor#object_id}.
 
 ---
 
@@ -1018,7 +1198,7 @@ ObjectType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#object_type DataQualityMonitor#object_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#object_type DataQualityMonitor#object_type}.
 
 ---
 
@@ -1030,7 +1210,7 @@ AnomalyDetectionConfig DataQualityMonitorAnomalyDetectionConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfig">DataQualityMonitorAnomalyDetectionConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#anomaly_detection_config DataQualityMonitor#anomaly_detection_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#anomaly_detection_config DataQualityMonitor#anomaly_detection_config}.
 
 ---
 
@@ -1042,7 +1222,7 @@ DataProfilingConfig DataQualityMonitorDataProfilingConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig">DataQualityMonitorDataProfilingConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#data_profiling_config DataQualityMonitor#data_profiling_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#data_profiling_config DataQualityMonitor#data_profiling_config}.
 
 ---
 
@@ -1054,7 +1234,7 @@ ProviderConfig DataQualityMonitorProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorProviderConfig">DataQualityMonitorProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#provider_config DataQualityMonitor#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#provider_config DataQualityMonitor#provider_config}.
 
 ---
 
@@ -1085,18 +1265,18 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqual
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.outputSchemaId">OutputSchemaId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#output_schema_id DataQualityMonitor#output_schema_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.assetsDir">AssetsDir</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#assets_dir DataQualityMonitor#assets_dir}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.baselineTableName">BaselineTableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#baseline_table_name DataQualityMonitor#baseline_table_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.customMetrics">CustomMetrics</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#custom_metrics DataQualityMonitor#custom_metrics}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.inferenceLog">InferenceLog</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog">DataQualityMonitorDataProfilingConfigInferenceLog</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#inference_log DataQualityMonitor#inference_log}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.notificationSettings">NotificationSettings</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettings">DataQualityMonitorDataProfilingConfigNotificationSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#notification_settings DataQualityMonitor#notification_settings}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.schedule">Schedule</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSchedule">DataQualityMonitorDataProfilingConfigSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#schedule DataQualityMonitor#schedule}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.skipBuiltinDashboard">SkipBuiltinDashboard</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#skip_builtin_dashboard DataQualityMonitor#skip_builtin_dashboard}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.slicingExprs">SlicingExprs</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#slicing_exprs DataQualityMonitor#slicing_exprs}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.snapshot">Snapshot</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSnapshot">DataQualityMonitorDataProfilingConfigSnapshot</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#snapshot DataQualityMonitor#snapshot}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.timeSeries">TimeSeries</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigTimeSeries">DataQualityMonitorDataProfilingConfigTimeSeries</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#time_series DataQualityMonitor#time_series}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#warehouse_id DataQualityMonitor#warehouse_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.outputSchemaId">OutputSchemaId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#output_schema_id DataQualityMonitor#output_schema_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.assetsDir">AssetsDir</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#assets_dir DataQualityMonitor#assets_dir}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.baselineTableName">BaselineTableName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#baseline_table_name DataQualityMonitor#baseline_table_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.customMetrics">CustomMetrics</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#custom_metrics DataQualityMonitor#custom_metrics}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.inferenceLog">InferenceLog</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog">DataQualityMonitorDataProfilingConfigInferenceLog</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#inference_log DataQualityMonitor#inference_log}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.notificationSettings">NotificationSettings</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettings">DataQualityMonitorDataProfilingConfigNotificationSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#notification_settings DataQualityMonitor#notification_settings}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.schedule">Schedule</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSchedule">DataQualityMonitorDataProfilingConfigSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#schedule DataQualityMonitor#schedule}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.skipBuiltinDashboard">SkipBuiltinDashboard</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#skip_builtin_dashboard DataQualityMonitor#skip_builtin_dashboard}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.slicingExprs">SlicingExprs</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#slicing_exprs DataQualityMonitor#slicing_exprs}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.snapshot">Snapshot</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSnapshot">DataQualityMonitorDataProfilingConfigSnapshot</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#snapshot DataQualityMonitor#snapshot}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.timeSeries">TimeSeries</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigTimeSeries">DataQualityMonitorDataProfilingConfigTimeSeries</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#time_series DataQualityMonitor#time_series}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfig.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#warehouse_id DataQualityMonitor#warehouse_id}. |
 
 ---
 
@@ -1108,7 +1288,7 @@ OutputSchemaId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#output_schema_id DataQualityMonitor#output_schema_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#output_schema_id DataQualityMonitor#output_schema_id}.
 
 ---
 
@@ -1120,7 +1300,7 @@ AssetsDir *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#assets_dir DataQualityMonitor#assets_dir}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#assets_dir DataQualityMonitor#assets_dir}.
 
 ---
 
@@ -1132,7 +1312,7 @@ BaselineTableName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#baseline_table_name DataQualityMonitor#baseline_table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#baseline_table_name DataQualityMonitor#baseline_table_name}.
 
 ---
 
@@ -1144,7 +1324,7 @@ CustomMetrics interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#custom_metrics DataQualityMonitor#custom_metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#custom_metrics DataQualityMonitor#custom_metrics}.
 
 ---
 
@@ -1156,7 +1336,7 @@ InferenceLog DataQualityMonitorDataProfilingConfigInferenceLog
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog">DataQualityMonitorDataProfilingConfigInferenceLog</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#inference_log DataQualityMonitor#inference_log}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#inference_log DataQualityMonitor#inference_log}.
 
 ---
 
@@ -1168,7 +1348,7 @@ NotificationSettings DataQualityMonitorDataProfilingConfigNotificationSettings
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettings">DataQualityMonitorDataProfilingConfigNotificationSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#notification_settings DataQualityMonitor#notification_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#notification_settings DataQualityMonitor#notification_settings}.
 
 ---
 
@@ -1180,7 +1360,7 @@ Schedule DataQualityMonitorDataProfilingConfigSchedule
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSchedule">DataQualityMonitorDataProfilingConfigSchedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#schedule DataQualityMonitor#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#schedule DataQualityMonitor#schedule}.
 
 ---
 
@@ -1192,7 +1372,7 @@ SkipBuiltinDashboard interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#skip_builtin_dashboard DataQualityMonitor#skip_builtin_dashboard}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#skip_builtin_dashboard DataQualityMonitor#skip_builtin_dashboard}.
 
 ---
 
@@ -1204,7 +1384,7 @@ SlicingExprs *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#slicing_exprs DataQualityMonitor#slicing_exprs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#slicing_exprs DataQualityMonitor#slicing_exprs}.
 
 ---
 
@@ -1216,7 +1396,7 @@ Snapshot DataQualityMonitorDataProfilingConfigSnapshot
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSnapshot">DataQualityMonitorDataProfilingConfigSnapshot</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#snapshot DataQualityMonitor#snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#snapshot DataQualityMonitor#snapshot}.
 
 ---
 
@@ -1228,7 +1408,7 @@ TimeSeries DataQualityMonitorDataProfilingConfigTimeSeries
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigTimeSeries">DataQualityMonitorDataProfilingConfigTimeSeries</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#time_series DataQualityMonitor#time_series}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#time_series DataQualityMonitor#time_series}.
 
 ---
 
@@ -1240,7 +1420,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#warehouse_id DataQualityMonitor#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#warehouse_id DataQualityMonitor#warehouse_id}.
 
 ---
 
@@ -1264,11 +1444,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqual
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigCustomMetrics.property.definition">Definition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#definition DataQualityMonitor#definition}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigCustomMetrics.property.inputColumns">InputColumns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#input_columns DataQualityMonitor#input_columns}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigCustomMetrics.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#name DataQualityMonitor#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigCustomMetrics.property.outputDataType">OutputDataType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#output_data_type DataQualityMonitor#output_data_type}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigCustomMetrics.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#type DataQualityMonitor#type}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigCustomMetrics.property.definition">Definition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#definition DataQualityMonitor#definition}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigCustomMetrics.property.inputColumns">InputColumns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#input_columns DataQualityMonitor#input_columns}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigCustomMetrics.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#name DataQualityMonitor#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigCustomMetrics.property.outputDataType">OutputDataType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#output_data_type DataQualityMonitor#output_data_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigCustomMetrics.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#type DataQualityMonitor#type}. |
 
 ---
 
@@ -1280,7 +1460,7 @@ Definition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#definition DataQualityMonitor#definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#definition DataQualityMonitor#definition}.
 
 ---
 
@@ -1292,7 +1472,7 @@ InputColumns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#input_columns DataQualityMonitor#input_columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#input_columns DataQualityMonitor#input_columns}.
 
 ---
 
@@ -1304,7 +1484,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#name DataQualityMonitor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#name DataQualityMonitor#name}.
 
 ---
 
@@ -1316,7 +1496,7 @@ OutputDataType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#output_data_type DataQualityMonitor#output_data_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#output_data_type DataQualityMonitor#output_data_type}.
 
 ---
 
@@ -1328,7 +1508,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#type DataQualityMonitor#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#type DataQualityMonitor#type}.
 
 ---
 
@@ -1353,12 +1533,12 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqual
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog.property.granularities">Granularities</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#granularities DataQualityMonitor#granularities}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog.property.modelIdColumn">ModelIdColumn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#model_id_column DataQualityMonitor#model_id_column}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog.property.predictionColumn">PredictionColumn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#prediction_column DataQualityMonitor#prediction_column}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog.property.problemType">ProblemType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#problem_type DataQualityMonitor#problem_type}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog.property.timestampColumn">TimestampColumn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#timestamp_column DataQualityMonitor#timestamp_column}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog.property.labelColumn">LabelColumn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#label_column DataQualityMonitor#label_column}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog.property.granularities">Granularities</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#granularities DataQualityMonitor#granularities}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog.property.modelIdColumn">ModelIdColumn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#model_id_column DataQualityMonitor#model_id_column}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog.property.predictionColumn">PredictionColumn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#prediction_column DataQualityMonitor#prediction_column}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog.property.problemType">ProblemType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#problem_type DataQualityMonitor#problem_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog.property.timestampColumn">TimestampColumn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#timestamp_column DataQualityMonitor#timestamp_column}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigInferenceLog.property.labelColumn">LabelColumn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#label_column DataQualityMonitor#label_column}. |
 
 ---
 
@@ -1370,7 +1550,7 @@ Granularities *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#granularities DataQualityMonitor#granularities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#granularities DataQualityMonitor#granularities}.
 
 ---
 
@@ -1382,7 +1562,7 @@ ModelIdColumn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#model_id_column DataQualityMonitor#model_id_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#model_id_column DataQualityMonitor#model_id_column}.
 
 ---
 
@@ -1394,7 +1574,7 @@ PredictionColumn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#prediction_column DataQualityMonitor#prediction_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#prediction_column DataQualityMonitor#prediction_column}.
 
 ---
 
@@ -1406,7 +1586,7 @@ ProblemType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#problem_type DataQualityMonitor#problem_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#problem_type DataQualityMonitor#problem_type}.
 
 ---
 
@@ -1418,7 +1598,7 @@ TimestampColumn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#timestamp_column DataQualityMonitor#timestamp_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#timestamp_column DataQualityMonitor#timestamp_column}.
 
 ---
 
@@ -1430,7 +1610,7 @@ LabelColumn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#label_column DataQualityMonitor#label_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#label_column DataQualityMonitor#label_column}.
 
 ---
 
@@ -1443,6 +1623,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqual
 
 &dataqualitymonitor.DataQualityMonitorDataProfilingConfigNotificationSettings {
 	OnFailure: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure,
+	OnUnhealthyTable: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable,
 }
 ```
 
@@ -1450,7 +1631,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqual
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettings.property.onFailure">OnFailure</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure">DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#on_failure DataQualityMonitor#on_failure}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettings.property.onFailure">OnFailure</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure">DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#on_failure DataQualityMonitor#on_failure}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettings.property.onUnhealthyTable">OnUnhealthyTable</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable">DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#on_unhealthy_table DataQualityMonitor#on_unhealthy_table}. |
 
 ---
 
@@ -1462,7 +1644,19 @@ OnFailure DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure">DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#on_failure DataQualityMonitor#on_failure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#on_failure DataQualityMonitor#on_failure}.
+
+---
+
+##### `OnUnhealthyTable`<sup>Optional</sup> <a name="OnUnhealthyTable" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettings.property.onUnhealthyTable"></a>
+
+```go
+OnUnhealthyTable DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable">DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#on_unhealthy_table DataQualityMonitor#on_unhealthy_table}.
 
 ---
 
@@ -1474,6 +1668,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqualitymonitor"
 
 &dataqualitymonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure {
+	DestinationIds: *[]*string,
+	DestinationUserIds: *[]*f64,
 	EmailAddresses: *[]*string,
 }
 ```
@@ -1482,7 +1678,33 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqual
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure.property.emailAddresses">EmailAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#email_addresses DataQualityMonitor#email_addresses}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure.property.destinationIds">DestinationIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_ids DataQualityMonitor#destination_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure.property.destinationUserIds">DestinationUserIds</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_user_ids DataQualityMonitor#destination_user_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure.property.emailAddresses">EmailAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#email_addresses DataQualityMonitor#email_addresses}. |
+
+---
+
+##### `DestinationIds`<sup>Optional</sup> <a name="DestinationIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure.property.destinationIds"></a>
+
+```go
+DestinationIds *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_ids DataQualityMonitor#destination_ids}.
+
+---
+
+##### `DestinationUserIds`<sup>Optional</sup> <a name="DestinationUserIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure.property.destinationUserIds"></a>
+
+```go
+DestinationUserIds *[]*f64
+```
+
+- *Type:* *[]*f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_user_ids DataQualityMonitor#destination_user_ids}.
 
 ---
 
@@ -1494,7 +1716,67 @@ EmailAddresses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#email_addresses DataQualityMonitor#email_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#email_addresses DataQualityMonitor#email_addresses}.
+
+---
+
+### DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable <a name="DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqualitymonitor"
+
+&dataqualitymonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable {
+	DestinationIds: *[]*string,
+	DestinationUserIds: *[]*f64,
+	EmailAddresses: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable.property.destinationIds">DestinationIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_ids DataQualityMonitor#destination_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable.property.destinationUserIds">DestinationUserIds</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_user_ids DataQualityMonitor#destination_user_ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable.property.emailAddresses">EmailAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#email_addresses DataQualityMonitor#email_addresses}. |
+
+---
+
+##### `DestinationIds`<sup>Optional</sup> <a name="DestinationIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable.property.destinationIds"></a>
+
+```go
+DestinationIds *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_ids DataQualityMonitor#destination_ids}.
+
+---
+
+##### `DestinationUserIds`<sup>Optional</sup> <a name="DestinationUserIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable.property.destinationUserIds"></a>
+
+```go
+DestinationUserIds *[]*f64
+```
+
+- *Type:* *[]*f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#destination_user_ids DataQualityMonitor#destination_user_ids}.
+
+---
+
+##### `EmailAddresses`<sup>Optional</sup> <a name="EmailAddresses" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable.property.emailAddresses"></a>
+
+```go
+EmailAddresses *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#email_addresses DataQualityMonitor#email_addresses}.
 
 ---
 
@@ -1515,8 +1797,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqual
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSchedule.property.quartzCronExpression">QuartzCronExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#quartz_cron_expression DataQualityMonitor#quartz_cron_expression}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSchedule.property.timezoneId">TimezoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#timezone_id DataQualityMonitor#timezone_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSchedule.property.quartzCronExpression">QuartzCronExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#quartz_cron_expression DataQualityMonitor#quartz_cron_expression}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigSchedule.property.timezoneId">TimezoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#timezone_id DataQualityMonitor#timezone_id}. |
 
 ---
 
@@ -1528,7 +1810,7 @@ QuartzCronExpression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#quartz_cron_expression DataQualityMonitor#quartz_cron_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#quartz_cron_expression DataQualityMonitor#quartz_cron_expression}.
 
 ---
 
@@ -1540,7 +1822,7 @@ TimezoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#timezone_id DataQualityMonitor#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#timezone_id DataQualityMonitor#timezone_id}.
 
 ---
 
@@ -1574,8 +1856,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqual
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigTimeSeries.property.granularities">Granularities</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#granularities DataQualityMonitor#granularities}. |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigTimeSeries.property.timestampColumn">TimestampColumn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#timestamp_column DataQualityMonitor#timestamp_column}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigTimeSeries.property.granularities">Granularities</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#granularities DataQualityMonitor#granularities}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigTimeSeries.property.timestampColumn">TimestampColumn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#timestamp_column DataQualityMonitor#timestamp_column}. |
 
 ---
 
@@ -1587,7 +1869,7 @@ Granularities *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#granularities DataQualityMonitor#granularities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#granularities DataQualityMonitor#granularities}.
 
 ---
 
@@ -1599,7 +1881,7 @@ TimestampColumn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#timestamp_column DataQualityMonitor#timestamp_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#timestamp_column DataQualityMonitor#timestamp_column}.
 
 ---
 
@@ -1619,7 +1901,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqual
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#workspace_id DataQualityMonitor#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#workspace_id DataQualityMonitor#workspace_id}. |
 
 ---
 
@@ -1631,11 +1913,1016 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/data_quality_monitor#workspace_id DataQualityMonitor#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/data_quality_monitor#workspace_id DataQualityMonitor#workspace_id}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference <a name="DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqualitymonitor"
+
+dataqualitymonitor.NewDataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.resetDestinationIds">ResetDestinationIds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.resetDestinationUserIds">ResetDestinationUserIds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.resetEmailAddresses">ResetEmailAddresses</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetDestinationIds` <a name="ResetDestinationIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.resetDestinationIds"></a>
+
+```go
+func ResetDestinationIds()
+```
+
+##### `ResetDestinationUserIds` <a name="ResetDestinationUserIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.resetDestinationUserIds"></a>
+
+```go
+func ResetDestinationUserIds()
+```
+
+##### `ResetEmailAddresses` <a name="ResetEmailAddresses" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.resetEmailAddresses"></a>
+
+```go
+func ResetEmailAddresses()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.destinationIdsInput">DestinationIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.destinationUserIdsInput">DestinationUserIdsInput</a></code> | <code>*[]*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.emailAddressesInput">EmailAddressesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.destinationIds">DestinationIds</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.destinationUserIds">DestinationUserIds</a></code> | <code>*[]*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.emailAddresses">EmailAddresses</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DestinationIdsInput`<sup>Optional</sup> <a name="DestinationIdsInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.destinationIdsInput"></a>
+
+```go
+func DestinationIdsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `DestinationUserIdsInput`<sup>Optional</sup> <a name="DestinationUserIdsInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.destinationUserIdsInput"></a>
+
+```go
+func DestinationUserIdsInput() *[]*f64
+```
+
+- *Type:* *[]*f64
+
+---
+
+##### `EmailAddressesInput`<sup>Optional</sup> <a name="EmailAddressesInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.emailAddressesInput"></a>
+
+```go
+func EmailAddressesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `DestinationIds`<sup>Required</sup> <a name="DestinationIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.destinationIds"></a>
+
+```go
+func DestinationIds() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `DestinationUserIds`<sup>Required</sup> <a name="DestinationUserIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.destinationUserIds"></a>
+
+```go
+func DestinationUserIds() *[]*f64
+```
+
+- *Type:* *[]*f64
+
+---
+
+##### `EmailAddresses`<sup>Required</sup> <a name="EmailAddresses" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.emailAddresses"></a>
+
+```go
+func EmailAddresses() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference <a name="DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqualitymonitor"
+
+dataqualitymonitor.NewDataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.resetDestinationIds">ResetDestinationIds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.resetDestinationUserIds">ResetDestinationUserIds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.resetEmailAddresses">ResetEmailAddresses</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetDestinationIds` <a name="ResetDestinationIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.resetDestinationIds"></a>
+
+```go
+func ResetDestinationIds()
+```
+
+##### `ResetDestinationUserIds` <a name="ResetDestinationUserIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.resetDestinationUserIds"></a>
+
+```go
+func ResetDestinationUserIds()
+```
+
+##### `ResetEmailAddresses` <a name="ResetEmailAddresses" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.resetEmailAddresses"></a>
+
+```go
+func ResetEmailAddresses()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationIdsInput">DestinationIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationUserIdsInput">DestinationUserIdsInput</a></code> | <code>*[]*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.emailAddressesInput">EmailAddressesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationIds">DestinationIds</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationUserIds">DestinationUserIds</a></code> | <code>*[]*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.emailAddresses">EmailAddresses</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DestinationIdsInput`<sup>Optional</sup> <a name="DestinationIdsInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationIdsInput"></a>
+
+```go
+func DestinationIdsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `DestinationUserIdsInput`<sup>Optional</sup> <a name="DestinationUserIdsInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationUserIdsInput"></a>
+
+```go
+func DestinationUserIdsInput() *[]*f64
+```
+
+- *Type:* *[]*f64
+
+---
+
+##### `EmailAddressesInput`<sup>Optional</sup> <a name="EmailAddressesInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.emailAddressesInput"></a>
+
+```go
+func EmailAddressesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `DestinationIds`<sup>Required</sup> <a name="DestinationIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationIds"></a>
+
+```go
+func DestinationIds() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `DestinationUserIds`<sup>Required</sup> <a name="DestinationUserIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationUserIds"></a>
+
+```go
+func DestinationUserIds() *[]*f64
+```
+
+- *Type:* *[]*f64
+
+---
+
+##### `EmailAddresses`<sup>Required</sup> <a name="EmailAddresses" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.emailAddresses"></a>
+
+```go
+func EmailAddresses() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference <a name="DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqualitymonitor"
+
+dataqualitymonitor.NewDataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.putOnFailure">PutOnFailure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.putOnUnhealthyTable">PutOnUnhealthyTable</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.resetOnFailure">ResetOnFailure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.resetOnUnhealthyTable">ResetOnUnhealthyTable</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutOnFailure` <a name="PutOnFailure" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.putOnFailure"></a>
+
+```go
+func PutOnFailure(value DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.putOnFailure.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure">DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailure</a>
+
+---
+
+##### `PutOnUnhealthyTable` <a name="PutOnUnhealthyTable" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.putOnUnhealthyTable"></a>
+
+```go
+func PutOnUnhealthyTable(value DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.putOnUnhealthyTable.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable">DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTable</a>
+
+---
+
+##### `ResetOnFailure` <a name="ResetOnFailure" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.resetOnFailure"></a>
+
+```go
+func ResetOnFailure()
+```
+
+##### `ResetOnUnhealthyTable` <a name="ResetOnUnhealthyTable" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.resetOnUnhealthyTable"></a>
+
+```go
+func ResetOnUnhealthyTable()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.property.onFailure">OnFailure</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference">DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.property.onUnhealthyTable">OnUnhealthyTable</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference">DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.property.onFailureInput">OnFailureInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.property.onUnhealthyTableInput">OnUnhealthyTableInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OnFailure`<sup>Required</sup> <a name="OnFailure" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.property.onFailure"></a>
+
+```go
+func OnFailure() DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference">DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnFailureOutputReference</a>
+
+---
+
+##### `OnUnhealthyTable`<sup>Required</sup> <a name="OnUnhealthyTable" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.property.onUnhealthyTable"></a>
+
+```go
+func OnUnhealthyTable() DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference">DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOnUnhealthyTableOutputReference</a>
+
+---
+
+##### `OnFailureInput`<sup>Optional</sup> <a name="OnFailureInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.property.onFailureInput"></a>
+
+```go
+func OnFailureInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `OnUnhealthyTableInput`<sup>Optional</sup> <a name="OnUnhealthyTableInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.property.onUnhealthyTableInput"></a>
+
+```go
+func OnUnhealthyTableInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 
 ### DataQualityMonitorAnomalyDetectionConfigOutputReference <a name="DataQualityMonitorAnomalyDetectionConfigOutputReference" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference"></a>
 
@@ -1687,7 +2974,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.putNotificationSettings">PutNotificationSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.resetExcludedTableFullNames">ResetExcludedTableFullNames</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.resetNotificationSettings">ResetNotificationSettings</a></code> | *No description.* |
 
 ---
 
@@ -1841,10 +3130,28 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutNotificationSettings` <a name="PutNotificationSettings" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.putNotificationSettings"></a>
+
+```go
+func PutNotificationSettings(value DataQualityMonitorAnomalyDetectionConfigNotificationSettings)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.putNotificationSettings.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettings">DataQualityMonitorAnomalyDetectionConfigNotificationSettings</a>
+
+---
+
 ##### `ResetExcludedTableFullNames` <a name="ResetExcludedTableFullNames" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.resetExcludedTableFullNames"></a>
 
 ```go
 func ResetExcludedTableFullNames()
+```
+
+##### `ResetNotificationSettings` <a name="ResetNotificationSettings" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.resetNotificationSettings"></a>
+
+```go
+func ResetNotificationSettings()
 ```
 
 
@@ -1854,7 +3161,9 @@ func ResetExcludedTableFullNames()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.property.notificationSettings">NotificationSettings</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference">DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.property.excludedTableFullNamesInput">ExcludedTableFullNamesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.property.notificationSettingsInput">NotificationSettingsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.property.excludedTableFullNames">ExcludedTableFullNames</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
@@ -1884,6 +3193,16 @@ func Fqn() *string
 
 ---
 
+##### `NotificationSettings`<sup>Required</sup> <a name="NotificationSettings" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.property.notificationSettings"></a>
+
+```go
+func NotificationSettings() DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference">DataQualityMonitorAnomalyDetectionConfigNotificationSettingsOutputReference</a>
+
+---
+
 ##### `ExcludedTableFullNamesInput`<sup>Optional</sup> <a name="ExcludedTableFullNamesInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.property.excludedTableFullNamesInput"></a>
 
 ```go
@@ -1891,6 +3210,16 @@ func ExcludedTableFullNamesInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `NotificationSettingsInput`<sup>Optional</sup> <a name="NotificationSettingsInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorAnomalyDetectionConfigOutputReference.property.notificationSettingsInput"></a>
+
+```go
+func NotificationSettingsInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -2890,6 +4219,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.resetDestinationIds">ResetDestinationIds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.resetDestinationUserIds">ResetDestinationUserIds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.resetEmailAddresses">ResetEmailAddresses</a></code> | *No description.* |
 
 ---
@@ -3044,6 +4375,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetDestinationIds` <a name="ResetDestinationIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.resetDestinationIds"></a>
+
+```go
+func ResetDestinationIds()
+```
+
+##### `ResetDestinationUserIds` <a name="ResetDestinationUserIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.resetDestinationUserIds"></a>
+
+```go
+func ResetDestinationUserIds()
+```
+
 ##### `ResetEmailAddresses` <a name="ResetEmailAddresses" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.resetEmailAddresses"></a>
 
 ```go
@@ -3057,7 +4400,11 @@ func ResetEmailAddresses()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.destinationIdsInput">DestinationIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.destinationUserIdsInput">DestinationUserIdsInput</a></code> | <code>*[]*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.emailAddressesInput">EmailAddressesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.destinationIds">DestinationIds</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.destinationUserIds">DestinationUserIds</a></code> | <code>*[]*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.emailAddresses">EmailAddresses</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
@@ -3087,6 +4434,26 @@ func Fqn() *string
 
 ---
 
+##### `DestinationIdsInput`<sup>Optional</sup> <a name="DestinationIdsInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.destinationIdsInput"></a>
+
+```go
+func DestinationIdsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `DestinationUserIdsInput`<sup>Optional</sup> <a name="DestinationUserIdsInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.destinationUserIdsInput"></a>
+
+```go
+func DestinationUserIdsInput() *[]*f64
+```
+
+- *Type:* *[]*f64
+
+---
+
 ##### `EmailAddressesInput`<sup>Optional</sup> <a name="EmailAddressesInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.emailAddressesInput"></a>
 
 ```go
@@ -3094,6 +4461,26 @@ func EmailAddressesInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `DestinationIds`<sup>Required</sup> <a name="DestinationIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.destinationIds"></a>
+
+```go
+func DestinationIds() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `DestinationUserIds`<sup>Required</sup> <a name="DestinationUserIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.destinationUserIds"></a>
+
+```go
+func DestinationUserIds() *[]*f64
+```
+
+- *Type:* *[]*f64
 
 ---
 
@@ -3108,6 +4495,342 @@ func EmailAddresses() *[]*string
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference <a name="DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/dataqualitymonitor"
+
+dataqualitymonitor.NewDataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.resetDestinationIds">ResetDestinationIds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.resetDestinationUserIds">ResetDestinationUserIds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.resetEmailAddresses">ResetEmailAddresses</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetDestinationIds` <a name="ResetDestinationIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.resetDestinationIds"></a>
+
+```go
+func ResetDestinationIds()
+```
+
+##### `ResetDestinationUserIds` <a name="ResetDestinationUserIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.resetDestinationUserIds"></a>
+
+```go
+func ResetDestinationUserIds()
+```
+
+##### `ResetEmailAddresses` <a name="ResetEmailAddresses" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.resetEmailAddresses"></a>
+
+```go
+func ResetEmailAddresses()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationIdsInput">DestinationIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationUserIdsInput">DestinationUserIdsInput</a></code> | <code>*[]*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.emailAddressesInput">EmailAddressesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationIds">DestinationIds</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationUserIds">DestinationUserIds</a></code> | <code>*[]*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.emailAddresses">EmailAddresses</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DestinationIdsInput`<sup>Optional</sup> <a name="DestinationIdsInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationIdsInput"></a>
+
+```go
+func DestinationIdsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `DestinationUserIdsInput`<sup>Optional</sup> <a name="DestinationUserIdsInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationUserIdsInput"></a>
+
+```go
+func DestinationUserIdsInput() *[]*f64
+```
+
+- *Type:* *[]*f64
+
+---
+
+##### `EmailAddressesInput`<sup>Optional</sup> <a name="EmailAddressesInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.emailAddressesInput"></a>
+
+```go
+func EmailAddressesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `DestinationIds`<sup>Required</sup> <a name="DestinationIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationIds"></a>
+
+```go
+func DestinationIds() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `DestinationUserIds`<sup>Required</sup> <a name="DestinationUserIds" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.destinationUserIds"></a>
+
+```go
+func DestinationUserIds() *[]*f64
+```
+
+- *Type:* *[]*f64
+
+---
+
+##### `EmailAddresses`<sup>Required</sup> <a name="EmailAddresses" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.emailAddresses"></a>
+
+```go
+func EmailAddresses() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -3169,7 +4892,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.putOnFailure">PutOnFailure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.putOnUnhealthyTable">PutOnUnhealthyTable</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.resetOnFailure">ResetOnFailure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.resetOnUnhealthyTable">ResetOnUnhealthyTable</a></code> | *No description.* |
 
 ---
 
@@ -3335,10 +5060,28 @@ func PutOnFailure(value DataQualityMonitorDataProfilingConfigNotificationSetting
 
 ---
 
+##### `PutOnUnhealthyTable` <a name="PutOnUnhealthyTable" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.putOnUnhealthyTable"></a>
+
+```go
+func PutOnUnhealthyTable(value DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.putOnUnhealthyTable.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable">DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTable</a>
+
+---
+
 ##### `ResetOnFailure` <a name="ResetOnFailure" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.resetOnFailure"></a>
 
 ```go
 func ResetOnFailure()
+```
+
+##### `ResetOnUnhealthyTable` <a name="ResetOnUnhealthyTable" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.resetOnUnhealthyTable"></a>
+
+```go
+func ResetOnUnhealthyTable()
 ```
 
 
@@ -3349,7 +5092,9 @@ func ResetOnFailure()
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.property.onFailure">OnFailure</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference">DataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.property.onUnhealthyTable">OnUnhealthyTable</a></code> | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference">DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.property.onFailureInput">OnFailureInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.property.onUnhealthyTableInput">OnUnhealthyTableInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
@@ -3388,10 +5133,30 @@ func OnFailure() DataQualityMonitorDataProfilingConfigNotificationSettingsOnFail
 
 ---
 
+##### `OnUnhealthyTable`<sup>Required</sup> <a name="OnUnhealthyTable" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.property.onUnhealthyTable"></a>
+
+```go
+func OnUnhealthyTable() DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference">DataQualityMonitorDataProfilingConfigNotificationSettingsOnUnhealthyTableOutputReference</a>
+
+---
+
 ##### `OnFailureInput`<sup>Optional</sup> <a name="OnFailureInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.property.onFailureInput"></a>
 
 ```go
 func OnFailureInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `OnUnhealthyTableInput`<sup>Optional</sup> <a name="OnUnhealthyTableInput" id="@cdktn/provider-databricks.dataQualityMonitor.DataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference.property.onUnhealthyTableInput"></a>
+
+```go
+func OnUnhealthyTableInput() interface{}
 ```
 
 - *Type:* interface{}

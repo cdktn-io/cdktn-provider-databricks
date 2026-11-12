@@ -4,14 +4,14 @@
 
 ### AccountIamGroupV2 <a name="AccountIamGroupV2" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2 databricks_account_iam_group_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.Initializer"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Databricks;
 
-new AccountIamGroupV2(Construct Scope, string Id, AccountIamGroupV2Config Config = null);
+new AccountIamGroupV2(Construct Scope, string Id, AccountIamGroupV2Config Config);
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.Initializer.parameter.config"></a>
+##### `Config`<sup>Required</sup> <a name="Config" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config">AccountIamGroupV2Config</a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the AccountIamGroupV2 to impor
 
 The id of the existing AccountIamGroupV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -535,10 +535,13 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.accountId">AccountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.groupId">GroupId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.externalIdInput">ExternalIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.groupNameInput">GroupNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.parentInput">ParentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.externalId">ExternalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.groupName">GroupName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.parent">Parent</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -704,6 +707,16 @@ public string GroupId { get; }
 
 ---
 
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.name"></a>
+
+```csharp
+public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ExternalIdInput`<sup>Optional</sup> <a name="ExternalIdInput" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.externalIdInput"></a>
 
 ```csharp
@@ -724,6 +737,16 @@ public string GroupNameInput { get; }
 
 ---
 
+##### `ParentInput`<sup>Optional</sup> <a name="ParentInput" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.parentInput"></a>
+
+```csharp
+public string ParentInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ExternalId`<sup>Required</sup> <a name="ExternalId" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.externalId"></a>
 
 ```csharp
@@ -738,6 +761,16 @@ public string ExternalId { get; }
 
 ```csharp
 public string GroupName { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2.property.parent"></a>
+
+```csharp
+public string Parent { get; }
 ```
 
 - *Type:* string
@@ -779,6 +812,7 @@ new AccountIamGroupV2Config {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string Parent,
     string ExternalId = null,
     string GroupName = null
 };
@@ -795,8 +829,9 @@ new AccountIamGroupV2Config {
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.externalId">ExternalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.groupName">GroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.parent">Parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2#parent AccountIamGroupV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.externalId">ExternalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.groupName">GroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}. |
 
 ---
 
@@ -870,6 +905,18 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.parent"></a>
+
+```csharp
+public string Parent { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2#parent AccountIamGroupV2#parent}.
+
+---
+
 ##### `ExternalId`<sup>Optional</sup> <a name="ExternalId" id="@cdktn/provider-databricks.accountIamGroupV2.AccountIamGroupV2Config.property.externalId"></a>
 
 ```csharp
@@ -878,7 +925,7 @@ public string ExternalId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2#external_id AccountIamGroupV2#external_id}.
 
 ---
 
@@ -890,7 +937,7 @@ public string GroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_group_v2#group_name AccountIamGroupV2#group_name}.
 
 ---
 

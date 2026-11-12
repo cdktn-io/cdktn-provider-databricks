@@ -4,7 +4,7 @@
 
 ### DataDatabricksWorkspaceIamGroupsV2 <a name="DataDatabricksWorkspaceIamGroupsV2" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2 databricks_workspace_iam_groups_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2 databricks_workspace_iam_groups_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.Initializer"></a>
 
@@ -71,6 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.putProviderConfig">putProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.resetFilter">resetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.resetPageSize">resetPageSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.resetParent">resetParent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.resetProviderConfig">resetProviderConfig</a></code> | *No description.* |
 
 ---
@@ -312,6 +313,12 @@ public resetFilter(): void
 public resetPageSize(): void
 ```
 
+##### `resetParent` <a name="resetParent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.resetParent"></a>
+
+```typescript
+public resetParent(): void
+```
+
 ##### `resetProviderConfig` <a name="resetProviderConfig" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.resetProviderConfig"></a>
 
 ```typescript
@@ -421,7 +428,7 @@ The construct id used in the generated config for the DataDatabricksWorkspaceIam
 
 The id of the existing DataDatabricksWorkspaceIamGroupsV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -453,9 +460,11 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2ProviderConfigOutputReference">DataDatabricksWorkspaceIamGroupsV2ProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.property.filterInput">filterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.property.pageSizeInput">pageSizeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.property.parentInput">parentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.property.providerConfigInput">providerConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2ProviderConfig">DataDatabricksWorkspaceIamGroupsV2ProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.property.filter">filter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.property.pageSize">pageSize</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.property.parent">parent</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -621,6 +630,16 @@ public readonly pageSizeInput: number;
 
 ---
 
+##### `parentInput`<sup>Optional</sup> <a name="parentInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.property.parentInput"></a>
+
+```typescript
+public readonly parentInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `providerConfigInput`<sup>Optional</sup> <a name="providerConfigInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.property.providerConfigInput"></a>
 
 ```typescript
@@ -648,6 +667,16 @@ public readonly pageSize: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2.property.parent"></a>
+
+```typescript
+public readonly parent: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -692,9 +721,10 @@ const dataDatabricksWorkspaceIamGroupsV2Config: dataDatabricksWorkspaceIamGroups
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Config.property.filter">filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#filter DataDatabricksWorkspaceIamGroupsV2#filter}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Config.property.pageSize">pageSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#page_size DataDatabricksWorkspaceIamGroupsV2#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Config.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2ProviderConfig">DataDatabricksWorkspaceIamGroupsV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#provider_config DataDatabricksWorkspaceIamGroupsV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Config.property.filter">filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#filter DataDatabricksWorkspaceIamGroupsV2#filter}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Config.property.pageSize">pageSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#page_size DataDatabricksWorkspaceIamGroupsV2#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Config.property.parent">parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#parent DataDatabricksWorkspaceIamGroupsV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Config.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2ProviderConfig">DataDatabricksWorkspaceIamGroupsV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#provider_config DataDatabricksWorkspaceIamGroupsV2#provider_config}. |
 
 ---
 
@@ -776,7 +806,7 @@ public readonly filter: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#filter DataDatabricksWorkspaceIamGroupsV2#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#filter DataDatabricksWorkspaceIamGroupsV2#filter}.
 
 ---
 
@@ -788,7 +818,19 @@ public readonly pageSize: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#page_size DataDatabricksWorkspaceIamGroupsV2#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#page_size DataDatabricksWorkspaceIamGroupsV2#page_size}.
+
+---
+
+##### `parent`<sup>Optional</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Config.property.parent"></a>
+
+```typescript
+public readonly parent: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#parent DataDatabricksWorkspaceIamGroupsV2#parent}.
 
 ---
 
@@ -800,7 +842,7 @@ public readonly providerConfig: DataDatabricksWorkspaceIamGroupsV2ProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2ProviderConfig">DataDatabricksWorkspaceIamGroupsV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#provider_config DataDatabricksWorkspaceIamGroupsV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#provider_config DataDatabricksWorkspaceIamGroupsV2#provider_config}.
 
 ---
 
@@ -818,20 +860,20 @@ const dataDatabricksWorkspaceIamGroupsV2Groups: dataDatabricksWorkspaceIamGroups
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Groups.property.groupId">groupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#group_id DataDatabricksWorkspaceIamGroupsV2#group_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Groups.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfig">DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#provider_config DataDatabricksWorkspaceIamGroupsV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Groups.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#name DataDatabricksWorkspaceIamGroupsV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Groups.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfig">DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#provider_config DataDatabricksWorkspaceIamGroupsV2#provider_config}. |
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Groups.property.groupId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Groups.property.name"></a>
 
 ```typescript
-public readonly groupId: string;
+public readonly name: string;
 ```
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#group_id DataDatabricksWorkspaceIamGroupsV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#name DataDatabricksWorkspaceIamGroupsV2#name}.
 
 ---
 
@@ -843,7 +885,7 @@ public readonly providerConfig: DataDatabricksWorkspaceIamGroupsV2GroupsProvider
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfig">DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#provider_config DataDatabricksWorkspaceIamGroupsV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#provider_config DataDatabricksWorkspaceIamGroupsV2#provider_config}.
 
 ---
 
@@ -861,7 +903,7 @@ const dataDatabricksWorkspaceIamGroupsV2GroupsProviderConfig: dataDatabricksWork
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#workspace_id DataDatabricksWorkspaceIamGroupsV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#workspace_id DataDatabricksWorkspaceIamGroupsV2#workspace_id}. |
 
 ---
 
@@ -873,7 +915,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#workspace_id DataDatabricksWorkspaceIamGroupsV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#workspace_id DataDatabricksWorkspaceIamGroupsV2#workspace_id}.
 
 ---
 
@@ -891,7 +933,7 @@ const dataDatabricksWorkspaceIamGroupsV2ProviderConfig: dataDatabricksWorkspaceI
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2ProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#workspace_id DataDatabricksWorkspaceIamGroupsV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2ProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#workspace_id DataDatabricksWorkspaceIamGroupsV2#workspace_id}. |
 
 ---
 
@@ -903,7 +945,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_groups_v2#workspace_id DataDatabricksWorkspaceIamGroupsV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_groups_v2#workspace_id DataDatabricksWorkspaceIamGroupsV2#workspace_id}.
 
 ---
 
@@ -1319,11 +1361,13 @@ public resetProviderConfig(): void
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.externalId">externalId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.groupName">groupName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfigOutputReference">DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.groupIdInput">groupIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.providerConfigInput">providerConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfig">DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.groupId">groupId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.groupName">groupName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.parent">parent</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfigOutputReference">DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.providerConfigInput">providerConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfig">DataDatabricksWorkspaceIamGroupsV2GroupsProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2Groups">DataDatabricksWorkspaceIamGroupsV2Groups</a></code> | *No description.* |
 
 ---
@@ -1372,10 +1416,30 @@ public readonly externalId: string;
 
 ---
 
+##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.groupId"></a>
+
+```typescript
+public readonly groupId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `groupName`<sup>Required</sup> <a name="groupName" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.groupName"></a>
 
 ```typescript
 public readonly groupName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.parent"></a>
+
+```typescript
+public readonly parent: string;
 ```
 
 - *Type:* string
@@ -1392,10 +1456,10 @@ public readonly providerConfig: DataDatabricksWorkspaceIamGroupsV2GroupsProvider
 
 ---
 
-##### `groupIdInput`<sup>Optional</sup> <a name="groupIdInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.groupIdInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.nameInput"></a>
 
 ```typescript
-public readonly groupIdInput: string;
+public readonly nameInput: string;
 ```
 
 - *Type:* string
@@ -1412,10 +1476,10 @@ public readonly providerConfigInput: IResolvable | DataDatabricksWorkspaceIamGro
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.groupId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamGroupsV2.DataDatabricksWorkspaceIamGroupsV2GroupsOutputReference.property.name"></a>
 
 ```typescript
-public readonly groupId: string;
+public readonly name: string;
 ```
 
 - *Type:* string

@@ -4,7 +4,7 @@
 
 ### AccountIamServicePrincipalV2 <a name="AccountIamServicePrincipalV2" id="@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2 databricks_account_iam_service_principal_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2 databricks_account_iam_service_principal_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the AccountIamServicePrincipal
 
 The id of the existing AccountIamServicePrincipalV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -534,15 +534,18 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.servicePrincipalId">servicePrincipalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.accountSpStatusInput">accountSpStatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.applicationIdInput">applicationIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.externalIdInput">externalIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.parentInput">parentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.accountSpStatus">accountSpStatus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.applicationId">applicationId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.externalId">externalId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.parent">parent</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -698,6 +701,16 @@ public readonly accountId: string;
 
 ---
 
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `servicePrincipalId`<sup>Required</sup> <a name="servicePrincipalId" id="@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.servicePrincipalId"></a>
 
 ```typescript
@@ -748,6 +761,16 @@ public readonly externalIdInput: string;
 
 ---
 
+##### `parentInput`<sup>Optional</sup> <a name="parentInput" id="@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.parentInput"></a>
+
+```typescript
+public readonly parentInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `accountSpStatus`<sup>Required</sup> <a name="accountSpStatus" id="@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.accountSpStatus"></a>
 
 ```typescript
@@ -782,6 +805,16 @@ public readonly displayName: string;
 
 ```typescript
 public readonly externalId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2.property.parent"></a>
+
+```typescript
+public readonly parent: string;
 ```
 
 - *Type:* string
@@ -829,10 +862,11 @@ const accountIamServicePrincipalV2Config: accountIamServicePrincipalV2.AccountIa
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2Config.property.accountSpStatus">accountSpStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2#account_sp_status AccountIamServicePrincipalV2#account_sp_status}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2Config.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2#display_name AccountIamServicePrincipalV2#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2Config.property.applicationId">applicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2#application_id AccountIamServicePrincipalV2#application_id}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2Config.property.externalId">externalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2#external_id AccountIamServicePrincipalV2#external_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2Config.property.accountSpStatus">accountSpStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#account_sp_status AccountIamServicePrincipalV2#account_sp_status}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2Config.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#display_name AccountIamServicePrincipalV2#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2Config.property.parent">parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#parent AccountIamServicePrincipalV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2Config.property.applicationId">applicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#application_id AccountIamServicePrincipalV2#application_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2Config.property.externalId">externalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#external_id AccountIamServicePrincipalV2#external_id}. |
 
 ---
 
@@ -914,7 +948,7 @@ public readonly accountSpStatus: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2#account_sp_status AccountIamServicePrincipalV2#account_sp_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#account_sp_status AccountIamServicePrincipalV2#account_sp_status}.
 
 ---
 
@@ -926,7 +960,19 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2#display_name AccountIamServicePrincipalV2#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#display_name AccountIamServicePrincipalV2#display_name}.
+
+---
+
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.accountIamServicePrincipalV2.AccountIamServicePrincipalV2Config.property.parent"></a>
+
+```typescript
+public readonly parent: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#parent AccountIamServicePrincipalV2#parent}.
 
 ---
 
@@ -938,7 +984,7 @@ public readonly applicationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2#application_id AccountIamServicePrincipalV2#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#application_id AccountIamServicePrincipalV2#application_id}.
 
 ---
 
@@ -950,7 +996,7 @@ public readonly externalId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_service_principal_v2#external_id AccountIamServicePrincipalV2#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_service_principal_v2#external_id AccountIamServicePrincipalV2#external_id}.
 
 ---
 

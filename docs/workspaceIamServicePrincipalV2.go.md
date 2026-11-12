@@ -4,7 +4,7 @@
 
 ### WorkspaceIamServicePrincipalV2 <a name="WorkspaceIamServicePrincipalV2" id="@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the WorkspaceIamServicePrincip
 
 The id of the existing WorkspaceIamServicePrincipalV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_service_principal_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_service_principal_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -554,6 +554,8 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2.property.parent">Parent</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2ProviderConfigOutputReference">WorkspaceIamServicePrincipalV2ProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2.property.servicePrincipalId">ServicePrincipalId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2.property.accountSpStatusInput">AccountSpStatusInput</a></code> | <code>*string</code> | *No description.* |
@@ -714,6 +716,26 @@ func Provisioners() *[]interface{}
 
 ```go
 func AccountId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2.property.parent"></a>
+
+```go
+func Parent() *string
 ```
 
 - *Type:* *string
@@ -884,11 +906,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/workspac
 | <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2Config.property.accountSpStatus">AccountSpStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_service_principal_v2#account_sp_status WorkspaceIamServicePrincipalV2#account_sp_status}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2Config.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_service_principal_v2#display_name WorkspaceIamServicePrincipalV2#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2Config.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_service_principal_v2#application_id WorkspaceIamServicePrincipalV2#application_id}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2Config.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_service_principal_v2#external_id WorkspaceIamServicePrincipalV2#external_id}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2Config.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2ProviderConfig">WorkspaceIamServicePrincipalV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_service_principal_v2#provider_config WorkspaceIamServicePrincipalV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2Config.property.accountSpStatus">AccountSpStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_service_principal_v2#account_sp_status WorkspaceIamServicePrincipalV2#account_sp_status}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2Config.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_service_principal_v2#display_name WorkspaceIamServicePrincipalV2#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2Config.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_service_principal_v2#application_id WorkspaceIamServicePrincipalV2#application_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2Config.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_service_principal_v2#external_id WorkspaceIamServicePrincipalV2#external_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2Config.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2ProviderConfig">WorkspaceIamServicePrincipalV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_service_principal_v2#provider_config WorkspaceIamServicePrincipalV2#provider_config}. |
 
 ---
 
@@ -970,7 +992,7 @@ AccountSpStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_service_principal_v2#account_sp_status WorkspaceIamServicePrincipalV2#account_sp_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_service_principal_v2#account_sp_status WorkspaceIamServicePrincipalV2#account_sp_status}.
 
 ---
 
@@ -982,7 +1004,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_service_principal_v2#display_name WorkspaceIamServicePrincipalV2#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_service_principal_v2#display_name WorkspaceIamServicePrincipalV2#display_name}.
 
 ---
 
@@ -994,7 +1016,7 @@ ApplicationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_service_principal_v2#application_id WorkspaceIamServicePrincipalV2#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_service_principal_v2#application_id WorkspaceIamServicePrincipalV2#application_id}.
 
 ---
 
@@ -1006,7 +1028,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_service_principal_v2#external_id WorkspaceIamServicePrincipalV2#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_service_principal_v2#external_id WorkspaceIamServicePrincipalV2#external_id}.
 
 ---
 
@@ -1018,7 +1040,7 @@ ProviderConfig WorkspaceIamServicePrincipalV2ProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2ProviderConfig">WorkspaceIamServicePrincipalV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_service_principal_v2#provider_config WorkspaceIamServicePrincipalV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_service_principal_v2#provider_config WorkspaceIamServicePrincipalV2#provider_config}.
 
 ---
 
@@ -1038,7 +1060,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/workspac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2ProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_service_principal_v2#workspace_id WorkspaceIamServicePrincipalV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamServicePrincipalV2.WorkspaceIamServicePrincipalV2ProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_service_principal_v2#workspace_id WorkspaceIamServicePrincipalV2#workspace_id}. |
 
 ---
 
@@ -1050,7 +1072,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_service_principal_v2#workspace_id WorkspaceIamServicePrincipalV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_service_principal_v2#workspace_id WorkspaceIamServicePrincipalV2#workspace_id}.
 
 ---
 

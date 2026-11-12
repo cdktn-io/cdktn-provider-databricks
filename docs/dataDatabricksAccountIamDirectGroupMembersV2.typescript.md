@@ -4,7 +4,7 @@
 
 ### DataDatabricksAccountIamDirectGroupMembersV2 <a name="DataDatabricksAccountIamDirectGroupMembersV2" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_members_v2 databricks_account_iam_direct_group_members_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_members_v2 databricks_account_iam_direct_group_members_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataDatabricksAccountIamDi
 
 The id of the existing DataDatabricksAccountIamDirectGroupMembersV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_members_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_members_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -423,10 +423,10 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.property.directGroupMembers">directGroupMembers</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersList">DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.property.groupIdInput">groupIdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.property.pageSizeInput">pageSizeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.property.groupId">groupId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.property.parentInput">parentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.property.pageSize">pageSize</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.property.parent">parent</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -562,16 +562,6 @@ public readonly directGroupMembers: DataDatabricksAccountIamDirectGroupMembersV2
 
 ---
 
-##### `groupIdInput`<sup>Optional</sup> <a name="groupIdInput" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.property.groupIdInput"></a>
-
-```typescript
-public readonly groupIdInput: number;
-```
-
-- *Type:* number
-
----
-
 ##### `pageSizeInput`<sup>Optional</sup> <a name="pageSizeInput" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.property.pageSizeInput"></a>
 
 ```typescript
@@ -582,13 +572,13 @@ public readonly pageSizeInput: number;
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.property.groupId"></a>
+##### `parentInput`<sup>Optional</sup> <a name="parentInput" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.property.parentInput"></a>
 
 ```typescript
-public readonly groupId: number;
+public readonly parentInput: string;
 ```
 
-- *Type:* number
+- *Type:* string
 
 ---
 
@@ -599,6 +589,16 @@ public readonly pageSize: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2.property.parent"></a>
+
+```typescript
+public readonly parent: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -643,8 +643,8 @@ const dataDatabricksAccountIamDirectGroupMembersV2Config: dataDatabricksAccountI
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2Config.property.groupId">groupId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_members_v2#group_id DataDatabricksAccountIamDirectGroupMembersV2#group_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2Config.property.pageSize">pageSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_members_v2#page_size DataDatabricksAccountIamDirectGroupMembersV2#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2Config.property.parent">parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_members_v2#parent DataDatabricksAccountIamDirectGroupMembersV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2Config.property.pageSize">pageSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_members_v2#page_size DataDatabricksAccountIamDirectGroupMembersV2#page_size}. |
 
 ---
 
@@ -718,15 +718,15 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2Config.property.groupId"></a>
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2Config.property.parent"></a>
 
 ```typescript
-public readonly groupId: number;
+public readonly parent: string;
 ```
 
-- *Type:* number
+- *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_members_v2#group_id DataDatabricksAccountIamDirectGroupMembersV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_members_v2#parent DataDatabricksAccountIamDirectGroupMembersV2#parent}.
 
 ---
 
@@ -738,7 +738,7 @@ public readonly pageSize: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_members_v2#page_size DataDatabricksAccountIamDirectGroupMembersV2#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_members_v2#page_size DataDatabricksAccountIamDirectGroupMembersV2#page_size}.
 
 ---
 
@@ -756,32 +756,19 @@ const dataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers: dataDatabr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers.property.groupId">groupId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_members_v2#group_id DataDatabricksAccountIamDirectGroupMembersV2#group_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers.property.principalId">principalId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_members_v2#principal_id DataDatabricksAccountIamDirectGroupMembersV2#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_members_v2#name DataDatabricksAccountIamDirectGroupMembersV2#name}. |
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers.property.groupId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers.property.name"></a>
 
 ```typescript
-public readonly groupId: number;
+public readonly name: string;
 ```
 
-- *Type:* number
+- *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_members_v2#group_id DataDatabricksAccountIamDirectGroupMembersV2#group_id}.
-
----
-
-##### `principalId`<sup>Required</sup> <a name="principalId" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers.property.principalId"></a>
-
-```typescript
-public readonly principalId: number;
-```
-
-- *Type:* number
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_direct_group_members_v2#principal_id DataDatabricksAccountIamDirectGroupMembersV2#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_direct_group_members_v2#name DataDatabricksAccountIamDirectGroupMembersV2#name}.
 
 ---
 
@@ -1177,12 +1164,13 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.externalId">externalId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.membershipSource">membershipSource</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.principalType">principalType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.groupIdInput">groupIdInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.principalIdInput">principalIdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.groupId">groupId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.membershipSource">membershipSource</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.parent">parent</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.principalId">principalId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.principalType">principalType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers">DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembers</a></code> | *No description.* |
 
 ---
@@ -1231,6 +1219,16 @@ public readonly externalId: string;
 
 ---
 
+##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.groupId"></a>
+
+```typescript
+public readonly groupId: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `membershipSource`<sup>Required</sup> <a name="membershipSource" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.membershipSource"></a>
 
 ```typescript
@@ -1238,6 +1236,26 @@ public readonly membershipSource: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.parent"></a>
+
+```typescript
+public readonly parent: string;
+```
+
+- *Type:* string
+
+---
+
+##### `principalId`<sup>Required</sup> <a name="principalId" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.principalId"></a>
+
+```typescript
+public readonly principalId: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -1251,43 +1269,23 @@ public readonly principalType: string;
 
 ---
 
-##### `groupIdInput`<sup>Optional</sup> <a name="groupIdInput" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.groupIdInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.nameInput"></a>
 
 ```typescript
-public readonly groupIdInput: number;
+public readonly nameInput: string;
 ```
 
-- *Type:* number
+- *Type:* string
 
 ---
 
-##### `principalIdInput`<sup>Optional</sup> <a name="principalIdInput" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.principalIdInput"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.name"></a>
 
 ```typescript
-public readonly principalIdInput: number;
+public readonly name: string;
 ```
 
-- *Type:* number
-
----
-
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.groupId"></a>
-
-```typescript
-public readonly groupId: number;
-```
-
-- *Type:* number
-
----
-
-##### `principalId`<sup>Required</sup> <a name="principalId" id="@cdktn/provider-databricks.dataDatabricksAccountIamDirectGroupMembersV2.DataDatabricksAccountIamDirectGroupMembersV2DirectGroupMembersOutputReference.property.principalId"></a>
-
-```typescript
-public readonly principalId: number;
-```
-
-- *Type:* number
+- *Type:* string
 
 ---
 

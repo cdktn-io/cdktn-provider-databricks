@@ -4,7 +4,7 @@
 
 ### AccountIamWorkspaceAssignmentV2 <a name="AccountIamWorkspaceAssignmentV2" id="@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2 databricks_account_iam_workspace_assignment_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.Initializer"></a>
 
@@ -19,6 +19,7 @@ AccountIamWorkspaceAssignmentV2.Builder.create(Construct scope, java.lang.String
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .parent(java.lang.String)
     .principalId(java.lang.Number)
 //  .entitlements(java.util.List<java.lang.String>)
 //  .workspaceId(java.lang.Number)
@@ -36,9 +37,10 @@ AccountIamWorkspaceAssignmentV2.Builder.create(Construct scope, java.lang.String
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.Initializer.parameter.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#principal_id AccountIamWorkspaceAssignmentV2#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.Initializer.parameter.entitlements">entitlements</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#entitlements AccountIamWorkspaceAssignmentV2#entitlements}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.Initializer.parameter.workspaceId">workspaceId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#workspace_id AccountIamWorkspaceAssignmentV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.Initializer.parameter.parent">parent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#parent AccountIamWorkspaceAssignmentV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.Initializer.parameter.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#principal_id AccountIamWorkspaceAssignmentV2#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.Initializer.parameter.entitlements">entitlements</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#entitlements AccountIamWorkspaceAssignmentV2#entitlements}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.Initializer.parameter.workspaceId">workspaceId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#workspace_id AccountIamWorkspaceAssignmentV2#workspace_id}. |
 
 ---
 
@@ -102,11 +104,19 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.Initializer.parameter.parent"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#parent AccountIamWorkspaceAssignmentV2#parent}.
+
+---
+
 ##### `principalId`<sup>Required</sup> <a name="principalId" id="@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.Initializer.parameter.principalId"></a>
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#principal_id AccountIamWorkspaceAssignmentV2#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#principal_id AccountIamWorkspaceAssignmentV2#principal_id}.
 
 ---
 
@@ -114,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#entitlements AccountIamWorkspaceAssignmentV2#entitlements}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#entitlements AccountIamWorkspaceAssignmentV2#entitlements}.
 
 ---
 
@@ -122,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#workspace_id AccountIamWorkspaceAssignmentV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#workspace_id AccountIamWorkspaceAssignmentV2#workspace_id}.
 
 ---
 
@@ -585,7 +595,7 @@ The construct id used in the generated config for the AccountIamWorkspaceAssignm
 
 The id of the existing AccountIamWorkspaceAssignmentV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -617,11 +627,14 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.effectiveEntitlements">effectiveEntitlements</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.principalType">principalType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.entitlementsInput">entitlementsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.parentInput">parentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.principalIdInput">principalIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.workspaceIdInput">workspaceIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.entitlements">entitlements</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.parent">parent</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.workspaceId">workspaceId</a></code> | <code>java.lang.Number</code> | *No description.* |
 
@@ -789,6 +802,16 @@ public java.util.List<java.lang.String> getEffectiveEntitlements();
 
 ---
 
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `principalType`<sup>Required</sup> <a name="principalType" id="@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.principalType"></a>
 
 ```java
@@ -806,6 +829,16 @@ public java.util.List<java.lang.String> getEntitlementsInput();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `parentInput`<sup>Optional</sup> <a name="parentInput" id="@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.parentInput"></a>
+
+```java
+public java.lang.String getParentInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -836,6 +869,16 @@ public java.util.List<java.lang.String> getEntitlements();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2.property.parent"></a>
+
+```java
+public java.lang.String getParent();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -894,6 +937,7 @@ AccountIamWorkspaceAssignmentV2Config.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .parent(java.lang.String)
     .principalId(java.lang.Number)
 //  .entitlements(java.util.List<java.lang.String>)
 //  .workspaceId(java.lang.Number)
@@ -911,9 +955,10 @@ AccountIamWorkspaceAssignmentV2Config.builder()
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2Config.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2Config.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2Config.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#principal_id AccountIamWorkspaceAssignmentV2#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2Config.property.entitlements">entitlements</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#entitlements AccountIamWorkspaceAssignmentV2#entitlements}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2Config.property.workspaceId">workspaceId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#workspace_id AccountIamWorkspaceAssignmentV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2Config.property.parent">parent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#parent AccountIamWorkspaceAssignmentV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2Config.property.principalId">principalId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#principal_id AccountIamWorkspaceAssignmentV2#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2Config.property.entitlements">entitlements</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#entitlements AccountIamWorkspaceAssignmentV2#entitlements}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2Config.property.workspaceId">workspaceId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#workspace_id AccountIamWorkspaceAssignmentV2#workspace_id}. |
 
 ---
 
@@ -987,6 +1032,18 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2Config.property.parent"></a>
+
+```java
+public java.lang.String getParent();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#parent AccountIamWorkspaceAssignmentV2#parent}.
+
+---
+
 ##### `principalId`<sup>Required</sup> <a name="principalId" id="@cdktn/provider-databricks.accountIamWorkspaceAssignmentV2.AccountIamWorkspaceAssignmentV2Config.property.principalId"></a>
 
 ```java
@@ -995,7 +1052,7 @@ public java.lang.Number getPrincipalId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#principal_id AccountIamWorkspaceAssignmentV2#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#principal_id AccountIamWorkspaceAssignmentV2#principal_id}.
 
 ---
 
@@ -1007,7 +1064,7 @@ public java.util.List<java.lang.String> getEntitlements();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#entitlements AccountIamWorkspaceAssignmentV2#entitlements}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#entitlements AccountIamWorkspaceAssignmentV2#entitlements}.
 
 ---
 
@@ -1019,7 +1076,7 @@ public java.lang.Number getWorkspaceId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_workspace_assignment_v2#workspace_id AccountIamWorkspaceAssignmentV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_workspace_assignment_v2#workspace_id AccountIamWorkspaceAssignmentV2#workspace_id}.
 
 ---
 

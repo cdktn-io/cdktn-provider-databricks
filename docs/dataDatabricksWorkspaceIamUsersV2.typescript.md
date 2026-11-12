@@ -4,7 +4,7 @@
 
 ### DataDatabricksWorkspaceIamUsersV2 <a name="DataDatabricksWorkspaceIamUsersV2" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2 databricks_workspace_iam_users_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2 databricks_workspace_iam_users_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.Initializer"></a>
 
@@ -71,6 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.putProviderConfig">putProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.resetFilter">resetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.resetPageSize">resetPageSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.resetParent">resetParent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.resetProviderConfig">resetProviderConfig</a></code> | *No description.* |
 
 ---
@@ -312,6 +313,12 @@ public resetFilter(): void
 public resetPageSize(): void
 ```
 
+##### `resetParent` <a name="resetParent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.resetParent"></a>
+
+```typescript
+public resetParent(): void
+```
+
 ##### `resetProviderConfig` <a name="resetProviderConfig" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.resetProviderConfig"></a>
 
 ```typescript
@@ -421,7 +428,7 @@ The construct id used in the generated config for the DataDatabricksWorkspaceIam
 
 The id of the existing DataDatabricksWorkspaceIamUsersV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -453,9 +460,11 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.property.users">users</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersList">DataDatabricksWorkspaceIamUsersV2UsersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.property.filterInput">filterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.property.pageSizeInput">pageSizeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.property.parentInput">parentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.property.providerConfigInput">providerConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2ProviderConfig">DataDatabricksWorkspaceIamUsersV2ProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.property.filter">filter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.property.pageSize">pageSize</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.property.parent">parent</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -621,6 +630,16 @@ public readonly pageSizeInput: number;
 
 ---
 
+##### `parentInput`<sup>Optional</sup> <a name="parentInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.property.parentInput"></a>
+
+```typescript
+public readonly parentInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `providerConfigInput`<sup>Optional</sup> <a name="providerConfigInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.property.providerConfigInput"></a>
 
 ```typescript
@@ -648,6 +667,16 @@ public readonly pageSize: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2.property.parent"></a>
+
+```typescript
+public readonly parent: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -692,9 +721,10 @@ const dataDatabricksWorkspaceIamUsersV2Config: dataDatabricksWorkspaceIamUsersV2
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Config.property.filter">filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#filter DataDatabricksWorkspaceIamUsersV2#filter}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Config.property.pageSize">pageSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#page_size DataDatabricksWorkspaceIamUsersV2#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Config.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2ProviderConfig">DataDatabricksWorkspaceIamUsersV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#provider_config DataDatabricksWorkspaceIamUsersV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Config.property.filter">filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#filter DataDatabricksWorkspaceIamUsersV2#filter}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Config.property.pageSize">pageSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#page_size DataDatabricksWorkspaceIamUsersV2#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Config.property.parent">parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#parent DataDatabricksWorkspaceIamUsersV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Config.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2ProviderConfig">DataDatabricksWorkspaceIamUsersV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#provider_config DataDatabricksWorkspaceIamUsersV2#provider_config}. |
 
 ---
 
@@ -776,7 +806,7 @@ public readonly filter: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#filter DataDatabricksWorkspaceIamUsersV2#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#filter DataDatabricksWorkspaceIamUsersV2#filter}.
 
 ---
 
@@ -788,7 +818,19 @@ public readonly pageSize: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#page_size DataDatabricksWorkspaceIamUsersV2#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#page_size DataDatabricksWorkspaceIamUsersV2#page_size}.
+
+---
+
+##### `parent`<sup>Optional</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Config.property.parent"></a>
+
+```typescript
+public readonly parent: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#parent DataDatabricksWorkspaceIamUsersV2#parent}.
 
 ---
 
@@ -800,7 +842,7 @@ public readonly providerConfig: DataDatabricksWorkspaceIamUsersV2ProviderConfig;
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2ProviderConfig">DataDatabricksWorkspaceIamUsersV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#provider_config DataDatabricksWorkspaceIamUsersV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#provider_config DataDatabricksWorkspaceIamUsersV2#provider_config}.
 
 ---
 
@@ -818,7 +860,7 @@ const dataDatabricksWorkspaceIamUsersV2ProviderConfig: dataDatabricksWorkspaceIa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2ProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#workspace_id DataDatabricksWorkspaceIamUsersV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2ProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#workspace_id DataDatabricksWorkspaceIamUsersV2#workspace_id}. |
 
 ---
 
@@ -830,7 +872,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#workspace_id DataDatabricksWorkspaceIamUsersV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#workspace_id DataDatabricksWorkspaceIamUsersV2#workspace_id}.
 
 ---
 
@@ -848,20 +890,20 @@ const dataDatabricksWorkspaceIamUsersV2Users: dataDatabricksWorkspaceIamUsersV2.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Users.property.userId">userId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#user_id DataDatabricksWorkspaceIamUsersV2#user_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Users.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersProviderConfig">DataDatabricksWorkspaceIamUsersV2UsersProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#provider_config DataDatabricksWorkspaceIamUsersV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Users.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#name DataDatabricksWorkspaceIamUsersV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Users.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersProviderConfig">DataDatabricksWorkspaceIamUsersV2UsersProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#provider_config DataDatabricksWorkspaceIamUsersV2#provider_config}. |
 
 ---
 
-##### `userId`<sup>Required</sup> <a name="userId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Users.property.userId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Users.property.name"></a>
 
 ```typescript
-public readonly userId: string;
+public readonly name: string;
 ```
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#user_id DataDatabricksWorkspaceIamUsersV2#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#name DataDatabricksWorkspaceIamUsersV2#name}.
 
 ---
 
@@ -873,7 +915,7 @@ public readonly providerConfig: DataDatabricksWorkspaceIamUsersV2UsersProviderCo
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersProviderConfig">DataDatabricksWorkspaceIamUsersV2UsersProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#provider_config DataDatabricksWorkspaceIamUsersV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#provider_config DataDatabricksWorkspaceIamUsersV2#provider_config}.
 
 ---
 
@@ -891,8 +933,8 @@ const dataDatabricksWorkspaceIamUsersV2UsersFullName: dataDatabricksWorkspaceIam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersFullName.property.familyName">familyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#family_name DataDatabricksWorkspaceIamUsersV2#family_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersFullName.property.givenName">givenName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#given_name DataDatabricksWorkspaceIamUsersV2#given_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersFullName.property.familyName">familyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#family_name DataDatabricksWorkspaceIamUsersV2#family_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersFullName.property.givenName">givenName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#given_name DataDatabricksWorkspaceIamUsersV2#given_name}. |
 
 ---
 
@@ -904,7 +946,7 @@ public readonly familyName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#family_name DataDatabricksWorkspaceIamUsersV2#family_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#family_name DataDatabricksWorkspaceIamUsersV2#family_name}.
 
 ---
 
@@ -916,7 +958,7 @@ public readonly givenName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#given_name DataDatabricksWorkspaceIamUsersV2#given_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#given_name DataDatabricksWorkspaceIamUsersV2#given_name}.
 
 ---
 
@@ -934,7 +976,7 @@ const dataDatabricksWorkspaceIamUsersV2UsersProviderConfig: dataDatabricksWorksp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#workspace_id DataDatabricksWorkspaceIamUsersV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#workspace_id DataDatabricksWorkspaceIamUsersV2#workspace_id}. |
 
 ---
 
@@ -946,7 +988,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_users_v2#workspace_id DataDatabricksWorkspaceIamUsersV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_users_v2#workspace_id DataDatabricksWorkspaceIamUsersV2#workspace_id}.
 
 ---
 
@@ -1949,11 +1991,13 @@ public resetProviderConfig(): void
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.accountUserStatus">accountUserStatus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.externalId">externalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.fullName">fullName</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersFullNameOutputReference">DataDatabricksWorkspaceIamUsersV2UsersFullNameOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.parent">parent</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersProviderConfigOutputReference">DataDatabricksWorkspaceIamUsersV2UsersProviderConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.username">username</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.providerConfigInput">providerConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersProviderConfig">DataDatabricksWorkspaceIamUsersV2UsersProviderConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.userIdInput">userIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.userId">userId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.username">username</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.providerConfigInput">providerConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersProviderConfig">DataDatabricksWorkspaceIamUsersV2UsersProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2Users">DataDatabricksWorkspaceIamUsersV2Users</a></code> | *No description.* |
 
 ---
@@ -2022,6 +2066,16 @@ public readonly fullName: DataDatabricksWorkspaceIamUsersV2UsersFullNameOutputRe
 
 ---
 
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.parent"></a>
+
+```typescript
+public readonly parent: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `providerConfig`<sup>Required</sup> <a name="providerConfig" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.providerConfig"></a>
 
 ```typescript
@@ -2032,10 +2086,30 @@ public readonly providerConfig: DataDatabricksWorkspaceIamUsersV2UsersProviderCo
 
 ---
 
+##### `userId`<sup>Required</sup> <a name="userId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.userId"></a>
+
+```typescript
+public readonly userId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `username`<sup>Required</sup> <a name="username" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.username"></a>
 
 ```typescript
 public readonly username: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
 ```
 
 - *Type:* string
@@ -2052,20 +2126,10 @@ public readonly providerConfigInput: IResolvable | DataDatabricksWorkspaceIamUse
 
 ---
 
-##### `userIdInput`<sup>Optional</sup> <a name="userIdInput" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.userIdInput"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.name"></a>
 
 ```typescript
-public readonly userIdInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `userId`<sup>Required</sup> <a name="userId" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamUsersV2.DataDatabricksWorkspaceIamUsersV2UsersOutputReference.property.userId"></a>
-
-```typescript
-public readonly userId: string;
+public readonly name: string;
 ```
 
 - *Type:* string

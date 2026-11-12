@@ -4,7 +4,7 @@
 
 ### DataDatabricksAgentKitManagedMemoryStore <a name="DataDatabricksAgentKitManagedMemoryStore" id="@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store databricks_agent_kit_managed_memory_store}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store databricks_agent_kit_managed_memory_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStore.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStor
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStore.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStore.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStore.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStore.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store#name DataDatabricksAgentKitManagedMemoryStore#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStore.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreProviderConfig">DataDatabricksAgentKitManagedMemoryStoreProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store#provider_config DataDatabricksAgentKitManagedMemoryStore#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStore.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store#name DataDatabricksAgentKitManagedMemoryStore#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStore.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreProviderConfig">DataDatabricksAgentKitManagedMemoryStoreProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store#provider_config DataDatabricksAgentKitManagedMemoryStore#provider_config}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store#name DataDatabricksAgentKitManagedMemoryStore#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store#name DataDatabricksAgentKitManagedMemoryStore#name}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreProviderConfig">DataDatabricksAgentKitManagedMemoryStoreProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store#provider_config DataDatabricksAgentKitManagedMemoryStore#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store#provider_config DataDatabricksAgentKitManagedMemoryStore#provider_config}.
 
 ---
 
@@ -397,7 +397,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store#workspace_id DataDatabricksAgentKitManagedMemoryStore#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store#workspace_id DataDatabricksAgentKitManagedMemoryStore#workspace_id}.
 
 ---
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the DataDatabricksAgentKitMana
 
 The id of the existing DataDatabricksAgentKitManagedMemoryStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,8 +857,8 @@ dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStor
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store#name DataDatabricksAgentKitManagedMemoryStore#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreProviderConfig">DataDatabricksAgentKitManagedMemoryStoreProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store#provider_config DataDatabricksAgentKitManagedMemoryStore#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store#name DataDatabricksAgentKitManagedMemoryStore#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreProviderConfig">DataDatabricksAgentKitManagedMemoryStoreProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store#provider_config DataDatabricksAgentKitManagedMemoryStore#provider_config}. |
 
 ---
 
@@ -940,7 +940,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store#name DataDatabricksAgentKitManagedMemoryStore#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store#name DataDatabricksAgentKitManagedMemoryStore#name}.
 
 ---
 
@@ -952,7 +952,7 @@ provider_config: DataDatabricksAgentKitManagedMemoryStoreProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreProviderConfig">DataDatabricksAgentKitManagedMemoryStoreProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store#provider_config DataDatabricksAgentKitManagedMemoryStore#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store#provider_config DataDatabricksAgentKitManagedMemoryStore#provider_config}.
 
 ---
 
@@ -972,7 +972,7 @@ dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store#workspace_id DataDatabricksAgentKitManagedMemoryStore#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitManagedMemoryStore.DataDatabricksAgentKitManagedMemoryStoreProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store#workspace_id DataDatabricksAgentKitManagedMemoryStore#workspace_id}. |
 
 ---
 
@@ -984,7 +984,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_managed_memory_store#workspace_id DataDatabricksAgentKitManagedMemoryStore#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_managed_memory_store#workspace_id DataDatabricksAgentKitManagedMemoryStore#workspace_id}.
 
 ---
 

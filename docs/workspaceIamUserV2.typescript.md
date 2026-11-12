@@ -4,7 +4,7 @@
 
 ### WorkspaceIamUserV2 <a name="WorkspaceIamUserV2" id="@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2 databricks_workspace_iam_user_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2 databricks_workspace_iam_user_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2.Initializer"></a>
 
@@ -529,7 +529,7 @@ The construct id used in the generated config for the WorkspaceIamUserV2 to impo
 
 The id of the existing WorkspaceIamUserV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -561,6 +561,8 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2.property.fullName">fullName</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2FullNameOutputReference">WorkspaceIamUserV2FullNameOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2.property.parent">parent</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2ProviderConfigOutputReference">WorkspaceIamUserV2ProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2.property.userId">userId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2.property.accountUserStatusInput">accountUserStatusInput</a></code> | <code>string</code> | *No description.* |
@@ -736,6 +738,26 @@ public readonly fullName: WorkspaceIamUserV2FullNameOutputReference;
 
 ---
 
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2.property.parent"></a>
+
+```typescript
+public readonly parent: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `providerConfig`<sup>Required</sup> <a name="providerConfig" id="@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2.property.providerConfig"></a>
 
 ```typescript
@@ -877,11 +899,11 @@ const workspaceIamUserV2Config: workspaceIamUserV2.WorkspaceIamUserV2Config = { 
 | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2Config.property.accountUserStatus">accountUserStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#account_user_status WorkspaceIamUserV2#account_user_status}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2Config.property.fullName">fullName</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2FullName">WorkspaceIamUserV2FullName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#full_name WorkspaceIamUserV2#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2Config.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#username WorkspaceIamUserV2#username}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2Config.property.externalId">externalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#external_id WorkspaceIamUserV2#external_id}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2Config.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2ProviderConfig">WorkspaceIamUserV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#provider_config WorkspaceIamUserV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2Config.property.accountUserStatus">accountUserStatus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#account_user_status WorkspaceIamUserV2#account_user_status}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2Config.property.fullName">fullName</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2FullName">WorkspaceIamUserV2FullName</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#full_name WorkspaceIamUserV2#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2Config.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#username WorkspaceIamUserV2#username}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2Config.property.externalId">externalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#external_id WorkspaceIamUserV2#external_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2Config.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2ProviderConfig">WorkspaceIamUserV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#provider_config WorkspaceIamUserV2#provider_config}. |
 
 ---
 
@@ -963,7 +985,7 @@ public readonly accountUserStatus: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#account_user_status WorkspaceIamUserV2#account_user_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#account_user_status WorkspaceIamUserV2#account_user_status}.
 
 ---
 
@@ -975,7 +997,7 @@ public readonly fullName: WorkspaceIamUserV2FullName;
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2FullName">WorkspaceIamUserV2FullName</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#full_name WorkspaceIamUserV2#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#full_name WorkspaceIamUserV2#full_name}.
 
 ---
 
@@ -987,7 +1009,7 @@ public readonly username: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#username WorkspaceIamUserV2#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#username WorkspaceIamUserV2#username}.
 
 ---
 
@@ -999,7 +1021,7 @@ public readonly externalId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#external_id WorkspaceIamUserV2#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#external_id WorkspaceIamUserV2#external_id}.
 
 ---
 
@@ -1011,7 +1033,7 @@ public readonly providerConfig: WorkspaceIamUserV2ProviderConfig;
 
 - *Type:* <a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2ProviderConfig">WorkspaceIamUserV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#provider_config WorkspaceIamUserV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#provider_config WorkspaceIamUserV2#provider_config}.
 
 ---
 
@@ -1029,8 +1051,8 @@ const workspaceIamUserV2FullName: workspaceIamUserV2.WorkspaceIamUserV2FullName 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2FullName.property.familyName">familyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#family_name WorkspaceIamUserV2#family_name}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2FullName.property.givenName">givenName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#given_name WorkspaceIamUserV2#given_name}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2FullName.property.familyName">familyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#family_name WorkspaceIamUserV2#family_name}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2FullName.property.givenName">givenName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#given_name WorkspaceIamUserV2#given_name}. |
 
 ---
 
@@ -1042,7 +1064,7 @@ public readonly familyName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#family_name WorkspaceIamUserV2#family_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#family_name WorkspaceIamUserV2#family_name}.
 
 ---
 
@@ -1054,7 +1076,7 @@ public readonly givenName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#given_name WorkspaceIamUserV2#given_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#given_name WorkspaceIamUserV2#given_name}.
 
 ---
 
@@ -1072,7 +1094,7 @@ const workspaceIamUserV2ProviderConfig: workspaceIamUserV2.WorkspaceIamUserV2Pro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2ProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#workspace_id WorkspaceIamUserV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceIamUserV2.WorkspaceIamUserV2ProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#workspace_id WorkspaceIamUserV2#workspace_id}. |
 
 ---
 
@@ -1084,7 +1106,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/workspace_iam_user_v2#workspace_id WorkspaceIamUserV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/workspace_iam_user_v2#workspace_id WorkspaceIamUserV2#workspace_id}.
 
 ---
 

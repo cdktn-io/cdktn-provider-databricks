@@ -4,7 +4,7 @@
 
 ### DataDatabricksAccountIamGroupV2 <a name="DataDatabricksAccountIamGroupV2" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2 databricks_account_iam_group_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_group_v2 databricks_account_iam_group_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer"></a>
 
@@ -19,7 +19,7 @@ DataDatabricksAccountIamGroupV2.Builder.create(Construct scope, java.lang.String
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-    .groupId(java.lang.String)
+    .name(java.lang.String)
     .build();
 ```
 
@@ -34,7 +34,7 @@ DataDatabricksAccountIamGroupV2.Builder.create(Construct scope, java.lang.String
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer.parameter.groupId">groupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2#group_id DataDatabricksAccountIamGroupV2#group_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_group_v2#name DataDatabricksAccountIamGroupV2#name}. |
 
 ---
 
@@ -98,11 +98,11 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer.parameter.groupId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.Initializer.parameter.name"></a>
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2#group_id DataDatabricksAccountIamGroupV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_group_v2#name DataDatabricksAccountIamGroupV2#name}.
 
 ---
 
@@ -447,7 +447,7 @@ The construct id used in the generated config for the DataDatabricksAccountIamGr
 
 The id of the existing DataDatabricksAccountIamGroupV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_group_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -477,9 +477,11 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.accountId">accountId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.externalId">externalId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupName">groupName</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupIdInput">groupIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupId">groupId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupName">groupName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.parent">parent</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -625,6 +627,16 @@ public java.lang.String getExternalId();
 
 ---
 
+##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupId"></a>
+
+```java
+public java.lang.String getGroupId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `groupName`<sup>Required</sup> <a name="groupName" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupName"></a>
 
 ```java
@@ -635,20 +647,30 @@ public java.lang.String getGroupName();
 
 ---
 
-##### `groupIdInput`<sup>Optional</sup> <a name="groupIdInput" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupIdInput"></a>
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.parent"></a>
 
 ```java
-public java.lang.String getGroupIdInput();
+public java.lang.String getParent();
 ```
 
 - *Type:* java.lang.String
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.groupId"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.nameInput"></a>
 
 ```java
-public java.lang.String getGroupId();
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2.property.name"></a>
+
+```java
+public java.lang.String getName();
 ```
 
 - *Type:* java.lang.String
@@ -690,7 +712,7 @@ DataDatabricksAccountIamGroupV2Config.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-    .groupId(java.lang.String)
+    .name(java.lang.String)
     .build();
 ```
 
@@ -705,7 +727,7 @@ DataDatabricksAccountIamGroupV2Config.builder()
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config.property.groupId">groupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2#group_id DataDatabricksAccountIamGroupV2#group_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_group_v2#name DataDatabricksAccountIamGroupV2#name}. |
 
 ---
 
@@ -779,15 +801,15 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config.property.groupId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksAccountIamGroupV2.DataDatabricksAccountIamGroupV2Config.property.name"></a>
 
 ```java
-public java.lang.String getGroupId();
+public java.lang.String getName();
 ```
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_group_v2#group_id DataDatabricksAccountIamGroupV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_group_v2#name DataDatabricksAccountIamGroupV2#name}.
 
 ---
 

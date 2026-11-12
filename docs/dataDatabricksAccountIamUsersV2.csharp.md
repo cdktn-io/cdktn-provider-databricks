@@ -4,14 +4,14 @@
 
 ### DataDatabricksAccountIamUsersV2 <a name="DataDatabricksAccountIamUsersV2" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2 databricks_account_iam_users_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2 databricks_account_iam_users_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2.Initializer"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Databricks;
 
-new DataDatabricksAccountIamUsersV2(Construct Scope, string Id, DataDatabricksAccountIamUsersV2Config Config = null);
+new DataDatabricksAccountIamUsersV2(Construct Scope, string Id, DataDatabricksAccountIamUsersV2Config Config);
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2.Initializer.parameter.config"></a>
+##### `Config`<sup>Required</sup> <a name="Config" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Config">DataDatabricksAccountIamUsersV2Config</a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataDatabricksAccountIamUs
 
 The id of the existing DataDatabricksAccountIamUsersV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -432,8 +432,10 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2.property.users">Users</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersList">DataDatabricksAccountIamUsersV2UsersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2.property.filterInput">FilterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2.property.pageSizeInput">PageSizeInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2.property.parentInput">ParentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2.property.filter">Filter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2.property.pageSize">PageSize</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2.property.parent">Parent</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -589,6 +591,16 @@ public double PageSizeInput { get; }
 
 ---
 
+##### `ParentInput`<sup>Optional</sup> <a name="ParentInput" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2.property.parentInput"></a>
+
+```csharp
+public string ParentInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Filter`<sup>Required</sup> <a name="Filter" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2.property.filter"></a>
 
 ```csharp
@@ -606,6 +618,16 @@ public double PageSize { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2.property.parent"></a>
+
+```csharp
+public string Parent { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -644,6 +666,7 @@ new DataDatabricksAccountIamUsersV2Config {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string Parent,
     string Filter = null,
     double PageSize = null
 };
@@ -660,8 +683,9 @@ new DataDatabricksAccountIamUsersV2Config {
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Config.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Config.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Config.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Config.property.filter">Filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#filter DataDatabricksAccountIamUsersV2#filter}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Config.property.pageSize">PageSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#page_size DataDatabricksAccountIamUsersV2#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Config.property.parent">Parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#parent DataDatabricksAccountIamUsersV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Config.property.filter">Filter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#filter DataDatabricksAccountIamUsersV2#filter}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Config.property.pageSize">PageSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#page_size DataDatabricksAccountIamUsersV2#page_size}. |
 
 ---
 
@@ -735,6 +759,18 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Config.property.parent"></a>
+
+```csharp
+public string Parent { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#parent DataDatabricksAccountIamUsersV2#parent}.
+
+---
+
 ##### `Filter`<sup>Optional</sup> <a name="Filter" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Config.property.filter"></a>
 
 ```csharp
@@ -743,7 +779,7 @@ public string Filter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#filter DataDatabricksAccountIamUsersV2#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#filter DataDatabricksAccountIamUsersV2#filter}.
 
 ---
 
@@ -755,7 +791,7 @@ public double PageSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#page_size DataDatabricksAccountIamUsersV2#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#page_size DataDatabricksAccountIamUsersV2#page_size}.
 
 ---
 
@@ -767,7 +803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 using Io.Cdktn.Providers.Databricks;
 
 new DataDatabricksAccountIamUsersV2Users {
-    string UserId
+    string Name
 };
 ```
 
@@ -775,19 +811,19 @@ new DataDatabricksAccountIamUsersV2Users {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Users.property.userId">UserId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#user_id DataDatabricksAccountIamUsersV2#user_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Users.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#name DataDatabricksAccountIamUsersV2#name}. |
 
 ---
 
-##### `UserId`<sup>Required</sup> <a name="UserId" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Users.property.userId"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Users.property.name"></a>
 
 ```csharp
-public string UserId { get; set; }
+public string Name { get; set; }
 ```
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#user_id DataDatabricksAccountIamUsersV2#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#name DataDatabricksAccountIamUsersV2#name}.
 
 ---
 
@@ -808,8 +844,8 @@ new DataDatabricksAccountIamUsersV2UsersFullName {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersFullName.property.familyName">FamilyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#family_name DataDatabricksAccountIamUsersV2#family_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersFullName.property.givenName">GivenName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#given_name DataDatabricksAccountIamUsersV2#given_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersFullName.property.familyName">FamilyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#family_name DataDatabricksAccountIamUsersV2#family_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersFullName.property.givenName">GivenName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#given_name DataDatabricksAccountIamUsersV2#given_name}. |
 
 ---
 
@@ -821,7 +857,7 @@ public string FamilyName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#family_name DataDatabricksAccountIamUsersV2#family_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#family_name DataDatabricksAccountIamUsersV2#family_name}.
 
 ---
 
@@ -833,7 +869,7 @@ public string GivenName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_users_v2#given_name DataDatabricksAccountIamUsersV2#given_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_users_v2#given_name DataDatabricksAccountIamUsersV2#given_name}.
 
 ---
 
@@ -1538,9 +1574,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.accountUserStatus">AccountUserStatus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.externalId">ExternalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.fullName">FullName</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersFullNameOutputReference">DataDatabricksAccountIamUsersV2UsersFullNameOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.userIdInput">UserIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.parent">Parent</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.userId">UserId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2Users">DataDatabricksAccountIamUsersV2Users</a></code> | *No description.* |
 
 ---
@@ -1609,20 +1647,10 @@ public DataDatabricksAccountIamUsersV2UsersFullNameOutputReference FullName { ge
 
 ---
 
-##### `Username`<sup>Required</sup> <a name="Username" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.username"></a>
+##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.parent"></a>
 
 ```csharp
-public string Username { get; }
-```
-
-- *Type:* string
-
----
-
-##### `UserIdInput`<sup>Optional</sup> <a name="UserIdInput" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.userIdInput"></a>
-
-```csharp
-public string UserIdInput { get; }
+public string Parent { get; }
 ```
 
 - *Type:* string
@@ -1633,6 +1661,36 @@ public string UserIdInput { get; }
 
 ```csharp
 public string UserId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Username`<sup>Required</sup> <a name="Username" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.username"></a>
+
+```csharp
+public string Username { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.nameInput"></a>
+
+```csharp
+public string NameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-databricks.dataDatabricksAccountIamUsersV2.DataDatabricksAccountIamUsersV2UsersOutputReference.property.name"></a>
+
+```csharp
+public string Name { get; }
 ```
 
 - *Type:* string

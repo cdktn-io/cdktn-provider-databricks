@@ -4,7 +4,7 @@
 
 ### AccountIamDirectGroupMemberV2 <a name="AccountIamDirectGroupMemberV2" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2 databricks_account_iam_direct_group_member_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the AccountIamDirectGroupMembe
 
 The id of the existing AccountIamDirectGroupMemberV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -529,10 +529,13 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.externalId">ExternalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.membershipSource">MembershipSource</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.principalType">PrincipalType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.groupIdInput">GroupIdInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.parentInput">ParentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.principalIdInput">PrincipalIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.groupId">GroupId</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.parent">Parent</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.principalId">PrincipalId</a></code> | <code>double</code> | *No description.* |
 
 ---
@@ -709,6 +712,16 @@ public string MembershipSource { get; }
 
 ---
 
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.name"></a>
+
+```csharp
+public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `PrincipalType`<sup>Required</sup> <a name="PrincipalType" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.principalType"></a>
 
 ```csharp
@@ -729,6 +742,16 @@ public double GroupIdInput { get; }
 
 ---
 
+##### `ParentInput`<sup>Optional</sup> <a name="ParentInput" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.parentInput"></a>
+
+```csharp
+public string ParentInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `PrincipalIdInput`<sup>Optional</sup> <a name="PrincipalIdInput" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.principalIdInput"></a>
 
 ```csharp
@@ -746,6 +769,16 @@ public double GroupId { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2.property.parent"></a>
+
+```csharp
+public string Parent { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -794,6 +827,7 @@ new AccountIamDirectGroupMemberV2Config {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string Parent,
     double PrincipalId,
     double GroupId = null
 };
@@ -810,8 +844,9 @@ new AccountIamDirectGroupMemberV2Config {
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.principalId">PrincipalId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.groupId">GroupId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.parent">Parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#parent AccountIamDirectGroupMemberV2#parent}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.principalId">PrincipalId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.groupId">GroupId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}. |
 
 ---
 
@@ -885,6 +920,18 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.parent"></a>
+
+```csharp
+public string Parent { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#parent AccountIamDirectGroupMemberV2#parent}.
+
+---
+
 ##### `PrincipalId`<sup>Required</sup> <a name="PrincipalId" id="@cdktn/provider-databricks.accountIamDirectGroupMemberV2.AccountIamDirectGroupMemberV2Config.property.principalId"></a>
 
 ```csharp
@@ -893,7 +940,7 @@ public double PrincipalId { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#principal_id AccountIamDirectGroupMemberV2#principal_id}.
 
 ---
 
@@ -905,7 +952,7 @@ public double GroupId { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/account_iam_direct_group_member_v2#group_id AccountIamDirectGroupMemberV2#group_id}.
 
 ---
 

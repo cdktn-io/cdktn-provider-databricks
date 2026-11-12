@@ -4,7 +4,7 @@
 
 ### DataDatabricksAgentKitSession <a name="DataDatabricksAgentKitSession" id="@cdktn/provider-databricks.dataDatabricksAgentKitSession.DataDatabricksAgentKitSession"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session databricks_agent_kit_session}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session databricks_agent_kit_session}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAgentKitSession.DataDatabricksAgentKitSession.Initializer"></a>
 
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataDatabricksAgentKitSess
 
 The id of the existing DataDatabricksAgentKitSession that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,8 +733,8 @@ const dataDatabricksAgentKitSessionConfig: dataDatabricksAgentKitSession.DataDat
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitSession.DataDatabricksAgentKitSessionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitSession.DataDatabricksAgentKitSessionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitSession.DataDatabricksAgentKitSessionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitSession.DataDatabricksAgentKitSessionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session#name DataDatabricksAgentKitSession#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitSession.DataDatabricksAgentKitSessionConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitSession.DataDatabricksAgentKitSessionProviderConfig">DataDatabricksAgentKitSessionProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session#provider_config DataDatabricksAgentKitSession#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitSession.DataDatabricksAgentKitSessionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session#name DataDatabricksAgentKitSession#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitSession.DataDatabricksAgentKitSessionConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitSession.DataDatabricksAgentKitSessionProviderConfig">DataDatabricksAgentKitSessionProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session#provider_config DataDatabricksAgentKitSession#provider_config}. |
 
 ---
 
@@ -816,7 +816,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session#name DataDatabricksAgentKitSession#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session#name DataDatabricksAgentKitSession#name}.
 
 ---
 
@@ -828,7 +828,7 @@ public readonly providerConfig: DataDatabricksAgentKitSessionProviderConfig;
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAgentKitSession.DataDatabricksAgentKitSessionProviderConfig">DataDatabricksAgentKitSessionProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session#provider_config DataDatabricksAgentKitSession#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session#provider_config DataDatabricksAgentKitSession#provider_config}.
 
 ---
 
@@ -846,7 +846,7 @@ const dataDatabricksAgentKitSessionProviderConfig: dataDatabricksAgentKitSession
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitSession.DataDatabricksAgentKitSessionProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session#workspace_id DataDatabricksAgentKitSession#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAgentKitSession.DataDatabricksAgentKitSessionProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session#workspace_id DataDatabricksAgentKitSession#workspace_id}. |
 
 ---
 
@@ -858,7 +858,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/agent_kit_session#workspace_id DataDatabricksAgentKitSession#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/agent_kit_session#workspace_id DataDatabricksAgentKitSession#workspace_id}.
 
 ---
 

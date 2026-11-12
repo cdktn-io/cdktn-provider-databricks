@@ -4,7 +4,7 @@
 
 ### DataDatabricksAccountIamUserV2 <a name="DataDatabricksAccountIamUserV2" id="@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_user_v2 databricks_account_iam_user_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_user_v2 databricks_account_iam_user_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.Initializer"></a>
 
@@ -19,7 +19,7 @@ DataDatabricksAccountIamUserV2.Builder.create(Construct scope, java.lang.String 
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-    .userId(java.lang.String)
+    .name(java.lang.String)
     .build();
 ```
 
@@ -34,7 +34,7 @@ DataDatabricksAccountIamUserV2.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.Initializer.parameter.userId">userId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_user_v2#user_id DataDatabricksAccountIamUserV2#user_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_user_v2#name DataDatabricksAccountIamUserV2#name}. |
 
 ---
 
@@ -98,11 +98,11 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `userId`<sup>Required</sup> <a name="userId" id="@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.Initializer.parameter.userId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.Initializer.parameter.name"></a>
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_user_v2#user_id DataDatabricksAccountIamUserV2#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_user_v2#name DataDatabricksAccountIamUserV2#name}.
 
 ---
 
@@ -447,7 +447,7 @@ The construct id used in the generated config for the DataDatabricksAccountIamUs
 
 The id of the existing DataDatabricksAccountIamUserV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_user_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_user_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -479,9 +479,11 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.accountUserStatus">accountUserStatus</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.externalId">externalId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.fullName">fullName</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2FullNameOutputReference">DataDatabricksAccountIamUserV2FullNameOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.userIdInput">userIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.parent">parent</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.userId">userId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -647,20 +649,10 @@ public DataDatabricksAccountIamUserV2FullNameOutputReference getFullName();
 
 ---
 
-##### `username`<sup>Required</sup> <a name="username" id="@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.username"></a>
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.parent"></a>
 
 ```java
-public java.lang.String getUsername();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `userIdInput`<sup>Optional</sup> <a name="userIdInput" id="@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.userIdInput"></a>
-
-```java
-public java.lang.String getUserIdInput();
+public java.lang.String getParent();
 ```
 
 - *Type:* java.lang.String
@@ -671,6 +663,36 @@ public java.lang.String getUserIdInput();
 
 ```java
 public java.lang.String getUserId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `username`<sup>Required</sup> <a name="username" id="@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.username"></a>
+
+```java
+public java.lang.String getUsername();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2.property.name"></a>
+
+```java
+public java.lang.String getName();
 ```
 
 - *Type:* java.lang.String
@@ -712,7 +734,7 @@ DataDatabricksAccountIamUserV2Config.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-    .userId(java.lang.String)
+    .name(java.lang.String)
     .build();
 ```
 
@@ -727,7 +749,7 @@ DataDatabricksAccountIamUserV2Config.builder()
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2Config.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2Config.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2Config.property.userId">userId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_user_v2#user_id DataDatabricksAccountIamUserV2#user_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_user_v2#name DataDatabricksAccountIamUserV2#name}. |
 
 ---
 
@@ -801,15 +823,15 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `userId`<sup>Required</sup> <a name="userId" id="@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2Config.property.userId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2Config.property.name"></a>
 
 ```java
-public java.lang.String getUserId();
+public java.lang.String getName();
 ```
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_user_v2#user_id DataDatabricksAccountIamUserV2#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_user_v2#name DataDatabricksAccountIamUserV2#name}.
 
 ---
 
@@ -830,8 +852,8 @@ DataDatabricksAccountIamUserV2FullName.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2FullName.property.familyName">familyName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_user_v2#family_name DataDatabricksAccountIamUserV2#family_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2FullName.property.givenName">givenName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_user_v2#given_name DataDatabricksAccountIamUserV2#given_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2FullName.property.familyName">familyName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_user_v2#family_name DataDatabricksAccountIamUserV2#family_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAccountIamUserV2.DataDatabricksAccountIamUserV2FullName.property.givenName">givenName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_user_v2#given_name DataDatabricksAccountIamUserV2#given_name}. |
 
 ---
 
@@ -843,7 +865,7 @@ public java.lang.String getFamilyName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_user_v2#family_name DataDatabricksAccountIamUserV2#family_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_user_v2#family_name DataDatabricksAccountIamUserV2#family_name}.
 
 ---
 
@@ -855,7 +877,7 @@ public java.lang.String getGivenName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/account_iam_user_v2#given_name DataDatabricksAccountIamUserV2#given_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/account_iam_user_v2#given_name DataDatabricksAccountIamUserV2#given_name}.
 
 ---
 

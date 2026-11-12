@@ -4,7 +4,7 @@
 
 ### DataDatabricksWorkspaceIamServicePrincipalV2 <a name="DataDatabricksWorkspaceIamServicePrincipalV2" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2 databricks_workspace_iam_service_principal_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.Initializer"></a>
 
@@ -21,7 +21,7 @@ dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePr
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  service_principal_id: str,
+  name: str,
   provider_config: DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig = None
 )
 ```
@@ -37,8 +37,8 @@ dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePr
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.Initializer.parameter.servicePrincipalId">service_principal_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2#service_principal_id DataDatabricksWorkspaceIamServicePrincipalV2#service_principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig">DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2#name DataDatabricksWorkspaceIamServicePrincipalV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig">DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalV2#provider_config}. |
 
 ---
 
@@ -102,11 +102,11 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `service_principal_id`<sup>Required</sup> <a name="service_principal_id" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.Initializer.parameter.servicePrincipalId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2#service_principal_id DataDatabricksWorkspaceIamServicePrincipalV2#service_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2#name DataDatabricksWorkspaceIamServicePrincipalV2#name}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig">DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalV2#provider_config}.
 
 ---
 
@@ -397,7 +397,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalV2#workspace_id}.
 
 ---
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the DataDatabricksWorkspaceIam
 
 The id of the existing DataDatabricksWorkspaceIamServicePrincipalV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -554,10 +554,12 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.applicationId">application_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.externalId">external_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.parent">parent</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfigOutputReference">DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.providerConfigInput">provider_config_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig">DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.servicePrincipalIdInput">service_principal_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.servicePrincipalId">service_principal_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.providerConfigInput">provider_config_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig">DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -733,6 +735,16 @@ external_id: str
 
 ---
 
+##### `parent`<sup>Required</sup> <a name="parent" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.parent"></a>
+
+```python
+parent: str
+```
+
+- *Type:* str
+
+---
+
 ##### `provider_config`<sup>Required</sup> <a name="provider_config" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.providerConfig"></a>
 
 ```python
@@ -740,6 +752,26 @@ provider_config: DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfigOutpu
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfigOutputReference">DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfigOutputReference</a>
+
+---
+
+##### `service_principal_id`<sup>Required</sup> <a name="service_principal_id" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.servicePrincipalId"></a>
+
+```python
+service_principal_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -753,20 +785,10 @@ provider_config_input: IResolvable | DataDatabricksWorkspaceIamServicePrincipalV
 
 ---
 
-##### `service_principal_id_input`<sup>Optional</sup> <a name="service_principal_id_input" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.servicePrincipalIdInput"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.name"></a>
 
 ```python
-service_principal_id_input: str
-```
-
-- *Type:* str
-
----
-
-##### `service_principal_id`<sup>Required</sup> <a name="service_principal_id" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2.property.servicePrincipalId"></a>
-
-```python
-service_principal_id: str
+name: str
 ```
 
 - *Type:* str
@@ -808,7 +830,7 @@ dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePr
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  service_principal_id: str,
+  name: str,
   provider_config: DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig = None
 )
 ```
@@ -824,8 +846,8 @@ dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePr
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2Config.property.servicePrincipalId">service_principal_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2#service_principal_id DataDatabricksWorkspaceIamServicePrincipalV2#service_principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2Config.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig">DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2#name DataDatabricksWorkspaceIamServicePrincipalV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2Config.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig">DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalV2#provider_config}. |
 
 ---
 
@@ -899,15 +921,15 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `service_principal_id`<sup>Required</sup> <a name="service_principal_id" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2Config.property.servicePrincipalId"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2Config.property.name"></a>
 
 ```python
-service_principal_id: str
+name: str
 ```
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2#service_principal_id DataDatabricksWorkspaceIamServicePrincipalV2#service_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2#name DataDatabricksWorkspaceIamServicePrincipalV2#name}.
 
 ---
 
@@ -919,7 +941,7 @@ provider_config: DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig">DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalV2#provider_config}.
 
 ---
 
@@ -939,7 +961,7 @@ dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceIamServicePrincipalV2.DataDatabricksWorkspaceIamServicePrincipalV2ProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalV2#workspace_id}. |
 
 ---
 
@@ -951,7 +973,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.140.0/docs/data-sources/workspace_iam_service_principal_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/workspace_iam_service_principal_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalV2#workspace_id}.
 
 ---
 
