@@ -4,7 +4,7 @@
 
 ### Connection <a name="Connection" id="@cdktn/provider-databricks.connection.Connection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection databricks_connection}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection databricks_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.connection.Connection.Initializer"></a>
 
@@ -82,6 +82,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.resetOptions">ResetOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.Connection.resetOptionsWo">ResetOptionsWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.Connection.resetOptionsWoVersion">ResetOptionsWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.resetOwner">ResetOwner</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.resetParent">ResetParent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.resetProperties">ResetProperties</a></code> | *No description.* |
@@ -460,6 +462,18 @@ private void ResetName()
 private void ResetOptions()
 ```
 
+##### `ResetOptionsWo` <a name="ResetOptionsWo" id="@cdktn/provider-databricks.connection.Connection.resetOptionsWo"></a>
+
+```csharp
+private void ResetOptionsWo()
+```
+
+##### `ResetOptionsWoVersion` <a name="ResetOptionsWoVersion" id="@cdktn/provider-databricks.connection.Connection.resetOptionsWoVersion"></a>
+
+```csharp
+private void ResetOptionsWoVersion()
+```
+
 ##### `ResetOwner` <a name="ResetOwner" id="@cdktn/provider-databricks.connection.Connection.resetOwner"></a>
 
 ```csharp
@@ -599,7 +613,7 @@ The construct id used in the generated config for the Connection to import.
 
 The id of the existing Connection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -648,6 +662,8 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.optionsInput">OptionsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.Connection.property.optionsWoInput">OptionsWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.Connection.property.optionsWoVersionInput">OptionsWoVersionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.ownerInput">OwnerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.parentInput">ParentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.propertiesInput">PropertiesInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -659,6 +675,8 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.options">Options</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.Connection.property.optionsWo">OptionsWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.connection.Connection.property.optionsWoVersion">OptionsWoVersion</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.owner">Owner</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.parent">Parent</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.Connection.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -999,6 +1017,26 @@ public System.Collections.Generic.IDictionary<string, string> OptionsInput { get
 
 ---
 
+##### `OptionsWoInput`<sup>Optional</sup> <a name="OptionsWoInput" id="@cdktn/provider-databricks.connection.Connection.property.optionsWoInput"></a>
+
+```csharp
+public string OptionsWoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `OptionsWoVersionInput`<sup>Optional</sup> <a name="OptionsWoVersionInput" id="@cdktn/provider-databricks.connection.Connection.property.optionsWoVersionInput"></a>
+
+```csharp
+public double OptionsWoVersionInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `OwnerInput`<sup>Optional</sup> <a name="OwnerInput" id="@cdktn/provider-databricks.connection.Connection.property.ownerInput"></a>
 
 ```csharp
@@ -1109,6 +1147,28 @@ public System.Collections.Generic.IDictionary<string, string> Options { get; }
 
 ---
 
+##### ~~`OptionsWo`~~<sup>Required</sup> <a name="OptionsWo" id="@cdktn/provider-databricks.connection.Connection.property.optionsWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```csharp
+public string OptionsWo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `OptionsWoVersion`<sup>Required</sup> <a name="OptionsWoVersion" id="@cdktn/provider-databricks.connection.Connection.property.optionsWoVersion"></a>
+
+```csharp
+public double OptionsWoVersion { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `Owner`<sup>Required</sup> <a name="Owner" id="@cdktn/provider-databricks.connection.Connection.property.owner"></a>
 
 ```csharp
@@ -1200,6 +1260,8 @@ new ConnectionConfig {
     string Id = null,
     string Name = null,
     System.Collections.Generic.IDictionary<string, string> Options = null,
+    string OptionsWo = null,
+    double OptionsWoVersion = null,
     string Owner = null,
     string Parent = null,
     System.Collections.Generic.IDictionary<string, string> Properties = null,
@@ -1220,18 +1282,20 @@ new ConnectionConfig {
 | <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#comment Connection#comment}. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.connectionType">ConnectionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#connection_type Connection#connection_type}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#comment Connection#comment}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.connectionType">ConnectionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#connection_type Connection#connection_type}. |
 | <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.environmentSettings">EnvironmentSettings</a></code> | <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings">ConnectionEnvironmentSettings</a></code> | environment_settings block. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#id Connection#id}. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#name Connection#name}. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.options">Options</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#options Connection#options}. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#owner Connection#owner}. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.parent">Parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#parent Connection#parent}. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#properties Connection#properties}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#id Connection#id}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#name Connection#name}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.options">Options</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#options Connection#options}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.optionsWo">OptionsWo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#options_wo Connection#options_wo}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.optionsWoVersion">OptionsWoVersion</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#options_wo_version Connection#options_wo_version}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#owner Connection#owner}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.parent">Parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#parent Connection#parent}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#properties Connection#properties}. |
 | <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.connection.ConnectionProviderConfig">ConnectionProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.readOnly">ReadOnly</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#read_only Connection#read_only}. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.secrets">Secrets</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#secrets Connection#secrets}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.readOnly">ReadOnly</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#read_only Connection#read_only}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionConfig.property.secrets">Secrets</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#secrets Connection#secrets}. |
 
 ---
 
@@ -1313,7 +1377,7 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#comment Connection#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#comment Connection#comment}.
 
 ---
 
@@ -1325,7 +1389,7 @@ public string ConnectionType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#connection_type Connection#connection_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#connection_type Connection#connection_type}.
 
 ---
 
@@ -1339,7 +1403,7 @@ public ConnectionEnvironmentSettings EnvironmentSettings { get; set; }
 
 environment_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#environment_settings Connection#environment_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#environment_settings Connection#environment_settings}
 
 ---
 
@@ -1351,7 +1415,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#id Connection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#id Connection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1366,7 +1430,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#name Connection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#name Connection#name}.
 
 ---
 
@@ -1378,7 +1442,31 @@ public System.Collections.Generic.IDictionary<string, string> Options { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#options Connection#options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#options Connection#options}.
+
+---
+
+##### `OptionsWo`<sup>Optional</sup> <a name="OptionsWo" id="@cdktn/provider-databricks.connection.ConnectionConfig.property.optionsWo"></a>
+
+```csharp
+public string OptionsWo { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#options_wo Connection#options_wo}.
+
+---
+
+##### `OptionsWoVersion`<sup>Optional</sup> <a name="OptionsWoVersion" id="@cdktn/provider-databricks.connection.ConnectionConfig.property.optionsWoVersion"></a>
+
+```csharp
+public double OptionsWoVersion { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#options_wo_version Connection#options_wo_version}.
 
 ---
 
@@ -1390,7 +1478,7 @@ public string Owner { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#owner Connection#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#owner Connection#owner}.
 
 ---
 
@@ -1402,7 +1490,7 @@ public string Parent { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#parent Connection#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#parent Connection#parent}.
 
 ---
 
@@ -1414,7 +1502,7 @@ public System.Collections.Generic.IDictionary<string, string> Properties { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#properties Connection#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#properties Connection#properties}.
 
 ---
 
@@ -1428,7 +1516,7 @@ public ConnectionProviderConfig ProviderConfig { get; set; }
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#provider_config Connection#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#provider_config Connection#provider_config}
 
 ---
 
@@ -1440,7 +1528,7 @@ public bool|IResolvable ReadOnly { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#read_only Connection#read_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#read_only Connection#read_only}.
 
 ---
 
@@ -1452,7 +1540,7 @@ public System.Collections.Generic.IDictionary<string, string> Secrets { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#secrets Connection#secrets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#secrets Connection#secrets}.
 
 ---
 
@@ -1473,8 +1561,8 @@ new ConnectionEnvironmentSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings.property.environmentVersion">EnvironmentVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#environment_version Connection#environment_version}. |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings.property.javaDependencies">JavaDependencies</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#java_dependencies Connection#java_dependencies}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings.property.environmentVersion">EnvironmentVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#environment_version Connection#environment_version}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionEnvironmentSettings.property.javaDependencies">JavaDependencies</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#java_dependencies Connection#java_dependencies}. |
 
 ---
 
@@ -1486,7 +1574,7 @@ public string EnvironmentVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#environment_version Connection#environment_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#environment_version Connection#environment_version}.
 
 ---
 
@@ -1498,7 +1586,7 @@ public string[] JavaDependencies { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#java_dependencies Connection#java_dependencies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#java_dependencies Connection#java_dependencies}.
 
 ---
 
@@ -1518,7 +1606,7 @@ new ConnectionProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.connection.ConnectionProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#workspace_id Connection#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.connection.ConnectionProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#workspace_id Connection#workspace_id}. |
 
 ---
 
@@ -1530,7 +1618,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#workspace_id Connection#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#workspace_id Connection#workspace_id}.
 
 ---
 
