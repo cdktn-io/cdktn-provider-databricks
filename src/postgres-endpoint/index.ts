@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint
+// https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktn from 'cdktn';
 
 export interface PostgresEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#endpoint_id PostgresEndpoint#endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#endpoint_id PostgresEndpoint#endpoint_id}
   */
   readonly endpointId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#parent PostgresEndpoint#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#parent PostgresEndpoint#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#provider_config PostgresEndpoint#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#provider_config PostgresEndpoint#provider_config}
   */
   readonly providerConfig?: PostgresEndpointProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#replace_existing PostgresEndpoint#replace_existing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#replace_existing PostgresEndpoint#replace_existing}
   */
   readonly replaceExisting?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#spec PostgresEndpoint#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#spec PostgresEndpoint#spec}
   */
   readonly spec?: PostgresEndpointSpec;
 }
 export interface PostgresEndpointProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#workspace_id PostgresEndpoint#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#workspace_id PostgresEndpoint#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -129,15 +129,15 @@ export class PostgresEndpointProviderConfigOutputReference extends cdktn.Complex
 }
 export interface PostgresEndpointSpecGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#enable_readable_secondaries PostgresEndpoint#enable_readable_secondaries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#enable_readable_secondaries PostgresEndpoint#enable_readable_secondaries}
   */
   readonly enableReadableSecondaries?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#max PostgresEndpoint#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#max PostgresEndpoint#max}
   */
   readonly max: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#min PostgresEndpoint#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#min PostgresEndpoint#min}
   */
   readonly min: number;
 }
@@ -239,7 +239,7 @@ export class PostgresEndpointSpecGroupOutputReference extends cdktn.ComplexObjec
     }
   }
 
-  // enable_readable_secondaries - computed: true, optional: true, required: false
+  // enable_readable_secondaries - computed: false, optional: true, required: false
   private _enableReadableSecondaries?: boolean | cdktn.IResolvable; 
   public get enableReadableSecondaries() {
     return this.getBooleanAttribute('enable_readable_secondaries');
@@ -255,7 +255,7 @@ export class PostgresEndpointSpecGroupOutputReference extends cdktn.ComplexObjec
     return this._enableReadableSecondaries;
   }
 
-  // max - computed: true, optional: false, required: true
+  // max - computed: false, optional: false, required: true
   private _max?: number; 
   public get max() {
     return this.getNumberAttribute('max');
@@ -268,7 +268,7 @@ export class PostgresEndpointSpecGroupOutputReference extends cdktn.ComplexObjec
     return this._max;
   }
 
-  // min - computed: true, optional: false, required: true
+  // min - computed: false, optional: false, required: true
   private _min?: number; 
   public get min() {
     return this.getNumberAttribute('min');
@@ -283,7 +283,7 @@ export class PostgresEndpointSpecGroupOutputReference extends cdktn.ComplexObjec
 }
 export interface PostgresEndpointSpecSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#pg_settings PostgresEndpoint#pg_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#pg_settings PostgresEndpoint#pg_settings}
   */
   readonly pgSettings?: { [key: string]: string };
 }
@@ -359,7 +359,7 @@ export class PostgresEndpointSpecSettingsOutputReference extends cdktn.ComplexOb
     }
   }
 
-  // pg_settings - computed: true, optional: true, required: false
+  // pg_settings - computed: false, optional: true, required: false
   private _pgSettings?: { [key: string]: string }; 
   public get pgSettings() {
     return this.getStringMapAttribute('pg_settings');
@@ -377,35 +377,35 @@ export class PostgresEndpointSpecSettingsOutputReference extends cdktn.ComplexOb
 }
 export interface PostgresEndpointSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#autoscaling_limit_max_cu PostgresEndpoint#autoscaling_limit_max_cu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#autoscaling_limit_max_cu PostgresEndpoint#autoscaling_limit_max_cu}
   */
   readonly autoscalingLimitMaxCu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#autoscaling_limit_min_cu PostgresEndpoint#autoscaling_limit_min_cu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#autoscaling_limit_min_cu PostgresEndpoint#autoscaling_limit_min_cu}
   */
   readonly autoscalingLimitMinCu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#disabled PostgresEndpoint#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#disabled PostgresEndpoint#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#endpoint_type PostgresEndpoint#endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#endpoint_type PostgresEndpoint#endpoint_type}
   */
   readonly endpointType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#group PostgresEndpoint#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#group PostgresEndpoint#group}
   */
   readonly group?: PostgresEndpointSpecGroup;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#no_suspension PostgresEndpoint#no_suspension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#no_suspension PostgresEndpoint#no_suspension}
   */
   readonly noSuspension?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#settings PostgresEndpoint#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#settings PostgresEndpoint#settings}
   */
   readonly settings?: PostgresEndpointSpecSettings;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#suspend_timeout_duration PostgresEndpoint#suspend_timeout_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#suspend_timeout_duration PostgresEndpoint#suspend_timeout_duration}
   */
   readonly suspendTimeoutDuration?: string;
 }
@@ -572,7 +572,7 @@ export class PostgresEndpointSpecOutputReference extends cdktn.ComplexObject {
     }
   }
 
-  // autoscaling_limit_max_cu - computed: true, optional: true, required: false
+  // autoscaling_limit_max_cu - computed: false, optional: true, required: false
   private _autoscalingLimitMaxCu?: number; 
   public get autoscalingLimitMaxCu() {
     return this.getNumberAttribute('autoscaling_limit_max_cu');
@@ -588,7 +588,7 @@ export class PostgresEndpointSpecOutputReference extends cdktn.ComplexObject {
     return this._autoscalingLimitMaxCu;
   }
 
-  // autoscaling_limit_min_cu - computed: true, optional: true, required: false
+  // autoscaling_limit_min_cu - computed: false, optional: true, required: false
   private _autoscalingLimitMinCu?: number; 
   public get autoscalingLimitMinCu() {
     return this.getNumberAttribute('autoscaling_limit_min_cu');
@@ -604,7 +604,7 @@ export class PostgresEndpointSpecOutputReference extends cdktn.ComplexObject {
     return this._autoscalingLimitMinCu;
   }
 
-  // disabled - computed: true, optional: true, required: false
+  // disabled - computed: false, optional: true, required: false
   private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
@@ -620,7 +620,7 @@ export class PostgresEndpointSpecOutputReference extends cdktn.ComplexObject {
     return this._disabled;
   }
 
-  // endpoint_type - computed: true, optional: false, required: true
+  // endpoint_type - computed: false, optional: false, required: true
   private _endpointType?: string; 
   public get endpointType() {
     return this.getStringAttribute('endpoint_type');
@@ -633,7 +633,7 @@ export class PostgresEndpointSpecOutputReference extends cdktn.ComplexObject {
     return this._endpointType;
   }
 
-  // group - computed: true, optional: true, required: false
+  // group - computed: false, optional: true, required: false
   private _group = new PostgresEndpointSpecGroupOutputReference(this, "group");
   public get group() {
     return this._group;
@@ -649,7 +649,7 @@ export class PostgresEndpointSpecOutputReference extends cdktn.ComplexObject {
     return this._group.internalValue;
   }
 
-  // no_suspension - computed: true, optional: true, required: false
+  // no_suspension - computed: false, optional: true, required: false
   private _noSuspension?: boolean | cdktn.IResolvable; 
   public get noSuspension() {
     return this.getBooleanAttribute('no_suspension');
@@ -665,7 +665,7 @@ export class PostgresEndpointSpecOutputReference extends cdktn.ComplexObject {
     return this._noSuspension;
   }
 
-  // settings - computed: true, optional: true, required: false
+  // settings - computed: false, optional: true, required: false
   private _settings = new PostgresEndpointSpecSettingsOutputReference(this, "settings");
   public get settings() {
     return this._settings;
@@ -681,7 +681,7 @@ export class PostgresEndpointSpecOutputReference extends cdktn.ComplexObject {
     return this._settings.internalValue;
   }
 
-  // suspend_timeout_duration - computed: true, optional: true, required: false
+  // suspend_timeout_duration - computed: false, optional: true, required: false
   private _suspendTimeoutDuration?: string; 
   public get suspendTimeoutDuration() {
     return this.getStringAttribute('suspend_timeout_duration');
@@ -699,11 +699,11 @@ export class PostgresEndpointSpecOutputReference extends cdktn.ComplexObject {
 }
 export interface PostgresEndpointStatusGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#max PostgresEndpoint#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#max PostgresEndpoint#max}
   */
   readonly max: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#min PostgresEndpoint#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#min PostgresEndpoint#min}
   */
   readonly min: number;
 }
@@ -884,7 +884,7 @@ export class PostgresEndpointStatusHostsOutputReference extends cdktn.ComplexObj
 }
 export interface PostgresEndpointStatusSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#pg_settings PostgresEndpoint#pg_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#pg_settings PostgresEndpoint#pg_settings}
   */
   readonly pgSettings?: { [key: string]: string };
 }
@@ -1080,7 +1080,7 @@ export class PostgresEndpointStatusOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint databricks_postgres_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint databricks_postgres_endpoint}
 */
 export class PostgresEndpoint extends cdktn.TerraformResource {
 
@@ -1096,7 +1096,7 @@ export class PostgresEndpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PostgresEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PostgresEndpoint to import
-  * @param importFromId The id of the existing PostgresEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PostgresEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PostgresEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1108,7 +1108,7 @@ export class PostgresEndpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_endpoint databricks_postgres_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_endpoint databricks_postgres_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1119,7 +1119,7 @@ export class PostgresEndpoint extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_postgres_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.142.0',
+        providerVersion: '1.143.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1209,7 +1209,7 @@ export class PostgresEndpoint extends cdktn.TerraformResource {
     return this._replaceExisting;
   }
 
-  // spec - computed: true, optional: true, required: false
+  // spec - computed: false, optional: true, required: false
   private _spec = new PostgresEndpointSpecOutputReference(this, "spec");
   public get spec() {
     return this._spec;

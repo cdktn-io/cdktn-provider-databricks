@@ -4,7 +4,7 @@
 
 ### DataDatabricksLakewatchRuleConfigA <a name="DataDatabricksLakewatchRuleConfigA" id="@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config databricks_lakewatch_rule_config}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config databricks_lakewatch_rule_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigA.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigA(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigA.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigA.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigA.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigA.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#name DataDatabricksLakewatchRuleConfigA#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigA.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigProviderConfig">DataDatabricksLakewatchRuleConfigProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#provider_config DataDatabricksLakewatchRuleConfigA#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigA.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#name DataDatabricksLakewatchRuleConfigA#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigA.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigProviderConfig">DataDatabricksLakewatchRuleConfigProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#provider_config DataDatabricksLakewatchRuleConfigA#provider_config}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#name DataDatabricksLakewatchRuleConfigA#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#name DataDatabricksLakewatchRuleConfigA#name}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigProviderConfig">DataDatabricksLakewatchRuleConfigProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#provider_config DataDatabricksLakewatchRuleConfigA#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#provider_config DataDatabricksLakewatchRuleConfigA#provider_config}.
 
 ---
 
@@ -397,7 +397,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#workspace_id DataDatabricksLakewatchRuleConfigA#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#workspace_id DataDatabricksLakewatchRuleConfigA#workspace_id}.
 
 ---
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the DataDatabricksLakewatchRul
 
 The id of the existing DataDatabricksLakewatchRuleConfigA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,8 +879,8 @@ dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigAConfig(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigAConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigAConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigAConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigAConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#name DataDatabricksLakewatchRuleConfigA#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigAConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigProviderConfig">DataDatabricksLakewatchRuleConfigProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#provider_config DataDatabricksLakewatchRuleConfigA#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigAConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#name DataDatabricksLakewatchRuleConfigA#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigAConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigProviderConfig">DataDatabricksLakewatchRuleConfigProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#provider_config DataDatabricksLakewatchRuleConfigA#provider_config}. |
 
 ---
 
@@ -962,7 +962,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#name DataDatabricksLakewatchRuleConfigA#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#name DataDatabricksLakewatchRuleConfigA#name}.
 
 ---
 
@@ -974,7 +974,7 @@ provider_config: DataDatabricksLakewatchRuleConfigProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigProviderConfig">DataDatabricksLakewatchRuleConfigProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#provider_config DataDatabricksLakewatchRuleConfigA#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#provider_config DataDatabricksLakewatchRuleConfigA#provider_config}.
 
 ---
 
@@ -987,7 +987,6 @@ from cdktn_provider_databricks import data_databricks_lakewatch_rule_config
 
 dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultSchedule(
   at_least_every: str = None,
-  continuous: bool | IResolvable = None,
   cron_expression: str = None,
   enabled: bool | IResolvable = None
 )
@@ -997,10 +996,9 @@ dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultSchedu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultSchedule.property.atLeastEvery">at_least_every</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#at_least_every DataDatabricksLakewatchRuleConfigA#at_least_every}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultSchedule.property.continuous">continuous</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#continuous DataDatabricksLakewatchRuleConfigA#continuous}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultSchedule.property.cronExpression">cron_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#cron_expression DataDatabricksLakewatchRuleConfigA#cron_expression}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultSchedule.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#enabled DataDatabricksLakewatchRuleConfigA#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultSchedule.property.atLeastEvery">at_least_every</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#at_least_every DataDatabricksLakewatchRuleConfigA#at_least_every}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultSchedule.property.cronExpression">cron_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#cron_expression DataDatabricksLakewatchRuleConfigA#cron_expression}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultSchedule.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#enabled DataDatabricksLakewatchRuleConfigA#enabled}. |
 
 ---
 
@@ -1012,19 +1010,7 @@ at_least_every: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#at_least_every DataDatabricksLakewatchRuleConfigA#at_least_every}.
-
----
-
-##### `continuous`<sup>Optional</sup> <a name="continuous" id="@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultSchedule.property.continuous"></a>
-
-```python
-continuous: bool | IResolvable
-```
-
-- *Type:* bool | cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#continuous DataDatabricksLakewatchRuleConfigA#continuous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#at_least_every DataDatabricksLakewatchRuleConfigA#at_least_every}.
 
 ---
 
@@ -1036,7 +1022,7 @@ cron_expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#cron_expression DataDatabricksLakewatchRuleConfigA#cron_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#cron_expression DataDatabricksLakewatchRuleConfigA#cron_expression}.
 
 ---
 
@@ -1048,7 +1034,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#enabled DataDatabricksLakewatchRuleConfigA#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#enabled DataDatabricksLakewatchRuleConfigA#enabled}.
 
 ---
 
@@ -1068,7 +1054,7 @@ dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigProviderConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#workspace_id DataDatabricksLakewatchRuleConfigA#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#workspace_id DataDatabricksLakewatchRuleConfigA#workspace_id}. |
 
 ---
 
@@ -1080,7 +1066,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#workspace_id DataDatabricksLakewatchRuleConfigA#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#workspace_id DataDatabricksLakewatchRuleConfigA#workspace_id}.
 
 ---
 
@@ -1103,10 +1089,10 @@ dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigUpdatedBy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigUpdatedBy.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#display_name DataDatabricksLakewatchRuleConfigA#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigUpdatedBy.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#email DataDatabricksLakewatchRuleConfigA#email}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigUpdatedBy.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#id DataDatabricksLakewatchRuleConfigA#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigUpdatedBy.property.principalType">principal_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#principal_type DataDatabricksLakewatchRuleConfigA#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigUpdatedBy.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#display_name DataDatabricksLakewatchRuleConfigA#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigUpdatedBy.property.email">email</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#email DataDatabricksLakewatchRuleConfigA#email}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigUpdatedBy.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#id DataDatabricksLakewatchRuleConfigA#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigUpdatedBy.property.principalType">principal_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#principal_type DataDatabricksLakewatchRuleConfigA#principal_type}. |
 
 ---
 
@@ -1118,7 +1104,7 @@ display_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#display_name DataDatabricksLakewatchRuleConfigA#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#display_name DataDatabricksLakewatchRuleConfigA#display_name}.
 
 ---
 
@@ -1130,7 +1116,7 @@ email: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#email DataDatabricksLakewatchRuleConfigA#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#email DataDatabricksLakewatchRuleConfigA#email}.
 
 ---
 
@@ -1142,7 +1128,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#id DataDatabricksLakewatchRuleConfigA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#id DataDatabricksLakewatchRuleConfigA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1157,7 +1143,7 @@ principal_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_rule_config#principal_type DataDatabricksLakewatchRuleConfigA#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_rule_config#principal_type DataDatabricksLakewatchRuleConfigA#principal_type}.
 
 ---
 
@@ -1217,7 +1203,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.resetAtLeastEvery">reset_at_least_every</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.resetContinuous">reset_continuous</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.resetCronExpression">reset_cron_expression</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.resetEnabled">reset_enabled</a></code> | *No description.* |
 
@@ -1401,12 +1386,6 @@ Returns a reversible string representation.
 def reset_at_least_every() -> None
 ```
 
-##### `reset_continuous` <a name="reset_continuous" id="@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.resetContinuous"></a>
-
-```python
-def reset_continuous() -> None
-```
-
 ##### `reset_cron_expression` <a name="reset_cron_expression" id="@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.resetCronExpression"></a>
 
 ```python
@@ -1427,11 +1406,9 @@ def reset_enabled() -> None
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.property.atLeastEveryInput">at_least_every_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.property.continuousInput">continuous_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.property.cronExpressionInput">cron_expression_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.property.atLeastEvery">at_least_every</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.property.continuous">continuous</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.property.cronExpression">cron_expression</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultSchedule">DataDatabricksLakewatchRuleConfigDefaultSchedule</a></code> | *No description.* |
@@ -1472,16 +1449,6 @@ at_least_every_input: str
 
 ---
 
-##### `continuous_input`<sup>Optional</sup> <a name="continuous_input" id="@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.property.continuousInput"></a>
-
-```python
-continuous_input: bool | IResolvable
-```
-
-- *Type:* bool | cdktn.IResolvable
-
----
-
 ##### `cron_expression_input`<sup>Optional</sup> <a name="cron_expression_input" id="@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.property.cronExpressionInput"></a>
 
 ```python
@@ -1509,16 +1476,6 @@ at_least_every: str
 ```
 
 - *Type:* str
-
----
-
-##### `continuous`<sup>Required</sup> <a name="continuous" id="@cdktn/provider-databricks.dataDatabricksLakewatchRuleConfig.DataDatabricksLakewatchRuleConfigDefaultScheduleOutputReference.property.continuous"></a>
-
-```python
-continuous: bool | IResolvable
-```
-
-- *Type:* bool | cdktn.IResolvable
 
 ---
 

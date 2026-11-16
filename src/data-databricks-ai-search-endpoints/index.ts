@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints
+// https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksAiSearchEndpointsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#page_size DataDatabricksAiSearchEndpoints#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#page_size DataDatabricksAiSearchEndpoints#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#parent DataDatabricksAiSearchEndpoints#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#parent DataDatabricksAiSearchEndpoints#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#provider_config DataDatabricksAiSearchEndpoints#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#provider_config DataDatabricksAiSearchEndpoints#provider_config}
   */
   readonly providerConfig?: DataDatabricksAiSearchEndpointsProviderConfig;
 }
 export interface DataDatabricksAiSearchEndpointsEndpointsCustomTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#key DataDatabricksAiSearchEndpoints#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#key DataDatabricksAiSearchEndpoints#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#value DataDatabricksAiSearchEndpoints#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#value DataDatabricksAiSearchEndpoints#value}
   */
   readonly value?: string;
 }
@@ -222,7 +222,7 @@ export class DataDatabricksAiSearchEndpointsEndpointsEndpointStatusOutputReferen
 }
 export interface DataDatabricksAiSearchEndpointsEndpointsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#workspace_id DataDatabricksAiSearchEndpoints#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#workspace_id DataDatabricksAiSearchEndpoints#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -316,7 +316,7 @@ export class DataDatabricksAiSearchEndpointsEndpointsProviderConfigOutputReferen
 }
 export interface DataDatabricksAiSearchEndpointsEndpointsScalingInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#requested_target_qps DataDatabricksAiSearchEndpoints#requested_target_qps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#requested_target_qps DataDatabricksAiSearchEndpoints#requested_target_qps}
   */
   readonly requestedTargetQps?: number;
 }
@@ -382,6 +382,26 @@ export class DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputReference 
     }
   }
 
+  // delayed_reason - computed: true, optional: false, required: false
+  public get delayedReason() {
+    return this.getStringAttribute('delayed_reason');
+  }
+
+  // estimated_completion_time - computed: true, optional: false, required: false
+  public get estimatedCompletionTime() {
+    return this.getStringAttribute('estimated_completion_time');
+  }
+
+  // index_initialization_percentage - computed: true, optional: false, required: false
+  public get indexInitializationPercentage() {
+    return this.getNumberAttribute('index_initialization_percentage');
+  }
+
+  // phase - computed: true, optional: false, required: false
+  public get phase() {
+    return this.getStringAttribute('phase');
+  }
+
   // requested_target_qps - computed: true, optional: true, required: false
   private _requestedTargetQps?: number; 
   public get requestedTargetQps() {
@@ -402,22 +422,27 @@ export class DataDatabricksAiSearchEndpointsEndpointsScalingInfoOutputReference 
   public get state() {
     return this.getStringAttribute('state');
   }
+
+  // target_qps_change_allowed_after_time - computed: true, optional: false, required: false
+  public get targetQpsChangeAllowedAfterTime() {
+    return this.getStringAttribute('target_qps_change_allowed_after_time');
+  }
 }
 export interface DataDatabricksAiSearchEndpointsEndpointsThroughputInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#maximum_concurrency_allowed DataDatabricksAiSearchEndpoints#maximum_concurrency_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#maximum_concurrency_allowed DataDatabricksAiSearchEndpoints#maximum_concurrency_allowed}
   */
   readonly maximumConcurrencyAllowed?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#minimal_concurrency_allowed DataDatabricksAiSearchEndpoints#minimal_concurrency_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#minimal_concurrency_allowed DataDatabricksAiSearchEndpoints#minimal_concurrency_allowed}
   */
   readonly minimalConcurrencyAllowed?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#requested_concurrency DataDatabricksAiSearchEndpoints#requested_concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#requested_concurrency DataDatabricksAiSearchEndpoints#requested_concurrency}
   */
   readonly requestedConcurrency?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#requested_num_replicas DataDatabricksAiSearchEndpoints#requested_num_replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#requested_num_replicas DataDatabricksAiSearchEndpoints#requested_num_replicas}
   */
   readonly requestedNumReplicas?: number;
 }
@@ -613,11 +638,11 @@ export class DataDatabricksAiSearchEndpointsEndpointsThroughputInfoOutputReferen
 }
 export interface DataDatabricksAiSearchEndpointsEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#name DataDatabricksAiSearchEndpoints#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#name DataDatabricksAiSearchEndpoints#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#provider_config DataDatabricksAiSearchEndpoints#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#provider_config DataDatabricksAiSearchEndpoints#provider_config}
   */
   readonly providerConfig?: DataDatabricksAiSearchEndpointsEndpointsProviderConfig;
 }
@@ -833,7 +858,7 @@ export class DataDatabricksAiSearchEndpointsEndpointsList extends cdktn.ComplexL
 }
 export interface DataDatabricksAiSearchEndpointsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#workspace_id DataDatabricksAiSearchEndpoints#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#workspace_id DataDatabricksAiSearchEndpoints#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -927,7 +952,7 @@ export class DataDatabricksAiSearchEndpointsProviderConfigOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints databricks_ai_search_endpoints}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints databricks_ai_search_endpoints}
 */
 export class DataDatabricksAiSearchEndpoints extends cdktn.TerraformDataSource {
 
@@ -943,7 +968,7 @@ export class DataDatabricksAiSearchEndpoints extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksAiSearchEndpoints resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAiSearchEndpoints to import
-  * @param importFromId The id of the existing DataDatabricksAiSearchEndpoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAiSearchEndpoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAiSearchEndpoints to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -955,7 +980,7 @@ export class DataDatabricksAiSearchEndpoints extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/ai_search_endpoints databricks_ai_search_endpoints} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/ai_search_endpoints databricks_ai_search_endpoints} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -966,7 +991,7 @@ export class DataDatabricksAiSearchEndpoints extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_ai_search_endpoints',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.142.0',
+        providerVersion: '1.143.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -31,6 +31,7 @@ Object.defineProperty(exports, 'app', { get: function () { return require('./app
 Object.defineProperty(exports, 'appSpace', { get: function () { return require('./app-space'); } });
 Object.defineProperty(exports, 'appsSettingsCustomTemplate', { get: function () { return require('./apps-settings-custom-template'); } });
 Object.defineProperty(exports, 'artifactAllowlist', { get: function () { return require('./artifact-allowlist'); } });
+Object.defineProperty(exports, 'assumeGroupRestrictedSharingGroup', { get: function () { return require('./assume-group-restricted-sharing-group'); } });
 Object.defineProperty(exports, 'automaticClusterUpdateWorkspaceSetting', { get: function () { return require('./automatic-cluster-update-workspace-setting'); } });
 Object.defineProperty(exports, 'awsS3Mount', { get: function () { return require('./aws-s3-mount'); } });
 Object.defineProperty(exports, 'azureAdlsGen1Mount', { get: function () { return require('./azure-adls-gen1-mount'); } });
@@ -237,6 +238,8 @@ Object.defineProperty(exports, 'dataDatabricksAppSpaces', { get: function () { r
 Object.defineProperty(exports, 'dataDatabricksApps', { get: function () { return require('./data-databricks-apps'); } });
 Object.defineProperty(exports, 'dataDatabricksAppsSettingsCustomTemplate', { get: function () { return require('./data-databricks-apps-settings-custom-template'); } });
 Object.defineProperty(exports, 'dataDatabricksAppsSettingsCustomTemplates', { get: function () { return require('./data-databricks-apps-settings-custom-templates'); } });
+Object.defineProperty(exports, 'dataDatabricksAssumeGroupRestrictedSharingGroup', { get: function () { return require('./data-databricks-assume-group-restricted-sharing-group'); } });
+Object.defineProperty(exports, 'dataDatabricksAssumeGroupRestrictedSharingGroups', { get: function () { return require('./data-databricks-assume-group-restricted-sharing-groups'); } });
 Object.defineProperty(exports, 'dataDatabricksAwsAssumeRolePolicy', { get: function () { return require('./data-databricks-aws-assume-role-policy'); } });
 Object.defineProperty(exports, 'dataDatabricksAwsBucketPolicy', { get: function () { return require('./data-databricks-aws-bucket-policy'); } });
 Object.defineProperty(exports, 'dataDatabricksAwsCrossaccountPolicy', { get: function () { return require('./data-databricks-aws-crossaccount-policy'); } });

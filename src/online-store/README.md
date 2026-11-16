@@ -1,3 +1,3 @@
 # `databricks_online_store`
 
-Refer to the Terraform Registry for docs: [`databricks_online_store`](https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/online_store).
+Refer to the Terraform Registry for docs: [`databricks_online_store`](https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/online_store).

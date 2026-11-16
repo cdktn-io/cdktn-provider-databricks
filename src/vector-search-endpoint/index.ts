@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint
+// https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,40 @@ import * as cdktn from 'cdktn';
 
 export interface VectorSearchEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint#budget_policy_id VectorSearchEndpoint#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#budget_policy_id VectorSearchEndpoint#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}
   */
   readonly endpointType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}
   */
   readonly name: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint#provider_config VectorSearchEndpoint#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#provider_config VectorSearchEndpoint#provider_config}
   */
   readonly providerConfig?: VectorSearchEndpointProviderConfig;
   /**
   * scaling_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint#scaling_info VectorSearchEndpoint#scaling_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#scaling_info VectorSearchEndpoint#scaling_info}
   */
   readonly scalingInfo?: VectorSearchEndpointScalingInfo;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
   */
   readonly timeouts?: VectorSearchEndpointTimeouts;
 }
@@ -132,7 +132,7 @@ export class VectorSearchEndpointEndpointStatusList extends cdktn.ComplexList {
 }
 export interface VectorSearchEndpointProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint#workspace_id VectorSearchEndpoint#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#workspace_id VectorSearchEndpoint#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -216,13 +216,33 @@ export class VectorSearchEndpointProviderConfigOutputReference extends cdktn.Com
 }
 export interface VectorSearchEndpointScalingInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint#requested_target_qps VectorSearchEndpoint#requested_target_qps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#delayed_reason VectorSearchEndpoint#delayed_reason}
+  */
+  readonly delayedReason?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#estimated_completion_timestamp VectorSearchEndpoint#estimated_completion_timestamp}
+  */
+  readonly estimatedCompletionTimestamp?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#index_initialization_percentage VectorSearchEndpoint#index_initialization_percentage}
+  */
+  readonly indexInitializationPercentage?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#phase VectorSearchEndpoint#phase}
+  */
+  readonly phase?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#requested_target_qps VectorSearchEndpoint#requested_target_qps}
   */
   readonly requestedTargetQps?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint#state VectorSearchEndpoint#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#state VectorSearchEndpoint#state}
   */
   readonly state?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#target_qps_change_allowed_after_timestamp VectorSearchEndpoint#target_qps_change_allowed_after_timestamp}
+  */
+  readonly targetQpsChangeAllowedAfterTimestamp?: number;
 }
 
 export function vectorSearchEndpointScalingInfoToTerraform(struct?: VectorSearchEndpointScalingInfoOutputReference | VectorSearchEndpointScalingInfo): any {
@@ -231,8 +251,13 @@ export function vectorSearchEndpointScalingInfoToTerraform(struct?: VectorSearch
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    delayed_reason: cdktn.stringToTerraform(struct!.delayedReason),
+    estimated_completion_timestamp: cdktn.numberToTerraform(struct!.estimatedCompletionTimestamp),
+    index_initialization_percentage: cdktn.numberToTerraform(struct!.indexInitializationPercentage),
+    phase: cdktn.stringToTerraform(struct!.phase),
     requested_target_qps: cdktn.numberToTerraform(struct!.requestedTargetQps),
     state: cdktn.stringToTerraform(struct!.state),
+    target_qps_change_allowed_after_timestamp: cdktn.numberToTerraform(struct!.targetQpsChangeAllowedAfterTimestamp),
   }
 }
 
@@ -243,6 +268,30 @@ export function vectorSearchEndpointScalingInfoToHclTerraform(struct?: VectorSea
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    delayed_reason: {
+      value: cdktn.stringToHclTerraform(struct!.delayedReason),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    estimated_completion_timestamp: {
+      value: cdktn.numberToHclTerraform(struct!.estimatedCompletionTimestamp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    index_initialization_percentage: {
+      value: cdktn.numberToHclTerraform(struct!.indexInitializationPercentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    phase: {
+      value: cdktn.stringToHclTerraform(struct!.phase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     requested_target_qps: {
       value: cdktn.numberToHclTerraform(struct!.requestedTargetQps),
       isBlock: false,
@@ -254,6 +303,12 @@ export function vectorSearchEndpointScalingInfoToHclTerraform(struct?: VectorSea
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    target_qps_change_allowed_after_timestamp: {
+      value: cdktn.numberToHclTerraform(struct!.targetQpsChangeAllowedAfterTimestamp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
     },
   };
 
@@ -275,6 +330,22 @@ export class VectorSearchEndpointScalingInfoOutputReference extends cdktn.Comple
   public get internalValue(): VectorSearchEndpointScalingInfo | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._delayedReason !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delayedReason = this._delayedReason;
+    }
+    if (this._estimatedCompletionTimestamp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.estimatedCompletionTimestamp = this._estimatedCompletionTimestamp;
+    }
+    if (this._indexInitializationPercentage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.indexInitializationPercentage = this._indexInitializationPercentage;
+    }
+    if (this._phase !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.phase = this._phase;
+    }
     if (this._requestedTargetQps !== undefined) {
       hasAnyValues = true;
       internalValueResult.requestedTargetQps = this._requestedTargetQps;
@@ -283,20 +354,98 @@ export class VectorSearchEndpointScalingInfoOutputReference extends cdktn.Comple
       hasAnyValues = true;
       internalValueResult.state = this._state;
     }
+    if (this._targetQpsChangeAllowedAfterTimestamp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetQpsChangeAllowedAfterTimestamp = this._targetQpsChangeAllowedAfterTimestamp;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: VectorSearchEndpointScalingInfo | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._delayedReason = undefined;
+      this._estimatedCompletionTimestamp = undefined;
+      this._indexInitializationPercentage = undefined;
+      this._phase = undefined;
       this._requestedTargetQps = undefined;
       this._state = undefined;
+      this._targetQpsChangeAllowedAfterTimestamp = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._delayedReason = value.delayedReason;
+      this._estimatedCompletionTimestamp = value.estimatedCompletionTimestamp;
+      this._indexInitializationPercentage = value.indexInitializationPercentage;
+      this._phase = value.phase;
       this._requestedTargetQps = value.requestedTargetQps;
       this._state = value.state;
+      this._targetQpsChangeAllowedAfterTimestamp = value.targetQpsChangeAllowedAfterTimestamp;
     }
+  }
+
+  // delayed_reason - computed: false, optional: true, required: false
+  private _delayedReason?: string; 
+  public get delayedReason() {
+    return this.getStringAttribute('delayed_reason');
+  }
+  public set delayedReason(value: string) {
+    this._delayedReason = value;
+  }
+  public resetDelayedReason() {
+    this._delayedReason = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get delayedReasonInput() {
+    return this._delayedReason;
+  }
+
+  // estimated_completion_timestamp - computed: false, optional: true, required: false
+  private _estimatedCompletionTimestamp?: number; 
+  public get estimatedCompletionTimestamp() {
+    return this.getNumberAttribute('estimated_completion_timestamp');
+  }
+  public set estimatedCompletionTimestamp(value: number) {
+    this._estimatedCompletionTimestamp = value;
+  }
+  public resetEstimatedCompletionTimestamp() {
+    this._estimatedCompletionTimestamp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get estimatedCompletionTimestampInput() {
+    return this._estimatedCompletionTimestamp;
+  }
+
+  // index_initialization_percentage - computed: false, optional: true, required: false
+  private _indexInitializationPercentage?: number; 
+  public get indexInitializationPercentage() {
+    return this.getNumberAttribute('index_initialization_percentage');
+  }
+  public set indexInitializationPercentage(value: number) {
+    this._indexInitializationPercentage = value;
+  }
+  public resetIndexInitializationPercentage() {
+    this._indexInitializationPercentage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get indexInitializationPercentageInput() {
+    return this._indexInitializationPercentage;
+  }
+
+  // phase - computed: false, optional: true, required: false
+  private _phase?: string; 
+  public get phase() {
+    return this.getStringAttribute('phase');
+  }
+  public set phase(value: string) {
+    this._phase = value;
+  }
+  public resetPhase() {
+    this._phase = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get phaseInput() {
+    return this._phase;
   }
 
   // requested_target_qps - computed: false, optional: true, required: false
@@ -330,10 +479,26 @@ export class VectorSearchEndpointScalingInfoOutputReference extends cdktn.Comple
   public get stateInput() {
     return this._state;
   }
+
+  // target_qps_change_allowed_after_timestamp - computed: false, optional: true, required: false
+  private _targetQpsChangeAllowedAfterTimestamp?: number; 
+  public get targetQpsChangeAllowedAfterTimestamp() {
+    return this.getNumberAttribute('target_qps_change_allowed_after_timestamp');
+  }
+  public set targetQpsChangeAllowedAfterTimestamp(value: number) {
+    this._targetQpsChangeAllowedAfterTimestamp = value;
+  }
+  public resetTargetQpsChangeAllowedAfterTimestamp() {
+    this._targetQpsChangeAllowedAfterTimestamp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetQpsChangeAllowedAfterTimestampInput() {
+    return this._targetQpsChangeAllowedAfterTimestamp;
+  }
 }
 export interface VectorSearchEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}
   */
   readonly create?: string;
 }
@@ -427,7 +592,7 @@ export class VectorSearchEndpointTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}
 */
 export class VectorSearchEndpoint extends cdktn.TerraformResource {
 
@@ -443,7 +608,7 @@ export class VectorSearchEndpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VectorSearchEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VectorSearchEndpoint to import
-  * @param importFromId The id of the existing VectorSearchEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VectorSearchEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VectorSearchEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -455,7 +620,7 @@ export class VectorSearchEndpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -466,7 +631,7 @@ export class VectorSearchEndpoint extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_vector_search_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.142.0',
+        providerVersion: '1.143.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

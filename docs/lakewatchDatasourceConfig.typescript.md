@@ -4,7 +4,7 @@
 
 ### LakewatchDatasourceConfigA <a name="LakewatchDatasourceConfigA" id="@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config databricks_lakewatch_datasource_config}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config databricks_lakewatch_datasource_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigA.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the LakewatchDatasourceConfigA
 
 The id of the existing LakewatchDatasourceConfigA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -893,10 +893,10 @@ const lakewatchDatasourceConfigAConfig: lakewatchDatasourceConfig.LakewatchDatas
 | <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigAConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigAConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigAConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigAConfig.property.parent">parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#parent LakewatchDatasourceConfigA#parent}. |
-| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigAConfig.property.defaultComputeMode">defaultComputeMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#default_compute_mode LakewatchDatasourceConfigA#default_compute_mode}. |
-| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigAConfig.property.defaultFolder">defaultFolder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#default_folder LakewatchDatasourceConfigA#default_folder}. |
-| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigAConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigProviderConfig">LakewatchDatasourceConfigProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#provider_config LakewatchDatasourceConfigA#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigAConfig.property.parent">parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#parent LakewatchDatasourceConfigA#parent}. |
+| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigAConfig.property.defaultComputeMode">defaultComputeMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#default_compute_mode LakewatchDatasourceConfigA#default_compute_mode}. |
+| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigAConfig.property.defaultFolder">defaultFolder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#default_folder LakewatchDatasourceConfigA#default_folder}. |
+| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigAConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigProviderConfig">LakewatchDatasourceConfigProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#provider_config LakewatchDatasourceConfigA#provider_config}. |
 
 ---
 
@@ -978,7 +978,7 @@ public readonly parent: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#parent LakewatchDatasourceConfigA#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#parent LakewatchDatasourceConfigA#parent}.
 
 ---
 
@@ -990,7 +990,7 @@ public readonly defaultComputeMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#default_compute_mode LakewatchDatasourceConfigA#default_compute_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#default_compute_mode LakewatchDatasourceConfigA#default_compute_mode}.
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly defaultFolder: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#default_folder LakewatchDatasourceConfigA#default_folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#default_folder LakewatchDatasourceConfigA#default_folder}.
 
 ---
 
@@ -1014,7 +1014,7 @@ public readonly providerConfig: LakewatchDatasourceConfigProviderConfig;
 
 - *Type:* <a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigProviderConfig">LakewatchDatasourceConfigProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#provider_config LakewatchDatasourceConfigA#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#provider_config LakewatchDatasourceConfigA#provider_config}.
 
 ---
 
@@ -1032,7 +1032,7 @@ const lakewatchDatasourceConfigProviderConfig: lakewatchDatasourceConfig.Lakewat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#workspace_id LakewatchDatasourceConfigA#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#workspace_id LakewatchDatasourceConfigA#workspace_id}. |
 
 ---
 
@@ -1044,7 +1044,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#workspace_id LakewatchDatasourceConfigA#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#workspace_id LakewatchDatasourceConfigA#workspace_id}.
 
 ---
 
@@ -1062,10 +1062,10 @@ const lakewatchDatasourceConfigUpdatedBy: lakewatchDatasourceConfig.LakewatchDat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigUpdatedBy.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#display_name LakewatchDatasourceConfigA#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigUpdatedBy.property.email">email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#email LakewatchDatasourceConfigA#email}. |
-| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigUpdatedBy.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#id LakewatchDatasourceConfigA#id}. |
-| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigUpdatedBy.property.principalType">principalType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#principal_type LakewatchDatasourceConfigA#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigUpdatedBy.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#display_name LakewatchDatasourceConfigA#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigUpdatedBy.property.email">email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#email LakewatchDatasourceConfigA#email}. |
+| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigUpdatedBy.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#id LakewatchDatasourceConfigA#id}. |
+| <code><a href="#@cdktn/provider-databricks.lakewatchDatasourceConfig.LakewatchDatasourceConfigUpdatedBy.property.principalType">principalType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#principal_type LakewatchDatasourceConfigA#principal_type}. |
 
 ---
 
@@ -1077,7 +1077,7 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#display_name LakewatchDatasourceConfigA#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#display_name LakewatchDatasourceConfigA#display_name}.
 
 ---
 
@@ -1089,7 +1089,7 @@ public readonly email: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#email LakewatchDatasourceConfigA#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#email LakewatchDatasourceConfigA#email}.
 
 ---
 
@@ -1101,7 +1101,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#id LakewatchDatasourceConfigA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#id LakewatchDatasourceConfigA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1116,7 +1116,7 @@ public readonly principalType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_datasource_config#principal_type LakewatchDatasourceConfigA#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_datasource_config#principal_type LakewatchDatasourceConfigA#principal_type}.
 
 ---
 

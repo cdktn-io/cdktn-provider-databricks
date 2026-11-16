@@ -4,7 +4,7 @@
 
 ### GitCredential <a name="GitCredential" id="@cdktn/provider-databricks.gitCredential.GitCredential"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential databricks_git_credential}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential databricks_git_credential}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.gitCredential.GitCredential.Initializer"></a>
 
@@ -82,6 +82,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.resetIsDefaultForProvider">ResetIsDefaultForProvider</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.resetPersonalAccessToken">ResetPersonalAccessToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.resetPersonalAccessTokenWo">ResetPersonalAccessTokenWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.resetPersonalAccessTokenWoVersion">ResetPersonalAccessTokenWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.resetPrincipalId">ResetPrincipalId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.resetProviderConfig">ResetProviderConfig</a></code> | *No description.* |
 
@@ -450,6 +452,18 @@ private void ResetName()
 private void ResetPersonalAccessToken()
 ```
 
+##### `ResetPersonalAccessTokenWo` <a name="ResetPersonalAccessTokenWo" id="@cdktn/provider-databricks.gitCredential.GitCredential.resetPersonalAccessTokenWo"></a>
+
+```csharp
+private void ResetPersonalAccessTokenWo()
+```
+
+##### `ResetPersonalAccessTokenWoVersion` <a name="ResetPersonalAccessTokenWoVersion" id="@cdktn/provider-databricks.gitCredential.GitCredential.resetPersonalAccessTokenWoVersion"></a>
+
+```csharp
+private void ResetPersonalAccessTokenWoVersion()
+```
+
 ##### `ResetPrincipalId` <a name="ResetPrincipalId" id="@cdktn/provider-databricks.gitCredential.GitCredential.resetPrincipalId"></a>
 
 ```csharp
@@ -565,7 +579,7 @@ The construct id used in the generated config for the GitCredential to import.
 
 The id of the existing GitCredential that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -604,6 +618,8 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.property.isDefaultForProviderInput">IsDefaultForProviderInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.property.personalAccessTokenInput">PersonalAccessTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.property.personalAccessTokenWoInput">PersonalAccessTokenWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.property.personalAccessTokenWoVersionInput">PersonalAccessTokenWoVersionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.property.principalIdInput">PrincipalIdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.property.providerConfigInput">ProviderConfigInput</a></code> | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialProviderConfig">GitCredentialProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.property.force">Force</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
@@ -614,6 +630,8 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.property.isDefaultForProvider">IsDefaultForProvider</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.property.personalAccessToken">PersonalAccessToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.property.personalAccessTokenWo">PersonalAccessTokenWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.property.personalAccessTokenWoVersion">PersonalAccessTokenWoVersion</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredential.property.principalId">PrincipalId</a></code> | <code>double</code> | *No description.* |
 
 ---
@@ -850,6 +868,26 @@ public string PersonalAccessTokenInput { get; }
 
 ---
 
+##### `PersonalAccessTokenWoInput`<sup>Optional</sup> <a name="PersonalAccessTokenWoInput" id="@cdktn/provider-databricks.gitCredential.GitCredential.property.personalAccessTokenWoInput"></a>
+
+```csharp
+public string PersonalAccessTokenWoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PersonalAccessTokenWoVersionInput`<sup>Optional</sup> <a name="PersonalAccessTokenWoVersionInput" id="@cdktn/provider-databricks.gitCredential.GitCredential.property.personalAccessTokenWoVersionInput"></a>
+
+```csharp
+public double PersonalAccessTokenWoVersionInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `PrincipalIdInput`<sup>Optional</sup> <a name="PrincipalIdInput" id="@cdktn/provider-databricks.gitCredential.GitCredential.property.principalIdInput"></a>
 
 ```csharp
@@ -950,6 +988,28 @@ public string PersonalAccessToken { get; }
 
 ---
 
+##### ~~`PersonalAccessTokenWo`~~<sup>Required</sup> <a name="PersonalAccessTokenWo" id="@cdktn/provider-databricks.gitCredential.GitCredential.property.personalAccessTokenWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```csharp
+public string PersonalAccessTokenWo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PersonalAccessTokenWoVersion`<sup>Required</sup> <a name="PersonalAccessTokenWoVersion" id="@cdktn/provider-databricks.gitCredential.GitCredential.property.personalAccessTokenWoVersion"></a>
+
+```csharp
+public double PersonalAccessTokenWoVersion { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `PrincipalId`<sup>Required</sup> <a name="PrincipalId" id="@cdktn/provider-databricks.gitCredential.GitCredential.property.principalId"></a>
 
 ```csharp
@@ -1003,6 +1063,8 @@ new GitCredentialConfig {
     bool|IResolvable IsDefaultForProvider = null,
     string Name = null,
     string PersonalAccessToken = null,
+    string PersonalAccessTokenWo = null,
+    double PersonalAccessTokenWoVersion = null,
     double PrincipalId = null,
     GitCredentialProviderConfig ProviderConfig = null
 };
@@ -1019,15 +1081,17 @@ new GitCredentialConfig {
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.gitProvider">GitProvider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#git_provider GitCredential#git_provider}. |
-| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.force">Force</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#force GitCredential#force}. |
-| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.gitEmail">GitEmail</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#git_email GitCredential#git_email}. |
-| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.gitUsername">GitUsername</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#git_username GitCredential#git_username}. |
-| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#id GitCredential#id}. |
-| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.isDefaultForProvider">IsDefaultForProvider</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#is_default_for_provider GitCredential#is_default_for_provider}. |
-| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#name GitCredential#name}. |
-| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.personalAccessToken">PersonalAccessToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#personal_access_token GitCredential#personal_access_token}. |
-| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.principalId">PrincipalId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#principal_id GitCredential#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.gitProvider">GitProvider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#git_provider GitCredential#git_provider}. |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.force">Force</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#force GitCredential#force}. |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.gitEmail">GitEmail</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#git_email GitCredential#git_email}. |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.gitUsername">GitUsername</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#git_username GitCredential#git_username}. |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#id GitCredential#id}. |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.isDefaultForProvider">IsDefaultForProvider</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#is_default_for_provider GitCredential#is_default_for_provider}. |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#name GitCredential#name}. |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.personalAccessToken">PersonalAccessToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#personal_access_token GitCredential#personal_access_token}. |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.personalAccessTokenWo">PersonalAccessTokenWo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#personal_access_token_wo GitCredential#personal_access_token_wo}. |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.personalAccessTokenWoVersion">PersonalAccessTokenWoVersion</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#personal_access_token_wo_version GitCredential#personal_access_token_wo_version}. |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.principalId">PrincipalId</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#principal_id GitCredential#principal_id}. |
 | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialProviderConfig">GitCredentialProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -1110,7 +1174,7 @@ public string GitProvider { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#git_provider GitCredential#git_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#git_provider GitCredential#git_provider}.
 
 ---
 
@@ -1122,7 +1186,7 @@ public bool|IResolvable Force { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#force GitCredential#force}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#force GitCredential#force}.
 
 ---
 
@@ -1134,7 +1198,7 @@ public string GitEmail { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#git_email GitCredential#git_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#git_email GitCredential#git_email}.
 
 ---
 
@@ -1146,7 +1210,7 @@ public string GitUsername { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#git_username GitCredential#git_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#git_username GitCredential#git_username}.
 
 ---
 
@@ -1158,7 +1222,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#id GitCredential#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#id GitCredential#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1173,7 +1237,7 @@ public bool|IResolvable IsDefaultForProvider { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#is_default_for_provider GitCredential#is_default_for_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#is_default_for_provider GitCredential#is_default_for_provider}.
 
 ---
 
@@ -1185,7 +1249,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#name GitCredential#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#name GitCredential#name}.
 
 ---
 
@@ -1197,7 +1261,31 @@ public string PersonalAccessToken { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#personal_access_token GitCredential#personal_access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#personal_access_token GitCredential#personal_access_token}.
+
+---
+
+##### `PersonalAccessTokenWo`<sup>Optional</sup> <a name="PersonalAccessTokenWo" id="@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.personalAccessTokenWo"></a>
+
+```csharp
+public string PersonalAccessTokenWo { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#personal_access_token_wo GitCredential#personal_access_token_wo}.
+
+---
+
+##### `PersonalAccessTokenWoVersion`<sup>Optional</sup> <a name="PersonalAccessTokenWoVersion" id="@cdktn/provider-databricks.gitCredential.GitCredentialConfig.property.personalAccessTokenWoVersion"></a>
+
+```csharp
+public double PersonalAccessTokenWoVersion { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#personal_access_token_wo_version GitCredential#personal_access_token_wo_version}.
 
 ---
 
@@ -1209,7 +1297,7 @@ public double PrincipalId { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#principal_id GitCredential#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#principal_id GitCredential#principal_id}.
 
 ---
 
@@ -1223,7 +1311,7 @@ public GitCredentialProviderConfig ProviderConfig { get; set; }
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#provider_config GitCredential#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#provider_config GitCredential#provider_config}
 
 ---
 
@@ -1243,7 +1331,7 @@ new GitCredentialProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#workspace_id GitCredential#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.gitCredential.GitCredentialProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#workspace_id GitCredential#workspace_id}. |
 
 ---
 
@@ -1255,7 +1343,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/git_credential#workspace_id GitCredential#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/git_credential#workspace_id GitCredential#workspace_id}.
 
 ---
 

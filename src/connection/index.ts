@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection
+// https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +13,66 @@ import * as cdktn from 'cdktn';
 
 export interface ConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#comment Connection#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#comment Connection#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#connection_type Connection#connection_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#connection_type Connection#connection_type}
   */
   readonly connectionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#id Connection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#id Connection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#name Connection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#name Connection#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#options Connection#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#options Connection#options}
   */
   readonly options?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#owner Connection#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#options_wo Connection#options_wo}
+  */
+  readonly optionsWo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#options_wo_version Connection#options_wo_version}
+  */
+  readonly optionsWoVersion?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#owner Connection#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#parent Connection#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#parent Connection#parent}
   */
   readonly parent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#properties Connection#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#properties Connection#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#read_only Connection#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#read_only Connection#read_only}
   */
   readonly readOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#secrets Connection#secrets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#secrets Connection#secrets}
   */
   readonly secrets?: { [key: string]: string };
   /**
   * environment_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#environment_settings Connection#environment_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#environment_settings Connection#environment_settings}
   */
   readonly environmentSettings?: ConnectionEnvironmentSettings;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#provider_config Connection#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#provider_config Connection#provider_config}
   */
   readonly providerConfig?: ConnectionProviderConfig;
 }
@@ -145,11 +153,11 @@ export class ConnectionProvisioningInfoList extends cdktn.ComplexList {
 }
 export interface ConnectionEnvironmentSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#environment_version Connection#environment_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#environment_version Connection#environment_version}
   */
   readonly environmentVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#java_dependencies Connection#java_dependencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#java_dependencies Connection#java_dependencies}
   */
   readonly javaDependencies?: string[];
 }
@@ -262,7 +270,7 @@ export class ConnectionEnvironmentSettingsOutputReference extends cdktn.ComplexO
 }
 export interface ConnectionProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#workspace_id Connection#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#workspace_id Connection#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -346,7 +354,7 @@ export class ConnectionProviderConfigOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection databricks_connection}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection databricks_connection}
 */
 export class Connection extends cdktn.TerraformResource {
 
@@ -362,7 +370,7 @@ export class Connection extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Connection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Connection to import
-  * @param importFromId The id of the existing Connection that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Connection that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Connection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -374,7 +382,7 @@ export class Connection extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/connection databricks_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/connection databricks_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -385,7 +393,7 @@ export class Connection extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_connection',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.142.0',
+        providerVersion: '1.143.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -401,6 +409,8 @@ export class Connection extends cdktn.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._options = config.options;
+    this._optionsWo = config.optionsWo;
+    this._optionsWoVersion = config.optionsWoVersion;
     this._owner = config.owner;
     this._parent = config.parent;
     this._properties = config.properties;
@@ -522,6 +532,41 @@ export class Connection extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get optionsInput() {
     return this._options;
+  }
+
+  // options_wo - computed: false, optional: true, required: false
+  private _optionsWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
+  public get optionsWo() {
+    return this.getStringAttribute('options_wo');
+  }
+  public set optionsWo(value: string) {
+    this._optionsWo = value;
+  }
+  public resetOptionsWo() {
+    this._optionsWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optionsWoInput() {
+    return this._optionsWo;
+  }
+
+  // options_wo_version - computed: false, optional: true, required: false
+  private _optionsWoVersion?: number; 
+  public get optionsWoVersion() {
+    return this.getNumberAttribute('options_wo_version');
+  }
+  public set optionsWoVersion(value: number) {
+    this._optionsWoVersion = value;
+  }
+  public resetOptionsWoVersion() {
+    this._optionsWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optionsWoVersionInput() {
+    return this._optionsWoVersion;
   }
 
   // owner - computed: true, optional: true, required: false
@@ -673,6 +718,8 @@ export class Connection extends cdktn.TerraformResource {
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
       options: cdktn.hashMapper(cdktn.stringToTerraform)(this._options),
+      options_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._optionsWo)),
+      options_wo_version: cdktn.numberToTerraform(this._optionsWoVersion),
       owner: cdktn.stringToTerraform(this._owner),
       parent: cdktn.stringToTerraform(this._parent),
       properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._properties),
@@ -714,6 +761,18 @@ export class Connection extends cdktn.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      options_wo: {
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._optionsWo)),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      options_wo_version: {
+        value: cdktn.numberToHclTerraform(this._optionsWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       owner: {
         value: cdktn.stringToHclTerraform(this._owner),

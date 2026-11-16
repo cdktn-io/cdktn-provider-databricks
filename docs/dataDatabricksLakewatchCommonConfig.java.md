@@ -4,7 +4,7 @@
 
 ### DataDatabricksLakewatchCommonConfig <a name="DataDatabricksLakewatchCommonConfig" id="@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config databricks_lakewatch_common_config}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config databricks_lakewatch_common_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.Initializer"></a>
 
@@ -35,8 +35,8 @@ DataDatabricksLakewatchCommonConfig.Builder.create(Construct scope, java.lang.St
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#name DataDatabricksLakewatchCommonConfig#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigProviderConfig">DataDatabricksLakewatchCommonConfigProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#provider_config DataDatabricksLakewatchCommonConfig#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#name DataDatabricksLakewatchCommonConfig#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigProviderConfig">DataDatabricksLakewatchCommonConfigProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#provider_config DataDatabricksLakewatchCommonConfig#provider_config}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#name DataDatabricksLakewatchCommonConfig#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#name DataDatabricksLakewatchCommonConfig#name}.
 
 ---
 
@@ -112,7 +112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigProviderConfig">DataDatabricksLakewatchCommonConfigProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#provider_config DataDatabricksLakewatchCommonConfig#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#provider_config DataDatabricksLakewatchCommonConfig#provider_config}.
 
 ---
 
@@ -477,7 +477,7 @@ The construct id used in the generated config for the DataDatabricksLakewatchCom
 
 The id of the existing DataDatabricksLakewatchCommonConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -505,8 +505,6 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.property.forEach">forEach</a></code> | <code>io.cdktn.cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.property.customContentPackPath">customContentPackPath</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.property.customPresetsPath">customPresetsPath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.property.etag">etag</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.property.perResourcePermissionsEnabled">perResourcePermissionsEnabled</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigProviderConfigOutputReference">DataDatabricksLakewatchCommonConfigProviderConfigOutputReference</a></code> | *No description.* |
@@ -638,26 +636,6 @@ public TerraformProvider getProvider();
 ```
 
 - *Type:* io.cdktn.cdktn.TerraformProvider
-
----
-
-##### `customContentPackPath`<sup>Required</sup> <a name="customContentPackPath" id="@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.property.customContentPackPath"></a>
-
-```java
-public java.lang.String getCustomContentPackPath();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `customPresetsPath`<sup>Required</sup> <a name="customPresetsPath" id="@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfig.property.customPresetsPath"></a>
-
-```java
-public java.lang.String getCustomPresetsPath();
-```
-
-- *Type:* java.lang.String
 
 ---
 
@@ -802,8 +780,8 @@ DataDatabricksLakewatchCommonConfigConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#name DataDatabricksLakewatchCommonConfig#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigProviderConfig">DataDatabricksLakewatchCommonConfigProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#provider_config DataDatabricksLakewatchCommonConfig#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#name DataDatabricksLakewatchCommonConfig#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigProviderConfig">DataDatabricksLakewatchCommonConfigProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#provider_config DataDatabricksLakewatchCommonConfig#provider_config}. |
 
 ---
 
@@ -885,7 +863,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#name DataDatabricksLakewatchCommonConfig#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#name DataDatabricksLakewatchCommonConfig#name}.
 
 ---
 
@@ -897,7 +875,7 @@ public DataDatabricksLakewatchCommonConfigProviderConfig getProviderConfig();
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigProviderConfig">DataDatabricksLakewatchCommonConfigProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#provider_config DataDatabricksLakewatchCommonConfig#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#provider_config DataDatabricksLakewatchCommonConfig#provider_config}.
 
 ---
 
@@ -917,7 +895,7 @@ DataDatabricksLakewatchCommonConfigProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#workspace_id DataDatabricksLakewatchCommonConfig#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#workspace_id DataDatabricksLakewatchCommonConfig#workspace_id}. |
 
 ---
 
@@ -929,7 +907,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#workspace_id DataDatabricksLakewatchCommonConfig#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#workspace_id DataDatabricksLakewatchCommonConfig#workspace_id}.
 
 ---
 
@@ -952,10 +930,10 @@ DataDatabricksLakewatchCommonConfigUpdatedBy.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigUpdatedBy.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#display_name DataDatabricksLakewatchCommonConfig#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigUpdatedBy.property.email">email</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#email DataDatabricksLakewatchCommonConfig#email}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigUpdatedBy.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#id DataDatabricksLakewatchCommonConfig#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigUpdatedBy.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#principal_type DataDatabricksLakewatchCommonConfig#principal_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigUpdatedBy.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#display_name DataDatabricksLakewatchCommonConfig#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigUpdatedBy.property.email">email</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#email DataDatabricksLakewatchCommonConfig#email}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigUpdatedBy.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#id DataDatabricksLakewatchCommonConfig#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksLakewatchCommonConfig.DataDatabricksLakewatchCommonConfigUpdatedBy.property.principalType">principalType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#principal_type DataDatabricksLakewatchCommonConfig#principal_type}. |
 
 ---
 
@@ -967,7 +945,7 @@ public java.lang.String getDisplayName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#display_name DataDatabricksLakewatchCommonConfig#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#display_name DataDatabricksLakewatchCommonConfig#display_name}.
 
 ---
 
@@ -979,7 +957,7 @@ public java.lang.String getEmail();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#email DataDatabricksLakewatchCommonConfig#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#email DataDatabricksLakewatchCommonConfig#email}.
 
 ---
 
@@ -991,7 +969,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#id DataDatabricksLakewatchCommonConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#id DataDatabricksLakewatchCommonConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1006,7 +984,7 @@ public java.lang.String getPrincipalType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/data-sources/lakewatch_common_config#principal_type DataDatabricksLakewatchCommonConfig#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config#principal_type DataDatabricksLakewatchCommonConfig#principal_type}.
 
 ---
 
