@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project
+// https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,33 @@ import * as cdktn from 'cdktn';
 
 export interface PostgresProjectConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#initial_branch_spec PostgresProject#initial_branch_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#initial_branch_spec PostgresProject#initial_branch_spec}
   */
   readonly initialBranchSpec?: PostgresProjectInitialBranchSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#initial_endpoint_spec PostgresProject#initial_endpoint_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#initial_endpoint_spec PostgresProject#initial_endpoint_spec}
   */
   readonly initialEndpointSpec?: PostgresProjectInitialEndpointSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#project_id PostgresProject#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#project_id PostgresProject#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#provider_config PostgresProject#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#provider_config PostgresProject#provider_config}
   */
   readonly providerConfig?: PostgresProjectProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#purge_on_delete PostgresProject#purge_on_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#purge_on_delete PostgresProject#purge_on_delete}
   */
   readonly purgeOnDelete?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#spec PostgresProject#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#spec PostgresProject#spec}
   */
   readonly spec?: PostgresProjectSpec;
 }
 export interface PostgresProjectInitialBranchSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#is_protected PostgresProject#is_protected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#is_protected PostgresProject#is_protected}
   */
   readonly isProtected?: boolean | cdktn.IResolvable;
 }
@@ -133,15 +133,15 @@ export class PostgresProjectInitialBranchSpecOutputReference extends cdktn.Compl
 }
 export interface PostgresProjectInitialEndpointSpecGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#enable_readable_secondaries PostgresProject#enable_readable_secondaries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#enable_readable_secondaries PostgresProject#enable_readable_secondaries}
   */
   readonly enableReadableSecondaries?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#max PostgresProject#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#max PostgresProject#max}
   */
   readonly max: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#min PostgresProject#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#min PostgresProject#min}
   */
   readonly min: number;
 }
@@ -287,23 +287,23 @@ export class PostgresProjectInitialEndpointSpecGroupOutputReference extends cdkt
 }
 export interface PostgresProjectInitialEndpointSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#autoscaling_limit_max_cu PostgresProject#autoscaling_limit_max_cu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#autoscaling_limit_max_cu PostgresProject#autoscaling_limit_max_cu}
   */
   readonly autoscalingLimitMaxCu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#autoscaling_limit_min_cu PostgresProject#autoscaling_limit_min_cu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#autoscaling_limit_min_cu PostgresProject#autoscaling_limit_min_cu}
   */
   readonly autoscalingLimitMinCu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#group PostgresProject#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#group PostgresProject#group}
   */
   readonly group?: PostgresProjectInitialEndpointSpecGroup;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#no_suspension PostgresProject#no_suspension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#no_suspension PostgresProject#no_suspension}
   */
   readonly noSuspension?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#suspend_timeout_duration PostgresProject#suspend_timeout_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#suspend_timeout_duration PostgresProject#suspend_timeout_duration}
   */
   readonly suspendTimeoutDuration?: string;
 }
@@ -513,7 +513,7 @@ export class PostgresProjectInitialEndpointSpecOutputReference extends cdktn.Com
 }
 export interface PostgresProjectProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#workspace_id PostgresProject#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#workspace_id PostgresProject#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -607,11 +607,11 @@ export class PostgresProjectProviderConfigOutputReference extends cdktn.ComplexO
 }
 export interface PostgresProjectSpecCustomTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#key PostgresProject#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#key PostgresProject#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#value PostgresProject#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#value PostgresProject#value}
   */
   readonly value?: string;
 }
@@ -702,7 +702,7 @@ export class PostgresProjectSpecCustomTagsOutputReference extends cdktn.ComplexO
     }
   }
 
-  // key - computed: true, optional: true, required: false
+  // key - computed: false, optional: true, required: false
   private _key?: string; 
   public get key() {
     return this.getStringAttribute('key');
@@ -718,7 +718,7 @@ export class PostgresProjectSpecCustomTagsOutputReference extends cdktn.ComplexO
     return this._key;
   }
 
-  // value - computed: true, optional: true, required: false
+  // value - computed: false, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
@@ -756,23 +756,23 @@ export class PostgresProjectSpecCustomTagsList extends cdktn.ComplexList {
 }
 export interface PostgresProjectSpecDefaultEndpointSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#autoscaling_limit_max_cu PostgresProject#autoscaling_limit_max_cu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#autoscaling_limit_max_cu PostgresProject#autoscaling_limit_max_cu}
   */
   readonly autoscalingLimitMaxCu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#autoscaling_limit_min_cu PostgresProject#autoscaling_limit_min_cu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#autoscaling_limit_min_cu PostgresProject#autoscaling_limit_min_cu}
   */
   readonly autoscalingLimitMinCu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#no_suspension PostgresProject#no_suspension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#no_suspension PostgresProject#no_suspension}
   */
   readonly noSuspension?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#pg_settings PostgresProject#pg_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#pg_settings PostgresProject#pg_settings}
   */
   readonly pgSettings?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#suspend_timeout_duration PostgresProject#suspend_timeout_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#suspend_timeout_duration PostgresProject#suspend_timeout_duration}
   */
   readonly suspendTimeoutDuration?: string;
 }
@@ -900,7 +900,7 @@ export class PostgresProjectSpecDefaultEndpointSettingsOutputReference extends c
     }
   }
 
-  // autoscaling_limit_max_cu - computed: true, optional: true, required: false
+  // autoscaling_limit_max_cu - computed: false, optional: true, required: false
   private _autoscalingLimitMaxCu?: number; 
   public get autoscalingLimitMaxCu() {
     return this.getNumberAttribute('autoscaling_limit_max_cu');
@@ -916,7 +916,7 @@ export class PostgresProjectSpecDefaultEndpointSettingsOutputReference extends c
     return this._autoscalingLimitMaxCu;
   }
 
-  // autoscaling_limit_min_cu - computed: true, optional: true, required: false
+  // autoscaling_limit_min_cu - computed: false, optional: true, required: false
   private _autoscalingLimitMinCu?: number; 
   public get autoscalingLimitMinCu() {
     return this.getNumberAttribute('autoscaling_limit_min_cu');
@@ -932,7 +932,7 @@ export class PostgresProjectSpecDefaultEndpointSettingsOutputReference extends c
     return this._autoscalingLimitMinCu;
   }
 
-  // no_suspension - computed: true, optional: true, required: false
+  // no_suspension - computed: false, optional: true, required: false
   private _noSuspension?: boolean | cdktn.IResolvable; 
   public get noSuspension() {
     return this.getBooleanAttribute('no_suspension');
@@ -948,7 +948,7 @@ export class PostgresProjectSpecDefaultEndpointSettingsOutputReference extends c
     return this._noSuspension;
   }
 
-  // pg_settings - computed: true, optional: true, required: false
+  // pg_settings - computed: false, optional: true, required: false
   private _pgSettings?: { [key: string]: string }; 
   public get pgSettings() {
     return this.getStringMapAttribute('pg_settings');
@@ -964,7 +964,7 @@ export class PostgresProjectSpecDefaultEndpointSettingsOutputReference extends c
     return this._pgSettings;
   }
 
-  // suspend_timeout_duration - computed: true, optional: true, required: false
+  // suspend_timeout_duration - computed: false, optional: true, required: false
   private _suspendTimeoutDuration?: string; 
   public get suspendTimeoutDuration() {
     return this.getStringAttribute('suspend_timeout_duration');
@@ -982,35 +982,35 @@ export class PostgresProjectSpecDefaultEndpointSettingsOutputReference extends c
 }
 export interface PostgresProjectSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#budget_policy_id PostgresProject#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#budget_policy_id PostgresProject#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#custom_tags PostgresProject#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#custom_tags PostgresProject#custom_tags}
   */
   readonly customTags?: PostgresProjectSpecCustomTags[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#default_branch PostgresProject#default_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#default_branch PostgresProject#default_branch}
   */
   readonly defaultBranch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#default_endpoint_settings PostgresProject#default_endpoint_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#default_endpoint_settings PostgresProject#default_endpoint_settings}
   */
   readonly defaultEndpointSettings?: PostgresProjectSpecDefaultEndpointSettings;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#display_name PostgresProject#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#display_name PostgresProject#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#enable_pg_native_login PostgresProject#enable_pg_native_login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#enable_pg_native_login PostgresProject#enable_pg_native_login}
   */
   readonly enablePgNativeLogin?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#history_retention_duration PostgresProject#history_retention_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#history_retention_duration PostgresProject#history_retention_duration}
   */
   readonly historyRetentionDuration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#pg_version PostgresProject#pg_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#pg_version PostgresProject#pg_version}
   */
   readonly pgVersion?: number;
 }
@@ -1177,7 +1177,7 @@ export class PostgresProjectSpecOutputReference extends cdktn.ComplexObject {
     }
   }
 
-  // budget_policy_id - computed: true, optional: true, required: false
+  // budget_policy_id - computed: false, optional: true, required: false
   private _budgetPolicyId?: string; 
   public get budgetPolicyId() {
     return this.getStringAttribute('budget_policy_id');
@@ -1193,7 +1193,7 @@ export class PostgresProjectSpecOutputReference extends cdktn.ComplexObject {
     return this._budgetPolicyId;
   }
 
-  // custom_tags - computed: true, optional: true, required: false
+  // custom_tags - computed: false, optional: true, required: false
   private _customTags = new PostgresProjectSpecCustomTagsList(this, "custom_tags", false);
   public get customTags() {
     return this._customTags;
@@ -1209,7 +1209,7 @@ export class PostgresProjectSpecOutputReference extends cdktn.ComplexObject {
     return this._customTags.internalValue;
   }
 
-  // default_branch - computed: true, optional: true, required: false
+  // default_branch - computed: false, optional: true, required: false
   private _defaultBranch?: string; 
   public get defaultBranch() {
     return this.getStringAttribute('default_branch');
@@ -1225,7 +1225,7 @@ export class PostgresProjectSpecOutputReference extends cdktn.ComplexObject {
     return this._defaultBranch;
   }
 
-  // default_endpoint_settings - computed: true, optional: true, required: false
+  // default_endpoint_settings - computed: false, optional: true, required: false
   private _defaultEndpointSettings = new PostgresProjectSpecDefaultEndpointSettingsOutputReference(this, "default_endpoint_settings");
   public get defaultEndpointSettings() {
     return this._defaultEndpointSettings;
@@ -1241,7 +1241,7 @@ export class PostgresProjectSpecOutputReference extends cdktn.ComplexObject {
     return this._defaultEndpointSettings.internalValue;
   }
 
-  // display_name - computed: true, optional: true, required: false
+  // display_name - computed: false, optional: true, required: false
   private _displayName?: string; 
   public get displayName() {
     return this.getStringAttribute('display_name');
@@ -1257,7 +1257,7 @@ export class PostgresProjectSpecOutputReference extends cdktn.ComplexObject {
     return this._displayName;
   }
 
-  // enable_pg_native_login - computed: true, optional: true, required: false
+  // enable_pg_native_login - computed: false, optional: true, required: false
   private _enablePgNativeLogin?: boolean | cdktn.IResolvable; 
   public get enablePgNativeLogin() {
     return this.getBooleanAttribute('enable_pg_native_login');
@@ -1273,7 +1273,7 @@ export class PostgresProjectSpecOutputReference extends cdktn.ComplexObject {
     return this._enablePgNativeLogin;
   }
 
-  // history_retention_duration - computed: true, optional: true, required: false
+  // history_retention_duration - computed: false, optional: true, required: false
   private _historyRetentionDuration?: string; 
   public get historyRetentionDuration() {
     return this.getStringAttribute('history_retention_duration');
@@ -1307,11 +1307,11 @@ export class PostgresProjectSpecOutputReference extends cdktn.ComplexObject {
 }
 export interface PostgresProjectStatusCustomTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#key PostgresProject#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#key PostgresProject#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#value PostgresProject#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#value PostgresProject#value}
   */
   readonly value?: string;
 }
@@ -1446,23 +1446,23 @@ export class PostgresProjectStatusCustomTagsList extends cdktn.ComplexList {
 }
 export interface PostgresProjectStatusDefaultEndpointSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#autoscaling_limit_max_cu PostgresProject#autoscaling_limit_max_cu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#autoscaling_limit_max_cu PostgresProject#autoscaling_limit_max_cu}
   */
   readonly autoscalingLimitMaxCu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#autoscaling_limit_min_cu PostgresProject#autoscaling_limit_min_cu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#autoscaling_limit_min_cu PostgresProject#autoscaling_limit_min_cu}
   */
   readonly autoscalingLimitMinCu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#no_suspension PostgresProject#no_suspension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#no_suspension PostgresProject#no_suspension}
   */
   readonly noSuspension?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#pg_settings PostgresProject#pg_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#pg_settings PostgresProject#pg_settings}
   */
   readonly pgSettings?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#suspend_timeout_duration PostgresProject#suspend_timeout_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#suspend_timeout_duration PostgresProject#suspend_timeout_duration}
   */
   readonly suspendTimeoutDuration?: string;
 }
@@ -1778,7 +1778,7 @@ export class PostgresProjectStatusOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project databricks_postgres_project}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project databricks_postgres_project}
 */
 export class PostgresProject extends cdktn.TerraformResource {
 
@@ -1794,7 +1794,7 @@ export class PostgresProject extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PostgresProject resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PostgresProject to import
-  * @param importFromId The id of the existing PostgresProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PostgresProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PostgresProject to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1806,7 +1806,7 @@ export class PostgresProject extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_project databricks_postgres_project} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_project databricks_postgres_project} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1817,7 +1817,7 @@ export class PostgresProject extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_postgres_project',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.142.0',
+        providerVersion: '1.143.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1937,7 +1937,7 @@ export class PostgresProject extends cdktn.TerraformResource {
     return this.getStringAttribute('purge_time');
   }
 
-  // spec - computed: true, optional: true, required: false
+  // spec - computed: false, optional: true, required: false
   private _spec = new PostgresProjectSpecOutputReference(this, "spec");
   public get spec() {
     return this._spec;

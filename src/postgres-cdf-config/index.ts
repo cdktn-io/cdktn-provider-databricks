@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_cdf_config
+// https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +13,37 @@ import * as cdktn from 'cdktn';
 
 export interface PostgresCdfConfigConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_cdf_config#catalog PostgresCdfConfig#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config#catalog PostgresCdfConfig#catalog}
   */
   readonly catalog: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_cdf_config#cdf_config_id PostgresCdfConfig#cdf_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config#cdf_config_id PostgresCdfConfig#cdf_config_id}
   */
   readonly cdfConfigId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_cdf_config#parent PostgresCdfConfig#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config#parent PostgresCdfConfig#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_cdf_config#postgres_schema PostgresCdfConfig#postgres_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config#postgres_schema PostgresCdfConfig#postgres_schema}
   */
   readonly postgresSchema: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_cdf_config#provider_config PostgresCdfConfig#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config#provider_config PostgresCdfConfig#provider_config}
   */
   readonly providerConfig?: PostgresCdfConfigProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_cdf_config#schema PostgresCdfConfig#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config#schema PostgresCdfConfig#schema}
   */
   readonly schema: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config#service_principal PostgresCdfConfig#service_principal}
+  */
+  readonly servicePrincipal?: string;
 }
 export interface PostgresCdfConfigProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_cdf_config#workspace_id PostgresCdfConfig#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config#workspace_id PostgresCdfConfig#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -133,7 +137,7 @@ export class PostgresCdfConfigProviderConfigOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config}
 */
 export class PostgresCdfConfig extends cdktn.TerraformResource {
 
@@ -149,7 +153,7 @@ export class PostgresCdfConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PostgresCdfConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PostgresCdfConfig to import
-  * @param importFromId The id of the existing PostgresCdfConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_cdf_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PostgresCdfConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PostgresCdfConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -161,7 +165,7 @@ export class PostgresCdfConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/postgres_cdf_config databricks_postgres_cdf_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -172,7 +176,7 @@ export class PostgresCdfConfig extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_postgres_cdf_config',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.142.0',
+        providerVersion: '1.143.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -189,6 +193,7 @@ export class PostgresCdfConfig extends cdktn.TerraformResource {
     this._postgresSchema = config.postgresSchema;
     this._providerConfig.internalValue = config.providerConfig;
     this._schema = config.schema;
+    this._servicePrincipal = config.servicePrincipal;
   }
 
   // ==========
@@ -289,6 +294,22 @@ export class PostgresCdfConfig extends cdktn.TerraformResource {
     return this._schema;
   }
 
+  // service_principal - computed: false, optional: true, required: false
+  private _servicePrincipal?: string; 
+  public get servicePrincipal() {
+    return this.getStringAttribute('service_principal');
+  }
+  public set servicePrincipal(value: string) {
+    this._servicePrincipal = value;
+  }
+  public resetServicePrincipal() {
+    this._servicePrincipal = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get servicePrincipalInput() {
+    return this._servicePrincipal;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -301,6 +322,7 @@ export class PostgresCdfConfig extends cdktn.TerraformResource {
       postgres_schema: cdktn.stringToTerraform(this._postgresSchema),
       provider_config: postgresCdfConfigProviderConfigToTerraform(this._providerConfig.internalValue),
       schema: cdktn.stringToTerraform(this._schema),
+      service_principal: cdktn.stringToTerraform(this._servicePrincipal),
     };
   }
 
@@ -338,6 +360,12 @@ export class PostgresCdfConfig extends cdktn.TerraformResource {
       },
       schema: {
         value: cdktn.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_principal: {
+        value: cdktn.stringToHclTerraform(this._servicePrincipal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

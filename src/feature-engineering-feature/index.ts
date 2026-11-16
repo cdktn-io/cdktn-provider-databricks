@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature
+// https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,53 +13,53 @@ import * as cdktn from 'cdktn';
 
 export interface FeatureEngineeringFeatureConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#entities FeatureEngineeringFeature#entities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#entities FeatureEngineeringFeature#entities}
   */
   readonly entities?: FeatureEngineeringFeatureEntities[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}
   */
   readonly filterCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}
   */
   readonly function: FeatureEngineeringFeatureFunction;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}
   */
   readonly inputs?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}
   */
   readonly lineageContext?: FeatureEngineeringFeatureLineageContext;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}
   */
   readonly providerConfig?: FeatureEngineeringFeatureProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}
   */
   readonly source: FeatureEngineeringFeatureSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}
   */
   readonly timeWindow?: FeatureEngineeringFeatureTimeWindow;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}
   */
   readonly timeseriesColumn?: FeatureEngineeringFeatureTimeseriesColumn;
 }
 export interface FeatureEngineeringFeatureEntities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}
   */
   readonly name: string;
 }
@@ -172,15 +172,15 @@ export class FeatureEngineeringFeatureEntitiesList extends cdktn.ComplexList {
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#relative_error FeatureEngineeringFeature#relative_error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#relative_error FeatureEngineeringFeature#relative_error}
   */
   readonly relativeError?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#relative_sd FeatureEngineeringFeature#relative_sd}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#relative_sd FeatureEngineeringFeature#relative_sd}
   */
   readonly relativeSd?: number;
 }
@@ -329,19 +329,19 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDist
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#accuracy FeatureEngineeringFeature#accuracy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#accuracy FeatureEngineeringFeature#accuracy}
   */
   readonly accuracy?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#percentile FeatureEngineeringFeature#percentile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#percentile FeatureEngineeringFeature#percentile}
   */
   readonly percentile: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#relative_error FeatureEngineeringFeature#relative_error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#relative_error FeatureEngineeringFeature#relative_error}
   */
   readonly relativeError?: number;
 }
@@ -516,7 +516,7 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentil
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionAvg {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -607,7 +607,7 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputRefere
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -698,7 +698,7 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOu
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionFirst {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -789,11 +789,11 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputRefe
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}
   */
   readonly n: number;
 }
@@ -910,11 +910,11 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinctOu
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionFirstN {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}
   */
   readonly n: number;
 }
@@ -1031,7 +1031,7 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionFirstNOutputRef
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionLast {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -1122,11 +1122,11 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputRefer
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}
   */
   readonly n: number;
 }
@@ -1243,11 +1243,11 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinctOut
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionLastN {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#n FeatureEngineeringFeature#n}
   */
   readonly n: number;
 }
@@ -1364,7 +1364,7 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionLastNOutputRefe
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionMax {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -1455,7 +1455,7 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputRefere
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionMin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -1546,7 +1546,7 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputRefere
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -1637,7 +1637,7 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutput
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -1728,7 +1728,7 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutpu
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionSum {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -1819,11 +1819,11 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputRefere
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}
   */
   readonly offset?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -1943,11 +1943,11 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowConti
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
   */
   readonly delay?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration?: string;
 }
@@ -2070,11 +2070,11 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolli
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
   */
   readonly delay?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration?: string;
 }
@@ -2197,19 +2197,19 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawto
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
   */
   readonly delay?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}
   */
   readonly offset?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}
   */
   readonly slideDuration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration?: string;
 }
@@ -2387,15 +2387,15 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidi
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
   */
   readonly delay?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}
   */
   readonly offset?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -2544,27 +2544,27 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbl
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}
   */
   readonly continuous?: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}
   */
   readonly rolling?: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowRolling;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}
   */
   readonly sawtooth?: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSawtooth;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}
   */
   readonly sliding?: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}
   */
   readonly startTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}
   */
   readonly tumbling?: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling;
 }
@@ -2803,7 +2803,7 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutpu
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionVarPop {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -2894,7 +2894,7 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputRef
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}
   */
   readonly input: string;
 }
@@ -2985,75 +2985,75 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputRe
 }
 export interface FeatureEngineeringFeatureFunctionAggregationFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#approx_count_distinct FeatureEngineeringFeature#approx_count_distinct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#approx_count_distinct FeatureEngineeringFeature#approx_count_distinct}
   */
   readonly approxCountDistinct?: FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#approx_percentile FeatureEngineeringFeature#approx_percentile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#approx_percentile FeatureEngineeringFeature#approx_percentile}
   */
   readonly approxPercentile?: FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#avg FeatureEngineeringFeature#avg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#avg FeatureEngineeringFeature#avg}
   */
   readonly avg?: FeatureEngineeringFeatureFunctionAggregationFunctionAvg;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#count_function FeatureEngineeringFeature#count_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#count_function FeatureEngineeringFeature#count_function}
   */
   readonly countFunction?: FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#first FeatureEngineeringFeature#first}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#first FeatureEngineeringFeature#first}
   */
   readonly first?: FeatureEngineeringFeatureFunctionAggregationFunctionFirst;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#first_distinct FeatureEngineeringFeature#first_distinct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#first_distinct FeatureEngineeringFeature#first_distinct}
   */
   readonly firstDistinct?: FeatureEngineeringFeatureFunctionAggregationFunctionFirstDistinct;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#first_n FeatureEngineeringFeature#first_n}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#first_n FeatureEngineeringFeature#first_n}
   */
   readonly firstN?: FeatureEngineeringFeatureFunctionAggregationFunctionFirstN;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#last FeatureEngineeringFeature#last}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#last FeatureEngineeringFeature#last}
   */
   readonly last?: FeatureEngineeringFeatureFunctionAggregationFunctionLast;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#last_distinct FeatureEngineeringFeature#last_distinct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#last_distinct FeatureEngineeringFeature#last_distinct}
   */
   readonly lastDistinct?: FeatureEngineeringFeatureFunctionAggregationFunctionLastDistinct;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#last_n FeatureEngineeringFeature#last_n}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#last_n FeatureEngineeringFeature#last_n}
   */
   readonly lastN?: FeatureEngineeringFeatureFunctionAggregationFunctionLastN;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#max FeatureEngineeringFeature#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#max FeatureEngineeringFeature#max}
   */
   readonly max?: FeatureEngineeringFeatureFunctionAggregationFunctionMax;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#min FeatureEngineeringFeature#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#min FeatureEngineeringFeature#min}
   */
   readonly min?: FeatureEngineeringFeatureFunctionAggregationFunctionMin;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#stddev_pop FeatureEngineeringFeature#stddev_pop}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#stddev_pop FeatureEngineeringFeature#stddev_pop}
   */
   readonly stddevPop?: FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#stddev_samp FeatureEngineeringFeature#stddev_samp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#stddev_samp FeatureEngineeringFeature#stddev_samp}
   */
   readonly stddevSamp?: FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#sum FeatureEngineeringFeature#sum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#sum FeatureEngineeringFeature#sum}
   */
   readonly sum?: FeatureEngineeringFeatureFunctionAggregationFunctionSum;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}
   */
   readonly timeWindow?: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#var_pop FeatureEngineeringFeature#var_pop}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#var_pop FeatureEngineeringFeature#var_pop}
   */
   readonly varPop?: FeatureEngineeringFeatureFunctionAggregationFunctionVarPop;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#var_samp FeatureEngineeringFeature#var_samp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#var_samp FeatureEngineeringFeature#var_samp}
   */
   readonly varSamp?: FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp;
 }
@@ -3640,7 +3640,7 @@ export class FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference
 }
 export interface FeatureEngineeringFeatureFunctionColumnSelection {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}
   */
   readonly column: string;
 }
@@ -3731,11 +3731,11 @@ export class FeatureEngineeringFeatureFunctionColumnSelectionOutputReference ext
 }
 export interface FeatureEngineeringFeatureFunctionCustomUdfInputBindings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#column FeatureEngineeringFeature#column}
   */
   readonly column: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#parameter FeatureEngineeringFeature#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#parameter FeatureEngineeringFeature#parameter}
   */
   readonly parameter: string;
 }
@@ -3874,11 +3874,11 @@ export class FeatureEngineeringFeatureFunctionCustomUdfInputBindingsList extends
 }
 export interface FeatureEngineeringFeatureFunctionCustomUdf {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#function_path FeatureEngineeringFeature#function_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#function_path FeatureEngineeringFeature#function_path}
   */
   readonly functionPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input_bindings FeatureEngineeringFeature#input_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input_bindings FeatureEngineeringFeature#input_bindings}
   */
   readonly inputBindings?: FeatureEngineeringFeatureFunctionCustomUdfInputBindings[] | cdktn.IResolvable;
 }
@@ -3998,11 +3998,11 @@ export class FeatureEngineeringFeatureFunctionCustomUdfOutputReference extends c
 }
 export interface FeatureEngineeringFeatureFunctionExtraParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#key FeatureEngineeringFeature#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#key FeatureEngineeringFeature#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#value FeatureEngineeringFeature#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#value FeatureEngineeringFeature#value}
   */
   readonly value: string;
 }
@@ -4141,23 +4141,23 @@ export class FeatureEngineeringFeatureFunctionExtraParametersList extends cdktn.
 }
 export interface FeatureEngineeringFeatureFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#aggregation_function FeatureEngineeringFeature#aggregation_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#aggregation_function FeatureEngineeringFeature#aggregation_function}
   */
   readonly aggregationFunction?: FeatureEngineeringFeatureFunctionAggregationFunction;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#column_selection FeatureEngineeringFeature#column_selection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#column_selection FeatureEngineeringFeature#column_selection}
   */
   readonly columnSelection?: FeatureEngineeringFeatureFunctionColumnSelection;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#custom_udf FeatureEngineeringFeature#custom_udf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#custom_udf FeatureEngineeringFeature#custom_udf}
   */
   readonly customUdf?: FeatureEngineeringFeatureFunctionCustomUdf;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#extra_parameters FeatureEngineeringFeature#extra_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#extra_parameters FeatureEngineeringFeature#extra_parameters}
   */
   readonly extraParameters?: FeatureEngineeringFeatureFunctionExtraParameters[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#function_type FeatureEngineeringFeature#function_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#function_type FeatureEngineeringFeature#function_type}
   */
   readonly functionType?: string;
 }
@@ -4367,11 +4367,11 @@ export class FeatureEngineeringFeatureFunctionOutputReference extends cdktn.Comp
 }
 export interface FeatureEngineeringFeatureLineageContextJobContext {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#job_id FeatureEngineeringFeature#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#job_id FeatureEngineeringFeature#job_id}
   */
   readonly jobId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#job_run_id FeatureEngineeringFeature#job_run_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#job_run_id FeatureEngineeringFeature#job_run_id}
   */
   readonly jobRunId?: number;
 }
@@ -4494,11 +4494,11 @@ export class FeatureEngineeringFeatureLineageContextJobContextOutputReference ex
 }
 export interface FeatureEngineeringFeatureLineageContext {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#job_context FeatureEngineeringFeature#job_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#job_context FeatureEngineeringFeature#job_context}
   */
   readonly jobContext?: FeatureEngineeringFeatureLineageContextJobContext;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#notebook_id FeatureEngineeringFeature#notebook_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#notebook_id FeatureEngineeringFeature#notebook_id}
   */
   readonly notebookId?: number;
 }
@@ -4621,7 +4621,7 @@ export class FeatureEngineeringFeatureLineageContextOutputReference extends cdkt
 }
 export interface FeatureEngineeringFeatureProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#workspace_id FeatureEngineeringFeature#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#workspace_id FeatureEngineeringFeature#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -4715,27 +4715,27 @@ export class FeatureEngineeringFeatureProviderConfigOutputReference extends cdkt
 }
 export interface FeatureEngineeringFeatureSourceDeltaTableSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}
   */
   readonly dataframeSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#entity_columns FeatureEngineeringFeature#entity_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#entity_columns FeatureEngineeringFeature#entity_columns}
   */
   readonly entityColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}
   */
   readonly filterCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}
   */
   readonly timeseriesColumn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}
   */
   readonly transformationSql?: string;
 }
@@ -4971,7 +4971,7 @@ export class FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference exte
 }
 export interface FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#feature FeatureEngineeringFeature#feature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#feature FeatureEngineeringFeature#feature}
   */
   readonly feature: string;
 }
@@ -5084,7 +5084,7 @@ export class FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferencesLi
 }
 export interface FeatureEngineeringFeatureSourceFeatureViewSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#feature_references FeatureEngineeringFeature#feature_references}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#feature_references FeatureEngineeringFeature#feature_references}
   */
   readonly featureReferences?: FeatureEngineeringFeatureSourceFeatureViewSourceFeatureReferences[] | cdktn.IResolvable;
 }
@@ -5176,9 +5176,199 @@ export class FeatureEngineeringFeatureSourceFeatureViewSourceOutputReference ext
     return this._featureReferences.internalValue;
   }
 }
+export interface FeatureEngineeringFeatureSourceIcebergTableSource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}
+  */
+  readonly dataframeSchema?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}
+  */
+  readonly filterCondition?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}
+  */
+  readonly fullName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}
+  */
+  readonly transformationSql?: string;
+}
+
+export function featureEngineeringFeatureSourceIcebergTableSourceToTerraform(struct?: FeatureEngineeringFeatureSourceIcebergTableSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    dataframe_schema: cdktn.stringToTerraform(struct!.dataframeSchema),
+    filter_condition: cdktn.stringToTerraform(struct!.filterCondition),
+    full_name: cdktn.stringToTerraform(struct!.fullName),
+    transformation_sql: cdktn.stringToTerraform(struct!.transformationSql),
+  }
+}
+
+
+export function featureEngineeringFeatureSourceIcebergTableSourceToHclTerraform(struct?: FeatureEngineeringFeatureSourceIcebergTableSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    dataframe_schema: {
+      value: cdktn.stringToHclTerraform(struct!.dataframeSchema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter_condition: {
+      value: cdktn.stringToHclTerraform(struct!.filterCondition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    full_name: {
+      value: cdktn.stringToHclTerraform(struct!.fullName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transformation_sql: {
+      value: cdktn.stringToHclTerraform(struct!.transformationSql),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class FeatureEngineeringFeatureSourceIcebergTableSourceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): FeatureEngineeringFeatureSourceIcebergTableSource | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dataframeSchema !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataframeSchema = this._dataframeSchema;
+    }
+    if (this._filterCondition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filterCondition = this._filterCondition;
+    }
+    if (this._fullName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fullName = this._fullName;
+    }
+    if (this._transformationSql !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transformationSql = this._transformationSql;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FeatureEngineeringFeatureSourceIcebergTableSource | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dataframeSchema = undefined;
+      this._filterCondition = undefined;
+      this._fullName = undefined;
+      this._transformationSql = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dataframeSchema = value.dataframeSchema;
+      this._filterCondition = value.filterCondition;
+      this._fullName = value.fullName;
+      this._transformationSql = value.transformationSql;
+    }
+  }
+
+  // dataframe_schema - computed: false, optional: true, required: false
+  private _dataframeSchema?: string; 
+  public get dataframeSchema() {
+    return this.getStringAttribute('dataframe_schema');
+  }
+  public set dataframeSchema(value: string) {
+    this._dataframeSchema = value;
+  }
+  public resetDataframeSchema() {
+    this._dataframeSchema = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataframeSchemaInput() {
+    return this._dataframeSchema;
+  }
+
+  // filter_condition - computed: false, optional: true, required: false
+  private _filterCondition?: string; 
+  public get filterCondition() {
+    return this.getStringAttribute('filter_condition');
+  }
+  public set filterCondition(value: string) {
+    this._filterCondition = value;
+  }
+  public resetFilterCondition() {
+    this._filterCondition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterConditionInput() {
+    return this._filterCondition;
+  }
+
+  // full_name - computed: false, optional: false, required: true
+  private _fullName?: string; 
+  public get fullName() {
+    return this.getStringAttribute('full_name');
+  }
+  public set fullName(value: string) {
+    this._fullName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fullNameInput() {
+    return this._fullName;
+  }
+
+  // transformation_sql - computed: false, optional: true, required: false
+  private _transformationSql?: string; 
+  public get transformationSql() {
+    return this.getStringAttribute('transformation_sql');
+  }
+  public set transformationSql(value: string) {
+    this._transformationSql = value;
+  }
+  public resetTransformationSql() {
+    this._transformationSql = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transformationSqlInput() {
+    return this._transformationSql;
+  }
+}
 export interface FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}
   */
   readonly variantExprPath: string;
 }
@@ -5291,7 +5481,7 @@ export class FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersLi
 }
 export interface FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}
   */
   readonly variantExprPath: string;
 }
@@ -5382,19 +5572,19 @@ export class FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifie
 }
 export interface FeatureEngineeringFeatureSourceKafkaSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#entity_column_identifiers FeatureEngineeringFeature#entity_column_identifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#entity_column_identifiers FeatureEngineeringFeature#entity_column_identifiers}
   */
   readonly entityColumnIdentifiers?: FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}
   */
   readonly filterCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#timeseries_column_identifier FeatureEngineeringFeature#timeseries_column_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#timeseries_column_identifier FeatureEngineeringFeature#timeseries_column_identifier}
   */
   readonly timeseriesColumnIdentifier?: FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier;
 }
@@ -5572,7 +5762,7 @@ export class FeatureEngineeringFeatureSourceKafkaSourceOutputReference extends c
 }
 export interface FeatureEngineeringFeatureSourceLateness {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#settling_delay FeatureEngineeringFeature#settling_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#settling_delay FeatureEngineeringFeature#settling_delay}
   */
   readonly settlingDelay?: string;
 }
@@ -5666,11 +5856,11 @@ export class FeatureEngineeringFeatureSourceLatenessOutputReference extends cdkt
 }
 export interface FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#data_type FeatureEngineeringFeature#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#data_type FeatureEngineeringFeature#data_type}
   */
   readonly dataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}
   */
   readonly name: string;
 }
@@ -5809,7 +5999,7 @@ export class FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFieldsList ex
 }
 export interface FeatureEngineeringFeatureSourceRequestSourceFlatSchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#fields FeatureEngineeringFeature#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#fields FeatureEngineeringFeature#fields}
   */
   readonly fields: FeatureEngineeringFeatureSourceRequestSourceFlatSchemaFields[] | cdktn.IResolvable;
 }
@@ -5900,11 +6090,11 @@ export class FeatureEngineeringFeatureSourceRequestSourceFlatSchemaOutputReferen
 }
 export interface FeatureEngineeringFeatureSourceRequestSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}
   */
   readonly dataframeSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#flat_schema FeatureEngineeringFeature#flat_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#flat_schema FeatureEngineeringFeature#flat_schema}
   */
   readonly flatSchema?: FeatureEngineeringFeatureSourceRequestSourceFlatSchema;
 }
@@ -6027,27 +6217,27 @@ export class FeatureEngineeringFeatureSourceRequestSourceOutputReference extends
 }
 export interface FeatureEngineeringFeatureSourceSdpSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}
   */
   readonly dataframeSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}
   */
   readonly filterCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#input_tables FeatureEngineeringFeature#input_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#input_tables FeatureEngineeringFeature#input_tables}
   */
   readonly inputTables?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#output_table FeatureEngineeringFeature#output_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#output_table FeatureEngineeringFeature#output_table}
   */
   readonly outputTable?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#pipeline_id FeatureEngineeringFeature#pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#pipeline_id FeatureEngineeringFeature#pipeline_id}
   */
   readonly pipelineId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}
   */
   readonly transformationSql?: string;
 }
@@ -6291,19 +6481,19 @@ export class FeatureEngineeringFeatureSourceSdpSourceOutputReference extends cdk
 }
 export interface FeatureEngineeringFeatureSourceStreamSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}
   */
   readonly dataframeSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}
   */
   readonly filterCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}
   */
   readonly transformationSql?: string;
 }
@@ -6481,31 +6671,35 @@ export class FeatureEngineeringFeatureSourceStreamSourceOutputReference extends 
 }
 export interface FeatureEngineeringFeatureSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#delta_table_source FeatureEngineeringFeature#delta_table_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#delta_table_source FeatureEngineeringFeature#delta_table_source}
   */
   readonly deltaTableSource?: FeatureEngineeringFeatureSourceDeltaTableSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#feature_view_source FeatureEngineeringFeature#feature_view_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#feature_view_source FeatureEngineeringFeature#feature_view_source}
   */
   readonly featureViewSource?: FeatureEngineeringFeatureSourceFeatureViewSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#kafka_source FeatureEngineeringFeature#kafka_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#iceberg_table_source FeatureEngineeringFeature#iceberg_table_source}
+  */
+  readonly icebergTableSource?: FeatureEngineeringFeatureSourceIcebergTableSource;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#kafka_source FeatureEngineeringFeature#kafka_source}
   */
   readonly kafkaSource?: FeatureEngineeringFeatureSourceKafkaSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#lateness FeatureEngineeringFeature#lateness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#lateness FeatureEngineeringFeature#lateness}
   */
   readonly lateness?: FeatureEngineeringFeatureSourceLateness;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#request_source FeatureEngineeringFeature#request_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#request_source FeatureEngineeringFeature#request_source}
   */
   readonly requestSource?: FeatureEngineeringFeatureSourceRequestSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#sdp_source FeatureEngineeringFeature#sdp_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#sdp_source FeatureEngineeringFeature#sdp_source}
   */
   readonly sdpSource?: FeatureEngineeringFeatureSourceSdpSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#stream_source FeatureEngineeringFeature#stream_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#stream_source FeatureEngineeringFeature#stream_source}
   */
   readonly streamSource?: FeatureEngineeringFeatureSourceStreamSource;
 }
@@ -6518,6 +6712,7 @@ export function featureEngineeringFeatureSourceToTerraform(struct?: FeatureEngin
   return {
     delta_table_source: featureEngineeringFeatureSourceDeltaTableSourceToTerraform(struct!.deltaTableSource),
     feature_view_source: featureEngineeringFeatureSourceFeatureViewSourceToTerraform(struct!.featureViewSource),
+    iceberg_table_source: featureEngineeringFeatureSourceIcebergTableSourceToTerraform(struct!.icebergTableSource),
     kafka_source: featureEngineeringFeatureSourceKafkaSourceToTerraform(struct!.kafkaSource),
     lateness: featureEngineeringFeatureSourceLatenessToTerraform(struct!.lateness),
     request_source: featureEngineeringFeatureSourceRequestSourceToTerraform(struct!.requestSource),
@@ -6544,6 +6739,12 @@ export function featureEngineeringFeatureSourceToHclTerraform(struct?: FeatureEn
       isBlock: true,
       type: "struct",
       storageClassType: "FeatureEngineeringFeatureSourceFeatureViewSource",
+    },
+    iceberg_table_source: {
+      value: featureEngineeringFeatureSourceIcebergTableSourceToHclTerraform(struct!.icebergTableSource),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "FeatureEngineeringFeatureSourceIcebergTableSource",
     },
     kafka_source: {
       value: featureEngineeringFeatureSourceKafkaSourceToHclTerraform(struct!.kafkaSource),
@@ -6607,6 +6808,10 @@ export class FeatureEngineeringFeatureSourceOutputReference extends cdktn.Comple
       hasAnyValues = true;
       internalValueResult.featureViewSource = this._featureViewSource?.internalValue;
     }
+    if (this._icebergTableSource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.icebergTableSource = this._icebergTableSource?.internalValue;
+    }
     if (this._kafkaSource?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.kafkaSource = this._kafkaSource?.internalValue;
@@ -6636,6 +6841,7 @@ export class FeatureEngineeringFeatureSourceOutputReference extends cdktn.Comple
       this.resolvableValue = undefined;
       this._deltaTableSource.internalValue = undefined;
       this._featureViewSource.internalValue = undefined;
+      this._icebergTableSource.internalValue = undefined;
       this._kafkaSource.internalValue = undefined;
       this._lateness.internalValue = undefined;
       this._requestSource.internalValue = undefined;
@@ -6651,6 +6857,7 @@ export class FeatureEngineeringFeatureSourceOutputReference extends cdktn.Comple
       this.resolvableValue = undefined;
       this._deltaTableSource.internalValue = value.deltaTableSource;
       this._featureViewSource.internalValue = value.featureViewSource;
+      this._icebergTableSource.internalValue = value.icebergTableSource;
       this._kafkaSource.internalValue = value.kafkaSource;
       this._lateness.internalValue = value.lateness;
       this._requestSource.internalValue = value.requestSource;
@@ -6689,6 +6896,22 @@ export class FeatureEngineeringFeatureSourceOutputReference extends cdktn.Comple
   // Temporarily expose input value. Use with caution.
   public get featureViewSourceInput() {
     return this._featureViewSource.internalValue;
+  }
+
+  // iceberg_table_source - computed: false, optional: true, required: false
+  private _icebergTableSource = new FeatureEngineeringFeatureSourceIcebergTableSourceOutputReference(this, "iceberg_table_source");
+  public get icebergTableSource() {
+    return this._icebergTableSource;
+  }
+  public putIcebergTableSource(value: FeatureEngineeringFeatureSourceIcebergTableSource) {
+    this._icebergTableSource.internalValue = value;
+  }
+  public resetIcebergTableSource() {
+    this._icebergTableSource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get icebergTableSourceInput() {
+    return this._icebergTableSource.internalValue;
   }
 
   // kafka_source - computed: false, optional: true, required: false
@@ -6773,11 +6996,11 @@ export class FeatureEngineeringFeatureSourceOutputReference extends cdktn.Comple
 }
 export interface FeatureEngineeringFeatureTimeWindowContinuous {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}
   */
   readonly offset?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -6897,11 +7120,11 @@ export class FeatureEngineeringFeatureTimeWindowContinuousOutputReference extend
 }
 export interface FeatureEngineeringFeatureTimeWindowRolling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
   */
   readonly delay?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration?: string;
 }
@@ -7024,11 +7247,11 @@ export class FeatureEngineeringFeatureTimeWindowRollingOutputReference extends c
 }
 export interface FeatureEngineeringFeatureTimeWindowSawtooth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
   */
   readonly delay?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration?: string;
 }
@@ -7151,19 +7374,19 @@ export class FeatureEngineeringFeatureTimeWindowSawtoothOutputReference extends 
 }
 export interface FeatureEngineeringFeatureTimeWindowSliding {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
   */
   readonly delay?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}
   */
   readonly offset?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}
   */
   readonly slideDuration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration?: string;
 }
@@ -7341,15 +7564,15 @@ export class FeatureEngineeringFeatureTimeWindowSlidingOutputReference extends c
 }
 export interface FeatureEngineeringFeatureTimeWindowTumbling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#delay FeatureEngineeringFeature#delay}
   */
   readonly delay?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}
   */
   readonly offset?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -7498,27 +7721,27 @@ export class FeatureEngineeringFeatureTimeWindowTumblingOutputReference extends 
 }
 export interface FeatureEngineeringFeatureTimeWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}
   */
   readonly continuous?: FeatureEngineeringFeatureTimeWindowContinuous;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#rolling FeatureEngineeringFeature#rolling}
   */
   readonly rolling?: FeatureEngineeringFeatureTimeWindowRolling;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#sawtooth FeatureEngineeringFeature#sawtooth}
   */
   readonly sawtooth?: FeatureEngineeringFeatureTimeWindowSawtooth;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}
   */
   readonly sliding?: FeatureEngineeringFeatureTimeWindowSliding;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#start_time FeatureEngineeringFeature#start_time}
   */
   readonly startTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}
   */
   readonly tumbling?: FeatureEngineeringFeatureTimeWindowTumbling;
 }
@@ -7757,7 +7980,7 @@ export class FeatureEngineeringFeatureTimeWindowOutputReference extends cdktn.Co
 }
 export interface FeatureEngineeringFeatureTimeseriesColumn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}
   */
   readonly name: string;
 }
@@ -7848,7 +8071,7 @@ export class FeatureEngineeringFeatureTimeseriesColumnOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}
 */
 export class FeatureEngineeringFeature extends cdktn.TerraformResource {
 
@@ -7864,7 +8087,7 @@ export class FeatureEngineeringFeature extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FeatureEngineeringFeature resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FeatureEngineeringFeature to import
-  * @param importFromId The id of the existing FeatureEngineeringFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FeatureEngineeringFeature that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FeatureEngineeringFeature to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -7876,7 +8099,7 @@ export class FeatureEngineeringFeature extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -7887,7 +8110,7 @@ export class FeatureEngineeringFeature extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_feature_engineering_feature',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.142.0',
+        providerVersion: '1.143.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -8039,6 +8262,11 @@ export class FeatureEngineeringFeature extends cdktn.TerraformResource {
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
+  }
+
+  // output_type_text - computed: true, optional: false, required: false
+  public get outputTypeText() {
+    return this.getStringAttribute('output_type_text');
   }
 
   // provider_config - computed: true, optional: true, required: false

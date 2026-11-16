@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config
+// https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,45 +13,41 @@ import * as cdktn from 'cdktn';
 
 export interface LakewatchRuleConfigAConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#default_folder LakewatchRuleConfigA#default_folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#default_folder LakewatchRuleConfigA#default_folder}
   */
   readonly defaultFolder?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#default_schedule LakewatchRuleConfigA#default_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#default_schedule LakewatchRuleConfigA#default_schedule}
   */
   readonly defaultSchedule?: LakewatchRuleConfigDefaultSchedule;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#default_signal_collation_window LakewatchRuleConfigA#default_signal_collation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#default_signal_collation_window LakewatchRuleConfigA#default_signal_collation_window}
   */
   readonly defaultSignalCollationWindow?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#detection_categories LakewatchRuleConfigA#detection_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#detection_categories LakewatchRuleConfigA#detection_categories}
   */
   readonly detectionCategories?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#parent LakewatchRuleConfigA#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#parent LakewatchRuleConfigA#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#provider_config LakewatchRuleConfigA#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#provider_config LakewatchRuleConfigA#provider_config}
   */
   readonly providerConfig?: LakewatchRuleConfigProviderConfig;
 }
 export interface LakewatchRuleConfigDefaultSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#at_least_every LakewatchRuleConfigA#at_least_every}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#at_least_every LakewatchRuleConfigA#at_least_every}
   */
   readonly atLeastEvery?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#continuous LakewatchRuleConfigA#continuous}
-  */
-  readonly continuous?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#cron_expression LakewatchRuleConfigA#cron_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#cron_expression LakewatchRuleConfigA#cron_expression}
   */
   readonly cronExpression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#enabled LakewatchRuleConfigA#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#enabled LakewatchRuleConfigA#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -63,7 +59,6 @@ export function lakewatchRuleConfigDefaultScheduleToTerraform(struct?: Lakewatch
   }
   return {
     at_least_every: cdktn.stringToTerraform(struct!.atLeastEvery),
-    continuous: cdktn.booleanToTerraform(struct!.continuous),
     cron_expression: cdktn.stringToTerraform(struct!.cronExpression),
     enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
@@ -81,12 +76,6 @@ export function lakewatchRuleConfigDefaultScheduleToHclTerraform(struct?: Lakewa
       isBlock: false,
       type: "simple",
       storageClassType: "string",
-    },
-    continuous: {
-      value: cdktn.booleanToHclTerraform(struct!.continuous),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
     },
     cron_expression: {
       value: cdktn.stringToHclTerraform(struct!.cronExpression),
@@ -128,10 +117,6 @@ export class LakewatchRuleConfigDefaultScheduleOutputReference extends cdktn.Com
       hasAnyValues = true;
       internalValueResult.atLeastEvery = this._atLeastEvery;
     }
-    if (this._continuous !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.continuous = this._continuous;
-    }
     if (this._cronExpression !== undefined) {
       hasAnyValues = true;
       internalValueResult.cronExpression = this._cronExpression;
@@ -148,7 +133,6 @@ export class LakewatchRuleConfigDefaultScheduleOutputReference extends cdktn.Com
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._atLeastEvery = undefined;
-      this._continuous = undefined;
       this._cronExpression = undefined;
       this._enabled = undefined;
     }
@@ -160,7 +144,6 @@ export class LakewatchRuleConfigDefaultScheduleOutputReference extends cdktn.Com
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._atLeastEvery = value.atLeastEvery;
-      this._continuous = value.continuous;
       this._cronExpression = value.cronExpression;
       this._enabled = value.enabled;
     }
@@ -180,22 +163,6 @@ export class LakewatchRuleConfigDefaultScheduleOutputReference extends cdktn.Com
   // Temporarily expose input value. Use with caution.
   public get atLeastEveryInput() {
     return this._atLeastEvery;
-  }
-
-  // continuous - computed: false, optional: true, required: false
-  private _continuous?: boolean | cdktn.IResolvable; 
-  public get continuous() {
-    return this.getBooleanAttribute('continuous');
-  }
-  public set continuous(value: boolean | cdktn.IResolvable) {
-    this._continuous = value;
-  }
-  public resetContinuous() {
-    this._continuous = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get continuousInput() {
-    return this._continuous;
   }
 
   // cron_expression - computed: false, optional: true, required: false
@@ -232,7 +199,7 @@ export class LakewatchRuleConfigDefaultScheduleOutputReference extends cdktn.Com
 }
 export interface LakewatchRuleConfigProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#workspace_id LakewatchRuleConfigA#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#workspace_id LakewatchRuleConfigA#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -326,22 +293,22 @@ export class LakewatchRuleConfigProviderConfigOutputReference extends cdktn.Comp
 }
 export interface LakewatchRuleConfigUpdatedBy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#display_name LakewatchRuleConfigA#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#display_name LakewatchRuleConfigA#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#email LakewatchRuleConfigA#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#email LakewatchRuleConfigA#email}
   */
   readonly email?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#id LakewatchRuleConfigA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#id LakewatchRuleConfigA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#principal_type LakewatchRuleConfigA#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#principal_type LakewatchRuleConfigA#principal_type}
   */
   readonly principalType?: string;
 }
@@ -512,7 +479,7 @@ export class LakewatchRuleConfigUpdatedByOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config databricks_lakewatch_rule_config}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config databricks_lakewatch_rule_config}
 */
 export class LakewatchRuleConfigA extends cdktn.TerraformResource {
 
@@ -528,7 +495,7 @@ export class LakewatchRuleConfigA extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LakewatchRuleConfigA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LakewatchRuleConfigA to import
-  * @param importFromId The id of the existing LakewatchRuleConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LakewatchRuleConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LakewatchRuleConfigA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -540,7 +507,7 @@ export class LakewatchRuleConfigA extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.142.0/docs/resources/lakewatch_rule_config databricks_lakewatch_rule_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_rule_config databricks_lakewatch_rule_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -551,7 +518,7 @@ export class LakewatchRuleConfigA extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_lakewatch_rule_config',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.142.0',
+        providerVersion: '1.143.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
