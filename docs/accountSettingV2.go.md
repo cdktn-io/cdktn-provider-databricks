@@ -4,7 +4,7 @@
 
 ### AccountSettingV2 <a name="AccountSettingV2" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2 databricks_account_setting_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2 databricks_account_setting_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountSettingV2.AccountSettingV2.Initializer"></a>
 
@@ -876,7 +876,7 @@ The construct id used in the generated config for the AccountSettingV2 to import
 
 The id of the existing AccountSettingV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1604,7 +1604,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">AccessPolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">AccessPolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}. |
 
 ---
 
@@ -1616,7 +1616,7 @@ AccessPolicyType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}.
 
 ---
 
@@ -1636,7 +1636,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingApprovedDomains.property.approvedDomains">ApprovedDomains</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingApprovedDomains.property.approvedDomains">ApprovedDomains</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}. |
 
 ---
 
@@ -1648,7 +1648,7 @@ ApprovedDomains *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}.
 
 ---
 
@@ -1668,7 +1668,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AllowedAppsUserApiScopes.property.allowedScopes">AllowedScopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AllowedAppsUserApiScopes.property.allowedScopes">AllowedScopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}. |
 
 ---
 
@@ -1680,7 +1680,7 @@ AllowedScopes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}.
 
 ---
 
@@ -1704,11 +1704,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.canToggle">CanToggle</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.enablementDetails">EnablementDetails</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails">AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">RestartEvenIfNoUpdatesAvailable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.canToggle">CanToggle</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.enablementDetails">EnablementDetails</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails">AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">RestartEvenIfNoUpdatesAvailable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}. |
 
 ---
 
@@ -1720,7 +1720,7 @@ CanToggle interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}.
 
 ---
 
@@ -1732,7 +1732,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}.
 
 ---
 
@@ -1744,7 +1744,7 @@ EnablementDetails AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetai
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails">AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}.
 
 ---
 
@@ -1756,7 +1756,7 @@ MaintenanceWindow AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWind
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}.
 
 ---
 
@@ -1768,7 +1768,7 @@ RestartEvenIfNoUpdatesAvailable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}.
 
 ---
 
@@ -1790,9 +1790,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">ForcedForComplianceMode</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">UnavailableForDisabledEntitlement</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">UnavailableForNonEnterpriseTier</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">ForcedForComplianceMode</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">UnavailableForDisabledEntitlement</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">UnavailableForNonEnterpriseTier</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}. |
 
 ---
 
@@ -1804,7 +1804,7 @@ ForcedForComplianceMode interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}.
 
 ---
 
@@ -1816,7 +1816,7 @@ UnavailableForDisabledEntitlement interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}.
 
 ---
 
@@ -1828,7 +1828,7 @@ UnavailableForNonEnterpriseTier interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}.
 
 ---
 
@@ -1848,7 +1848,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">WeekDayBasedSchedule</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">WeekDayBasedSchedule</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}. |
 
 ---
 
@@ -1860,7 +1860,7 @@ WeekDayBasedSchedule AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceW
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}.
 
 ---
 
@@ -1882,9 +1882,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">DayOfWeek</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">Frequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">WindowStartTime</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">DayOfWeek</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">Frequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">WindowStartTime</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}. |
 
 ---
 
@@ -1896,7 +1896,7 @@ DayOfWeek *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}.
 
 ---
 
@@ -1908,7 +1908,7 @@ Frequency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}.
 
 ---
 
@@ -1920,7 +1920,7 @@ WindowStartTime AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}.
 
 ---
 
@@ -1941,8 +1941,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">Hours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">Hours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}. |
 
 ---
 
@@ -1954,7 +1954,7 @@ Hours *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}.
 
 ---
 
@@ -1966,7 +1966,7 @@ Minutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}.
 
 ---
 
@@ -1986,7 +1986,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2BooleanVal.property.value">Value</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2BooleanVal.property.value">Value</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -1998,7 +1998,7 @@ Value interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 
 ---
 
@@ -2018,7 +2018,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2CollaborationPlatformConnectivity.property.connectivity">Connectivity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2CollaborationPlatformConnectivity.property.connectivity">Connectivity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}. |
 
 ---
 
@@ -2030,7 +2030,7 @@ Connectivity *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}.
 
 ---
 
@@ -2083,26 +2083,26 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.aibiDashboardEmbeddingAccessPolicy">AibiDashboardEmbeddingAccessPolicy</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingAccessPolicy">AccountSettingV2AibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_access_policy AccountSettingV2#aibi_dashboard_embedding_access_policy}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.aibiDashboardEmbeddingApprovedDomains">AibiDashboardEmbeddingApprovedDomains</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingApprovedDomains">AccountSettingV2AibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_approved_domains AccountSettingV2#aibi_dashboard_embedding_approved_domains}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.allowedAppsUserApiScopes">AllowedAppsUserApiScopes</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AllowedAppsUserApiScopes">AccountSettingV2AllowedAppsUserApiScopes</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#allowed_apps_user_api_scopes AccountSettingV2#allowed_apps_user_api_scopes}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.automaticClusterUpdateWorkspace">AutomaticClusterUpdateWorkspace</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace">AccountSettingV2AutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#automatic_cluster_update_workspace AccountSettingV2#automatic_cluster_update_workspace}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.booleanVal">BooleanVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2BooleanVal">AccountSettingV2BooleanVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#boolean_val AccountSettingV2#boolean_val}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.collaborationPlatformConnectivity">CollaborationPlatformConnectivity</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2CollaborationPlatformConnectivity">AccountSettingV2CollaborationPlatformConnectivity</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#collaboration_platform_connectivity AccountSettingV2#collaboration_platform_connectivity}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveAibiDashboardEmbeddingAccessPolicy">EffectiveAibiDashboardEmbeddingAccessPolicy</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy">AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_access_policy AccountSettingV2#effective_aibi_dashboard_embedding_access_policy}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveAibiDashboardEmbeddingApprovedDomains">EffectiveAibiDashboardEmbeddingApprovedDomains</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains">AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_approved_domains AccountSettingV2#effective_aibi_dashboard_embedding_approved_domains}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveAutomaticClusterUpdateWorkspace">EffectiveAutomaticClusterUpdateWorkspace</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#effective_automatic_cluster_update_workspace AccountSettingV2#effective_automatic_cluster_update_workspace}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectivePersonalCompute">EffectivePersonalCompute</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectivePersonalCompute">AccountSettingV2EffectivePersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#effective_personal_compute AccountSettingV2#effective_personal_compute}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveRestrictWorkspaceAdmins">EffectiveRestrictWorkspaceAdmins</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins">AccountSettingV2EffectiveRestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#effective_restrict_workspace_admins AccountSettingV2#effective_restrict_workspace_admins}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveWorkspaceLabel">EffectiveWorkspaceLabel</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel">AccountSettingV2EffectiveWorkspaceLabel</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#effective_workspace_label AccountSettingV2#effective_workspace_label}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.integerVal">IntegerVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2IntegerVal">AccountSettingV2IntegerVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#integer_val AccountSettingV2#integer_val}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#name AccountSettingV2#name}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.operationalEmailCustomRecipient">OperationalEmailCustomRecipient</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2OperationalEmailCustomRecipient">AccountSettingV2OperationalEmailCustomRecipient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#operational_email_custom_recipient AccountSettingV2#operational_email_custom_recipient}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.personalCompute">PersonalCompute</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2PersonalCompute">AccountSettingV2PersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#personal_compute AccountSettingV2#personal_compute}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.restrictWorkspaceAdmins">RestrictWorkspaceAdmins</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins">AccountSettingV2RestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#restrict_workspace_admins AccountSettingV2#restrict_workspace_admins}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.stringVal">StringVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringVal">AccountSettingV2StringVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#string_val AccountSettingV2#string_val}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.workspaceDashboardTheme">WorkspaceDashboardTheme</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme">AccountSettingV2WorkspaceDashboardTheme</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#workspace_dashboard_theme AccountSettingV2#workspace_dashboard_theme}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.workspaceLabel">WorkspaceLabel</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel">AccountSettingV2WorkspaceLabel</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#workspace_label AccountSettingV2#workspace_label}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.aibiDashboardEmbeddingAccessPolicy">AibiDashboardEmbeddingAccessPolicy</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingAccessPolicy">AccountSettingV2AibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_access_policy AccountSettingV2#aibi_dashboard_embedding_access_policy}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.aibiDashboardEmbeddingApprovedDomains">AibiDashboardEmbeddingApprovedDomains</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingApprovedDomains">AccountSettingV2AibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_approved_domains AccountSettingV2#aibi_dashboard_embedding_approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.allowedAppsUserApiScopes">AllowedAppsUserApiScopes</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AllowedAppsUserApiScopes">AccountSettingV2AllowedAppsUserApiScopes</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#allowed_apps_user_api_scopes AccountSettingV2#allowed_apps_user_api_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.automaticClusterUpdateWorkspace">AutomaticClusterUpdateWorkspace</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace">AccountSettingV2AutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#automatic_cluster_update_workspace AccountSettingV2#automatic_cluster_update_workspace}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.booleanVal">BooleanVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2BooleanVal">AccountSettingV2BooleanVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#boolean_val AccountSettingV2#boolean_val}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.collaborationPlatformConnectivity">CollaborationPlatformConnectivity</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2CollaborationPlatformConnectivity">AccountSettingV2CollaborationPlatformConnectivity</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#collaboration_platform_connectivity AccountSettingV2#collaboration_platform_connectivity}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveAibiDashboardEmbeddingAccessPolicy">EffectiveAibiDashboardEmbeddingAccessPolicy</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy">AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_access_policy AccountSettingV2#effective_aibi_dashboard_embedding_access_policy}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveAibiDashboardEmbeddingApprovedDomains">EffectiveAibiDashboardEmbeddingApprovedDomains</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains">AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_approved_domains AccountSettingV2#effective_aibi_dashboard_embedding_approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveAutomaticClusterUpdateWorkspace">EffectiveAutomaticClusterUpdateWorkspace</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#effective_automatic_cluster_update_workspace AccountSettingV2#effective_automatic_cluster_update_workspace}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectivePersonalCompute">EffectivePersonalCompute</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectivePersonalCompute">AccountSettingV2EffectivePersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#effective_personal_compute AccountSettingV2#effective_personal_compute}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveRestrictWorkspaceAdmins">EffectiveRestrictWorkspaceAdmins</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins">AccountSettingV2EffectiveRestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#effective_restrict_workspace_admins AccountSettingV2#effective_restrict_workspace_admins}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.effectiveWorkspaceLabel">EffectiveWorkspaceLabel</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel">AccountSettingV2EffectiveWorkspaceLabel</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#effective_workspace_label AccountSettingV2#effective_workspace_label}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.integerVal">IntegerVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2IntegerVal">AccountSettingV2IntegerVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#integer_val AccountSettingV2#integer_val}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#name AccountSettingV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.operationalEmailCustomRecipient">OperationalEmailCustomRecipient</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2OperationalEmailCustomRecipient">AccountSettingV2OperationalEmailCustomRecipient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#operational_email_custom_recipient AccountSettingV2#operational_email_custom_recipient}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.personalCompute">PersonalCompute</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2PersonalCompute">AccountSettingV2PersonalCompute</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#personal_compute AccountSettingV2#personal_compute}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.restrictWorkspaceAdmins">RestrictWorkspaceAdmins</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins">AccountSettingV2RestrictWorkspaceAdmins</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#restrict_workspace_admins AccountSettingV2#restrict_workspace_admins}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.stringVal">StringVal</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringVal">AccountSettingV2StringVal</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#string_val AccountSettingV2#string_val}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.workspaceDashboardTheme">WorkspaceDashboardTheme</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme">AccountSettingV2WorkspaceDashboardTheme</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#workspace_dashboard_theme AccountSettingV2#workspace_dashboard_theme}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2Config.property.workspaceLabel">WorkspaceLabel</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel">AccountSettingV2WorkspaceLabel</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#workspace_label AccountSettingV2#workspace_label}. |
 
 ---
 
@@ -2184,7 +2184,7 @@ AibiDashboardEmbeddingAccessPolicy AccountSettingV2AibiDashboardEmbeddingAccessP
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingAccessPolicy">AccountSettingV2AibiDashboardEmbeddingAccessPolicy</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_access_policy AccountSettingV2#aibi_dashboard_embedding_access_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_access_policy AccountSettingV2#aibi_dashboard_embedding_access_policy}.
 
 ---
 
@@ -2196,7 +2196,7 @@ AibiDashboardEmbeddingApprovedDomains AccountSettingV2AibiDashboardEmbeddingAppr
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AibiDashboardEmbeddingApprovedDomains">AccountSettingV2AibiDashboardEmbeddingApprovedDomains</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_approved_domains AccountSettingV2#aibi_dashboard_embedding_approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#aibi_dashboard_embedding_approved_domains AccountSettingV2#aibi_dashboard_embedding_approved_domains}.
 
 ---
 
@@ -2208,7 +2208,7 @@ AllowedAppsUserApiScopes AccountSettingV2AllowedAppsUserApiScopes
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AllowedAppsUserApiScopes">AccountSettingV2AllowedAppsUserApiScopes</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#allowed_apps_user_api_scopes AccountSettingV2#allowed_apps_user_api_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#allowed_apps_user_api_scopes AccountSettingV2#allowed_apps_user_api_scopes}.
 
 ---
 
@@ -2220,7 +2220,7 @@ AutomaticClusterUpdateWorkspace AccountSettingV2AutomaticClusterUpdateWorkspace
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2AutomaticClusterUpdateWorkspace">AccountSettingV2AutomaticClusterUpdateWorkspace</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#automatic_cluster_update_workspace AccountSettingV2#automatic_cluster_update_workspace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#automatic_cluster_update_workspace AccountSettingV2#automatic_cluster_update_workspace}.
 
 ---
 
@@ -2232,7 +2232,7 @@ BooleanVal AccountSettingV2BooleanVal
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2BooleanVal">AccountSettingV2BooleanVal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#boolean_val AccountSettingV2#boolean_val}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#boolean_val AccountSettingV2#boolean_val}.
 
 ---
 
@@ -2244,7 +2244,7 @@ CollaborationPlatformConnectivity AccountSettingV2CollaborationPlatformConnectiv
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2CollaborationPlatformConnectivity">AccountSettingV2CollaborationPlatformConnectivity</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#collaboration_platform_connectivity AccountSettingV2#collaboration_platform_connectivity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#collaboration_platform_connectivity AccountSettingV2#collaboration_platform_connectivity}.
 
 ---
 
@@ -2256,7 +2256,7 @@ EffectiveAibiDashboardEmbeddingAccessPolicy AccountSettingV2EffectiveAibiDashboa
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy">AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_access_policy AccountSettingV2#effective_aibi_dashboard_embedding_access_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_access_policy AccountSettingV2#effective_aibi_dashboard_embedding_access_policy}.
 
 ---
 
@@ -2268,7 +2268,7 @@ EffectiveAibiDashboardEmbeddingApprovedDomains AccountSettingV2EffectiveAibiDash
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains">AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_approved_domains AccountSettingV2#effective_aibi_dashboard_embedding_approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#effective_aibi_dashboard_embedding_approved_domains AccountSettingV2#effective_aibi_dashboard_embedding_approved_domains}.
 
 ---
 
@@ -2280,7 +2280,7 @@ EffectiveAutomaticClusterUpdateWorkspace AccountSettingV2EffectiveAutomaticClust
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#effective_automatic_cluster_update_workspace AccountSettingV2#effective_automatic_cluster_update_workspace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#effective_automatic_cluster_update_workspace AccountSettingV2#effective_automatic_cluster_update_workspace}.
 
 ---
 
@@ -2292,7 +2292,7 @@ EffectivePersonalCompute AccountSettingV2EffectivePersonalCompute
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectivePersonalCompute">AccountSettingV2EffectivePersonalCompute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#effective_personal_compute AccountSettingV2#effective_personal_compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#effective_personal_compute AccountSettingV2#effective_personal_compute}.
 
 ---
 
@@ -2304,7 +2304,7 @@ EffectiveRestrictWorkspaceAdmins AccountSettingV2EffectiveRestrictWorkspaceAdmin
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins">AccountSettingV2EffectiveRestrictWorkspaceAdmins</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#effective_restrict_workspace_admins AccountSettingV2#effective_restrict_workspace_admins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#effective_restrict_workspace_admins AccountSettingV2#effective_restrict_workspace_admins}.
 
 ---
 
@@ -2316,7 +2316,7 @@ EffectiveWorkspaceLabel AccountSettingV2EffectiveWorkspaceLabel
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel">AccountSettingV2EffectiveWorkspaceLabel</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#effective_workspace_label AccountSettingV2#effective_workspace_label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#effective_workspace_label AccountSettingV2#effective_workspace_label}.
 
 ---
 
@@ -2328,7 +2328,7 @@ IntegerVal AccountSettingV2IntegerVal
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2IntegerVal">AccountSettingV2IntegerVal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#integer_val AccountSettingV2#integer_val}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#integer_val AccountSettingV2#integer_val}.
 
 ---
 
@@ -2340,7 +2340,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#name AccountSettingV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#name AccountSettingV2#name}.
 
 ---
 
@@ -2352,7 +2352,7 @@ OperationalEmailCustomRecipient AccountSettingV2OperationalEmailCustomRecipient
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2OperationalEmailCustomRecipient">AccountSettingV2OperationalEmailCustomRecipient</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#operational_email_custom_recipient AccountSettingV2#operational_email_custom_recipient}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#operational_email_custom_recipient AccountSettingV2#operational_email_custom_recipient}.
 
 ---
 
@@ -2364,7 +2364,7 @@ PersonalCompute AccountSettingV2PersonalCompute
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2PersonalCompute">AccountSettingV2PersonalCompute</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#personal_compute AccountSettingV2#personal_compute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#personal_compute AccountSettingV2#personal_compute}.
 
 ---
 
@@ -2376,7 +2376,7 @@ RestrictWorkspaceAdmins AccountSettingV2RestrictWorkspaceAdmins
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins">AccountSettingV2RestrictWorkspaceAdmins</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#restrict_workspace_admins AccountSettingV2#restrict_workspace_admins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#restrict_workspace_admins AccountSettingV2#restrict_workspace_admins}.
 
 ---
 
@@ -2388,7 +2388,7 @@ StringVal AccountSettingV2StringVal
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringVal">AccountSettingV2StringVal</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#string_val AccountSettingV2#string_val}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#string_val AccountSettingV2#string_val}.
 
 ---
 
@@ -2400,7 +2400,7 @@ WorkspaceDashboardTheme AccountSettingV2WorkspaceDashboardTheme
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme">AccountSettingV2WorkspaceDashboardTheme</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#workspace_dashboard_theme AccountSettingV2#workspace_dashboard_theme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#workspace_dashboard_theme AccountSettingV2#workspace_dashboard_theme}.
 
 ---
 
@@ -2412,7 +2412,7 @@ WorkspaceLabel AccountSettingV2WorkspaceLabel
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel">AccountSettingV2WorkspaceLabel</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#workspace_label AccountSettingV2#workspace_label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#workspace_label AccountSettingV2#workspace_label}.
 
 ---
 
@@ -2432,7 +2432,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">AccessPolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">AccessPolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}. |
 
 ---
 
@@ -2444,7 +2444,7 @@ AccessPolicyType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#access_policy_type AccountSettingV2#access_policy_type}.
 
 ---
 
@@ -2464,7 +2464,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains.property.approvedDomains">ApprovedDomains</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains.property.approvedDomains">ApprovedDomains</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}. |
 
 ---
 
@@ -2476,7 +2476,7 @@ ApprovedDomains *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#approved_domains AccountSettingV2#approved_domains}.
 
 ---
 
@@ -2496,7 +2496,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAllowedAppsUserApiScopes.property.allowedScopes">AllowedScopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAllowedAppsUserApiScopes.property.allowedScopes">AllowedScopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}. |
 
 ---
 
@@ -2508,7 +2508,7 @@ AllowedScopes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#allowed_scopes AccountSettingV2#allowed_scopes}.
 
 ---
 
@@ -2532,11 +2532,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.canToggle">CanToggle</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enablementDetails">EnablementDetails</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">RestartEvenIfNoUpdatesAvailable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.canToggle">CanToggle</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enablementDetails">EnablementDetails</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">RestartEvenIfNoUpdatesAvailable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}. |
 
 ---
 
@@ -2548,7 +2548,7 @@ CanToggle interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#can_toggle AccountSettingV2#can_toggle}.
 
 ---
 
@@ -2560,7 +2560,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#enabled AccountSettingV2#enabled}.
 
 ---
 
@@ -2572,7 +2572,7 @@ EnablementDetails AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnable
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#enablement_details AccountSettingV2#enablement_details}.
 
 ---
 
@@ -2584,7 +2584,7 @@ MaintenanceWindow AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMainte
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#maintenance_window AccountSettingV2#maintenance_window}.
 
 ---
 
@@ -2596,7 +2596,7 @@ RestartEvenIfNoUpdatesAvailable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#restart_even_if_no_updates_available AccountSettingV2#restart_even_if_no_updates_available}.
 
 ---
 
@@ -2618,9 +2618,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">ForcedForComplianceMode</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">UnavailableForDisabledEntitlement</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">UnavailableForNonEnterpriseTier</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">ForcedForComplianceMode</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">UnavailableForDisabledEntitlement</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">UnavailableForNonEnterpriseTier</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}. |
 
 ---
 
@@ -2632,7 +2632,7 @@ ForcedForComplianceMode interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#forced_for_compliance_mode AccountSettingV2#forced_for_compliance_mode}.
 
 ---
 
@@ -2644,7 +2644,7 @@ UnavailableForDisabledEntitlement interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#unavailable_for_disabled_entitlement AccountSettingV2#unavailable_for_disabled_entitlement}.
 
 ---
 
@@ -2656,7 +2656,7 @@ UnavailableForNonEnterpriseTier interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#unavailable_for_non_enterprise_tier AccountSettingV2#unavailable_for_non_enterprise_tier}.
 
 ---
 
@@ -2676,7 +2676,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">WeekDayBasedSchedule</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">WeekDayBasedSchedule</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}. |
 
 ---
 
@@ -2688,7 +2688,7 @@ WeekDayBasedSchedule AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMai
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#week_day_based_schedule AccountSettingV2#week_day_based_schedule}.
 
 ---
 
@@ -2710,9 +2710,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">DayOfWeek</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">Frequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">WindowStartTime</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">DayOfWeek</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">Frequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">WindowStartTime</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}. |
 
 ---
 
@@ -2724,7 +2724,7 @@ DayOfWeek *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#day_of_week AccountSettingV2#day_of_week}.
 
 ---
 
@@ -2736,7 +2736,7 @@ Frequency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#frequency AccountSettingV2#frequency}.
 
 ---
 
@@ -2748,7 +2748,7 @@ WindowStartTime AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintena
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#window_start_time AccountSettingV2#window_start_time}.
 
 ---
 
@@ -2769,8 +2769,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">Hours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">Hours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}. |
 
 ---
 
@@ -2782,7 +2782,7 @@ Hours *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#hours AccountSettingV2#hours}.
 
 ---
 
@@ -2794,7 +2794,7 @@ Minutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#minutes AccountSettingV2#minutes}.
 
 ---
 
@@ -2814,7 +2814,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveBooleanVal.property.value">Value</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveBooleanVal.property.value">Value</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -2826,7 +2826,7 @@ Value interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 
 ---
 
@@ -2846,7 +2846,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveCollaborationPlatformConnectivity.property.connectivity">Connectivity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveCollaborationPlatformConnectivity.property.connectivity">Connectivity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}. |
 
 ---
 
@@ -2858,7 +2858,7 @@ Connectivity *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#connectivity AccountSettingV2#connectivity}.
 
 ---
 
@@ -2878,7 +2878,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveIntegerVal.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveIntegerVal.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -2890,7 +2890,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 
 ---
 
@@ -2910,7 +2910,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveOperationalEmailCustomRecipient.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#email AccountSettingV2#email}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveOperationalEmailCustomRecipient.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#email AccountSettingV2#email}. |
 
 ---
 
@@ -2922,7 +2922,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#email AccountSettingV2#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#email AccountSettingV2#email}.
 
 ---
 
@@ -2942,7 +2942,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectivePersonalCompute.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectivePersonalCompute.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -2954,7 +2954,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 
 ---
 
@@ -2975,8 +2975,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#status AccountSettingV2#status}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins.property.disableGovTagCreation">DisableGovTagCreation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#status AccountSettingV2#status}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveRestrictWorkspaceAdmins.property.disableGovTagCreation">DisableGovTagCreation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}. |
 
 ---
 
@@ -2988,7 +2988,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#status AccountSettingV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#status AccountSettingV2#status}.
 
 ---
 
@@ -3000,7 +3000,7 @@ DisableGovTagCreation interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}.
 
 ---
 
@@ -3020,7 +3020,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveStringVal.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveStringVal.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -3032,7 +3032,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 
 ---
 
@@ -3089,44 +3089,44 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.axisLineColor">AxisLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor">AccountSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#axis_line_color AccountSettingV2#axis_line_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.canvasBackgroundColor">CanvasBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor">AccountSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#canvas_background_color AccountSettingV2#canvas_background_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.continuousGradient">ContinuousGradient</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#continuous_gradient AccountSettingV2#continuous_gradient}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.fontSettings">FontSettings</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_settings AccountSettingV2#font_settings}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.gridLineColor">GridLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeGridLineColor">AccountSettingV2EffectiveWorkspaceDashboardThemeGridLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#grid_line_color AccountSettingV2#grid_line_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.markCornerRadius">MarkCornerRadius</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#mark_corner_radius AccountSettingV2#mark_corner_radius}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.selectionColor">SelectionColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSelectionColor">AccountSettingV2EffectiveWorkspaceDashboardThemeSelectionColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#selection_color AccountSettingV2#selection_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.sentimentColors">SentimentColors</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors">AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#sentiment_colors AccountSettingV2#sentiment_colors}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.textBoxVerticalAlign">TextBoxVerticalAlign</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_box_vertical_align AccountSettingV2#text_box_vertical_align}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor01">VisualizationColor01</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_01 AccountSettingV2#visualization_color_01}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor02">VisualizationColor02</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_02 AccountSettingV2#visualization_color_02}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor03">VisualizationColor03</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_03 AccountSettingV2#visualization_color_03}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor04">VisualizationColor04</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_04 AccountSettingV2#visualization_color_04}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor05">VisualizationColor05</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_05 AccountSettingV2#visualization_color_05}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor06">VisualizationColor06</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_06 AccountSettingV2#visualization_color_06}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor07">VisualizationColor07</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_07 AccountSettingV2#visualization_color_07}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor08">VisualizationColor08</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_08 AccountSettingV2#visualization_color_08}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor09">VisualizationColor09</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_09 AccountSettingV2#visualization_color_09}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor10">VisualizationColor10</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_10 AccountSettingV2#visualization_color_10}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor11">VisualizationColor11</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_11 AccountSettingV2#visualization_color_11}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor12">VisualizationColor12</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_12 AccountSettingV2#visualization_color_12}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor13">VisualizationColor13</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_13 AccountSettingV2#visualization_color_13}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor14">VisualizationColor14</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_14 AccountSettingV2#visualization_color_14}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor15">VisualizationColor15</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_15 AccountSettingV2#visualization_color_15}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor16">VisualizationColor16</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_16 AccountSettingV2#visualization_color_16}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor17">VisualizationColor17</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_17 AccountSettingV2#visualization_color_17}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor18">VisualizationColor18</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_18 AccountSettingV2#visualization_color_18}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor19">VisualizationColor19</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_19 AccountSettingV2#visualization_color_19}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor20">VisualizationColor20</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_20 AccountSettingV2#visualization_color_20}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.widgetBackgroundColor">WidgetBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor">AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_background_color AccountSettingV2#widget_background_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.widgetBorderColor">WidgetBorderColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor">AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_border_color AccountSettingV2#widget_border_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.widgetCornerRadius">WidgetCornerRadius</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_corner_radius AccountSettingV2#widget_corner_radius}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.widgetHeaderAlignment">WidgetHeaderAlignment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_header_alignment AccountSettingV2#widget_header_alignment}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.widgetMargin">WidgetMargin</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_margin AccountSettingV2#widget_margin}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.widgetPadding">WidgetPadding</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_padding AccountSettingV2#widget_padding}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.widgetShadow">WidgetShadow</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_shadow AccountSettingV2#widget_shadow}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.axisLineColor">AxisLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor">AccountSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#axis_line_color AccountSettingV2#axis_line_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.canvasBackgroundColor">CanvasBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor">AccountSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#canvas_background_color AccountSettingV2#canvas_background_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.continuousGradient">ContinuousGradient</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#continuous_gradient AccountSettingV2#continuous_gradient}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.fontSettings">FontSettings</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_settings AccountSettingV2#font_settings}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.gridLineColor">GridLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeGridLineColor">AccountSettingV2EffectiveWorkspaceDashboardThemeGridLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#grid_line_color AccountSettingV2#grid_line_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.markCornerRadius">MarkCornerRadius</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#mark_corner_radius AccountSettingV2#mark_corner_radius}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.selectionColor">SelectionColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSelectionColor">AccountSettingV2EffectiveWorkspaceDashboardThemeSelectionColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#selection_color AccountSettingV2#selection_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.sentimentColors">SentimentColors</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors">AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#sentiment_colors AccountSettingV2#sentiment_colors}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.textBoxVerticalAlign">TextBoxVerticalAlign</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_box_vertical_align AccountSettingV2#text_box_vertical_align}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor01">VisualizationColor01</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_01 AccountSettingV2#visualization_color_01}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor02">VisualizationColor02</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_02 AccountSettingV2#visualization_color_02}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor03">VisualizationColor03</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_03 AccountSettingV2#visualization_color_03}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor04">VisualizationColor04</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_04 AccountSettingV2#visualization_color_04}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor05">VisualizationColor05</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_05 AccountSettingV2#visualization_color_05}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor06">VisualizationColor06</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_06 AccountSettingV2#visualization_color_06}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor07">VisualizationColor07</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_07 AccountSettingV2#visualization_color_07}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor08">VisualizationColor08</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_08 AccountSettingV2#visualization_color_08}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor09">VisualizationColor09</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_09 AccountSettingV2#visualization_color_09}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor10">VisualizationColor10</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_10 AccountSettingV2#visualization_color_10}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor11">VisualizationColor11</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_11 AccountSettingV2#visualization_color_11}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor12">VisualizationColor12</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_12 AccountSettingV2#visualization_color_12}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor13">VisualizationColor13</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_13 AccountSettingV2#visualization_color_13}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor14">VisualizationColor14</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_14 AccountSettingV2#visualization_color_14}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor15">VisualizationColor15</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_15 AccountSettingV2#visualization_color_15}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor16">VisualizationColor16</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_16 AccountSettingV2#visualization_color_16}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor17">VisualizationColor17</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_17 AccountSettingV2#visualization_color_17}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor18">VisualizationColor18</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_18 AccountSettingV2#visualization_color_18}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor19">VisualizationColor19</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_19 AccountSettingV2#visualization_color_19}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor20">VisualizationColor20</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_20 AccountSettingV2#visualization_color_20}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.widgetBackgroundColor">WidgetBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor">AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_background_color AccountSettingV2#widget_background_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.widgetBorderColor">WidgetBorderColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor">AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_border_color AccountSettingV2#widget_border_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.widgetCornerRadius">WidgetCornerRadius</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_corner_radius AccountSettingV2#widget_corner_radius}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.widgetHeaderAlignment">WidgetHeaderAlignment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_header_alignment AccountSettingV2#widget_header_alignment}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.widgetMargin">WidgetMargin</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_margin AccountSettingV2#widget_margin}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.widgetPadding">WidgetPadding</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_padding AccountSettingV2#widget_padding}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardTheme.property.widgetShadow">WidgetShadow</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_shadow AccountSettingV2#widget_shadow}. |
 
 ---
 
@@ -3138,7 +3138,7 @@ AxisLineColor AccountSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor">AccountSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#axis_line_color AccountSettingV2#axis_line_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#axis_line_color AccountSettingV2#axis_line_color}.
 
 ---
 
@@ -3150,7 +3150,7 @@ CanvasBackgroundColor AccountSettingV2EffectiveWorkspaceDashboardThemeCanvasBack
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor">AccountSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#canvas_background_color AccountSettingV2#canvas_background_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#canvas_background_color AccountSettingV2#canvas_background_color}.
 
 ---
 
@@ -3162,7 +3162,7 @@ ContinuousGradient AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGra
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#continuous_gradient AccountSettingV2#continuous_gradient}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#continuous_gradient AccountSettingV2#continuous_gradient}.
 
 ---
 
@@ -3174,7 +3174,7 @@ FontColor AccountSettingV2EffectiveWorkspaceDashboardThemeFontColor
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
 
 ---
 
@@ -3186,7 +3186,7 @@ FontFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
 
 ---
 
@@ -3198,7 +3198,7 @@ FontSettings AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_settings AccountSettingV2#font_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_settings AccountSettingV2#font_settings}.
 
 ---
 
@@ -3210,7 +3210,7 @@ GridLineColor AccountSettingV2EffectiveWorkspaceDashboardThemeGridLineColor
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeGridLineColor">AccountSettingV2EffectiveWorkspaceDashboardThemeGridLineColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#grid_line_color AccountSettingV2#grid_line_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#grid_line_color AccountSettingV2#grid_line_color}.
 
 ---
 
@@ -3222,7 +3222,7 @@ MarkCornerRadius *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#mark_corner_radius AccountSettingV2#mark_corner_radius}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#mark_corner_radius AccountSettingV2#mark_corner_radius}.
 
 ---
 
@@ -3234,7 +3234,7 @@ SelectionColor AccountSettingV2EffectiveWorkspaceDashboardThemeSelectionColor
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSelectionColor">AccountSettingV2EffectiveWorkspaceDashboardThemeSelectionColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#selection_color AccountSettingV2#selection_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#selection_color AccountSettingV2#selection_color}.
 
 ---
 
@@ -3246,7 +3246,7 @@ SentimentColors AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors">AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#sentiment_colors AccountSettingV2#sentiment_colors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#sentiment_colors AccountSettingV2#sentiment_colors}.
 
 ---
 
@@ -3258,7 +3258,7 @@ TextBoxVerticalAlign *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_box_vertical_align AccountSettingV2#text_box_vertical_align}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_box_vertical_align AccountSettingV2#text_box_vertical_align}.
 
 ---
 
@@ -3270,7 +3270,7 @@ VisualizationColor01 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_01 AccountSettingV2#visualization_color_01}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_01 AccountSettingV2#visualization_color_01}.
 
 ---
 
@@ -3282,7 +3282,7 @@ VisualizationColor02 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_02 AccountSettingV2#visualization_color_02}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_02 AccountSettingV2#visualization_color_02}.
 
 ---
 
@@ -3294,7 +3294,7 @@ VisualizationColor03 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_03 AccountSettingV2#visualization_color_03}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_03 AccountSettingV2#visualization_color_03}.
 
 ---
 
@@ -3306,7 +3306,7 @@ VisualizationColor04 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_04 AccountSettingV2#visualization_color_04}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_04 AccountSettingV2#visualization_color_04}.
 
 ---
 
@@ -3318,7 +3318,7 @@ VisualizationColor05 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_05 AccountSettingV2#visualization_color_05}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_05 AccountSettingV2#visualization_color_05}.
 
 ---
 
@@ -3330,7 +3330,7 @@ VisualizationColor06 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_06 AccountSettingV2#visualization_color_06}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_06 AccountSettingV2#visualization_color_06}.
 
 ---
 
@@ -3342,7 +3342,7 @@ VisualizationColor07 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_07 AccountSettingV2#visualization_color_07}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_07 AccountSettingV2#visualization_color_07}.
 
 ---
 
@@ -3354,7 +3354,7 @@ VisualizationColor08 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_08 AccountSettingV2#visualization_color_08}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_08 AccountSettingV2#visualization_color_08}.
 
 ---
 
@@ -3366,7 +3366,7 @@ VisualizationColor09 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_09 AccountSettingV2#visualization_color_09}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_09 AccountSettingV2#visualization_color_09}.
 
 ---
 
@@ -3378,7 +3378,7 @@ VisualizationColor10 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_10 AccountSettingV2#visualization_color_10}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_10 AccountSettingV2#visualization_color_10}.
 
 ---
 
@@ -3390,7 +3390,7 @@ VisualizationColor11 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_11 AccountSettingV2#visualization_color_11}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_11 AccountSettingV2#visualization_color_11}.
 
 ---
 
@@ -3402,7 +3402,7 @@ VisualizationColor12 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_12 AccountSettingV2#visualization_color_12}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_12 AccountSettingV2#visualization_color_12}.
 
 ---
 
@@ -3414,7 +3414,7 @@ VisualizationColor13 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_13 AccountSettingV2#visualization_color_13}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_13 AccountSettingV2#visualization_color_13}.
 
 ---
 
@@ -3426,7 +3426,7 @@ VisualizationColor14 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_14 AccountSettingV2#visualization_color_14}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_14 AccountSettingV2#visualization_color_14}.
 
 ---
 
@@ -3438,7 +3438,7 @@ VisualizationColor15 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_15 AccountSettingV2#visualization_color_15}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_15 AccountSettingV2#visualization_color_15}.
 
 ---
 
@@ -3450,7 +3450,7 @@ VisualizationColor16 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_16 AccountSettingV2#visualization_color_16}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_16 AccountSettingV2#visualization_color_16}.
 
 ---
 
@@ -3462,7 +3462,7 @@ VisualizationColor17 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_17 AccountSettingV2#visualization_color_17}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_17 AccountSettingV2#visualization_color_17}.
 
 ---
 
@@ -3474,7 +3474,7 @@ VisualizationColor18 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_18 AccountSettingV2#visualization_color_18}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_18 AccountSettingV2#visualization_color_18}.
 
 ---
 
@@ -3486,7 +3486,7 @@ VisualizationColor19 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_19 AccountSettingV2#visualization_color_19}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_19 AccountSettingV2#visualization_color_19}.
 
 ---
 
@@ -3498,7 +3498,7 @@ VisualizationColor20 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_20 AccountSettingV2#visualization_color_20}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_20 AccountSettingV2#visualization_color_20}.
 
 ---
 
@@ -3510,7 +3510,7 @@ WidgetBackgroundColor AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBack
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor">AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_background_color AccountSettingV2#widget_background_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_background_color AccountSettingV2#widget_background_color}.
 
 ---
 
@@ -3522,7 +3522,7 @@ WidgetBorderColor AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderCo
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor">AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_border_color AccountSettingV2#widget_border_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_border_color AccountSettingV2#widget_border_color}.
 
 ---
 
@@ -3534,7 +3534,7 @@ WidgetCornerRadius *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_corner_radius AccountSettingV2#widget_corner_radius}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_corner_radius AccountSettingV2#widget_corner_radius}.
 
 ---
 
@@ -3546,7 +3546,7 @@ WidgetHeaderAlignment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_header_alignment AccountSettingV2#widget_header_alignment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_header_alignment AccountSettingV2#widget_header_alignment}.
 
 ---
 
@@ -3558,7 +3558,7 @@ WidgetMargin *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_margin AccountSettingV2#widget_margin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_margin AccountSettingV2#widget_margin}.
 
 ---
 
@@ -3570,7 +3570,7 @@ WidgetPadding *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_padding AccountSettingV2#widget_padding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_padding AccountSettingV2#widget_padding}.
 
 ---
 
@@ -3582,7 +3582,7 @@ WidgetShadow *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_shadow AccountSettingV2#widget_shadow}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_shadow AccountSettingV2#widget_shadow}.
 
 ---
 
@@ -3603,8 +3603,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -3616,7 +3616,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -3628,7 +3628,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -3649,8 +3649,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -3662,7 +3662,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -3674,7 +3674,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -3695,8 +3695,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient.property.darkMode">DarkMode</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark_mode AccountSettingV2#dark_mode}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient.property.lightMode">LightMode</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light_mode AccountSettingV2#light_mode}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient.property.darkMode">DarkMode</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark_mode AccountSettingV2#dark_mode}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient.property.lightMode">LightMode</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light_mode AccountSettingV2#light_mode}. |
 
 ---
 
@@ -3708,7 +3708,7 @@ DarkMode AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkM
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark_mode AccountSettingV2#dark_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark_mode AccountSettingV2#dark_mode}.
 
 ---
 
@@ -3720,7 +3720,7 @@ LightMode AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLigh
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light_mode AccountSettingV2#light_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light_mode AccountSettingV2#light_mode}.
 
 ---
 
@@ -3744,11 +3744,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.color">Color</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color AccountSettingV2#color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.colorScheme">ColorScheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.color">Color</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color AccountSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.colorScheme">ColorScheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}. |
 
 ---
 
@@ -3760,7 +3760,7 @@ Color *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
 
 ---
 
@@ -3772,7 +3772,7 @@ ColorScheme *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}.
 
 ---
 
@@ -3784,7 +3784,7 @@ CustomDiverging AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradie
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}.
 
 ---
 
@@ -3796,7 +3796,7 @@ CustomSequential AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradi
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}.
 
 ---
 
@@ -3808,7 +3808,7 @@ FromCategoricalIndex *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}.
 
 ---
 
@@ -3830,9 +3830,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
 
 ---
 
@@ -3844,7 +3844,7 @@ End AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCu
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
 
 ---
 
@@ -3856,7 +3856,7 @@ Mid AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCu
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}.
 
 ---
 
@@ -3868,7 +3868,7 @@ Start AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
 
 ---
 
@@ -3889,8 +3889,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -3902,7 +3902,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -3914,7 +3914,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -3935,8 +3935,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -3948,7 +3948,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -3960,7 +3960,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -3981,8 +3981,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -3994,7 +3994,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -4006,7 +4006,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -4027,8 +4027,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
 
 ---
 
@@ -4040,7 +4040,7 @@ End AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCu
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
 
 ---
 
@@ -4052,7 +4052,7 @@ Start AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
 
 ---
 
@@ -4073,8 +4073,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -4086,7 +4086,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -4098,7 +4098,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -4119,8 +4119,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -4132,7 +4132,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -4144,7 +4144,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -4168,11 +4168,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.color">Color</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color AccountSettingV2#color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.colorScheme">ColorScheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.color">Color</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color AccountSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.colorScheme">ColorScheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}. |
 
 ---
 
@@ -4184,7 +4184,7 @@ Color *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
 
 ---
 
@@ -4196,7 +4196,7 @@ ColorScheme *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}.
 
 ---
 
@@ -4208,7 +4208,7 @@ CustomDiverging AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradie
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}.
 
 ---
 
@@ -4220,7 +4220,7 @@ CustomSequential AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradi
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}.
 
 ---
 
@@ -4232,7 +4232,7 @@ FromCategoricalIndex *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}.
 
 ---
 
@@ -4254,9 +4254,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
 
 ---
 
@@ -4268,7 +4268,7 @@ End AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeC
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
 
 ---
 
@@ -4280,7 +4280,7 @@ Mid AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeC
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}.
 
 ---
 
@@ -4292,7 +4292,7 @@ Start AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMod
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
 
 ---
 
@@ -4313,8 +4313,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -4326,7 +4326,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -4338,7 +4338,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -4359,8 +4359,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -4372,7 +4372,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -4384,7 +4384,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -4405,8 +4405,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -4418,7 +4418,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -4430,7 +4430,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -4451,8 +4451,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
 
 ---
 
@@ -4464,7 +4464,7 @@ End AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeC
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
 
 ---
 
@@ -4476,7 +4476,7 @@ Start AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMod
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart">AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
 
 ---
 
@@ -4497,8 +4497,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -4510,7 +4510,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -4522,7 +4522,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -4543,8 +4543,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -4556,7 +4556,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -4568,7 +4568,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -4589,8 +4589,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -4602,7 +4602,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -4614,7 +4614,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -4638,11 +4638,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.base">Base</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#base AccountSettingV2#base}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.fieldTitle">FieldTitle</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#field_title AccountSettingV2#field_title}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.fieldValue">FieldValue</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#field_value AccountSettingV2#field_value}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.widgetDescription">WidgetDescription</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_description AccountSettingV2#widget_description}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.widgetTitle">WidgetTitle</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_title AccountSettingV2#widget_title}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.base">Base</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#base AccountSettingV2#base}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.fieldTitle">FieldTitle</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#field_title AccountSettingV2#field_title}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.fieldValue">FieldValue</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#field_value AccountSettingV2#field_value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.widgetDescription">WidgetDescription</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_description AccountSettingV2#widget_description}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.widgetTitle">WidgetTitle</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_title AccountSettingV2#widget_title}. |
 
 ---
 
@@ -4654,7 +4654,7 @@ Base AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#base AccountSettingV2#base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#base AccountSettingV2#base}.
 
 ---
 
@@ -4666,7 +4666,7 @@ FieldTitle AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitl
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#field_title AccountSettingV2#field_title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#field_title AccountSettingV2#field_title}.
 
 ---
 
@@ -4678,7 +4678,7 @@ FieldValue AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValu
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#field_value AccountSettingV2#field_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#field_value AccountSettingV2#field_value}.
 
 ---
 
@@ -4690,7 +4690,7 @@ WidgetDescription AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWi
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_description AccountSettingV2#widget_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_description AccountSettingV2#widget_description}.
 
 ---
 
@@ -4702,7 +4702,7 @@ WidgetTitle AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTi
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_title AccountSettingV2#widget_title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_title AccountSettingV2#widget_title}.
 
 ---
 
@@ -4728,13 +4728,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
 
 ---
 
@@ -4746,7 +4746,7 @@ FontColor AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontCo
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
 
 ---
 
@@ -4758,7 +4758,7 @@ FontFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
 
 ---
 
@@ -4770,7 +4770,7 @@ FontSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
 
 ---
 
@@ -4782,7 +4782,7 @@ FontStyle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
 
 ---
 
@@ -4794,7 +4794,7 @@ FontWeight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
 
 ---
 
@@ -4806,7 +4806,7 @@ TextCase *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
 
 ---
 
@@ -4818,7 +4818,7 @@ TextDecoration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
 
 ---
 
@@ -4839,8 +4839,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -4852,7 +4852,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -4864,7 +4864,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -4890,13 +4890,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
 
 ---
 
@@ -4908,7 +4908,7 @@ FontColor AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
 
 ---
 
@@ -4920,7 +4920,7 @@ FontFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
 
 ---
 
@@ -4932,7 +4932,7 @@ FontSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
 
 ---
 
@@ -4944,7 +4944,7 @@ FontStyle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
 
 ---
 
@@ -4956,7 +4956,7 @@ FontWeight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
 
 ---
 
@@ -4968,7 +4968,7 @@ TextCase *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
 
 ---
 
@@ -4980,7 +4980,7 @@ TextDecoration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
 
 ---
 
@@ -5001,8 +5001,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -5014,7 +5014,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -5026,7 +5026,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -5052,13 +5052,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
 
 ---
 
@@ -5070,7 +5070,7 @@ FontColor AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
 
 ---
 
@@ -5082,7 +5082,7 @@ FontFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
 
 ---
 
@@ -5094,7 +5094,7 @@ FontSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
 
 ---
 
@@ -5106,7 +5106,7 @@ FontStyle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
 
 ---
 
@@ -5118,7 +5118,7 @@ FontWeight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
 
 ---
 
@@ -5130,7 +5130,7 @@ TextCase *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
 
 ---
 
@@ -5142,7 +5142,7 @@ TextDecoration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
 
 ---
 
@@ -5163,8 +5163,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -5176,7 +5176,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -5188,7 +5188,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -5214,13 +5214,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
 
 ---
 
@@ -5232,7 +5232,7 @@ FontColor AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDesc
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
 
 ---
 
@@ -5244,7 +5244,7 @@ FontFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
 
 ---
 
@@ -5256,7 +5256,7 @@ FontSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
 
 ---
 
@@ -5268,7 +5268,7 @@ FontStyle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
 
 ---
 
@@ -5280,7 +5280,7 @@ FontWeight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
 
 ---
 
@@ -5292,7 +5292,7 @@ TextCase *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
 
 ---
 
@@ -5304,7 +5304,7 @@ TextDecoration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
 
 ---
 
@@ -5325,8 +5325,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -5338,7 +5338,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -5350,7 +5350,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -5376,13 +5376,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
 
 ---
 
@@ -5394,7 +5394,7 @@ FontColor AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitl
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor">AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
 
 ---
 
@@ -5406,7 +5406,7 @@ FontFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
 
 ---
 
@@ -5418,7 +5418,7 @@ FontSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
 
 ---
 
@@ -5430,7 +5430,7 @@ FontStyle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
 
 ---
 
@@ -5442,7 +5442,7 @@ FontWeight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
 
 ---
 
@@ -5454,7 +5454,7 @@ TextCase *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
 
 ---
 
@@ -5466,7 +5466,7 @@ TextDecoration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
 
 ---
 
@@ -5487,8 +5487,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -5500,7 +5500,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -5512,7 +5512,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -5533,8 +5533,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeGridLineColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeGridLineColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeGridLineColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeGridLineColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -5546,7 +5546,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -5558,7 +5558,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -5579,8 +5579,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSelectionColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSelectionColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSelectionColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSelectionColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -5592,7 +5592,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -5604,7 +5604,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -5626,9 +5626,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors.property.negative">Negative</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative">AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#negative AccountSettingV2#negative}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors.property.neutral">Neutral</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral">AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#neutral AccountSettingV2#neutral}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors.property.positive">Positive</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive">AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#positive AccountSettingV2#positive}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors.property.negative">Negative</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative">AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#negative AccountSettingV2#negative}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors.property.neutral">Neutral</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral">AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#neutral AccountSettingV2#neutral}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors.property.positive">Positive</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive">AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#positive AccountSettingV2#positive}. |
 
 ---
 
@@ -5640,7 +5640,7 @@ Negative AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative">AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#negative AccountSettingV2#negative}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#negative AccountSettingV2#negative}.
 
 ---
 
@@ -5652,7 +5652,7 @@ Neutral AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral">AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#neutral AccountSettingV2#neutral}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#neutral AccountSettingV2#neutral}.
 
 ---
 
@@ -5664,7 +5664,7 @@ Positive AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive">AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#positive AccountSettingV2#positive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#positive AccountSettingV2#positive}.
 
 ---
 
@@ -5685,8 +5685,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -5698,7 +5698,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -5710,7 +5710,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -5731,8 +5731,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -5744,7 +5744,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -5756,7 +5756,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -5777,8 +5777,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -5790,7 +5790,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -5802,7 +5802,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -5823,8 +5823,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -5836,7 +5836,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -5848,7 +5848,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -5869,8 +5869,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -5882,7 +5882,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -5894,7 +5894,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -5915,8 +5915,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel.property.color">Color</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color AccountSettingV2#color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#label AccountSettingV2#label}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel.property.color">Color</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color AccountSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2EffectiveWorkspaceLabel.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#label AccountSettingV2#label}. |
 
 ---
 
@@ -5928,7 +5928,7 @@ Color *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
 
 ---
 
@@ -5940,7 +5940,7 @@ Label *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#label AccountSettingV2#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#label AccountSettingV2#label}.
 
 ---
 
@@ -5960,7 +5960,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2IntegerVal.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2IntegerVal.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -5972,7 +5972,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 
 ---
 
@@ -5992,7 +5992,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2OperationalEmailCustomRecipient.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#email AccountSettingV2#email}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2OperationalEmailCustomRecipient.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#email AccountSettingV2#email}. |
 
 ---
 
@@ -6004,7 +6004,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#email AccountSettingV2#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#email AccountSettingV2#email}.
 
 ---
 
@@ -6024,7 +6024,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2PersonalCompute.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2PersonalCompute.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -6036,7 +6036,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 
 ---
 
@@ -6057,8 +6057,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#status AccountSettingV2#status}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins.property.disableGovTagCreation">DisableGovTagCreation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#status AccountSettingV2#status}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2RestrictWorkspaceAdmins.property.disableGovTagCreation">DisableGovTagCreation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}. |
 
 ---
 
@@ -6070,7 +6070,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#status AccountSettingV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#status AccountSettingV2#status}.
 
 ---
 
@@ -6082,7 +6082,7 @@ DisableGovTagCreation interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#disable_gov_tag_creation AccountSettingV2#disable_gov_tag_creation}.
 
 ---
 
@@ -6102,7 +6102,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringVal.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2StringVal.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}. |
 
 ---
 
@@ -6114,7 +6114,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#value AccountSettingV2#value}.
 
 ---
 
@@ -6171,44 +6171,44 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.axisLineColor">AxisLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeAxisLineColor">AccountSettingV2WorkspaceDashboardThemeAxisLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#axis_line_color AccountSettingV2#axis_line_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.canvasBackgroundColor">CanvasBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeCanvasBackgroundColor">AccountSettingV2WorkspaceDashboardThemeCanvasBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#canvas_background_color AccountSettingV2#canvas_background_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.continuousGradient">ContinuousGradient</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradient">AccountSettingV2WorkspaceDashboardThemeContinuousGradient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#continuous_gradient AccountSettingV2#continuous_gradient}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontColor">AccountSettingV2WorkspaceDashboardThemeFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.fontSettings">FontSettings</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettings">AccountSettingV2WorkspaceDashboardThemeFontSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_settings AccountSettingV2#font_settings}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.gridLineColor">GridLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeGridLineColor">AccountSettingV2WorkspaceDashboardThemeGridLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#grid_line_color AccountSettingV2#grid_line_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.markCornerRadius">MarkCornerRadius</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#mark_corner_radius AccountSettingV2#mark_corner_radius}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.selectionColor">SelectionColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSelectionColor">AccountSettingV2WorkspaceDashboardThemeSelectionColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#selection_color AccountSettingV2#selection_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.sentimentColors">SentimentColors</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColors">AccountSettingV2WorkspaceDashboardThemeSentimentColors</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#sentiment_colors AccountSettingV2#sentiment_colors}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.textBoxVerticalAlign">TextBoxVerticalAlign</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_box_vertical_align AccountSettingV2#text_box_vertical_align}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor01">VisualizationColor01</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_01 AccountSettingV2#visualization_color_01}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor02">VisualizationColor02</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_02 AccountSettingV2#visualization_color_02}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor03">VisualizationColor03</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_03 AccountSettingV2#visualization_color_03}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor04">VisualizationColor04</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_04 AccountSettingV2#visualization_color_04}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor05">VisualizationColor05</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_05 AccountSettingV2#visualization_color_05}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor06">VisualizationColor06</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_06 AccountSettingV2#visualization_color_06}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor07">VisualizationColor07</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_07 AccountSettingV2#visualization_color_07}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor08">VisualizationColor08</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_08 AccountSettingV2#visualization_color_08}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor09">VisualizationColor09</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_09 AccountSettingV2#visualization_color_09}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor10">VisualizationColor10</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_10 AccountSettingV2#visualization_color_10}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor11">VisualizationColor11</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_11 AccountSettingV2#visualization_color_11}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor12">VisualizationColor12</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_12 AccountSettingV2#visualization_color_12}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor13">VisualizationColor13</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_13 AccountSettingV2#visualization_color_13}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor14">VisualizationColor14</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_14 AccountSettingV2#visualization_color_14}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor15">VisualizationColor15</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_15 AccountSettingV2#visualization_color_15}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor16">VisualizationColor16</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_16 AccountSettingV2#visualization_color_16}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor17">VisualizationColor17</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_17 AccountSettingV2#visualization_color_17}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor18">VisualizationColor18</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_18 AccountSettingV2#visualization_color_18}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor19">VisualizationColor19</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_19 AccountSettingV2#visualization_color_19}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor20">VisualizationColor20</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_20 AccountSettingV2#visualization_color_20}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.widgetBackgroundColor">WidgetBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeWidgetBackgroundColor">AccountSettingV2WorkspaceDashboardThemeWidgetBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_background_color AccountSettingV2#widget_background_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.widgetBorderColor">WidgetBorderColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeWidgetBorderColor">AccountSettingV2WorkspaceDashboardThemeWidgetBorderColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_border_color AccountSettingV2#widget_border_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.widgetCornerRadius">WidgetCornerRadius</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_corner_radius AccountSettingV2#widget_corner_radius}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.widgetHeaderAlignment">WidgetHeaderAlignment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_header_alignment AccountSettingV2#widget_header_alignment}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.widgetMargin">WidgetMargin</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_margin AccountSettingV2#widget_margin}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.widgetPadding">WidgetPadding</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_padding AccountSettingV2#widget_padding}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.widgetShadow">WidgetShadow</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_shadow AccountSettingV2#widget_shadow}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.axisLineColor">AxisLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeAxisLineColor">AccountSettingV2WorkspaceDashboardThemeAxisLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#axis_line_color AccountSettingV2#axis_line_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.canvasBackgroundColor">CanvasBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeCanvasBackgroundColor">AccountSettingV2WorkspaceDashboardThemeCanvasBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#canvas_background_color AccountSettingV2#canvas_background_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.continuousGradient">ContinuousGradient</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradient">AccountSettingV2WorkspaceDashboardThemeContinuousGradient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#continuous_gradient AccountSettingV2#continuous_gradient}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontColor">AccountSettingV2WorkspaceDashboardThemeFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.fontSettings">FontSettings</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettings">AccountSettingV2WorkspaceDashboardThemeFontSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_settings AccountSettingV2#font_settings}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.gridLineColor">GridLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeGridLineColor">AccountSettingV2WorkspaceDashboardThemeGridLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#grid_line_color AccountSettingV2#grid_line_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.markCornerRadius">MarkCornerRadius</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#mark_corner_radius AccountSettingV2#mark_corner_radius}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.selectionColor">SelectionColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSelectionColor">AccountSettingV2WorkspaceDashboardThemeSelectionColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#selection_color AccountSettingV2#selection_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.sentimentColors">SentimentColors</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColors">AccountSettingV2WorkspaceDashboardThemeSentimentColors</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#sentiment_colors AccountSettingV2#sentiment_colors}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.textBoxVerticalAlign">TextBoxVerticalAlign</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_box_vertical_align AccountSettingV2#text_box_vertical_align}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor01">VisualizationColor01</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_01 AccountSettingV2#visualization_color_01}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor02">VisualizationColor02</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_02 AccountSettingV2#visualization_color_02}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor03">VisualizationColor03</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_03 AccountSettingV2#visualization_color_03}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor04">VisualizationColor04</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_04 AccountSettingV2#visualization_color_04}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor05">VisualizationColor05</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_05 AccountSettingV2#visualization_color_05}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor06">VisualizationColor06</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_06 AccountSettingV2#visualization_color_06}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor07">VisualizationColor07</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_07 AccountSettingV2#visualization_color_07}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor08">VisualizationColor08</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_08 AccountSettingV2#visualization_color_08}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor09">VisualizationColor09</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_09 AccountSettingV2#visualization_color_09}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor10">VisualizationColor10</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_10 AccountSettingV2#visualization_color_10}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor11">VisualizationColor11</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_11 AccountSettingV2#visualization_color_11}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor12">VisualizationColor12</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_12 AccountSettingV2#visualization_color_12}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor13">VisualizationColor13</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_13 AccountSettingV2#visualization_color_13}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor14">VisualizationColor14</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_14 AccountSettingV2#visualization_color_14}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor15">VisualizationColor15</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_15 AccountSettingV2#visualization_color_15}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor16">VisualizationColor16</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_16 AccountSettingV2#visualization_color_16}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor17">VisualizationColor17</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_17 AccountSettingV2#visualization_color_17}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor18">VisualizationColor18</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_18 AccountSettingV2#visualization_color_18}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor19">VisualizationColor19</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_19 AccountSettingV2#visualization_color_19}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.visualizationColor20">VisualizationColor20</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_20 AccountSettingV2#visualization_color_20}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.widgetBackgroundColor">WidgetBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeWidgetBackgroundColor">AccountSettingV2WorkspaceDashboardThemeWidgetBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_background_color AccountSettingV2#widget_background_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.widgetBorderColor">WidgetBorderColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeWidgetBorderColor">AccountSettingV2WorkspaceDashboardThemeWidgetBorderColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_border_color AccountSettingV2#widget_border_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.widgetCornerRadius">WidgetCornerRadius</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_corner_radius AccountSettingV2#widget_corner_radius}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.widgetHeaderAlignment">WidgetHeaderAlignment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_header_alignment AccountSettingV2#widget_header_alignment}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.widgetMargin">WidgetMargin</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_margin AccountSettingV2#widget_margin}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.widgetPadding">WidgetPadding</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_padding AccountSettingV2#widget_padding}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardTheme.property.widgetShadow">WidgetShadow</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_shadow AccountSettingV2#widget_shadow}. |
 
 ---
 
@@ -6220,7 +6220,7 @@ AxisLineColor AccountSettingV2WorkspaceDashboardThemeAxisLineColor
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeAxisLineColor">AccountSettingV2WorkspaceDashboardThemeAxisLineColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#axis_line_color AccountSettingV2#axis_line_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#axis_line_color AccountSettingV2#axis_line_color}.
 
 ---
 
@@ -6232,7 +6232,7 @@ CanvasBackgroundColor AccountSettingV2WorkspaceDashboardThemeCanvasBackgroundCol
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeCanvasBackgroundColor">AccountSettingV2WorkspaceDashboardThemeCanvasBackgroundColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#canvas_background_color AccountSettingV2#canvas_background_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#canvas_background_color AccountSettingV2#canvas_background_color}.
 
 ---
 
@@ -6244,7 +6244,7 @@ ContinuousGradient AccountSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradient">AccountSettingV2WorkspaceDashboardThemeContinuousGradient</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#continuous_gradient AccountSettingV2#continuous_gradient}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#continuous_gradient AccountSettingV2#continuous_gradient}.
 
 ---
 
@@ -6256,7 +6256,7 @@ FontColor AccountSettingV2WorkspaceDashboardThemeFontColor
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontColor">AccountSettingV2WorkspaceDashboardThemeFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
 
 ---
 
@@ -6268,7 +6268,7 @@ FontFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
 
 ---
 
@@ -6280,7 +6280,7 @@ FontSettings AccountSettingV2WorkspaceDashboardThemeFontSettings
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettings">AccountSettingV2WorkspaceDashboardThemeFontSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_settings AccountSettingV2#font_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_settings AccountSettingV2#font_settings}.
 
 ---
 
@@ -6292,7 +6292,7 @@ GridLineColor AccountSettingV2WorkspaceDashboardThemeGridLineColor
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeGridLineColor">AccountSettingV2WorkspaceDashboardThemeGridLineColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#grid_line_color AccountSettingV2#grid_line_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#grid_line_color AccountSettingV2#grid_line_color}.
 
 ---
 
@@ -6304,7 +6304,7 @@ MarkCornerRadius *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#mark_corner_radius AccountSettingV2#mark_corner_radius}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#mark_corner_radius AccountSettingV2#mark_corner_radius}.
 
 ---
 
@@ -6316,7 +6316,7 @@ SelectionColor AccountSettingV2WorkspaceDashboardThemeSelectionColor
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSelectionColor">AccountSettingV2WorkspaceDashboardThemeSelectionColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#selection_color AccountSettingV2#selection_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#selection_color AccountSettingV2#selection_color}.
 
 ---
 
@@ -6328,7 +6328,7 @@ SentimentColors AccountSettingV2WorkspaceDashboardThemeSentimentColors
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColors">AccountSettingV2WorkspaceDashboardThemeSentimentColors</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#sentiment_colors AccountSettingV2#sentiment_colors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#sentiment_colors AccountSettingV2#sentiment_colors}.
 
 ---
 
@@ -6340,7 +6340,7 @@ TextBoxVerticalAlign *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_box_vertical_align AccountSettingV2#text_box_vertical_align}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_box_vertical_align AccountSettingV2#text_box_vertical_align}.
 
 ---
 
@@ -6352,7 +6352,7 @@ VisualizationColor01 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_01 AccountSettingV2#visualization_color_01}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_01 AccountSettingV2#visualization_color_01}.
 
 ---
 
@@ -6364,7 +6364,7 @@ VisualizationColor02 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_02 AccountSettingV2#visualization_color_02}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_02 AccountSettingV2#visualization_color_02}.
 
 ---
 
@@ -6376,7 +6376,7 @@ VisualizationColor03 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_03 AccountSettingV2#visualization_color_03}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_03 AccountSettingV2#visualization_color_03}.
 
 ---
 
@@ -6388,7 +6388,7 @@ VisualizationColor04 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_04 AccountSettingV2#visualization_color_04}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_04 AccountSettingV2#visualization_color_04}.
 
 ---
 
@@ -6400,7 +6400,7 @@ VisualizationColor05 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_05 AccountSettingV2#visualization_color_05}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_05 AccountSettingV2#visualization_color_05}.
 
 ---
 
@@ -6412,7 +6412,7 @@ VisualizationColor06 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_06 AccountSettingV2#visualization_color_06}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_06 AccountSettingV2#visualization_color_06}.
 
 ---
 
@@ -6424,7 +6424,7 @@ VisualizationColor07 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_07 AccountSettingV2#visualization_color_07}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_07 AccountSettingV2#visualization_color_07}.
 
 ---
 
@@ -6436,7 +6436,7 @@ VisualizationColor08 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_08 AccountSettingV2#visualization_color_08}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_08 AccountSettingV2#visualization_color_08}.
 
 ---
 
@@ -6448,7 +6448,7 @@ VisualizationColor09 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_09 AccountSettingV2#visualization_color_09}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_09 AccountSettingV2#visualization_color_09}.
 
 ---
 
@@ -6460,7 +6460,7 @@ VisualizationColor10 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_10 AccountSettingV2#visualization_color_10}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_10 AccountSettingV2#visualization_color_10}.
 
 ---
 
@@ -6472,7 +6472,7 @@ VisualizationColor11 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_11 AccountSettingV2#visualization_color_11}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_11 AccountSettingV2#visualization_color_11}.
 
 ---
 
@@ -6484,7 +6484,7 @@ VisualizationColor12 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_12 AccountSettingV2#visualization_color_12}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_12 AccountSettingV2#visualization_color_12}.
 
 ---
 
@@ -6496,7 +6496,7 @@ VisualizationColor13 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_13 AccountSettingV2#visualization_color_13}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_13 AccountSettingV2#visualization_color_13}.
 
 ---
 
@@ -6508,7 +6508,7 @@ VisualizationColor14 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_14 AccountSettingV2#visualization_color_14}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_14 AccountSettingV2#visualization_color_14}.
 
 ---
 
@@ -6520,7 +6520,7 @@ VisualizationColor15 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_15 AccountSettingV2#visualization_color_15}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_15 AccountSettingV2#visualization_color_15}.
 
 ---
 
@@ -6532,7 +6532,7 @@ VisualizationColor16 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_16 AccountSettingV2#visualization_color_16}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_16 AccountSettingV2#visualization_color_16}.
 
 ---
 
@@ -6544,7 +6544,7 @@ VisualizationColor17 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_17 AccountSettingV2#visualization_color_17}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_17 AccountSettingV2#visualization_color_17}.
 
 ---
 
@@ -6556,7 +6556,7 @@ VisualizationColor18 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_18 AccountSettingV2#visualization_color_18}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_18 AccountSettingV2#visualization_color_18}.
 
 ---
 
@@ -6568,7 +6568,7 @@ VisualizationColor19 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_19 AccountSettingV2#visualization_color_19}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_19 AccountSettingV2#visualization_color_19}.
 
 ---
 
@@ -6580,7 +6580,7 @@ VisualizationColor20 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#visualization_color_20 AccountSettingV2#visualization_color_20}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#visualization_color_20 AccountSettingV2#visualization_color_20}.
 
 ---
 
@@ -6592,7 +6592,7 @@ WidgetBackgroundColor AccountSettingV2WorkspaceDashboardThemeWidgetBackgroundCol
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeWidgetBackgroundColor">AccountSettingV2WorkspaceDashboardThemeWidgetBackgroundColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_background_color AccountSettingV2#widget_background_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_background_color AccountSettingV2#widget_background_color}.
 
 ---
 
@@ -6604,7 +6604,7 @@ WidgetBorderColor AccountSettingV2WorkspaceDashboardThemeWidgetBorderColor
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeWidgetBorderColor">AccountSettingV2WorkspaceDashboardThemeWidgetBorderColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_border_color AccountSettingV2#widget_border_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_border_color AccountSettingV2#widget_border_color}.
 
 ---
 
@@ -6616,7 +6616,7 @@ WidgetCornerRadius *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_corner_radius AccountSettingV2#widget_corner_radius}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_corner_radius AccountSettingV2#widget_corner_radius}.
 
 ---
 
@@ -6628,7 +6628,7 @@ WidgetHeaderAlignment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_header_alignment AccountSettingV2#widget_header_alignment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_header_alignment AccountSettingV2#widget_header_alignment}.
 
 ---
 
@@ -6640,7 +6640,7 @@ WidgetMargin *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_margin AccountSettingV2#widget_margin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_margin AccountSettingV2#widget_margin}.
 
 ---
 
@@ -6652,7 +6652,7 @@ WidgetPadding *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_padding AccountSettingV2#widget_padding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_padding AccountSettingV2#widget_padding}.
 
 ---
 
@@ -6664,7 +6664,7 @@ WidgetShadow *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_shadow AccountSettingV2#widget_shadow}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_shadow AccountSettingV2#widget_shadow}.
 
 ---
 
@@ -6685,8 +6685,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeAxisLineColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeAxisLineColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeAxisLineColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeAxisLineColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -6698,7 +6698,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -6710,7 +6710,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -6731,8 +6731,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeCanvasBackgroundColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeCanvasBackgroundColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeCanvasBackgroundColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeCanvasBackgroundColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -6744,7 +6744,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -6756,7 +6756,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -6777,8 +6777,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradient.property.darkMode">DarkMode</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark_mode AccountSettingV2#dark_mode}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradient.property.lightMode">LightMode</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light_mode AccountSettingV2#light_mode}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradient.property.darkMode">DarkMode</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark_mode AccountSettingV2#dark_mode}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradient.property.lightMode">LightMode</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light_mode AccountSettingV2#light_mode}. |
 
 ---
 
@@ -6790,7 +6790,7 @@ DarkMode AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark_mode AccountSettingV2#dark_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark_mode AccountSettingV2#dark_mode}.
 
 ---
 
@@ -6802,7 +6802,7 @@ LightMode AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light_mode AccountSettingV2#light_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light_mode AccountSettingV2#light_mode}.
 
 ---
 
@@ -6826,11 +6826,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.color">Color</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color AccountSettingV2#color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.colorScheme">ColorScheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.color">Color</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color AccountSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.colorScheme">ColorScheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}. |
 
 ---
 
@@ -6842,7 +6842,7 @@ Color *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
 
 ---
 
@@ -6854,7 +6854,7 @@ ColorScheme *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}.
 
 ---
 
@@ -6866,7 +6866,7 @@ CustomDiverging AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMod
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}.
 
 ---
 
@@ -6878,7 +6878,7 @@ CustomSequential AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMo
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}.
 
 ---
 
@@ -6890,7 +6890,7 @@ FromCategoricalIndex *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}.
 
 ---
 
@@ -6912,9 +6912,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
 
 ---
 
@@ -6926,7 +6926,7 @@ End AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiver
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
 
 ---
 
@@ -6938,7 +6938,7 @@ Mid AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiver
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}.
 
 ---
 
@@ -6950,7 +6950,7 @@ Start AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiv
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
 
 ---
 
@@ -6971,8 +6971,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -6984,7 +6984,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -6996,7 +6996,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -7017,8 +7017,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -7030,7 +7030,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -7042,7 +7042,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -7063,8 +7063,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -7076,7 +7076,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -7088,7 +7088,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -7109,8 +7109,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
 
 ---
 
@@ -7122,7 +7122,7 @@ End AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSeque
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
 
 ---
 
@@ -7134,7 +7134,7 @@ Start AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSeq
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart">AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
 
 ---
 
@@ -7155,8 +7155,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -7168,7 +7168,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -7180,7 +7180,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -7201,8 +7201,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -7214,7 +7214,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -7226,7 +7226,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -7250,11 +7250,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.color">Color</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color AccountSettingV2#color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.colorScheme">ColorScheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.color">Color</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color AccountSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.colorScheme">ColorScheme</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}. |
 
 ---
 
@@ -7266,7 +7266,7 @@ Color *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
 
 ---
 
@@ -7278,7 +7278,7 @@ ColorScheme *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color_scheme AccountSettingV2#color_scheme}.
 
 ---
 
@@ -7290,7 +7290,7 @@ CustomDiverging AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMo
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_diverging AccountSettingV2#custom_diverging}.
 
 ---
 
@@ -7302,7 +7302,7 @@ CustomSequential AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightM
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#custom_sequential AccountSettingV2#custom_sequential}.
 
 ---
 
@@ -7314,7 +7314,7 @@ FromCategoricalIndex *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#from_categorical_index AccountSettingV2#from_categorical_index}.
 
 ---
 
@@ -7336,9 +7336,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
 
 ---
 
@@ -7350,7 +7350,7 @@ End AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDive
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
 
 ---
 
@@ -7362,7 +7362,7 @@ Mid AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDive
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#mid AccountSettingV2#mid}.
 
 ---
 
@@ -7374,7 +7374,7 @@ Start AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDi
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
 
 ---
 
@@ -7395,8 +7395,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -7408,7 +7408,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -7420,7 +7420,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -7441,8 +7441,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -7454,7 +7454,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -7466,7 +7466,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -7487,8 +7487,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -7500,7 +7500,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -7512,7 +7512,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -7533,8 +7533,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}. |
 
 ---
 
@@ -7546,7 +7546,7 @@ End AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequ
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#end AccountSettingV2#end}.
 
 ---
 
@@ -7558,7 +7558,7 @@ Start AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSe
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart">AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#start AccountSettingV2#start}.
 
 ---
 
@@ -7579,8 +7579,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -7592,7 +7592,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -7604,7 +7604,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -7625,8 +7625,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -7638,7 +7638,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -7650,7 +7650,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -7671,8 +7671,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -7684,7 +7684,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -7696,7 +7696,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -7720,11 +7720,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettings.property.base">Base</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase">AccountSettingV2WorkspaceDashboardThemeFontSettingsBase</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#base AccountSettingV2#base}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettings.property.fieldTitle">FieldTitle</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle">AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#field_title AccountSettingV2#field_title}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettings.property.fieldValue">FieldValue</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue">AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#field_value AccountSettingV2#field_value}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettings.property.widgetDescription">WidgetDescription</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription">AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_description AccountSettingV2#widget_description}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettings.property.widgetTitle">WidgetTitle</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle">AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_title AccountSettingV2#widget_title}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettings.property.base">Base</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase">AccountSettingV2WorkspaceDashboardThemeFontSettingsBase</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#base AccountSettingV2#base}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettings.property.fieldTitle">FieldTitle</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle">AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#field_title AccountSettingV2#field_title}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettings.property.fieldValue">FieldValue</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue">AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#field_value AccountSettingV2#field_value}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettings.property.widgetDescription">WidgetDescription</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription">AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_description AccountSettingV2#widget_description}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettings.property.widgetTitle">WidgetTitle</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle">AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_title AccountSettingV2#widget_title}. |
 
 ---
 
@@ -7736,7 +7736,7 @@ Base AccountSettingV2WorkspaceDashboardThemeFontSettingsBase
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase">AccountSettingV2WorkspaceDashboardThemeFontSettingsBase</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#base AccountSettingV2#base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#base AccountSettingV2#base}.
 
 ---
 
@@ -7748,7 +7748,7 @@ FieldTitle AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle">AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#field_title AccountSettingV2#field_title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#field_title AccountSettingV2#field_title}.
 
 ---
 
@@ -7760,7 +7760,7 @@ FieldValue AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue">AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#field_value AccountSettingV2#field_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#field_value AccountSettingV2#field_value}.
 
 ---
 
@@ -7772,7 +7772,7 @@ WidgetDescription AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescr
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription">AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_description AccountSettingV2#widget_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_description AccountSettingV2#widget_description}.
 
 ---
 
@@ -7784,7 +7784,7 @@ WidgetTitle AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle">AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#widget_title AccountSettingV2#widget_title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#widget_title AccountSettingV2#widget_title}.
 
 ---
 
@@ -7810,13 +7810,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBase.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
 
 ---
 
@@ -7828,7 +7828,7 @@ FontColor AccountSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
 
 ---
 
@@ -7840,7 +7840,7 @@ FontFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
 
 ---
 
@@ -7852,7 +7852,7 @@ FontSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
 
 ---
 
@@ -7864,7 +7864,7 @@ FontStyle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
 
 ---
 
@@ -7876,7 +7876,7 @@ FontWeight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
 
 ---
 
@@ -7888,7 +7888,7 @@ TextCase *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
 
 ---
 
@@ -7900,7 +7900,7 @@ TextDecoration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
 
 ---
 
@@ -7921,8 +7921,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -7934,7 +7934,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -7946,7 +7946,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -7972,13 +7972,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
 
 ---
 
@@ -7990,7 +7990,7 @@ FontColor AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
 
 ---
 
@@ -8002,7 +8002,7 @@ FontFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
 
 ---
 
@@ -8014,7 +8014,7 @@ FontSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
 
 ---
 
@@ -8026,7 +8026,7 @@ FontStyle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
 
 ---
 
@@ -8038,7 +8038,7 @@ FontWeight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
 
 ---
 
@@ -8050,7 +8050,7 @@ TextCase *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
 
 ---
 
@@ -8062,7 +8062,7 @@ TextDecoration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
 
 ---
 
@@ -8083,8 +8083,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -8096,7 +8096,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -8108,7 +8108,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -8134,13 +8134,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
 
 ---
 
@@ -8152,7 +8152,7 @@ FontColor AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
 
 ---
 
@@ -8164,7 +8164,7 @@ FontFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
 
 ---
 
@@ -8176,7 +8176,7 @@ FontSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
 
 ---
 
@@ -8188,7 +8188,7 @@ FontStyle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
 
 ---
 
@@ -8200,7 +8200,7 @@ FontWeight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
 
 ---
 
@@ -8212,7 +8212,7 @@ TextCase *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
 
 ---
 
@@ -8224,7 +8224,7 @@ TextDecoration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
 
 ---
 
@@ -8245,8 +8245,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -8258,7 +8258,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -8270,7 +8270,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -8296,13 +8296,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
 
 ---
 
@@ -8314,7 +8314,7 @@ FontColor AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFo
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
 
 ---
 
@@ -8326,7 +8326,7 @@ FontFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
 
 ---
 
@@ -8338,7 +8338,7 @@ FontSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
 
 ---
 
@@ -8350,7 +8350,7 @@ FontStyle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
 
 ---
 
@@ -8362,7 +8362,7 @@ FontWeight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
 
 ---
 
@@ -8374,7 +8374,7 @@ TextCase *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
 
 ---
 
@@ -8386,7 +8386,7 @@ TextDecoration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
 
 ---
 
@@ -8407,8 +8407,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -8420,7 +8420,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -8432,7 +8432,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -8458,13 +8458,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontFamily">FontFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontSize">FontSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontStyle">FontStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontWeight">FontWeight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.textCase">TextCase</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.textDecoration">TextDecoration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}. |
 
 ---
 
@@ -8476,7 +8476,7 @@ FontColor AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColo
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor">AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_color AccountSettingV2#font_color}.
 
 ---
 
@@ -8488,7 +8488,7 @@ FontFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_family AccountSettingV2#font_family}.
 
 ---
 
@@ -8500,7 +8500,7 @@ FontSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_size AccountSettingV2#font_size}.
 
 ---
 
@@ -8512,7 +8512,7 @@ FontStyle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_style AccountSettingV2#font_style}.
 
 ---
 
@@ -8524,7 +8524,7 @@ FontWeight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#font_weight AccountSettingV2#font_weight}.
 
 ---
 
@@ -8536,7 +8536,7 @@ TextCase *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_case AccountSettingV2#text_case}.
 
 ---
 
@@ -8548,7 +8548,7 @@ TextDecoration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#text_decoration AccountSettingV2#text_decoration}.
 
 ---
 
@@ -8569,8 +8569,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -8582,7 +8582,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -8594,7 +8594,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -8615,8 +8615,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeGridLineColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeGridLineColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeGridLineColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeGridLineColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -8628,7 +8628,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -8640,7 +8640,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -8661,8 +8661,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSelectionColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSelectionColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSelectionColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSelectionColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -8674,7 +8674,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -8686,7 +8686,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -8708,9 +8708,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColors.property.negative">Negative</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsNegative">AccountSettingV2WorkspaceDashboardThemeSentimentColorsNegative</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#negative AccountSettingV2#negative}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColors.property.neutral">Neutral</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsNeutral">AccountSettingV2WorkspaceDashboardThemeSentimentColorsNeutral</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#neutral AccountSettingV2#neutral}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColors.property.positive">Positive</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsPositive">AccountSettingV2WorkspaceDashboardThemeSentimentColorsPositive</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#positive AccountSettingV2#positive}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColors.property.negative">Negative</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsNegative">AccountSettingV2WorkspaceDashboardThemeSentimentColorsNegative</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#negative AccountSettingV2#negative}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColors.property.neutral">Neutral</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsNeutral">AccountSettingV2WorkspaceDashboardThemeSentimentColorsNeutral</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#neutral AccountSettingV2#neutral}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColors.property.positive">Positive</a></code> | <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsPositive">AccountSettingV2WorkspaceDashboardThemeSentimentColorsPositive</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#positive AccountSettingV2#positive}. |
 
 ---
 
@@ -8722,7 +8722,7 @@ Negative AccountSettingV2WorkspaceDashboardThemeSentimentColorsNegative
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsNegative">AccountSettingV2WorkspaceDashboardThemeSentimentColorsNegative</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#negative AccountSettingV2#negative}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#negative AccountSettingV2#negative}.
 
 ---
 
@@ -8734,7 +8734,7 @@ Neutral AccountSettingV2WorkspaceDashboardThemeSentimentColorsNeutral
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsNeutral">AccountSettingV2WorkspaceDashboardThemeSentimentColorsNeutral</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#neutral AccountSettingV2#neutral}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#neutral AccountSettingV2#neutral}.
 
 ---
 
@@ -8746,7 +8746,7 @@ Positive AccountSettingV2WorkspaceDashboardThemeSentimentColorsPositive
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsPositive">AccountSettingV2WorkspaceDashboardThemeSentimentColorsPositive</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#positive AccountSettingV2#positive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#positive AccountSettingV2#positive}.
 
 ---
 
@@ -8767,8 +8767,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsNegative.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsNegative.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsNegative.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsNegative.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -8780,7 +8780,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -8792,7 +8792,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -8813,8 +8813,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsNeutral.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsNeutral.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsNeutral.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsNeutral.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -8826,7 +8826,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -8838,7 +8838,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -8859,8 +8859,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsPositive.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsPositive.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsPositive.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeSentimentColorsPositive.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -8872,7 +8872,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -8884,7 +8884,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -8905,8 +8905,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeWidgetBackgroundColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeWidgetBackgroundColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeWidgetBackgroundColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeWidgetBackgroundColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -8918,7 +8918,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -8930,7 +8930,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -8951,8 +8951,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeWidgetBorderColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeWidgetBorderColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeWidgetBorderColor.property.dark">Dark</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceDashboardThemeWidgetBorderColor.property.light">Light</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}. |
 
 ---
 
@@ -8964,7 +8964,7 @@ Dark *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#dark AccountSettingV2#dark}.
 
 ---
 
@@ -8976,7 +8976,7 @@ Light *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#light AccountSettingV2#light}.
 
 ---
 
@@ -8997,8 +8997,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/accounts
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel.property.color">Color</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color AccountSettingV2#color}. |
-| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#label AccountSettingV2#label}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel.property.color">Color</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color AccountSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.accountSettingV2.AccountSettingV2WorkspaceLabel.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#label AccountSettingV2#label}. |
 
 ---
 
@@ -9010,7 +9010,7 @@ Color *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#color AccountSettingV2#color}.
 
 ---
 
@@ -9022,7 +9022,7 @@ Label *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/account_setting_v2#label AccountSettingV2#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/account_setting_v2#label AccountSettingV2#label}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataDatabricksWorkspaceSettingV2 <a name="DataDatabricksWorkspaceSettingV2" id="@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2 databricks_workspace_setting_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2.Initializer"></a>
 
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataDatabricksWorkspaceSet
 
 The id of the existing DataDatabricksWorkspaceSettingV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -926,7 +926,7 @@ new DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">AccessPolicyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#access_policy_type DataDatabricksWorkspaceSettingV2#access_policy_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">AccessPolicyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#access_policy_type DataDatabricksWorkspaceSettingV2#access_policy_type}. |
 
 ---
 
@@ -938,7 +938,7 @@ public string AccessPolicyType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#access_policy_type DataDatabricksWorkspaceSettingV2#access_policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#access_policy_type DataDatabricksWorkspaceSettingV2#access_policy_type}.
 
 ---
 
@@ -958,7 +958,7 @@ new DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains.property.approvedDomains">ApprovedDomains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#approved_domains DataDatabricksWorkspaceSettingV2#approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains.property.approvedDomains">ApprovedDomains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#approved_domains DataDatabricksWorkspaceSettingV2#approved_domains}. |
 
 ---
 
@@ -970,7 +970,7 @@ public string[] ApprovedDomains { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#approved_domains DataDatabricksWorkspaceSettingV2#approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#approved_domains DataDatabricksWorkspaceSettingV2#approved_domains}.
 
 ---
 
@@ -990,7 +990,7 @@ new DataDatabricksWorkspaceSettingV2AllowedAppsUserApiScopes {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AllowedAppsUserApiScopes.property.allowedScopes">AllowedScopes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#allowed_scopes DataDatabricksWorkspaceSettingV2#allowed_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AllowedAppsUserApiScopes.property.allowedScopes">AllowedScopes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#allowed_scopes DataDatabricksWorkspaceSettingV2#allowed_scopes}. |
 
 ---
 
@@ -1002,7 +1002,7 @@ public string[] AllowedScopes { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#allowed_scopes DataDatabricksWorkspaceSettingV2#allowed_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#allowed_scopes DataDatabricksWorkspaceSettingV2#allowed_scopes}.
 
 ---
 
@@ -1026,11 +1026,11 @@ new DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspace {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.canToggle">CanToggle</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#can_toggle DataDatabricksWorkspaceSettingV2#can_toggle}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#enabled DataDatabricksWorkspaceSettingV2#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.enablementDetails">EnablementDetails</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails">DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#enablement_details DataDatabricksWorkspaceSettingV2#enablement_details}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow">DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#maintenance_window DataDatabricksWorkspaceSettingV2#maintenance_window}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">RestartEvenIfNoUpdatesAvailable</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#restart_even_if_no_updates_available DataDatabricksWorkspaceSettingV2#restart_even_if_no_updates_available}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.canToggle">CanToggle</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#can_toggle DataDatabricksWorkspaceSettingV2#can_toggle}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#enabled DataDatabricksWorkspaceSettingV2#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.enablementDetails">EnablementDetails</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails">DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#enablement_details DataDatabricksWorkspaceSettingV2#enablement_details}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow">DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#maintenance_window DataDatabricksWorkspaceSettingV2#maintenance_window}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">RestartEvenIfNoUpdatesAvailable</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#restart_even_if_no_updates_available DataDatabricksWorkspaceSettingV2#restart_even_if_no_updates_available}. |
 
 ---
 
@@ -1042,7 +1042,7 @@ public bool|IResolvable CanToggle { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#can_toggle DataDatabricksWorkspaceSettingV2#can_toggle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#can_toggle DataDatabricksWorkspaceSettingV2#can_toggle}.
 
 ---
 
@@ -1054,7 +1054,7 @@ public bool|IResolvable Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#enabled DataDatabricksWorkspaceSettingV2#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#enabled DataDatabricksWorkspaceSettingV2#enabled}.
 
 ---
 
@@ -1066,7 +1066,7 @@ public DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablement
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails">DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#enablement_details DataDatabricksWorkspaceSettingV2#enablement_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#enablement_details DataDatabricksWorkspaceSettingV2#enablement_details}.
 
 ---
 
@@ -1078,7 +1078,7 @@ public DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanc
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow">DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#maintenance_window DataDatabricksWorkspaceSettingV2#maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#maintenance_window DataDatabricksWorkspaceSettingV2#maintenance_window}.
 
 ---
 
@@ -1090,7 +1090,7 @@ public bool|IResolvable RestartEvenIfNoUpdatesAvailable { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#restart_even_if_no_updates_available DataDatabricksWorkspaceSettingV2#restart_even_if_no_updates_available}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#restart_even_if_no_updates_available DataDatabricksWorkspaceSettingV2#restart_even_if_no_updates_available}.
 
 ---
 
@@ -1112,9 +1112,9 @@ new DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">ForcedForComplianceMode</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#forced_for_compliance_mode DataDatabricksWorkspaceSettingV2#forced_for_compliance_mode}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">UnavailableForDisabledEntitlement</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#unavailable_for_disabled_entitlement DataDatabricksWorkspaceSettingV2#unavailable_for_disabled_entitlement}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">UnavailableForNonEnterpriseTier</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksWorkspaceSettingV2#unavailable_for_non_enterprise_tier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">ForcedForComplianceMode</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#forced_for_compliance_mode DataDatabricksWorkspaceSettingV2#forced_for_compliance_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">UnavailableForDisabledEntitlement</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#unavailable_for_disabled_entitlement DataDatabricksWorkspaceSettingV2#unavailable_for_disabled_entitlement}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">UnavailableForNonEnterpriseTier</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksWorkspaceSettingV2#unavailable_for_non_enterprise_tier}. |
 
 ---
 
@@ -1126,7 +1126,7 @@ public bool|IResolvable ForcedForComplianceMode { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#forced_for_compliance_mode DataDatabricksWorkspaceSettingV2#forced_for_compliance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#forced_for_compliance_mode DataDatabricksWorkspaceSettingV2#forced_for_compliance_mode}.
 
 ---
 
@@ -1138,7 +1138,7 @@ public bool|IResolvable UnavailableForDisabledEntitlement { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#unavailable_for_disabled_entitlement DataDatabricksWorkspaceSettingV2#unavailable_for_disabled_entitlement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#unavailable_for_disabled_entitlement DataDatabricksWorkspaceSettingV2#unavailable_for_disabled_entitlement}.
 
 ---
 
@@ -1150,7 +1150,7 @@ public bool|IResolvable UnavailableForNonEnterpriseTier { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksWorkspaceSettingV2#unavailable_for_non_enterprise_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksWorkspaceSettingV2#unavailable_for_non_enterprise_tier}.
 
 ---
 
@@ -1170,7 +1170,7 @@ new DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">WeekDayBasedSchedule</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#week_day_based_schedule DataDatabricksWorkspaceSettingV2#week_day_based_schedule}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">WeekDayBasedSchedule</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#week_day_based_schedule DataDatabricksWorkspaceSettingV2#week_day_based_schedule}. |
 
 ---
 
@@ -1182,7 +1182,7 @@ public DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanc
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#week_day_based_schedule DataDatabricksWorkspaceSettingV2#week_day_based_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#week_day_based_schedule DataDatabricksWorkspaceSettingV2#week_day_based_schedule}.
 
 ---
 
@@ -1204,9 +1204,9 @@ new DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">DayOfWeek</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#day_of_week DataDatabricksWorkspaceSettingV2#day_of_week}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">Frequency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#frequency DataDatabricksWorkspaceSettingV2#frequency}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">WindowStartTime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#window_start_time DataDatabricksWorkspaceSettingV2#window_start_time}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">DayOfWeek</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#day_of_week DataDatabricksWorkspaceSettingV2#day_of_week}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">Frequency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#frequency DataDatabricksWorkspaceSettingV2#frequency}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">WindowStartTime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#window_start_time DataDatabricksWorkspaceSettingV2#window_start_time}. |
 
 ---
 
@@ -1218,7 +1218,7 @@ public string DayOfWeek { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#day_of_week DataDatabricksWorkspaceSettingV2#day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#day_of_week DataDatabricksWorkspaceSettingV2#day_of_week}.
 
 ---
 
@@ -1230,7 +1230,7 @@ public string Frequency { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#frequency DataDatabricksWorkspaceSettingV2#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#frequency DataDatabricksWorkspaceSettingV2#frequency}.
 
 ---
 
@@ -1242,7 +1242,7 @@ public DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanc
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#window_start_time DataDatabricksWorkspaceSettingV2#window_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#window_start_time DataDatabricksWorkspaceSettingV2#window_start_time}.
 
 ---
 
@@ -1263,8 +1263,8 @@ new DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">Hours</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#hours DataDatabricksWorkspaceSettingV2#hours}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">Minutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#minutes DataDatabricksWorkspaceSettingV2#minutes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">Hours</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#hours DataDatabricksWorkspaceSettingV2#hours}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">Minutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#minutes DataDatabricksWorkspaceSettingV2#minutes}. |
 
 ---
 
@@ -1276,7 +1276,7 @@ public double Hours { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#hours DataDatabricksWorkspaceSettingV2#hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#hours DataDatabricksWorkspaceSettingV2#hours}.
 
 ---
 
@@ -1288,7 +1288,7 @@ public double Minutes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#minutes DataDatabricksWorkspaceSettingV2#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#minutes DataDatabricksWorkspaceSettingV2#minutes}.
 
 ---
 
@@ -1308,7 +1308,7 @@ new DataDatabricksWorkspaceSettingV2BooleanVal {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2BooleanVal.property.value">Value</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2BooleanVal.property.value">Value</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
 
 ---
 
@@ -1320,7 +1320,7 @@ public bool|IResolvable Value { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
 
 ---
 
@@ -1340,7 +1340,7 @@ new DataDatabricksWorkspaceSettingV2CollaborationPlatformConnectivity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2CollaborationPlatformConnectivity.property.connectivity">Connectivity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#connectivity DataDatabricksWorkspaceSettingV2#connectivity}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2CollaborationPlatformConnectivity.property.connectivity">Connectivity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#connectivity DataDatabricksWorkspaceSettingV2#connectivity}. |
 
 ---
 
@@ -1352,7 +1352,7 @@ public string Connectivity { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#connectivity DataDatabricksWorkspaceSettingV2#connectivity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#connectivity DataDatabricksWorkspaceSettingV2#connectivity}.
 
 ---
 
@@ -1387,8 +1387,8 @@ new DataDatabricksWorkspaceSettingV2Config {
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2Config.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2Config.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2Config.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#name DataDatabricksWorkspaceSettingV2#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2Config.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2ProviderConfig">DataDatabricksWorkspaceSettingV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#provider_config DataDatabricksWorkspaceSettingV2#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#name DataDatabricksWorkspaceSettingV2#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2Config.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2ProviderConfig">DataDatabricksWorkspaceSettingV2ProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#provider_config DataDatabricksWorkspaceSettingV2#provider_config}. |
 
 ---
 
@@ -1470,7 +1470,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#name DataDatabricksWorkspaceSettingV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#name DataDatabricksWorkspaceSettingV2#name}.
 
 ---
 
@@ -1482,7 +1482,7 @@ public DataDatabricksWorkspaceSettingV2ProviderConfig ProviderConfig { get; set;
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2ProviderConfig">DataDatabricksWorkspaceSettingV2ProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#provider_config DataDatabricksWorkspaceSettingV2#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#provider_config DataDatabricksWorkspaceSettingV2#provider_config}.
 
 ---
 
@@ -1502,7 +1502,7 @@ new DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">AccessPolicyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#access_policy_type DataDatabricksWorkspaceSettingV2#access_policy_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy.property.accessPolicyType">AccessPolicyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#access_policy_type DataDatabricksWorkspaceSettingV2#access_policy_type}. |
 
 ---
 
@@ -1514,7 +1514,7 @@ public string AccessPolicyType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#access_policy_type DataDatabricksWorkspaceSettingV2#access_policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#access_policy_type DataDatabricksWorkspaceSettingV2#access_policy_type}.
 
 ---
 
@@ -1534,7 +1534,7 @@ new DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomai
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains.property.approvedDomains">ApprovedDomains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#approved_domains DataDatabricksWorkspaceSettingV2#approved_domains}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains.property.approvedDomains">ApprovedDomains</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#approved_domains DataDatabricksWorkspaceSettingV2#approved_domains}. |
 
 ---
 
@@ -1546,7 +1546,7 @@ public string[] ApprovedDomains { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#approved_domains DataDatabricksWorkspaceSettingV2#approved_domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#approved_domains DataDatabricksWorkspaceSettingV2#approved_domains}.
 
 ---
 
@@ -1566,7 +1566,7 @@ new DataDatabricksWorkspaceSettingV2EffectiveAllowedAppsUserApiScopes {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAllowedAppsUserApiScopes.property.allowedScopes">AllowedScopes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#allowed_scopes DataDatabricksWorkspaceSettingV2#allowed_scopes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAllowedAppsUserApiScopes.property.allowedScopes">AllowedScopes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#allowed_scopes DataDatabricksWorkspaceSettingV2#allowed_scopes}. |
 
 ---
 
@@ -1578,7 +1578,7 @@ public string[] AllowedScopes { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#allowed_scopes DataDatabricksWorkspaceSettingV2#allowed_scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#allowed_scopes DataDatabricksWorkspaceSettingV2#allowed_scopes}.
 
 ---
 
@@ -1602,11 +1602,11 @@ new DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.canToggle">CanToggle</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#can_toggle DataDatabricksWorkspaceSettingV2#can_toggle}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#enabled DataDatabricksWorkspaceSettingV2#enabled}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enablementDetails">EnablementDetails</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails">DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#enablement_details DataDatabricksWorkspaceSettingV2#enablement_details}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow">DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#maintenance_window DataDatabricksWorkspaceSettingV2#maintenance_window}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">RestartEvenIfNoUpdatesAvailable</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#restart_even_if_no_updates_available DataDatabricksWorkspaceSettingV2#restart_even_if_no_updates_available}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.canToggle">CanToggle</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#can_toggle DataDatabricksWorkspaceSettingV2#can_toggle}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#enabled DataDatabricksWorkspaceSettingV2#enabled}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.enablementDetails">EnablementDetails</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails">DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#enablement_details DataDatabricksWorkspaceSettingV2#enablement_details}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow">DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#maintenance_window DataDatabricksWorkspaceSettingV2#maintenance_window}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.property.restartEvenIfNoUpdatesAvailable">RestartEvenIfNoUpdatesAvailable</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#restart_even_if_no_updates_available DataDatabricksWorkspaceSettingV2#restart_even_if_no_updates_available}. |
 
 ---
 
@@ -1618,7 +1618,7 @@ public bool|IResolvable CanToggle { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#can_toggle DataDatabricksWorkspaceSettingV2#can_toggle}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#can_toggle DataDatabricksWorkspaceSettingV2#can_toggle}.
 
 ---
 
@@ -1630,7 +1630,7 @@ public bool|IResolvable Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#enabled DataDatabricksWorkspaceSettingV2#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#enabled DataDatabricksWorkspaceSettingV2#enabled}.
 
 ---
 
@@ -1642,7 +1642,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceE
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails">DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#enablement_details DataDatabricksWorkspaceSettingV2#enablement_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#enablement_details DataDatabricksWorkspaceSettingV2#enablement_details}.
 
 ---
 
@@ -1654,7 +1654,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceM
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow">DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#maintenance_window DataDatabricksWorkspaceSettingV2#maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#maintenance_window DataDatabricksWorkspaceSettingV2#maintenance_window}.
 
 ---
 
@@ -1666,7 +1666,7 @@ public bool|IResolvable RestartEvenIfNoUpdatesAvailable { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#restart_even_if_no_updates_available DataDatabricksWorkspaceSettingV2#restart_even_if_no_updates_available}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#restart_even_if_no_updates_available DataDatabricksWorkspaceSettingV2#restart_even_if_no_updates_available}.
 
 ---
 
@@ -1688,9 +1688,9 @@ new DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnab
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">ForcedForComplianceMode</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#forced_for_compliance_mode DataDatabricksWorkspaceSettingV2#forced_for_compliance_mode}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">UnavailableForDisabledEntitlement</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#unavailable_for_disabled_entitlement DataDatabricksWorkspaceSettingV2#unavailable_for_disabled_entitlement}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">UnavailableForNonEnterpriseTier</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksWorkspaceSettingV2#unavailable_for_non_enterprise_tier}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.forcedForComplianceMode">ForcedForComplianceMode</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#forced_for_compliance_mode DataDatabricksWorkspaceSettingV2#forced_for_compliance_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForDisabledEntitlement">UnavailableForDisabledEntitlement</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#unavailable_for_disabled_entitlement DataDatabricksWorkspaceSettingV2#unavailable_for_disabled_entitlement}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.property.unavailableForNonEnterpriseTier">UnavailableForNonEnterpriseTier</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksWorkspaceSettingV2#unavailable_for_non_enterprise_tier}. |
 
 ---
 
@@ -1702,7 +1702,7 @@ public bool|IResolvable ForcedForComplianceMode { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#forced_for_compliance_mode DataDatabricksWorkspaceSettingV2#forced_for_compliance_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#forced_for_compliance_mode DataDatabricksWorkspaceSettingV2#forced_for_compliance_mode}.
 
 ---
 
@@ -1714,7 +1714,7 @@ public bool|IResolvable UnavailableForDisabledEntitlement { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#unavailable_for_disabled_entitlement DataDatabricksWorkspaceSettingV2#unavailable_for_disabled_entitlement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#unavailable_for_disabled_entitlement DataDatabricksWorkspaceSettingV2#unavailable_for_disabled_entitlement}.
 
 ---
 
@@ -1726,7 +1726,7 @@ public bool|IResolvable UnavailableForNonEnterpriseTier { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksWorkspaceSettingV2#unavailable_for_non_enterprise_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksWorkspaceSettingV2#unavailable_for_non_enterprise_tier}.
 
 ---
 
@@ -1746,7 +1746,7 @@ new DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMain
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">WeekDayBasedSchedule</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#week_day_based_schedule DataDatabricksWorkspaceSettingV2#week_day_based_schedule}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow.property.weekDayBasedSchedule">WeekDayBasedSchedule</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#week_day_based_schedule DataDatabricksWorkspaceSettingV2#week_day_based_schedule}. |
 
 ---
 
@@ -1758,7 +1758,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceM
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule">DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#week_day_based_schedule DataDatabricksWorkspaceSettingV2#week_day_based_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#week_day_based_schedule DataDatabricksWorkspaceSettingV2#week_day_based_schedule}.
 
 ---
 
@@ -1780,9 +1780,9 @@ new DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMain
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">DayOfWeek</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#day_of_week DataDatabricksWorkspaceSettingV2#day_of_week}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">Frequency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#frequency DataDatabricksWorkspaceSettingV2#frequency}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">WindowStartTime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#window_start_time DataDatabricksWorkspaceSettingV2#window_start_time}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.dayOfWeek">DayOfWeek</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#day_of_week DataDatabricksWorkspaceSettingV2#day_of_week}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.frequency">Frequency</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#frequency DataDatabricksWorkspaceSettingV2#frequency}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.property.windowStartTime">WindowStartTime</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#window_start_time DataDatabricksWorkspaceSettingV2#window_start_time}. |
 
 ---
 
@@ -1794,7 +1794,7 @@ public string DayOfWeek { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#day_of_week DataDatabricksWorkspaceSettingV2#day_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#day_of_week DataDatabricksWorkspaceSettingV2#day_of_week}.
 
 ---
 
@@ -1806,7 +1806,7 @@ public string Frequency { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#frequency DataDatabricksWorkspaceSettingV2#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#frequency DataDatabricksWorkspaceSettingV2#frequency}.
 
 ---
 
@@ -1818,7 +1818,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceM
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime">DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#window_start_time DataDatabricksWorkspaceSettingV2#window_start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#window_start_time DataDatabricksWorkspaceSettingV2#window_start_time}.
 
 ---
 
@@ -1839,8 +1839,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMain
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">Hours</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#hours DataDatabricksWorkspaceSettingV2#hours}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">Minutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#minutes DataDatabricksWorkspaceSettingV2#minutes}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.hours">Hours</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#hours DataDatabricksWorkspaceSettingV2#hours}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.property.minutes">Minutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#minutes DataDatabricksWorkspaceSettingV2#minutes}. |
 
 ---
 
@@ -1852,7 +1852,7 @@ public double Hours { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#hours DataDatabricksWorkspaceSettingV2#hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#hours DataDatabricksWorkspaceSettingV2#hours}.
 
 ---
 
@@ -1864,7 +1864,7 @@ public double Minutes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#minutes DataDatabricksWorkspaceSettingV2#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#minutes DataDatabricksWorkspaceSettingV2#minutes}.
 
 ---
 
@@ -1884,7 +1884,7 @@ new DataDatabricksWorkspaceSettingV2EffectiveBooleanVal {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveBooleanVal.property.value">Value</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveBooleanVal.property.value">Value</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
 
 ---
 
@@ -1896,7 +1896,7 @@ public bool|IResolvable Value { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
 
 ---
 
@@ -1916,7 +1916,7 @@ new DataDatabricksWorkspaceSettingV2EffectiveCollaborationPlatformConnectivity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveCollaborationPlatformConnectivity.property.connectivity">Connectivity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#connectivity DataDatabricksWorkspaceSettingV2#connectivity}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveCollaborationPlatformConnectivity.property.connectivity">Connectivity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#connectivity DataDatabricksWorkspaceSettingV2#connectivity}. |
 
 ---
 
@@ -1928,7 +1928,7 @@ public string Connectivity { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#connectivity DataDatabricksWorkspaceSettingV2#connectivity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#connectivity DataDatabricksWorkspaceSettingV2#connectivity}.
 
 ---
 
@@ -1948,7 +1948,7 @@ new DataDatabricksWorkspaceSettingV2EffectiveIntegerVal {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveIntegerVal.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveIntegerVal.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
 
 ---
 
@@ -1960,7 +1960,7 @@ public double Value { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
 
 ---
 
@@ -1980,7 +1980,7 @@ new DataDatabricksWorkspaceSettingV2EffectiveOperationalEmailCustomRecipient {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveOperationalEmailCustomRecipient.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#email DataDatabricksWorkspaceSettingV2#email}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveOperationalEmailCustomRecipient.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#email DataDatabricksWorkspaceSettingV2#email}. |
 
 ---
 
@@ -1992,7 +1992,7 @@ public string Email { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#email DataDatabricksWorkspaceSettingV2#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#email DataDatabricksWorkspaceSettingV2#email}.
 
 ---
 
@@ -2012,7 +2012,7 @@ new DataDatabricksWorkspaceSettingV2EffectivePersonalCompute {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectivePersonalCompute.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectivePersonalCompute.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
 
 ---
 
@@ -2024,7 +2024,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
 
 ---
 
@@ -2045,8 +2045,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveRestrictWorkspaceAdmins {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveRestrictWorkspaceAdmins.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#status DataDatabricksWorkspaceSettingV2#status}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveRestrictWorkspaceAdmins.property.disableGovTagCreation">DisableGovTagCreation</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#disable_gov_tag_creation DataDatabricksWorkspaceSettingV2#disable_gov_tag_creation}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveRestrictWorkspaceAdmins.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#status DataDatabricksWorkspaceSettingV2#status}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveRestrictWorkspaceAdmins.property.disableGovTagCreation">DisableGovTagCreation</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#disable_gov_tag_creation DataDatabricksWorkspaceSettingV2#disable_gov_tag_creation}. |
 
 ---
 
@@ -2058,7 +2058,7 @@ public string Status { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#status DataDatabricksWorkspaceSettingV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#status DataDatabricksWorkspaceSettingV2#status}.
 
 ---
 
@@ -2070,7 +2070,7 @@ public bool|IResolvable DisableGovTagCreation { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#disable_gov_tag_creation DataDatabricksWorkspaceSettingV2#disable_gov_tag_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#disable_gov_tag_creation DataDatabricksWorkspaceSettingV2#disable_gov_tag_creation}.
 
 ---
 
@@ -2090,7 +2090,7 @@ new DataDatabricksWorkspaceSettingV2EffectiveStringVal {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveStringVal.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveStringVal.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
 
 ---
 
@@ -2102,7 +2102,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
 
 ---
 
@@ -2159,44 +2159,44 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.axisLineColor">AxisLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#axis_line_color DataDatabricksWorkspaceSettingV2#axis_line_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.canvasBackgroundColor">CanvasBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#canvas_background_color DataDatabricksWorkspaceSettingV2#canvas_background_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.continuousGradient">ContinuousGradient</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#continuous_gradient DataDatabricksWorkspaceSettingV2#continuous_gradient}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.fontSettings">FontSettings</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_settings DataDatabricksWorkspaceSettingV2#font_settings}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.gridLineColor">GridLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeGridLineColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeGridLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#grid_line_color DataDatabricksWorkspaceSettingV2#grid_line_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.markCornerRadius">MarkCornerRadius</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#mark_corner_radius DataDatabricksWorkspaceSettingV2#mark_corner_radius}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.selectionColor">SelectionColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSelectionColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSelectionColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#selection_color DataDatabricksWorkspaceSettingV2#selection_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.sentimentColors">SentimentColors</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColors">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColors</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#sentiment_colors DataDatabricksWorkspaceSettingV2#sentiment_colors}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.textBoxVerticalAlign">TextBoxVerticalAlign</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_box_vertical_align DataDatabricksWorkspaceSettingV2#text_box_vertical_align}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor01">VisualizationColor01</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_01 DataDatabricksWorkspaceSettingV2#visualization_color_01}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor02">VisualizationColor02</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_02 DataDatabricksWorkspaceSettingV2#visualization_color_02}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor03">VisualizationColor03</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_03 DataDatabricksWorkspaceSettingV2#visualization_color_03}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor04">VisualizationColor04</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_04 DataDatabricksWorkspaceSettingV2#visualization_color_04}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor05">VisualizationColor05</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_05 DataDatabricksWorkspaceSettingV2#visualization_color_05}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor06">VisualizationColor06</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_06 DataDatabricksWorkspaceSettingV2#visualization_color_06}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor07">VisualizationColor07</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_07 DataDatabricksWorkspaceSettingV2#visualization_color_07}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor08">VisualizationColor08</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_08 DataDatabricksWorkspaceSettingV2#visualization_color_08}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor09">VisualizationColor09</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_09 DataDatabricksWorkspaceSettingV2#visualization_color_09}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor10">VisualizationColor10</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_10 DataDatabricksWorkspaceSettingV2#visualization_color_10}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor11">VisualizationColor11</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_11 DataDatabricksWorkspaceSettingV2#visualization_color_11}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor12">VisualizationColor12</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_12 DataDatabricksWorkspaceSettingV2#visualization_color_12}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor13">VisualizationColor13</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_13 DataDatabricksWorkspaceSettingV2#visualization_color_13}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor14">VisualizationColor14</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_14 DataDatabricksWorkspaceSettingV2#visualization_color_14}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor15">VisualizationColor15</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_15 DataDatabricksWorkspaceSettingV2#visualization_color_15}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor16">VisualizationColor16</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_16 DataDatabricksWorkspaceSettingV2#visualization_color_16}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor17">VisualizationColor17</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_17 DataDatabricksWorkspaceSettingV2#visualization_color_17}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor18">VisualizationColor18</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_18 DataDatabricksWorkspaceSettingV2#visualization_color_18}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor19">VisualizationColor19</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_19 DataDatabricksWorkspaceSettingV2#visualization_color_19}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor20">VisualizationColor20</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_20 DataDatabricksWorkspaceSettingV2#visualization_color_20}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.widgetBackgroundColor">WidgetBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_background_color DataDatabricksWorkspaceSettingV2#widget_background_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.widgetBorderColor">WidgetBorderColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_border_color DataDatabricksWorkspaceSettingV2#widget_border_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.widgetCornerRadius">WidgetCornerRadius</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_corner_radius DataDatabricksWorkspaceSettingV2#widget_corner_radius}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.widgetHeaderAlignment">WidgetHeaderAlignment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_header_alignment DataDatabricksWorkspaceSettingV2#widget_header_alignment}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.widgetMargin">WidgetMargin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_margin DataDatabricksWorkspaceSettingV2#widget_margin}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.widgetPadding">WidgetPadding</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_padding DataDatabricksWorkspaceSettingV2#widget_padding}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.widgetShadow">WidgetShadow</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_shadow DataDatabricksWorkspaceSettingV2#widget_shadow}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.axisLineColor">AxisLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#axis_line_color DataDatabricksWorkspaceSettingV2#axis_line_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.canvasBackgroundColor">CanvasBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#canvas_background_color DataDatabricksWorkspaceSettingV2#canvas_background_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.continuousGradient">ContinuousGradient</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#continuous_gradient DataDatabricksWorkspaceSettingV2#continuous_gradient}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.fontSettings">FontSettings</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_settings DataDatabricksWorkspaceSettingV2#font_settings}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.gridLineColor">GridLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeGridLineColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeGridLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#grid_line_color DataDatabricksWorkspaceSettingV2#grid_line_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.markCornerRadius">MarkCornerRadius</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#mark_corner_radius DataDatabricksWorkspaceSettingV2#mark_corner_radius}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.selectionColor">SelectionColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSelectionColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSelectionColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#selection_color DataDatabricksWorkspaceSettingV2#selection_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.sentimentColors">SentimentColors</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColors">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColors</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#sentiment_colors DataDatabricksWorkspaceSettingV2#sentiment_colors}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.textBoxVerticalAlign">TextBoxVerticalAlign</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_box_vertical_align DataDatabricksWorkspaceSettingV2#text_box_vertical_align}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor01">VisualizationColor01</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_01 DataDatabricksWorkspaceSettingV2#visualization_color_01}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor02">VisualizationColor02</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_02 DataDatabricksWorkspaceSettingV2#visualization_color_02}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor03">VisualizationColor03</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_03 DataDatabricksWorkspaceSettingV2#visualization_color_03}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor04">VisualizationColor04</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_04 DataDatabricksWorkspaceSettingV2#visualization_color_04}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor05">VisualizationColor05</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_05 DataDatabricksWorkspaceSettingV2#visualization_color_05}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor06">VisualizationColor06</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_06 DataDatabricksWorkspaceSettingV2#visualization_color_06}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor07">VisualizationColor07</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_07 DataDatabricksWorkspaceSettingV2#visualization_color_07}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor08">VisualizationColor08</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_08 DataDatabricksWorkspaceSettingV2#visualization_color_08}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor09">VisualizationColor09</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_09 DataDatabricksWorkspaceSettingV2#visualization_color_09}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor10">VisualizationColor10</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_10 DataDatabricksWorkspaceSettingV2#visualization_color_10}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor11">VisualizationColor11</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_11 DataDatabricksWorkspaceSettingV2#visualization_color_11}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor12">VisualizationColor12</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_12 DataDatabricksWorkspaceSettingV2#visualization_color_12}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor13">VisualizationColor13</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_13 DataDatabricksWorkspaceSettingV2#visualization_color_13}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor14">VisualizationColor14</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_14 DataDatabricksWorkspaceSettingV2#visualization_color_14}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor15">VisualizationColor15</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_15 DataDatabricksWorkspaceSettingV2#visualization_color_15}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor16">VisualizationColor16</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_16 DataDatabricksWorkspaceSettingV2#visualization_color_16}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor17">VisualizationColor17</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_17 DataDatabricksWorkspaceSettingV2#visualization_color_17}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor18">VisualizationColor18</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_18 DataDatabricksWorkspaceSettingV2#visualization_color_18}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor19">VisualizationColor19</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_19 DataDatabricksWorkspaceSettingV2#visualization_color_19}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.visualizationColor20">VisualizationColor20</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_20 DataDatabricksWorkspaceSettingV2#visualization_color_20}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.widgetBackgroundColor">WidgetBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_background_color DataDatabricksWorkspaceSettingV2#widget_background_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.widgetBorderColor">WidgetBorderColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_border_color DataDatabricksWorkspaceSettingV2#widget_border_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.widgetCornerRadius">WidgetCornerRadius</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_corner_radius DataDatabricksWorkspaceSettingV2#widget_corner_radius}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.widgetHeaderAlignment">WidgetHeaderAlignment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_header_alignment DataDatabricksWorkspaceSettingV2#widget_header_alignment}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.widgetMargin">WidgetMargin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_margin DataDatabricksWorkspaceSettingV2#widget_margin}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.widgetPadding">WidgetPadding</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_padding DataDatabricksWorkspaceSettingV2#widget_padding}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardTheme.property.widgetShadow">WidgetShadow</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_shadow DataDatabricksWorkspaceSettingV2#widget_shadow}. |
 
 ---
 
@@ -2208,7 +2208,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeAxisLineC
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#axis_line_color DataDatabricksWorkspaceSettingV2#axis_line_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#axis_line_color DataDatabricksWorkspaceSettingV2#axis_line_color}.
 
 ---
 
@@ -2220,7 +2220,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeCanvasBac
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#canvas_background_color DataDatabricksWorkspaceSettingV2#canvas_background_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#canvas_background_color DataDatabricksWorkspaceSettingV2#canvas_background_color}.
 
 ---
 
@@ -2232,7 +2232,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#continuous_gradient DataDatabricksWorkspaceSettingV2#continuous_gradient}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#continuous_gradient DataDatabricksWorkspaceSettingV2#continuous_gradient}.
 
 ---
 
@@ -2244,7 +2244,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontColor
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
 
 ---
 
@@ -2256,7 +2256,7 @@ public string FontFamily { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
 
 ---
 
@@ -2268,7 +2268,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSetti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_settings DataDatabricksWorkspaceSettingV2#font_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_settings DataDatabricksWorkspaceSettingV2#font_settings}.
 
 ---
 
@@ -2280,7 +2280,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeGridLineC
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeGridLineColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeGridLineColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#grid_line_color DataDatabricksWorkspaceSettingV2#grid_line_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#grid_line_color DataDatabricksWorkspaceSettingV2#grid_line_color}.
 
 ---
 
@@ -2292,7 +2292,7 @@ public double MarkCornerRadius { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#mark_corner_radius DataDatabricksWorkspaceSettingV2#mark_corner_radius}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#mark_corner_radius DataDatabricksWorkspaceSettingV2#mark_corner_radius}.
 
 ---
 
@@ -2304,7 +2304,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSelection
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSelectionColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSelectionColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#selection_color DataDatabricksWorkspaceSettingV2#selection_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#selection_color DataDatabricksWorkspaceSettingV2#selection_color}.
 
 ---
 
@@ -2316,7 +2316,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentiment
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColors">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColors</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#sentiment_colors DataDatabricksWorkspaceSettingV2#sentiment_colors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#sentiment_colors DataDatabricksWorkspaceSettingV2#sentiment_colors}.
 
 ---
 
@@ -2328,7 +2328,7 @@ public string TextBoxVerticalAlign { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_box_vertical_align DataDatabricksWorkspaceSettingV2#text_box_vertical_align}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_box_vertical_align DataDatabricksWorkspaceSettingV2#text_box_vertical_align}.
 
 ---
 
@@ -2340,7 +2340,7 @@ public string VisualizationColor01 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_01 DataDatabricksWorkspaceSettingV2#visualization_color_01}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_01 DataDatabricksWorkspaceSettingV2#visualization_color_01}.
 
 ---
 
@@ -2352,7 +2352,7 @@ public string VisualizationColor02 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_02 DataDatabricksWorkspaceSettingV2#visualization_color_02}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_02 DataDatabricksWorkspaceSettingV2#visualization_color_02}.
 
 ---
 
@@ -2364,7 +2364,7 @@ public string VisualizationColor03 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_03 DataDatabricksWorkspaceSettingV2#visualization_color_03}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_03 DataDatabricksWorkspaceSettingV2#visualization_color_03}.
 
 ---
 
@@ -2376,7 +2376,7 @@ public string VisualizationColor04 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_04 DataDatabricksWorkspaceSettingV2#visualization_color_04}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_04 DataDatabricksWorkspaceSettingV2#visualization_color_04}.
 
 ---
 
@@ -2388,7 +2388,7 @@ public string VisualizationColor05 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_05 DataDatabricksWorkspaceSettingV2#visualization_color_05}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_05 DataDatabricksWorkspaceSettingV2#visualization_color_05}.
 
 ---
 
@@ -2400,7 +2400,7 @@ public string VisualizationColor06 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_06 DataDatabricksWorkspaceSettingV2#visualization_color_06}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_06 DataDatabricksWorkspaceSettingV2#visualization_color_06}.
 
 ---
 
@@ -2412,7 +2412,7 @@ public string VisualizationColor07 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_07 DataDatabricksWorkspaceSettingV2#visualization_color_07}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_07 DataDatabricksWorkspaceSettingV2#visualization_color_07}.
 
 ---
 
@@ -2424,7 +2424,7 @@ public string VisualizationColor08 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_08 DataDatabricksWorkspaceSettingV2#visualization_color_08}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_08 DataDatabricksWorkspaceSettingV2#visualization_color_08}.
 
 ---
 
@@ -2436,7 +2436,7 @@ public string VisualizationColor09 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_09 DataDatabricksWorkspaceSettingV2#visualization_color_09}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_09 DataDatabricksWorkspaceSettingV2#visualization_color_09}.
 
 ---
 
@@ -2448,7 +2448,7 @@ public string VisualizationColor10 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_10 DataDatabricksWorkspaceSettingV2#visualization_color_10}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_10 DataDatabricksWorkspaceSettingV2#visualization_color_10}.
 
 ---
 
@@ -2460,7 +2460,7 @@ public string VisualizationColor11 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_11 DataDatabricksWorkspaceSettingV2#visualization_color_11}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_11 DataDatabricksWorkspaceSettingV2#visualization_color_11}.
 
 ---
 
@@ -2472,7 +2472,7 @@ public string VisualizationColor12 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_12 DataDatabricksWorkspaceSettingV2#visualization_color_12}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_12 DataDatabricksWorkspaceSettingV2#visualization_color_12}.
 
 ---
 
@@ -2484,7 +2484,7 @@ public string VisualizationColor13 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_13 DataDatabricksWorkspaceSettingV2#visualization_color_13}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_13 DataDatabricksWorkspaceSettingV2#visualization_color_13}.
 
 ---
 
@@ -2496,7 +2496,7 @@ public string VisualizationColor14 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_14 DataDatabricksWorkspaceSettingV2#visualization_color_14}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_14 DataDatabricksWorkspaceSettingV2#visualization_color_14}.
 
 ---
 
@@ -2508,7 +2508,7 @@ public string VisualizationColor15 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_15 DataDatabricksWorkspaceSettingV2#visualization_color_15}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_15 DataDatabricksWorkspaceSettingV2#visualization_color_15}.
 
 ---
 
@@ -2520,7 +2520,7 @@ public string VisualizationColor16 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_16 DataDatabricksWorkspaceSettingV2#visualization_color_16}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_16 DataDatabricksWorkspaceSettingV2#visualization_color_16}.
 
 ---
 
@@ -2532,7 +2532,7 @@ public string VisualizationColor17 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_17 DataDatabricksWorkspaceSettingV2#visualization_color_17}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_17 DataDatabricksWorkspaceSettingV2#visualization_color_17}.
 
 ---
 
@@ -2544,7 +2544,7 @@ public string VisualizationColor18 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_18 DataDatabricksWorkspaceSettingV2#visualization_color_18}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_18 DataDatabricksWorkspaceSettingV2#visualization_color_18}.
 
 ---
 
@@ -2556,7 +2556,7 @@ public string VisualizationColor19 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_19 DataDatabricksWorkspaceSettingV2#visualization_color_19}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_19 DataDatabricksWorkspaceSettingV2#visualization_color_19}.
 
 ---
 
@@ -2568,7 +2568,7 @@ public string VisualizationColor20 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_20 DataDatabricksWorkspaceSettingV2#visualization_color_20}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_20 DataDatabricksWorkspaceSettingV2#visualization_color_20}.
 
 ---
 
@@ -2580,7 +2580,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBac
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_background_color DataDatabricksWorkspaceSettingV2#widget_background_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_background_color DataDatabricksWorkspaceSettingV2#widget_background_color}.
 
 ---
 
@@ -2592,7 +2592,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBor
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_border_color DataDatabricksWorkspaceSettingV2#widget_border_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_border_color DataDatabricksWorkspaceSettingV2#widget_border_color}.
 
 ---
 
@@ -2604,7 +2604,7 @@ public double WidgetCornerRadius { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_corner_radius DataDatabricksWorkspaceSettingV2#widget_corner_radius}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_corner_radius DataDatabricksWorkspaceSettingV2#widget_corner_radius}.
 
 ---
 
@@ -2616,7 +2616,7 @@ public string WidgetHeaderAlignment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_header_alignment DataDatabricksWorkspaceSettingV2#widget_header_alignment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_header_alignment DataDatabricksWorkspaceSettingV2#widget_header_alignment}.
 
 ---
 
@@ -2628,7 +2628,7 @@ public double WidgetMargin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_margin DataDatabricksWorkspaceSettingV2#widget_margin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_margin DataDatabricksWorkspaceSettingV2#widget_margin}.
 
 ---
 
@@ -2640,7 +2640,7 @@ public double WidgetPadding { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_padding DataDatabricksWorkspaceSettingV2#widget_padding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_padding DataDatabricksWorkspaceSettingV2#widget_padding}.
 
 ---
 
@@ -2652,7 +2652,7 @@ public double WidgetShadow { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_shadow DataDatabricksWorkspaceSettingV2#widget_shadow}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_shadow DataDatabricksWorkspaceSettingV2#widget_shadow}.
 
 ---
 
@@ -2673,8 +2673,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeAxisLineColo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -2686,7 +2686,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -2698,7 +2698,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -2719,8 +2719,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -2732,7 +2732,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -2744,7 +2744,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -2765,8 +2765,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient.property.darkMode">DarkMode</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark_mode DataDatabricksWorkspaceSettingV2#dark_mode}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient.property.lightMode">LightMode</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light_mode DataDatabricksWorkspaceSettingV2#light_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient.property.darkMode">DarkMode</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark_mode DataDatabricksWorkspaceSettingV2#dark_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient.property.lightMode">LightMode</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light_mode DataDatabricksWorkspaceSettingV2#light_mode}. |
 
 ---
 
@@ -2778,7 +2778,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark_mode DataDatabricksWorkspaceSettingV2#dark_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark_mode DataDatabricksWorkspaceSettingV2#dark_mode}.
 
 ---
 
@@ -2790,7 +2790,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light_mode DataDatabricksWorkspaceSettingV2#light_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light_mode DataDatabricksWorkspaceSettingV2#light_mode}.
 
 ---
 
@@ -2814,11 +2814,11 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.colorScheme">ColorScheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.colorScheme">ColorScheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}. |
 
 ---
 
@@ -2830,7 +2830,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}.
 
 ---
 
@@ -2842,7 +2842,7 @@ public string ColorScheme { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}.
 
 ---
 
@@ -2854,7 +2854,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}.
 
 ---
 
@@ -2866,7 +2866,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}.
 
 ---
 
@@ -2878,7 +2878,7 @@ public double FromCategoricalIndex { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}.
 
 ---
 
@@ -2900,9 +2900,9 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
 
 ---
 
@@ -2914,7 +2914,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
 
 ---
 
@@ -2926,7 +2926,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}.
 
 ---
 
@@ -2938,7 +2938,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
 
 ---
 
@@ -2959,8 +2959,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -2972,7 +2972,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -2984,7 +2984,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -3005,8 +3005,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -3018,7 +3018,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -3030,7 +3030,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -3051,8 +3051,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -3064,7 +3064,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -3076,7 +3076,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -3097,8 +3097,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
 
 ---
 
@@ -3110,7 +3110,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
 
 ---
 
@@ -3122,7 +3122,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
 
 ---
 
@@ -3143,8 +3143,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -3156,7 +3156,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -3168,7 +3168,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -3189,8 +3189,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -3202,7 +3202,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -3214,7 +3214,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -3238,11 +3238,11 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.colorScheme">ColorScheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.colorScheme">ColorScheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}. |
 
 ---
 
@@ -3254,7 +3254,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}.
 
 ---
 
@@ -3266,7 +3266,7 @@ public string ColorScheme { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}.
 
 ---
 
@@ -3278,7 +3278,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}.
 
 ---
 
@@ -3290,7 +3290,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}.
 
 ---
 
@@ -3302,7 +3302,7 @@ public double FromCategoricalIndex { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}.
 
 ---
 
@@ -3324,9 +3324,9 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
 
 ---
 
@@ -3338,7 +3338,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
 
 ---
 
@@ -3350,7 +3350,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}.
 
 ---
 
@@ -3362,7 +3362,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
 
 ---
 
@@ -3383,8 +3383,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -3396,7 +3396,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -3408,7 +3408,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -3429,8 +3429,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -3442,7 +3442,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -3454,7 +3454,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -3475,8 +3475,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -3488,7 +3488,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -3500,7 +3500,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -3521,8 +3521,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
 
 ---
 
@@ -3534,7 +3534,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
 
 ---
 
@@ -3546,7 +3546,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuou
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
 
 ---
 
@@ -3567,8 +3567,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -3580,7 +3580,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -3592,7 +3592,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -3613,8 +3613,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -3626,7 +3626,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -3638,7 +3638,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -3659,8 +3659,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontColor {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -3672,7 +3672,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -3684,7 +3684,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -3708,11 +3708,11 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.base">Base</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#base DataDatabricksWorkspaceSettingV2#base}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.fieldTitle">FieldTitle</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#field_title DataDatabricksWorkspaceSettingV2#field_title}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.fieldValue">FieldValue</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#field_value DataDatabricksWorkspaceSettingV2#field_value}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.widgetDescription">WidgetDescription</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_description DataDatabricksWorkspaceSettingV2#widget_description}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.widgetTitle">WidgetTitle</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_title DataDatabricksWorkspaceSettingV2#widget_title}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.base">Base</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#base DataDatabricksWorkspaceSettingV2#base}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.fieldTitle">FieldTitle</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#field_title DataDatabricksWorkspaceSettingV2#field_title}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.fieldValue">FieldValue</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#field_value DataDatabricksWorkspaceSettingV2#field_value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.widgetDescription">WidgetDescription</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_description DataDatabricksWorkspaceSettingV2#widget_description}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings.property.widgetTitle">WidgetTitle</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_title DataDatabricksWorkspaceSettingV2#widget_title}. |
 
 ---
 
@@ -3724,7 +3724,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSetti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#base DataDatabricksWorkspaceSettingV2#base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#base DataDatabricksWorkspaceSettingV2#base}.
 
 ---
 
@@ -3736,7 +3736,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSetti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#field_title DataDatabricksWorkspaceSettingV2#field_title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#field_title DataDatabricksWorkspaceSettingV2#field_title}.
 
 ---
 
@@ -3748,7 +3748,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSetti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#field_value DataDatabricksWorkspaceSettingV2#field_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#field_value DataDatabricksWorkspaceSettingV2#field_value}.
 
 ---
 
@@ -3760,7 +3760,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSetti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_description DataDatabricksWorkspaceSettingV2#widget_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_description DataDatabricksWorkspaceSettingV2#widget_description}.
 
 ---
 
@@ -3772,7 +3772,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSetti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_title DataDatabricksWorkspaceSettingV2#widget_title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_title DataDatabricksWorkspaceSettingV2#widget_title}.
 
 ---
 
@@ -3798,13 +3798,13 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
 
 ---
 
@@ -3816,7 +3816,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSetti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
 
 ---
 
@@ -3828,7 +3828,7 @@ public string FontFamily { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
 
 ---
 
@@ -3840,7 +3840,7 @@ public double FontSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
 
 ---
 
@@ -3852,7 +3852,7 @@ public string FontStyle { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
 
 ---
 
@@ -3864,7 +3864,7 @@ public double FontWeight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
 
 ---
 
@@ -3876,7 +3876,7 @@ public string TextCase { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
 
 ---
 
@@ -3888,7 +3888,7 @@ public string TextDecoration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
 
 ---
 
@@ -3909,8 +3909,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -3922,7 +3922,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -3934,7 +3934,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -3960,13 +3960,13 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
 
 ---
 
@@ -3978,7 +3978,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSetti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
 
 ---
 
@@ -3990,7 +3990,7 @@ public string FontFamily { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
 
 ---
 
@@ -4002,7 +4002,7 @@ public double FontSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
 
 ---
 
@@ -4014,7 +4014,7 @@ public string FontStyle { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
 
 ---
 
@@ -4026,7 +4026,7 @@ public double FontWeight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
 
 ---
 
@@ -4038,7 +4038,7 @@ public string TextCase { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
 
 ---
 
@@ -4050,7 +4050,7 @@ public string TextDecoration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
 
 ---
 
@@ -4071,8 +4071,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -4084,7 +4084,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -4096,7 +4096,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -4122,13 +4122,13 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
 
 ---
 
@@ -4140,7 +4140,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSetti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
 
 ---
 
@@ -4152,7 +4152,7 @@ public string FontFamily { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
 
 ---
 
@@ -4164,7 +4164,7 @@ public double FontSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
 
 ---
 
@@ -4176,7 +4176,7 @@ public string FontStyle { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
 
 ---
 
@@ -4188,7 +4188,7 @@ public double FontWeight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
 
 ---
 
@@ -4200,7 +4200,7 @@ public string TextCase { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
 
 ---
 
@@ -4212,7 +4212,7 @@ public string TextDecoration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
 
 ---
 
@@ -4233,8 +4233,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -4246,7 +4246,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -4258,7 +4258,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -4284,13 +4284,13 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
 
 ---
 
@@ -4302,7 +4302,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSetti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
 
 ---
 
@@ -4314,7 +4314,7 @@ public string FontFamily { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
 
 ---
 
@@ -4326,7 +4326,7 @@ public double FontSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
 
 ---
 
@@ -4338,7 +4338,7 @@ public string FontStyle { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
 
 ---
 
@@ -4350,7 +4350,7 @@ public double FontWeight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
 
 ---
 
@@ -4362,7 +4362,7 @@ public string TextCase { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
 
 ---
 
@@ -4374,7 +4374,7 @@ public string TextDecoration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
 
 ---
 
@@ -4395,8 +4395,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -4408,7 +4408,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -4420,7 +4420,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -4446,13 +4446,13 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
 
 ---
 
@@ -4464,7 +4464,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSetti
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
 
 ---
 
@@ -4476,7 +4476,7 @@ public string FontFamily { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
 
 ---
 
@@ -4488,7 +4488,7 @@ public double FontSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
 
 ---
 
@@ -4500,7 +4500,7 @@ public string FontStyle { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
 
 ---
 
@@ -4512,7 +4512,7 @@ public double FontWeight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
 
 ---
 
@@ -4524,7 +4524,7 @@ public string TextCase { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
 
 ---
 
@@ -4536,7 +4536,7 @@ public string TextDecoration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
 
 ---
 
@@ -4557,8 +4557,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -4570,7 +4570,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -4582,7 +4582,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -4603,8 +4603,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeGridLineColo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeGridLineColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeGridLineColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeGridLineColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeGridLineColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -4616,7 +4616,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -4628,7 +4628,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -4649,8 +4649,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSelectionCol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSelectionColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSelectionColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSelectionColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSelectionColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -4662,7 +4662,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -4674,7 +4674,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -4696,9 +4696,9 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentCol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColors.property.negative">Negative</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#negative DataDatabricksWorkspaceSettingV2#negative}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColors.property.neutral">Neutral</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#neutral DataDatabricksWorkspaceSettingV2#neutral}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColors.property.positive">Positive</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#positive DataDatabricksWorkspaceSettingV2#positive}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColors.property.negative">Negative</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#negative DataDatabricksWorkspaceSettingV2#negative}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColors.property.neutral">Neutral</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#neutral DataDatabricksWorkspaceSettingV2#neutral}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColors.property.positive">Positive</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#positive DataDatabricksWorkspaceSettingV2#positive}. |
 
 ---
 
@@ -4710,7 +4710,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentiment
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#negative DataDatabricksWorkspaceSettingV2#negative}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#negative DataDatabricksWorkspaceSettingV2#negative}.
 
 ---
 
@@ -4722,7 +4722,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentiment
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#neutral DataDatabricksWorkspaceSettingV2#neutral}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#neutral DataDatabricksWorkspaceSettingV2#neutral}.
 
 ---
 
@@ -4734,7 +4734,7 @@ public DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentiment
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive">DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#positive DataDatabricksWorkspaceSettingV2#positive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#positive DataDatabricksWorkspaceSettingV2#positive}.
 
 ---
 
@@ -4755,8 +4755,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentCol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -4768,7 +4768,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -4780,7 +4780,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -4801,8 +4801,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentCol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -4814,7 +4814,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -4826,7 +4826,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -4847,8 +4847,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentCol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -4860,7 +4860,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -4872,7 +4872,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -4893,8 +4893,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -4906,7 +4906,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -4918,7 +4918,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -4939,8 +4939,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBorder
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -4952,7 +4952,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -4964,7 +4964,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -4985,8 +4985,8 @@ new DataDatabricksWorkspaceSettingV2EffectiveWorkspaceLabel {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceLabel.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceLabel.property.label">Label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#label DataDatabricksWorkspaceSettingV2#label}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceLabel.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2EffectiveWorkspaceLabel.property.label">Label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#label DataDatabricksWorkspaceSettingV2#label}. |
 
 ---
 
@@ -4998,7 +4998,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}.
 
 ---
 
@@ -5010,7 +5010,7 @@ public string Label { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#label DataDatabricksWorkspaceSettingV2#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#label DataDatabricksWorkspaceSettingV2#label}.
 
 ---
 
@@ -5030,7 +5030,7 @@ new DataDatabricksWorkspaceSettingV2IntegerVal {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2IntegerVal.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2IntegerVal.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
 
 ---
 
@@ -5042,7 +5042,7 @@ public double Value { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
 
 ---
 
@@ -5062,7 +5062,7 @@ new DataDatabricksWorkspaceSettingV2OperationalEmailCustomRecipient {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2OperationalEmailCustomRecipient.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#email DataDatabricksWorkspaceSettingV2#email}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2OperationalEmailCustomRecipient.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#email DataDatabricksWorkspaceSettingV2#email}. |
 
 ---
 
@@ -5074,7 +5074,7 @@ public string Email { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#email DataDatabricksWorkspaceSettingV2#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#email DataDatabricksWorkspaceSettingV2#email}.
 
 ---
 
@@ -5094,7 +5094,7 @@ new DataDatabricksWorkspaceSettingV2PersonalCompute {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2PersonalCompute.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2PersonalCompute.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
 
 ---
 
@@ -5106,7 +5106,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
 
 ---
 
@@ -5126,7 +5126,7 @@ new DataDatabricksWorkspaceSettingV2ProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2ProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#workspace_id DataDatabricksWorkspaceSettingV2#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2ProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#workspace_id DataDatabricksWorkspaceSettingV2#workspace_id}. |
 
 ---
 
@@ -5138,7 +5138,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#workspace_id DataDatabricksWorkspaceSettingV2#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#workspace_id DataDatabricksWorkspaceSettingV2#workspace_id}.
 
 ---
 
@@ -5159,8 +5159,8 @@ new DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdmins {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdmins.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#status DataDatabricksWorkspaceSettingV2#status}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdmins.property.disableGovTagCreation">DisableGovTagCreation</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#disable_gov_tag_creation DataDatabricksWorkspaceSettingV2#disable_gov_tag_creation}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdmins.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#status DataDatabricksWorkspaceSettingV2#status}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2RestrictWorkspaceAdmins.property.disableGovTagCreation">DisableGovTagCreation</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#disable_gov_tag_creation DataDatabricksWorkspaceSettingV2#disable_gov_tag_creation}. |
 
 ---
 
@@ -5172,7 +5172,7 @@ public string Status { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#status DataDatabricksWorkspaceSettingV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#status DataDatabricksWorkspaceSettingV2#status}.
 
 ---
 
@@ -5184,7 +5184,7 @@ public bool|IResolvable DisableGovTagCreation { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#disable_gov_tag_creation DataDatabricksWorkspaceSettingV2#disable_gov_tag_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#disable_gov_tag_creation DataDatabricksWorkspaceSettingV2#disable_gov_tag_creation}.
 
 ---
 
@@ -5204,7 +5204,7 @@ new DataDatabricksWorkspaceSettingV2StringVal {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2StringVal.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2StringVal.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}. |
 
 ---
 
@@ -5216,7 +5216,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#value DataDatabricksWorkspaceSettingV2#value}.
 
 ---
 
@@ -5273,44 +5273,44 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.axisLineColor">AxisLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeAxisLineColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeAxisLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#axis_line_color DataDatabricksWorkspaceSettingV2#axis_line_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.canvasBackgroundColor">CanvasBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeCanvasBackgroundColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeCanvasBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#canvas_background_color DataDatabricksWorkspaceSettingV2#canvas_background_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.continuousGradient">ContinuousGradient</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#continuous_gradient DataDatabricksWorkspaceSettingV2#continuous_gradient}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.fontSettings">FontSettings</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_settings DataDatabricksWorkspaceSettingV2#font_settings}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.gridLineColor">GridLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeGridLineColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeGridLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#grid_line_color DataDatabricksWorkspaceSettingV2#grid_line_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.markCornerRadius">MarkCornerRadius</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#mark_corner_radius DataDatabricksWorkspaceSettingV2#mark_corner_radius}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.selectionColor">SelectionColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSelectionColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSelectionColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#selection_color DataDatabricksWorkspaceSettingV2#selection_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.sentimentColors">SentimentColors</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColors">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColors</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#sentiment_colors DataDatabricksWorkspaceSettingV2#sentiment_colors}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.textBoxVerticalAlign">TextBoxVerticalAlign</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_box_vertical_align DataDatabricksWorkspaceSettingV2#text_box_vertical_align}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor01">VisualizationColor01</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_01 DataDatabricksWorkspaceSettingV2#visualization_color_01}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor02">VisualizationColor02</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_02 DataDatabricksWorkspaceSettingV2#visualization_color_02}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor03">VisualizationColor03</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_03 DataDatabricksWorkspaceSettingV2#visualization_color_03}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor04">VisualizationColor04</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_04 DataDatabricksWorkspaceSettingV2#visualization_color_04}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor05">VisualizationColor05</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_05 DataDatabricksWorkspaceSettingV2#visualization_color_05}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor06">VisualizationColor06</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_06 DataDatabricksWorkspaceSettingV2#visualization_color_06}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor07">VisualizationColor07</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_07 DataDatabricksWorkspaceSettingV2#visualization_color_07}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor08">VisualizationColor08</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_08 DataDatabricksWorkspaceSettingV2#visualization_color_08}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor09">VisualizationColor09</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_09 DataDatabricksWorkspaceSettingV2#visualization_color_09}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor10">VisualizationColor10</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_10 DataDatabricksWorkspaceSettingV2#visualization_color_10}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor11">VisualizationColor11</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_11 DataDatabricksWorkspaceSettingV2#visualization_color_11}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor12">VisualizationColor12</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_12 DataDatabricksWorkspaceSettingV2#visualization_color_12}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor13">VisualizationColor13</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_13 DataDatabricksWorkspaceSettingV2#visualization_color_13}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor14">VisualizationColor14</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_14 DataDatabricksWorkspaceSettingV2#visualization_color_14}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor15">VisualizationColor15</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_15 DataDatabricksWorkspaceSettingV2#visualization_color_15}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor16">VisualizationColor16</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_16 DataDatabricksWorkspaceSettingV2#visualization_color_16}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor17">VisualizationColor17</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_17 DataDatabricksWorkspaceSettingV2#visualization_color_17}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor18">VisualizationColor18</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_18 DataDatabricksWorkspaceSettingV2#visualization_color_18}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor19">VisualizationColor19</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_19 DataDatabricksWorkspaceSettingV2#visualization_color_19}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor20">VisualizationColor20</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_20 DataDatabricksWorkspaceSettingV2#visualization_color_20}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.widgetBackgroundColor">WidgetBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBackgroundColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_background_color DataDatabricksWorkspaceSettingV2#widget_background_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.widgetBorderColor">WidgetBorderColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBorderColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBorderColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_border_color DataDatabricksWorkspaceSettingV2#widget_border_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.widgetCornerRadius">WidgetCornerRadius</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_corner_radius DataDatabricksWorkspaceSettingV2#widget_corner_radius}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.widgetHeaderAlignment">WidgetHeaderAlignment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_header_alignment DataDatabricksWorkspaceSettingV2#widget_header_alignment}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.widgetMargin">WidgetMargin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_margin DataDatabricksWorkspaceSettingV2#widget_margin}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.widgetPadding">WidgetPadding</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_padding DataDatabricksWorkspaceSettingV2#widget_padding}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.widgetShadow">WidgetShadow</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_shadow DataDatabricksWorkspaceSettingV2#widget_shadow}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.axisLineColor">AxisLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeAxisLineColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeAxisLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#axis_line_color DataDatabricksWorkspaceSettingV2#axis_line_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.canvasBackgroundColor">CanvasBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeCanvasBackgroundColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeCanvasBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#canvas_background_color DataDatabricksWorkspaceSettingV2#canvas_background_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.continuousGradient">ContinuousGradient</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#continuous_gradient DataDatabricksWorkspaceSettingV2#continuous_gradient}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.fontSettings">FontSettings</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_settings DataDatabricksWorkspaceSettingV2#font_settings}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.gridLineColor">GridLineColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeGridLineColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeGridLineColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#grid_line_color DataDatabricksWorkspaceSettingV2#grid_line_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.markCornerRadius">MarkCornerRadius</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#mark_corner_radius DataDatabricksWorkspaceSettingV2#mark_corner_radius}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.selectionColor">SelectionColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSelectionColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSelectionColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#selection_color DataDatabricksWorkspaceSettingV2#selection_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.sentimentColors">SentimentColors</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColors">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColors</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#sentiment_colors DataDatabricksWorkspaceSettingV2#sentiment_colors}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.textBoxVerticalAlign">TextBoxVerticalAlign</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_box_vertical_align DataDatabricksWorkspaceSettingV2#text_box_vertical_align}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor01">VisualizationColor01</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_01 DataDatabricksWorkspaceSettingV2#visualization_color_01}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor02">VisualizationColor02</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_02 DataDatabricksWorkspaceSettingV2#visualization_color_02}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor03">VisualizationColor03</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_03 DataDatabricksWorkspaceSettingV2#visualization_color_03}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor04">VisualizationColor04</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_04 DataDatabricksWorkspaceSettingV2#visualization_color_04}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor05">VisualizationColor05</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_05 DataDatabricksWorkspaceSettingV2#visualization_color_05}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor06">VisualizationColor06</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_06 DataDatabricksWorkspaceSettingV2#visualization_color_06}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor07">VisualizationColor07</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_07 DataDatabricksWorkspaceSettingV2#visualization_color_07}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor08">VisualizationColor08</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_08 DataDatabricksWorkspaceSettingV2#visualization_color_08}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor09">VisualizationColor09</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_09 DataDatabricksWorkspaceSettingV2#visualization_color_09}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor10">VisualizationColor10</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_10 DataDatabricksWorkspaceSettingV2#visualization_color_10}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor11">VisualizationColor11</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_11 DataDatabricksWorkspaceSettingV2#visualization_color_11}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor12">VisualizationColor12</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_12 DataDatabricksWorkspaceSettingV2#visualization_color_12}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor13">VisualizationColor13</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_13 DataDatabricksWorkspaceSettingV2#visualization_color_13}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor14">VisualizationColor14</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_14 DataDatabricksWorkspaceSettingV2#visualization_color_14}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor15">VisualizationColor15</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_15 DataDatabricksWorkspaceSettingV2#visualization_color_15}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor16">VisualizationColor16</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_16 DataDatabricksWorkspaceSettingV2#visualization_color_16}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor17">VisualizationColor17</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_17 DataDatabricksWorkspaceSettingV2#visualization_color_17}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor18">VisualizationColor18</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_18 DataDatabricksWorkspaceSettingV2#visualization_color_18}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor19">VisualizationColor19</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_19 DataDatabricksWorkspaceSettingV2#visualization_color_19}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.visualizationColor20">VisualizationColor20</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_20 DataDatabricksWorkspaceSettingV2#visualization_color_20}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.widgetBackgroundColor">WidgetBackgroundColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBackgroundColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBackgroundColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_background_color DataDatabricksWorkspaceSettingV2#widget_background_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.widgetBorderColor">WidgetBorderColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBorderColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBorderColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_border_color DataDatabricksWorkspaceSettingV2#widget_border_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.widgetCornerRadius">WidgetCornerRadius</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_corner_radius DataDatabricksWorkspaceSettingV2#widget_corner_radius}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.widgetHeaderAlignment">WidgetHeaderAlignment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_header_alignment DataDatabricksWorkspaceSettingV2#widget_header_alignment}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.widgetMargin">WidgetMargin</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_margin DataDatabricksWorkspaceSettingV2#widget_margin}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.widgetPadding">WidgetPadding</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_padding DataDatabricksWorkspaceSettingV2#widget_padding}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardTheme.property.widgetShadow">WidgetShadow</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_shadow DataDatabricksWorkspaceSettingV2#widget_shadow}. |
 
 ---
 
@@ -5322,7 +5322,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeAxisLineColor Axis
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeAxisLineColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeAxisLineColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#axis_line_color DataDatabricksWorkspaceSettingV2#axis_line_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#axis_line_color DataDatabricksWorkspaceSettingV2#axis_line_color}.
 
 ---
 
@@ -5334,7 +5334,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeCanvasBackgroundCo
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeCanvasBackgroundColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeCanvasBackgroundColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#canvas_background_color DataDatabricksWorkspaceSettingV2#canvas_background_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#canvas_background_color DataDatabricksWorkspaceSettingV2#canvas_background_color}.
 
 ---
 
@@ -5346,7 +5346,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#continuous_gradient DataDatabricksWorkspaceSettingV2#continuous_gradient}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#continuous_gradient DataDatabricksWorkspaceSettingV2#continuous_gradient}.
 
 ---
 
@@ -5358,7 +5358,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontColor FontColo
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
 
 ---
 
@@ -5370,7 +5370,7 @@ public string FontFamily { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
 
 ---
 
@@ -5382,7 +5382,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings FontS
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_settings DataDatabricksWorkspaceSettingV2#font_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_settings DataDatabricksWorkspaceSettingV2#font_settings}.
 
 ---
 
@@ -5394,7 +5394,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeGridLineColor Grid
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeGridLineColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeGridLineColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#grid_line_color DataDatabricksWorkspaceSettingV2#grid_line_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#grid_line_color DataDatabricksWorkspaceSettingV2#grid_line_color}.
 
 ---
 
@@ -5406,7 +5406,7 @@ public double MarkCornerRadius { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#mark_corner_radius DataDatabricksWorkspaceSettingV2#mark_corner_radius}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#mark_corner_radius DataDatabricksWorkspaceSettingV2#mark_corner_radius}.
 
 ---
 
@@ -5418,7 +5418,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSelectionColor Sel
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSelectionColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSelectionColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#selection_color DataDatabricksWorkspaceSettingV2#selection_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#selection_color DataDatabricksWorkspaceSettingV2#selection_color}.
 
 ---
 
@@ -5430,7 +5430,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColors Se
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColors">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColors</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#sentiment_colors DataDatabricksWorkspaceSettingV2#sentiment_colors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#sentiment_colors DataDatabricksWorkspaceSettingV2#sentiment_colors}.
 
 ---
 
@@ -5442,7 +5442,7 @@ public string TextBoxVerticalAlign { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_box_vertical_align DataDatabricksWorkspaceSettingV2#text_box_vertical_align}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_box_vertical_align DataDatabricksWorkspaceSettingV2#text_box_vertical_align}.
 
 ---
 
@@ -5454,7 +5454,7 @@ public string VisualizationColor01 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_01 DataDatabricksWorkspaceSettingV2#visualization_color_01}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_01 DataDatabricksWorkspaceSettingV2#visualization_color_01}.
 
 ---
 
@@ -5466,7 +5466,7 @@ public string VisualizationColor02 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_02 DataDatabricksWorkspaceSettingV2#visualization_color_02}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_02 DataDatabricksWorkspaceSettingV2#visualization_color_02}.
 
 ---
 
@@ -5478,7 +5478,7 @@ public string VisualizationColor03 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_03 DataDatabricksWorkspaceSettingV2#visualization_color_03}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_03 DataDatabricksWorkspaceSettingV2#visualization_color_03}.
 
 ---
 
@@ -5490,7 +5490,7 @@ public string VisualizationColor04 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_04 DataDatabricksWorkspaceSettingV2#visualization_color_04}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_04 DataDatabricksWorkspaceSettingV2#visualization_color_04}.
 
 ---
 
@@ -5502,7 +5502,7 @@ public string VisualizationColor05 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_05 DataDatabricksWorkspaceSettingV2#visualization_color_05}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_05 DataDatabricksWorkspaceSettingV2#visualization_color_05}.
 
 ---
 
@@ -5514,7 +5514,7 @@ public string VisualizationColor06 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_06 DataDatabricksWorkspaceSettingV2#visualization_color_06}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_06 DataDatabricksWorkspaceSettingV2#visualization_color_06}.
 
 ---
 
@@ -5526,7 +5526,7 @@ public string VisualizationColor07 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_07 DataDatabricksWorkspaceSettingV2#visualization_color_07}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_07 DataDatabricksWorkspaceSettingV2#visualization_color_07}.
 
 ---
 
@@ -5538,7 +5538,7 @@ public string VisualizationColor08 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_08 DataDatabricksWorkspaceSettingV2#visualization_color_08}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_08 DataDatabricksWorkspaceSettingV2#visualization_color_08}.
 
 ---
 
@@ -5550,7 +5550,7 @@ public string VisualizationColor09 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_09 DataDatabricksWorkspaceSettingV2#visualization_color_09}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_09 DataDatabricksWorkspaceSettingV2#visualization_color_09}.
 
 ---
 
@@ -5562,7 +5562,7 @@ public string VisualizationColor10 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_10 DataDatabricksWorkspaceSettingV2#visualization_color_10}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_10 DataDatabricksWorkspaceSettingV2#visualization_color_10}.
 
 ---
 
@@ -5574,7 +5574,7 @@ public string VisualizationColor11 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_11 DataDatabricksWorkspaceSettingV2#visualization_color_11}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_11 DataDatabricksWorkspaceSettingV2#visualization_color_11}.
 
 ---
 
@@ -5586,7 +5586,7 @@ public string VisualizationColor12 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_12 DataDatabricksWorkspaceSettingV2#visualization_color_12}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_12 DataDatabricksWorkspaceSettingV2#visualization_color_12}.
 
 ---
 
@@ -5598,7 +5598,7 @@ public string VisualizationColor13 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_13 DataDatabricksWorkspaceSettingV2#visualization_color_13}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_13 DataDatabricksWorkspaceSettingV2#visualization_color_13}.
 
 ---
 
@@ -5610,7 +5610,7 @@ public string VisualizationColor14 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_14 DataDatabricksWorkspaceSettingV2#visualization_color_14}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_14 DataDatabricksWorkspaceSettingV2#visualization_color_14}.
 
 ---
 
@@ -5622,7 +5622,7 @@ public string VisualizationColor15 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_15 DataDatabricksWorkspaceSettingV2#visualization_color_15}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_15 DataDatabricksWorkspaceSettingV2#visualization_color_15}.
 
 ---
 
@@ -5634,7 +5634,7 @@ public string VisualizationColor16 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_16 DataDatabricksWorkspaceSettingV2#visualization_color_16}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_16 DataDatabricksWorkspaceSettingV2#visualization_color_16}.
 
 ---
 
@@ -5646,7 +5646,7 @@ public string VisualizationColor17 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_17 DataDatabricksWorkspaceSettingV2#visualization_color_17}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_17 DataDatabricksWorkspaceSettingV2#visualization_color_17}.
 
 ---
 
@@ -5658,7 +5658,7 @@ public string VisualizationColor18 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_18 DataDatabricksWorkspaceSettingV2#visualization_color_18}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_18 DataDatabricksWorkspaceSettingV2#visualization_color_18}.
 
 ---
 
@@ -5670,7 +5670,7 @@ public string VisualizationColor19 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_19 DataDatabricksWorkspaceSettingV2#visualization_color_19}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_19 DataDatabricksWorkspaceSettingV2#visualization_color_19}.
 
 ---
 
@@ -5682,7 +5682,7 @@ public string VisualizationColor20 { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#visualization_color_20 DataDatabricksWorkspaceSettingV2#visualization_color_20}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#visualization_color_20 DataDatabricksWorkspaceSettingV2#visualization_color_20}.
 
 ---
 
@@ -5694,7 +5694,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBackgroundCo
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBackgroundColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBackgroundColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_background_color DataDatabricksWorkspaceSettingV2#widget_background_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_background_color DataDatabricksWorkspaceSettingV2#widget_background_color}.
 
 ---
 
@@ -5706,7 +5706,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBorderColor 
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBorderColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBorderColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_border_color DataDatabricksWorkspaceSettingV2#widget_border_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_border_color DataDatabricksWorkspaceSettingV2#widget_border_color}.
 
 ---
 
@@ -5718,7 +5718,7 @@ public double WidgetCornerRadius { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_corner_radius DataDatabricksWorkspaceSettingV2#widget_corner_radius}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_corner_radius DataDatabricksWorkspaceSettingV2#widget_corner_radius}.
 
 ---
 
@@ -5730,7 +5730,7 @@ public string WidgetHeaderAlignment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_header_alignment DataDatabricksWorkspaceSettingV2#widget_header_alignment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_header_alignment DataDatabricksWorkspaceSettingV2#widget_header_alignment}.
 
 ---
 
@@ -5742,7 +5742,7 @@ public double WidgetMargin { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_margin DataDatabricksWorkspaceSettingV2#widget_margin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_margin DataDatabricksWorkspaceSettingV2#widget_margin}.
 
 ---
 
@@ -5754,7 +5754,7 @@ public double WidgetPadding { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_padding DataDatabricksWorkspaceSettingV2#widget_padding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_padding DataDatabricksWorkspaceSettingV2#widget_padding}.
 
 ---
 
@@ -5766,7 +5766,7 @@ public double WidgetShadow { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_shadow DataDatabricksWorkspaceSettingV2#widget_shadow}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_shadow DataDatabricksWorkspaceSettingV2#widget_shadow}.
 
 ---
 
@@ -5787,8 +5787,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeAxisLineColor {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeAxisLineColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeAxisLineColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeAxisLineColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeAxisLineColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -5800,7 +5800,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -5812,7 +5812,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -5833,8 +5833,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeCanvasBackgroundColor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeCanvasBackgroundColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeCanvasBackgroundColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeCanvasBackgroundColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeCanvasBackgroundColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -5846,7 +5846,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -5858,7 +5858,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -5879,8 +5879,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient.property.darkMode">DarkMode</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark_mode DataDatabricksWorkspaceSettingV2#dark_mode}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient.property.lightMode">LightMode</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light_mode DataDatabricksWorkspaceSettingV2#light_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient.property.darkMode">DarkMode</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark_mode DataDatabricksWorkspaceSettingV2#dark_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient.property.lightMode">LightMode</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light_mode DataDatabricksWorkspaceSettingV2#light_mode}. |
 
 ---
 
@@ -5892,7 +5892,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark_mode DataDatabricksWorkspaceSettingV2#dark_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark_mode DataDatabricksWorkspaceSettingV2#dark_mode}.
 
 ---
 
@@ -5904,7 +5904,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light_mode DataDatabricksWorkspaceSettingV2#light_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light_mode DataDatabricksWorkspaceSettingV2#light_mode}.
 
 ---
 
@@ -5928,11 +5928,11 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.colorScheme">ColorScheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.colorScheme">ColorScheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}. |
 
 ---
 
@@ -5944,7 +5944,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}.
 
 ---
 
@@ -5956,7 +5956,7 @@ public string ColorScheme { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}.
 
 ---
 
@@ -5968,7 +5968,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}.
 
 ---
 
@@ -5980,7 +5980,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}.
 
 ---
 
@@ -5992,7 +5992,7 @@ public double FromCategoricalIndex { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}.
 
 ---
 
@@ -6014,9 +6014,9 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
 
 ---
 
@@ -6028,7 +6028,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
 
 ---
 
@@ -6040,7 +6040,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}.
 
 ---
 
@@ -6052,7 +6052,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
 
 ---
 
@@ -6073,8 +6073,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -6086,7 +6086,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -6098,7 +6098,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -6119,8 +6119,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -6132,7 +6132,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -6144,7 +6144,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -6165,8 +6165,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -6178,7 +6178,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -6190,7 +6190,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -6211,8 +6211,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
 
 ---
 
@@ -6224,7 +6224,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
 
 ---
 
@@ -6236,7 +6236,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
 
 ---
 
@@ -6257,8 +6257,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -6270,7 +6270,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -6282,7 +6282,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -6303,8 +6303,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -6316,7 +6316,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -6328,7 +6328,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -6352,11 +6352,11 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.colorScheme">ColorScheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.colorScheme">ColorScheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.customDiverging">CustomDiverging</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.customSequential">CustomSequential</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightMode.property.fromCategoricalIndex">FromCategoricalIndex</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}. |
 
 ---
 
@@ -6368,7 +6368,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}.
 
 ---
 
@@ -6380,7 +6380,7 @@ public string ColorScheme { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color_scheme DataDatabricksWorkspaceSettingV2#color_scheme}.
 
 ---
 
@@ -6392,7 +6392,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_diverging DataDatabricksWorkspaceSettingV2#custom_diverging}.
 
 ---
 
@@ -6404,7 +6404,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#custom_sequential DataDatabricksWorkspaceSettingV2#custom_sequential}.
 
 ---
 
@@ -6416,7 +6416,7 @@ public double FromCategoricalIndex { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#from_categorical_index DataDatabricksWorkspaceSettingV2#from_categorical_index}.
 
 ---
 
@@ -6438,9 +6438,9 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.mid">Mid</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
 
 ---
 
@@ -6452,7 +6452,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
 
 ---
 
@@ -6464,7 +6464,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#mid DataDatabricksWorkspaceSettingV2#mid}.
 
 ---
 
@@ -6476,7 +6476,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
 
 ---
 
@@ -6497,8 +6497,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -6510,7 +6510,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -6522,7 +6522,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -6543,8 +6543,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -6556,7 +6556,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -6568,7 +6568,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -6589,8 +6589,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -6602,7 +6602,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -6614,7 +6614,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -6635,8 +6635,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.end">End</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential.property.start">Start</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}. |
 
 ---
 
@@ -6648,7 +6648,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#end DataDatabricksWorkspaceSettingV2#end}.
 
 ---
 
@@ -6660,7 +6660,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradient
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#start DataDatabricksWorkspaceSettingV2#start}.
 
 ---
 
@@ -6681,8 +6681,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -6694,7 +6694,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -6706,7 +6706,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -6727,8 +6727,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -6740,7 +6740,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -6752,7 +6752,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -6773,8 +6773,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontColor {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -6786,7 +6786,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -6798,7 +6798,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -6822,11 +6822,11 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings.property.base">Base</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#base DataDatabricksWorkspaceSettingV2#base}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings.property.fieldTitle">FieldTitle</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#field_title DataDatabricksWorkspaceSettingV2#field_title}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings.property.fieldValue">FieldValue</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#field_value DataDatabricksWorkspaceSettingV2#field_value}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings.property.widgetDescription">WidgetDescription</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_description DataDatabricksWorkspaceSettingV2#widget_description}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings.property.widgetTitle">WidgetTitle</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_title DataDatabricksWorkspaceSettingV2#widget_title}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings.property.base">Base</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#base DataDatabricksWorkspaceSettingV2#base}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings.property.fieldTitle">FieldTitle</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#field_title DataDatabricksWorkspaceSettingV2#field_title}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings.property.fieldValue">FieldValue</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#field_value DataDatabricksWorkspaceSettingV2#field_value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings.property.widgetDescription">WidgetDescription</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_description DataDatabricksWorkspaceSettingV2#widget_description}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettings.property.widgetTitle">WidgetTitle</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_title DataDatabricksWorkspaceSettingV2#widget_title}. |
 
 ---
 
@@ -6838,7 +6838,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase B
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#base DataDatabricksWorkspaceSettingV2#base}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#base DataDatabricksWorkspaceSettingV2#base}.
 
 ---
 
@@ -6850,7 +6850,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldT
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#field_title DataDatabricksWorkspaceSettingV2#field_title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#field_title DataDatabricksWorkspaceSettingV2#field_title}.
 
 ---
 
@@ -6862,7 +6862,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldV
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#field_value DataDatabricksWorkspaceSettingV2#field_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#field_value DataDatabricksWorkspaceSettingV2#field_value}.
 
 ---
 
@@ -6874,7 +6874,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidget
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_description DataDatabricksWorkspaceSettingV2#widget_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_description DataDatabricksWorkspaceSettingV2#widget_description}.
 
 ---
 
@@ -6886,7 +6886,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidget
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#widget_title DataDatabricksWorkspaceSettingV2#widget_title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#widget_title DataDatabricksWorkspaceSettingV2#widget_title}.
 
 ---
 
@@ -6912,13 +6912,13 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBase.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
 
 ---
 
@@ -6930,7 +6930,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBaseFo
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
 
 ---
 
@@ -6942,7 +6942,7 @@ public string FontFamily { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
 
 ---
 
@@ -6954,7 +6954,7 @@ public double FontSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
 
 ---
 
@@ -6966,7 +6966,7 @@ public string FontStyle { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
 
 ---
 
@@ -6978,7 +6978,7 @@ public double FontWeight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
 
 ---
 
@@ -6990,7 +6990,7 @@ public string TextCase { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
 
 ---
 
@@ -7002,7 +7002,7 @@ public string TextDecoration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
 
 ---
 
@@ -7023,8 +7023,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBaseFontC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -7036,7 +7036,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -7048,7 +7048,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -7074,13 +7074,13 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
 
 ---
 
@@ -7092,7 +7092,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldT
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
 
 ---
 
@@ -7104,7 +7104,7 @@ public string FontFamily { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
 
 ---
 
@@ -7116,7 +7116,7 @@ public double FontSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
 
 ---
 
@@ -7128,7 +7128,7 @@ public string FontStyle { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
 
 ---
 
@@ -7140,7 +7140,7 @@ public double FontWeight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
 
 ---
 
@@ -7152,7 +7152,7 @@ public string TextCase { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
 
 ---
 
@@ -7164,7 +7164,7 @@ public string TextDecoration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
 
 ---
 
@@ -7185,8 +7185,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -7198,7 +7198,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -7210,7 +7210,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -7236,13 +7236,13 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValue.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
 
 ---
 
@@ -7254,7 +7254,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldV
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
 
 ---
 
@@ -7266,7 +7266,7 @@ public string FontFamily { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
 
 ---
 
@@ -7278,7 +7278,7 @@ public double FontSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
 
 ---
 
@@ -7290,7 +7290,7 @@ public string FontStyle { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
 
 ---
 
@@ -7302,7 +7302,7 @@ public double FontWeight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
 
 ---
 
@@ -7314,7 +7314,7 @@ public string TextCase { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
 
 ---
 
@@ -7326,7 +7326,7 @@ public string TextDecoration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
 
 ---
 
@@ -7347,8 +7347,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -7360,7 +7360,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -7372,7 +7372,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -7398,13 +7398,13 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
 
 ---
 
@@ -7416,7 +7416,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidget
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
 
 ---
 
@@ -7428,7 +7428,7 @@ public string FontFamily { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
 
 ---
 
@@ -7440,7 +7440,7 @@ public double FontSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
 
 ---
 
@@ -7452,7 +7452,7 @@ public string FontStyle { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
 
 ---
 
@@ -7464,7 +7464,7 @@ public double FontWeight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
 
 ---
 
@@ -7476,7 +7476,7 @@ public string TextCase { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
 
 ---
 
@@ -7488,7 +7488,7 @@ public string TextDecoration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
 
 ---
 
@@ -7509,8 +7509,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -7522,7 +7522,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -7534,7 +7534,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -7560,13 +7560,13 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontColor">FontColor</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontFamily">FontFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontSize">FontSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontStyle">FontStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.fontWeight">FontWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.textCase">TextCase</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle.property.textDecoration">TextDecoration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}. |
 
 ---
 
@@ -7578,7 +7578,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidget
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_color DataDatabricksWorkspaceSettingV2#font_color}.
 
 ---
 
@@ -7590,7 +7590,7 @@ public string FontFamily { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_family DataDatabricksWorkspaceSettingV2#font_family}.
 
 ---
 
@@ -7602,7 +7602,7 @@ public double FontSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_size DataDatabricksWorkspaceSettingV2#font_size}.
 
 ---
 
@@ -7614,7 +7614,7 @@ public string FontStyle { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_style DataDatabricksWorkspaceSettingV2#font_style}.
 
 ---
 
@@ -7626,7 +7626,7 @@ public double FontWeight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#font_weight DataDatabricksWorkspaceSettingV2#font_weight}.
 
 ---
 
@@ -7638,7 +7638,7 @@ public string TextCase { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_case DataDatabricksWorkspaceSettingV2#text_case}.
 
 ---
 
@@ -7650,7 +7650,7 @@ public string TextDecoration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#text_decoration DataDatabricksWorkspaceSettingV2#text_decoration}.
 
 ---
 
@@ -7671,8 +7671,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -7684,7 +7684,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -7696,7 +7696,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -7717,8 +7717,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeGridLineColor {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeGridLineColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeGridLineColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeGridLineColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeGridLineColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -7730,7 +7730,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -7742,7 +7742,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -7763,8 +7763,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSelectionColor {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSelectionColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSelectionColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSelectionColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSelectionColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -7776,7 +7776,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -7788,7 +7788,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -7810,9 +7810,9 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColors.property.negative">Negative</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNegative">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNegative</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#negative DataDatabricksWorkspaceSettingV2#negative}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColors.property.neutral">Neutral</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNeutral">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNeutral</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#neutral DataDatabricksWorkspaceSettingV2#neutral}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColors.property.positive">Positive</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsPositive">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsPositive</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#positive DataDatabricksWorkspaceSettingV2#positive}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColors.property.negative">Negative</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNegative">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNegative</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#negative DataDatabricksWorkspaceSettingV2#negative}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColors.property.neutral">Neutral</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNeutral">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNeutral</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#neutral DataDatabricksWorkspaceSettingV2#neutral}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColors.property.positive">Positive</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsPositive">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsPositive</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#positive DataDatabricksWorkspaceSettingV2#positive}. |
 
 ---
 
@@ -7824,7 +7824,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNeg
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNegative">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNegative</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#negative DataDatabricksWorkspaceSettingV2#negative}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#negative DataDatabricksWorkspaceSettingV2#negative}.
 
 ---
 
@@ -7836,7 +7836,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNeu
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNeutral">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNeutral</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#neutral DataDatabricksWorkspaceSettingV2#neutral}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#neutral DataDatabricksWorkspaceSettingV2#neutral}.
 
 ---
 
@@ -7848,7 +7848,7 @@ public DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsPos
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsPositive">DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsPositive</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#positive DataDatabricksWorkspaceSettingV2#positive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#positive DataDatabricksWorkspaceSettingV2#positive}.
 
 ---
 
@@ -7869,8 +7869,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNegati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNegative.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNegative.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNegative.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNegative.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -7882,7 +7882,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -7894,7 +7894,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -7915,8 +7915,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNeutra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNeutral.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNeutral.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNeutral.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsNeutral.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -7928,7 +7928,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -7940,7 +7940,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -7961,8 +7961,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsPositi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsPositive.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsPositive.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsPositive.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeSentimentColorsPositive.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -7974,7 +7974,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -7986,7 +7986,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -8007,8 +8007,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBackgroundColor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBackgroundColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBackgroundColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBackgroundColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBackgroundColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -8020,7 +8020,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -8032,7 +8032,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -8053,8 +8053,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBorderColor {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBorderColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBorderColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBorderColor.property.dark">Dark</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceDashboardThemeWidgetBorderColor.property.light">Light</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}. |
 
 ---
 
@@ -8066,7 +8066,7 @@ public string Dark { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#dark DataDatabricksWorkspaceSettingV2#dark}.
 
 ---
 
@@ -8078,7 +8078,7 @@ public string Light { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#light DataDatabricksWorkspaceSettingV2#light}.
 
 ---
 
@@ -8099,8 +8099,8 @@ new DataDatabricksWorkspaceSettingV2WorkspaceLabel {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceLabel.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceLabel.property.label">Label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#label DataDatabricksWorkspaceSettingV2#label}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceLabel.property.color">Color</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWorkspaceSettingV2.DataDatabricksWorkspaceSettingV2WorkspaceLabel.property.label">Label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#label DataDatabricksWorkspaceSettingV2#label}. |
 
 ---
 
@@ -8112,7 +8112,7 @@ public string Color { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#color DataDatabricksWorkspaceSettingV2#color}.
 
 ---
 
@@ -8124,7 +8124,7 @@ public string Label { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/workspace_setting_v2#label DataDatabricksWorkspaceSettingV2#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_setting_v2#label DataDatabricksWorkspaceSettingV2#label}.
 
 ---
 

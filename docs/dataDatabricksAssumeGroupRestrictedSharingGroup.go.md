@@ -4,7 +4,7 @@
 
 ### DataDatabricksAssumeGroupRestrictedSharingGroup <a name="DataDatabricksAssumeGroupRestrictedSharingGroup" id="@cdktn/provider-databricks.dataDatabricksAssumeGroupRestrictedSharingGroup.DataDatabricksAssumeGroupRestrictedSharingGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_group databricks_assume_group_restricted_sharing_group}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_group databricks_assume_group_restricted_sharing_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksAssumeGroupRestrictedSharingGroup.DataDatabricksAssumeGroupRestrictedSharingGroup.Initializer"></a>
 
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataDatabricksAssumeGroupR
 
 The id of the existing DataDatabricksAssumeGroupRestrictedSharingGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -677,8 +677,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAssumeGroupRestrictedSharingGroup.DataDatabricksAssumeGroupRestrictedSharingGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAssumeGroupRestrictedSharingGroup.DataDatabricksAssumeGroupRestrictedSharingGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksAssumeGroupRestrictedSharingGroup.DataDatabricksAssumeGroupRestrictedSharingGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAssumeGroupRestrictedSharingGroup.DataDatabricksAssumeGroupRestrictedSharingGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_group#name DataDatabricksAssumeGroupRestrictedSharingGroup#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAssumeGroupRestrictedSharingGroup.DataDatabricksAssumeGroupRestrictedSharingGroupConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAssumeGroupRestrictedSharingGroup.DataDatabricksAssumeGroupRestrictedSharingGroupProviderConfig">DataDatabricksAssumeGroupRestrictedSharingGroupProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_group#provider_config DataDatabricksAssumeGroupRestrictedSharingGroup#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAssumeGroupRestrictedSharingGroup.DataDatabricksAssumeGroupRestrictedSharingGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_group#name DataDatabricksAssumeGroupRestrictedSharingGroup#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAssumeGroupRestrictedSharingGroup.DataDatabricksAssumeGroupRestrictedSharingGroupConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksAssumeGroupRestrictedSharingGroup.DataDatabricksAssumeGroupRestrictedSharingGroupProviderConfig">DataDatabricksAssumeGroupRestrictedSharingGroupProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_group#provider_config DataDatabricksAssumeGroupRestrictedSharingGroup#provider_config}. |
 
 ---
 
@@ -760,7 +760,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_group#name DataDatabricksAssumeGroupRestrictedSharingGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_group#name DataDatabricksAssumeGroupRestrictedSharingGroup#name}.
 
 ---
 
@@ -772,7 +772,7 @@ ProviderConfig DataDatabricksAssumeGroupRestrictedSharingGroupProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksAssumeGroupRestrictedSharingGroup.DataDatabricksAssumeGroupRestrictedSharingGroupProviderConfig">DataDatabricksAssumeGroupRestrictedSharingGroupProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_group#provider_config DataDatabricksAssumeGroupRestrictedSharingGroup#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_group#provider_config DataDatabricksAssumeGroupRestrictedSharingGroup#provider_config}.
 
 ---
 
@@ -792,7 +792,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v19/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksAssumeGroupRestrictedSharingGroup.DataDatabricksAssumeGroupRestrictedSharingGroupProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_group#workspace_id DataDatabricksAssumeGroupRestrictedSharingGroup#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksAssumeGroupRestrictedSharingGroup.DataDatabricksAssumeGroupRestrictedSharingGroupProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_group#workspace_id DataDatabricksAssumeGroupRestrictedSharingGroup#workspace_id}. |
 
 ---
 
@@ -804,7 +804,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_group#workspace_id DataDatabricksAssumeGroupRestrictedSharingGroup#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_group#workspace_id DataDatabricksAssumeGroupRestrictedSharingGroup#workspace_id}.
 
 ---
 
