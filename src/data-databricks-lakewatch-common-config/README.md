@@ -1,3 +1,3 @@
 # `data_databricks_lakewatch_common_config`
 
-Refer to the Terraform Registry for docs: [`data_databricks_lakewatch_common_config`](https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/lakewatch_common_config).
+Refer to the Terraform Registry for docs: [`data_databricks_lakewatch_common_config`](https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/lakewatch_common_config).

@@ -1,3 +1,3 @@
 # `databricks_job`
 
-Refer to the Terraform Registry for docs: [`databricks_job`](https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/job).
+Refer to the Terraform Registry for docs: [`databricks_job`](https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/job).

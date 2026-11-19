@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config
+// https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_common_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,21 @@ import * as cdktn from 'cdktn';
 
 export interface LakewatchCommonConfigConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config#parent LakewatchCommonConfig#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_common_config#parent LakewatchCommonConfig#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config#per_resource_permissions_enabled LakewatchCommonConfig#per_resource_permissions_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_common_config#per_resource_permissions_enabled LakewatchCommonConfig#per_resource_permissions_enabled}
   */
   readonly perResourcePermissionsEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config#provider_config LakewatchCommonConfig#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_common_config#provider_config LakewatchCommonConfig#provider_config}
   */
   readonly providerConfig?: LakewatchCommonConfigProviderConfig;
 }
 export interface LakewatchCommonConfigProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config#workspace_id LakewatchCommonConfig#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_common_config#workspace_id LakewatchCommonConfig#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -121,22 +121,22 @@ export class LakewatchCommonConfigProviderConfigOutputReference extends cdktn.Co
 }
 export interface LakewatchCommonConfigUpdatedBy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config#display_name LakewatchCommonConfig#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_common_config#display_name LakewatchCommonConfig#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config#email LakewatchCommonConfig#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_common_config#email LakewatchCommonConfig#email}
   */
   readonly email?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config#id LakewatchCommonConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_common_config#id LakewatchCommonConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config#principal_type LakewatchCommonConfig#principal_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_common_config#principal_type LakewatchCommonConfig#principal_type}
   */
   readonly principalType?: string;
 }
@@ -307,7 +307,7 @@ export class LakewatchCommonConfigUpdatedByOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config databricks_lakewatch_common_config}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_common_config databricks_lakewatch_common_config}
 */
 export class LakewatchCommonConfig extends cdktn.TerraformResource {
 
@@ -323,7 +323,7 @@ export class LakewatchCommonConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LakewatchCommonConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LakewatchCommonConfig to import
-  * @param importFromId The id of the existing LakewatchCommonConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LakewatchCommonConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_common_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LakewatchCommonConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -335,7 +335,7 @@ export class LakewatchCommonConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/resources/lakewatch_common_config databricks_lakewatch_common_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/lakewatch_common_config databricks_lakewatch_common_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -346,7 +346,7 @@ export class LakewatchCommonConfig extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_lakewatch_common_config',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.143.0',
+        providerVersion: '1.144.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
