@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_groups
+// https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksAssumeGroupRestrictedSharingGroupsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_groups#page_size DataDatabricksAssumeGroupRestrictedSharingGroups#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_groups#page_size DataDatabricksAssumeGroupRestrictedSharingGroups#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_groups#provider_config DataDatabricksAssumeGroupRestrictedSharingGroups#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_groups#provider_config DataDatabricksAssumeGroupRestrictedSharingGroups#provider_config}
   */
   readonly providerConfig?: DataDatabricksAssumeGroupRestrictedSharingGroupsProviderConfig;
 }
 export interface DataDatabricksAssumeGroupRestrictedSharingGroupsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_groups#workspace_id DataDatabricksAssumeGroupRestrictedSharingGroups#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_groups#workspace_id DataDatabricksAssumeGroupRestrictedSharingGroups#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -117,7 +117,7 @@ export class DataDatabricksAssumeGroupRestrictedSharingGroupsProviderConfigOutpu
 }
 export interface DataDatabricksAssumeGroupRestrictedSharingGroupsRestrictedSharingGroupsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_groups#workspace_id DataDatabricksAssumeGroupRestrictedSharingGroups#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_groups#workspace_id DataDatabricksAssumeGroupRestrictedSharingGroups#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -211,11 +211,11 @@ export class DataDatabricksAssumeGroupRestrictedSharingGroupsRestrictedSharingGr
 }
 export interface DataDatabricksAssumeGroupRestrictedSharingGroupsRestrictedSharingGroups {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_groups#name DataDatabricksAssumeGroupRestrictedSharingGroups#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_groups#name DataDatabricksAssumeGroupRestrictedSharingGroups#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_groups#provider_config DataDatabricksAssumeGroupRestrictedSharingGroups#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_groups#provider_config DataDatabricksAssumeGroupRestrictedSharingGroups#provider_config}
   */
   readonly providerConfig?: DataDatabricksAssumeGroupRestrictedSharingGroupsRestrictedSharingGroupsProviderConfig;
 }
@@ -357,7 +357,7 @@ export class DataDatabricksAssumeGroupRestrictedSharingGroupsRestrictedSharingGr
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_groups databricks_assume_group_restricted_sharing_groups}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_groups databricks_assume_group_restricted_sharing_groups}
 */
 export class DataDatabricksAssumeGroupRestrictedSharingGroups extends cdktn.TerraformDataSource {
 
@@ -373,7 +373,7 @@ export class DataDatabricksAssumeGroupRestrictedSharingGroups extends cdktn.Terr
   * Generates CDKTN code for importing a DataDatabricksAssumeGroupRestrictedSharingGroups resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAssumeGroupRestrictedSharingGroups to import
-  * @param importFromId The id of the existing DataDatabricksAssumeGroupRestrictedSharingGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_groups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAssumeGroupRestrictedSharingGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_groups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAssumeGroupRestrictedSharingGroups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -385,7 +385,7 @@ export class DataDatabricksAssumeGroupRestrictedSharingGroups extends cdktn.Terr
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.143.0/docs/data-sources/assume_group_restricted_sharing_groups databricks_assume_group_restricted_sharing_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/assume_group_restricted_sharing_groups databricks_assume_group_restricted_sharing_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -396,7 +396,7 @@ export class DataDatabricksAssumeGroupRestrictedSharingGroups extends cdktn.Terr
       terraformResourceType: 'databricks_assume_group_restricted_sharing_groups',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.143.0',
+        providerVersion: '1.144.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
