@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_service_principals_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/workspace_iam_service_principals_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksWorkspaceIamServicePrincipalsV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_service_principals_v2#filter DataDatabricksWorkspaceIamServicePrincipalsV2#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/workspace_iam_service_principals_v2#filter DataDatabricksWorkspaceIamServicePrincipalsV2#filter}
   */
   readonly filter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_service_principals_v2#page_size DataDatabricksWorkspaceIamServicePrincipalsV2#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/workspace_iam_service_principals_v2#page_size DataDatabricksWorkspaceIamServicePrincipalsV2#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_service_principals_v2#parent DataDatabricksWorkspaceIamServicePrincipalsV2#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/workspace_iam_service_principals_v2#parent DataDatabricksWorkspaceIamServicePrincipalsV2#parent}
   */
   readonly parent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_service_principals_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalsV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/workspace_iam_service_principals_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalsV2#provider_config}
   */
   readonly providerConfig?: DataDatabricksWorkspaceIamServicePrincipalsV2ProviderConfig;
 }
 export interface DataDatabricksWorkspaceIamServicePrincipalsV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_service_principals_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalsV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/workspace_iam_service_principals_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalsV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -125,7 +125,7 @@ export class DataDatabricksWorkspaceIamServicePrincipalsV2ProviderConfigOutputRe
 }
 export interface DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_service_principals_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalsV2#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/workspace_iam_service_principals_v2#workspace_id DataDatabricksWorkspaceIamServicePrincipalsV2#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -219,11 +219,11 @@ export class DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProvi
 }
 export interface DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipals {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_service_principals_v2#name DataDatabricksWorkspaceIamServicePrincipalsV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/workspace_iam_service_principals_v2#name DataDatabricksWorkspaceIamServicePrincipalsV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_service_principals_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalsV2#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/workspace_iam_service_principals_v2#provider_config DataDatabricksWorkspaceIamServicePrincipalsV2#provider_config}
   */
   readonly providerConfig?: DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsProviderConfig;
 }
@@ -390,7 +390,7 @@ export class DataDatabricksWorkspaceIamServicePrincipalsV2ServicePrincipalsList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_service_principals_v2 databricks_workspace_iam_service_principals_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/workspace_iam_service_principals_v2 databricks_workspace_iam_service_principals_v2}
 */
 export class DataDatabricksWorkspaceIamServicePrincipalsV2 extends cdktn.TerraformDataSource {
 
@@ -406,7 +406,7 @@ export class DataDatabricksWorkspaceIamServicePrincipalsV2 extends cdktn.Terrafo
   * Generates CDKTN code for importing a DataDatabricksWorkspaceIamServicePrincipalsV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksWorkspaceIamServicePrincipalsV2 to import
-  * @param importFromId The id of the existing DataDatabricksWorkspaceIamServicePrincipalsV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_service_principals_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksWorkspaceIamServicePrincipalsV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/workspace_iam_service_principals_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksWorkspaceIamServicePrincipalsV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -418,7 +418,7 @@ export class DataDatabricksWorkspaceIamServicePrincipalsV2 extends cdktn.Terrafo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/workspace_iam_service_principals_v2 databricks_workspace_iam_service_principals_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/workspace_iam_service_principals_v2 databricks_workspace_iam_service_principals_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -429,7 +429,7 @@ export class DataDatabricksWorkspaceIamServicePrincipalsV2 extends cdktn.Terrafo
       terraformResourceType: 'databricks_workspace_iam_service_principals_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.144.0',
+        providerVersion: '1.145.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

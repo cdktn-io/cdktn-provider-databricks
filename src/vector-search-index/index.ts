@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index
+// https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,221 @@ import * as cdktn from 'cdktn';
 
 export interface VectorSearchIndexConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#endpoint_id VectorSearchIndex#endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#endpoint_id VectorSearchIndex#endpoint_id}
   */
   readonly endpointId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#endpoint_name VectorSearchIndex#endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#endpoint_name VectorSearchIndex#endpoint_name}
   */
   readonly endpointName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#id VectorSearchIndex#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#id VectorSearchIndex#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#index_subtype VectorSearchIndex#index_subtype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#index_subtype VectorSearchIndex#index_subtype}
   */
   readonly indexSubtype?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#index_type VectorSearchIndex#index_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#index_type VectorSearchIndex#index_type}
   */
   readonly indexType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#primary_key VectorSearchIndex#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#primary_key VectorSearchIndex#primary_key}
   */
   readonly primaryKey: string;
   /**
   * delta_sync_index_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#delta_sync_index_spec VectorSearchIndex#delta_sync_index_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#delta_sync_index_spec VectorSearchIndex#delta_sync_index_spec}
   */
   readonly deltaSyncIndexSpec?: VectorSearchIndexDeltaSyncIndexSpec;
   /**
   * direct_access_index_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#direct_access_index_spec VectorSearchIndex#direct_access_index_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#direct_access_index_spec VectorSearchIndex#direct_access_index_spec}
   */
   readonly directAccessIndexSpec?: VectorSearchIndexDirectAccessIndexSpec;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#provider_config VectorSearchIndex#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#provider_config VectorSearchIndex#provider_config}
   */
   readonly providerConfig?: VectorSearchIndexProviderConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
   */
   readonly timeouts?: VectorSearchIndexTimeouts;
+}
+export interface VectorSearchIndexStatusFailedStatusLastProcessedCommitTimestamp {
+}
+
+export function vectorSearchIndexStatusFailedStatusLastProcessedCommitTimestampToTerraform(struct?: VectorSearchIndexStatusFailedStatusLastProcessedCommitTimestamp): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function vectorSearchIndexStatusFailedStatusLastProcessedCommitTimestampToHclTerraform(struct?: VectorSearchIndexStatusFailedStatusLastProcessedCommitTimestamp): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class VectorSearchIndexStatusFailedStatusLastProcessedCommitTimestampOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): VectorSearchIndexStatusFailedStatusLastProcessedCommitTimestamp | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VectorSearchIndexStatusFailedStatusLastProcessedCommitTimestamp | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+
+export class VectorSearchIndexStatusFailedStatusLastProcessedCommitTimestampList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VectorSearchIndexStatusFailedStatusLastProcessedCommitTimestampOutputReference {
+    return new VectorSearchIndexStatusFailedStatusLastProcessedCommitTimestampOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface VectorSearchIndexStatusFailedStatus {
+}
+
+export function vectorSearchIndexStatusFailedStatusToTerraform(struct?: VectorSearchIndexStatusFailedStatus): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function vectorSearchIndexStatusFailedStatusToHclTerraform(struct?: VectorSearchIndexStatusFailedStatus): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class VectorSearchIndexStatusFailedStatusOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): VectorSearchIndexStatusFailedStatus | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VectorSearchIndexStatusFailedStatus | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // error_code - computed: true, optional: false, required: false
+  public get errorCode() {
+    return this.getStringAttribute('error_code');
+  }
+
+  // error_message - computed: true, optional: false, required: false
+  public get errorMessage() {
+    return this.getStringAttribute('error_message');
+  }
+
+  // last_processed_commit_timestamp - computed: true, optional: false, required: false
+  private _lastProcessedCommitTimestamp = new VectorSearchIndexStatusFailedStatusLastProcessedCommitTimestampList(this, "last_processed_commit_timestamp", false);
+  public get lastProcessedCommitTimestamp() {
+    return this._lastProcessedCommitTimestamp;
+  }
+
+  // last_processed_commit_version - computed: true, optional: false, required: false
+  public get lastProcessedCommitVersion() {
+    return this.getNumberAttribute('last_processed_commit_version');
+  }
+}
+
+export class VectorSearchIndexStatusFailedStatusList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VectorSearchIndexStatusFailedStatusOutputReference {
+    return new VectorSearchIndexStatusFailedStatusOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface VectorSearchIndexStatus {
 }
@@ -119,6 +280,17 @@ export class VectorSearchIndexStatusOutputReference extends cdktn.ComplexObject 
     }
   }
 
+  // detailed_state - computed: true, optional: false, required: false
+  public get detailedState() {
+    return this.getStringAttribute('detailed_state');
+  }
+
+  // failed_status - computed: true, optional: false, required: false
+  private _failedStatus = new VectorSearchIndexStatusFailedStatusList(this, "failed_status", false);
+  public get failedStatus() {
+    return this._failedStatus;
+  }
+
   // index_url - computed: true, optional: false, required: false
   public get indexUrl() {
     return this.getStringAttribute('index_url');
@@ -160,15 +332,15 @@ export class VectorSearchIndexStatusList extends cdktn.ComplexList {
 }
 export interface VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}
   */
   readonly embeddingModelEndpointName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}
   */
   readonly modelEndpointNameForQuery?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name?: string;
 }
@@ -342,11 +514,11 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList exten
 }
 export interface VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}
   */
   readonly embeddingDimension?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name?: string;
 }
@@ -491,35 +663,35 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList exten
 }
 export interface VectorSearchIndexDeltaSyncIndexSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#columns_to_index VectorSearchIndex#columns_to_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#columns_to_index VectorSearchIndex#columns_to_index}
   */
   readonly columnsToIndex?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#columns_to_sync VectorSearchIndex#columns_to_sync}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#columns_to_sync VectorSearchIndex#columns_to_sync}
   */
   readonly columnsToSync?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#embedding_writeback_table VectorSearchIndex#embedding_writeback_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#embedding_writeback_table VectorSearchIndex#embedding_writeback_table}
   */
   readonly embeddingWritebackTable?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#pipeline_type VectorSearchIndex#pipeline_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#pipeline_type VectorSearchIndex#pipeline_type}
   */
   readonly pipelineType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#source_table VectorSearchIndex#source_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#source_table VectorSearchIndex#source_table}
   */
   readonly sourceTable?: string;
   /**
   * embedding_source_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
   */
   readonly embeddingSourceColumns?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns[] | cdktn.IResolvable;
   /**
   * embedding_vector_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
   */
   readonly embeddingVectorColumns?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns[] | cdktn.IResolvable;
 }
@@ -782,15 +954,15 @@ export class VectorSearchIndexDeltaSyncIndexSpecOutputReference extends cdktn.Co
 }
 export interface VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}
   */
   readonly embeddingModelEndpointName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}
   */
   readonly modelEndpointNameForQuery?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name?: string;
 }
@@ -964,11 +1136,11 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList ex
 }
 export interface VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}
   */
   readonly embeddingDimension?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name?: string;
 }
@@ -1113,19 +1285,19 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList ex
 }
 export interface VectorSearchIndexDirectAccessIndexSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#schema_json VectorSearchIndex#schema_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#schema_json VectorSearchIndex#schema_json}
   */
   readonly schemaJson?: string;
   /**
   * embedding_source_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
   */
   readonly embeddingSourceColumns?: VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns[] | cdktn.IResolvable;
   /**
   * embedding_vector_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
   */
   readonly embeddingVectorColumns?: VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns[] | cdktn.IResolvable;
 }
@@ -1267,7 +1439,7 @@ export class VectorSearchIndexDirectAccessIndexSpecOutputReference extends cdktn
 }
 export interface VectorSearchIndexProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#workspace_id VectorSearchIndex#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#workspace_id VectorSearchIndex#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -1351,7 +1523,7 @@ export class VectorSearchIndexProviderConfigOutputReference extends cdktn.Comple
 }
 export interface VectorSearchIndexTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#create VectorSearchIndex#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#create VectorSearchIndex#create}
   */
   readonly create?: string;
 }
@@ -1445,7 +1617,7 @@ export class VectorSearchIndexTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index databricks_vector_search_index}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index databricks_vector_search_index}
 */
 export class VectorSearchIndex extends cdktn.TerraformResource {
 
@@ -1461,7 +1633,7 @@ export class VectorSearchIndex extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VectorSearchIndex resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VectorSearchIndex to import
-  * @param importFromId The id of the existing VectorSearchIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VectorSearchIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VectorSearchIndex to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1473,7 +1645,7 @@ export class VectorSearchIndex extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/vector_search_index databricks_vector_search_index} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/vector_search_index databricks_vector_search_index} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1484,7 +1656,7 @@ export class VectorSearchIndex extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_vector_search_index',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.144.0',
+        providerVersion: '1.145.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

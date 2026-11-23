@@ -1,3 +1,3 @@
 # `databricks_agent_kit_managed_memory_entry`
 
-Refer to the Terraform Registry for docs: [`databricks_agent_kit_managed_memory_entry`](https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/agent_kit_managed_memory_entry).
+Refer to the Terraform Registry for docs: [`databricks_agent_kit_managed_memory_entry`](https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/agent_kit_managed_memory_entry).

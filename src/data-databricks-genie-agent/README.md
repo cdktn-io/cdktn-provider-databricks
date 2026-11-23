@@ -1,3 +1,3 @@
 # `data_databricks_genie_agent`
 
-Refer to the Terraform Registry for docs: [`data_databricks_genie_agent`](https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/genie_agent).
+Refer to the Terraform Registry for docs: [`data_databricks_genie_agent`](https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/genie_agent).

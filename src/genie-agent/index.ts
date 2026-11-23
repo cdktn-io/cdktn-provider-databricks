@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent
+// https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,41 +13,41 @@ import * as cdktn from 'cdktn';
 
 export interface GenieAgentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#definition GenieAgent#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#definition GenieAgent#definition}
   */
   readonly definition: GenieAgentDefinition;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#description GenieAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#description GenieAgent#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#display_name GenieAgent#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#display_name GenieAgent#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#genie_agent_id GenieAgent#genie_agent_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#genie_agent_id GenieAgent#genie_agent_id}
   */
   readonly genieAgentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#parent_path GenieAgent#parent_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#parent_path GenieAgent#parent_path}
   */
   readonly parentPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#provider_config GenieAgent#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#provider_config GenieAgent#provider_config}
   */
   readonly providerConfig?: GenieAgentProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#warehouse_id GenieAgent#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#warehouse_id GenieAgent#warehouse_id}
   */
   readonly warehouseId: string;
 }
 export interface GenieAgentDefinitionBenchmarksQuestionsAnswer {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#content GenieAgent#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#content GenieAgent#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#format GenieAgent#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#format GenieAgent#format}
   */
   readonly format: string;
 }
@@ -186,22 +186,22 @@ export class GenieAgentDefinitionBenchmarksQuestionsAnswerList extends cdktn.Com
 }
 export interface GenieAgentDefinitionBenchmarksQuestions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#answer GenieAgent#answer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#answer GenieAgent#answer}
   */
   readonly answer?: GenieAgentDefinitionBenchmarksQuestionsAnswer[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#evaluation_note GenieAgent#evaluation_note}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#evaluation_note GenieAgent#evaluation_note}
   */
   readonly evaluationNote?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#id GenieAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#id GenieAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#question GenieAgent#question}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#question GenieAgent#question}
   */
   readonly question: string;
 }
@@ -398,7 +398,7 @@ export class GenieAgentDefinitionBenchmarksQuestionsList extends cdktn.ComplexLi
 }
 export interface GenieAgentDefinitionBenchmarks {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#questions GenieAgent#questions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#questions GenieAgent#questions}
   */
   readonly questions?: GenieAgentDefinitionBenchmarksQuestions[] | cdktn.IResolvable;
 }
@@ -492,14 +492,14 @@ export class GenieAgentDefinitionBenchmarksOutputReference extends cdktn.Complex
 }
 export interface GenieAgentDefinitionConfigSampleQuestions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#id GenieAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#id GenieAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#question GenieAgent#question}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#question GenieAgent#question}
   */
   readonly question: string;
 }
@@ -638,7 +638,7 @@ export class GenieAgentDefinitionConfigSampleQuestionsList extends cdktn.Complex
 }
 export interface GenieAgentDefinitionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#sample_questions GenieAgent#sample_questions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#sample_questions GenieAgent#sample_questions}
   */
   readonly sampleQuestions?: GenieAgentDefinitionConfigSampleQuestions[] | cdktn.IResolvable;
 }
@@ -732,7 +732,7 @@ export class GenieAgentDefinitionConfigOutputReference extends cdktn.ComplexObje
 }
 export interface GenieAgentDefinitionDataSourcesMcpConnections {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#mcp_connection GenieAgent#mcp_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#mcp_connection GenieAgent#mcp_connection}
   */
   readonly mcpConnection: string;
 }
@@ -845,31 +845,31 @@ export class GenieAgentDefinitionDataSourcesMcpConnectionsList extends cdktn.Com
 }
 export interface GenieAgentDefinitionDataSourcesTablesColumnConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#column GenieAgent#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#column GenieAgent#column}
   */
   readonly column: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#description GenieAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#description GenieAgent#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#display_name GenieAgent#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#display_name GenieAgent#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#enable_entity_matching GenieAgent#enable_entity_matching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#enable_entity_matching GenieAgent#enable_entity_matching}
   */
   readonly enableEntityMatching?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#enable_format_assistance GenieAgent#enable_format_assistance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#enable_format_assistance GenieAgent#enable_format_assistance}
   */
   readonly enableFormatAssistance?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#exclude GenieAgent#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#exclude GenieAgent#exclude}
   */
   readonly exclude?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#synonyms GenieAgent#synonyms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#synonyms GenieAgent#synonyms}
   */
   readonly synonyms?: string[];
 }
@@ -1156,15 +1156,15 @@ export class GenieAgentDefinitionDataSourcesTablesColumnConfigsList extends cdkt
 }
 export interface GenieAgentDefinitionDataSourcesTables {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#column_configs GenieAgent#column_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#column_configs GenieAgent#column_configs}
   */
   readonly columnConfigs?: GenieAgentDefinitionDataSourcesTablesColumnConfigs[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#description GenieAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#description GenieAgent#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#identifier GenieAgent#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#identifier GenieAgent#identifier}
   */
   readonly identifier: string;
 }
@@ -1335,11 +1335,11 @@ export class GenieAgentDefinitionDataSourcesTablesList extends cdktn.ComplexList
 }
 export interface GenieAgentDefinitionDataSourcesVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#description GenieAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#description GenieAgent#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#path GenieAgent#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#path GenieAgent#path}
   */
   readonly path: string;
 }
@@ -1481,15 +1481,15 @@ export class GenieAgentDefinitionDataSourcesVolumesList extends cdktn.ComplexLis
 }
 export interface GenieAgentDefinitionDataSources {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#mcp_connections GenieAgent#mcp_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#mcp_connections GenieAgent#mcp_connections}
   */
   readonly mcpConnections?: GenieAgentDefinitionDataSourcesMcpConnections[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#tables GenieAgent#tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#tables GenieAgent#tables}
   */
   readonly tables?: GenieAgentDefinitionDataSourcesTables[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#volumes GenieAgent#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#volumes GenieAgent#volumes}
   */
   readonly volumes?: GenieAgentDefinitionDataSourcesVolumes[] | cdktn.IResolvable;
 }
@@ -1641,11 +1641,11 @@ export class GenieAgentDefinitionDataSourcesOutputReference extends cdktn.Comple
 }
 export interface GenieAgentDefinitionInstructionsExampleQuestionSqlsParametersDefaultValueValueRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#max GenieAgent#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#max GenieAgent#max}
   */
   readonly max?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#min GenieAgent#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#min GenieAgent#min}
   */
   readonly min?: string;
 }
@@ -1768,11 +1768,11 @@ export class GenieAgentDefinitionInstructionsExampleQuestionSqlsParametersDefaul
 }
 export interface GenieAgentDefinitionInstructionsExampleQuestionSqlsParametersDefaultValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#value_range GenieAgent#value_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#value_range GenieAgent#value_range}
   */
   readonly valueRange?: GenieAgentDefinitionInstructionsExampleQuestionSqlsParametersDefaultValueValueRange;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#values GenieAgent#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#values GenieAgent#values}
   */
   readonly values?: string[];
 }
@@ -1895,19 +1895,19 @@ export class GenieAgentDefinitionInstructionsExampleQuestionSqlsParametersDefaul
 }
 export interface GenieAgentDefinitionInstructionsExampleQuestionSqlsParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#default_value GenieAgent#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#default_value GenieAgent#default_value}
   */
   readonly defaultValue?: GenieAgentDefinitionInstructionsExampleQuestionSqlsParametersDefaultValue;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#description GenieAgent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#description GenieAgent#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#name GenieAgent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#name GenieAgent#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#type_hint GenieAgent#type_hint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#type_hint GenieAgent#type_hint}
   */
   readonly typeHint?: string;
 }
@@ -2107,26 +2107,26 @@ export class GenieAgentDefinitionInstructionsExampleQuestionSqlsParametersList e
 }
 export interface GenieAgentDefinitionInstructionsExampleQuestionSqls {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#id GenieAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#id GenieAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#parameters GenieAgent#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#parameters GenieAgent#parameters}
   */
   readonly parameters?: GenieAgentDefinitionInstructionsExampleQuestionSqlsParameters[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#question GenieAgent#question}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#question GenieAgent#question}
   */
   readonly question: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#sql GenieAgent#sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#sql GenieAgent#sql}
   */
   readonly sql: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#usage_guidance GenieAgent#usage_guidance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#usage_guidance GenieAgent#usage_guidance}
   */
   readonly usageGuidance?: string;
 }
@@ -2349,11 +2349,11 @@ export class GenieAgentDefinitionInstructionsExampleQuestionSqlsList extends cdk
 }
 export interface GenieAgentDefinitionInstructionsJoinSpecsLeft {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#alias GenieAgent#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#alias GenieAgent#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#identifier GenieAgent#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#identifier GenieAgent#identifier}
   */
   readonly identifier: string;
 }
@@ -2473,11 +2473,11 @@ export class GenieAgentDefinitionInstructionsJoinSpecsLeftOutputReference extend
 }
 export interface GenieAgentDefinitionInstructionsJoinSpecsRight {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#alias GenieAgent#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#alias GenieAgent#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#identifier GenieAgent#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#identifier GenieAgent#identifier}
   */
   readonly identifier: string;
 }
@@ -2597,34 +2597,34 @@ export class GenieAgentDefinitionInstructionsJoinSpecsRightOutputReference exten
 }
 export interface GenieAgentDefinitionInstructionsJoinSpecs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#comment GenieAgent#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#comment GenieAgent#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#id GenieAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#id GenieAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#instruction GenieAgent#instruction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#instruction GenieAgent#instruction}
   */
   readonly instruction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#left GenieAgent#left}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#left GenieAgent#left}
   */
   readonly left: GenieAgentDefinitionInstructionsJoinSpecsLeft;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#relationship_type GenieAgent#relationship_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#relationship_type GenieAgent#relationship_type}
   */
   readonly relationshipType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#right GenieAgent#right}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#right GenieAgent#right}
   */
   readonly right: GenieAgentDefinitionInstructionsJoinSpecsRight;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#sql GenieAgent#sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#sql GenieAgent#sql}
   */
   readonly sql: string;
 }
@@ -2902,14 +2902,14 @@ export class GenieAgentDefinitionInstructionsJoinSpecsList extends cdktn.Complex
 }
 export interface GenieAgentDefinitionInstructionsSqlFunctions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#id GenieAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#id GenieAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#identifier GenieAgent#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#identifier GenieAgent#identifier}
   */
   readonly identifier: string;
 }
@@ -3048,30 +3048,30 @@ export class GenieAgentDefinitionInstructionsSqlFunctionsList extends cdktn.Comp
 }
 export interface GenieAgentDefinitionInstructionsSqlSnippetsExpressions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#alias GenieAgent#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#alias GenieAgent#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#display_name GenieAgent#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#display_name GenieAgent#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#id GenieAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#id GenieAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#instruction GenieAgent#instruction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#instruction GenieAgent#instruction}
   */
   readonly instruction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#sql GenieAgent#sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#sql GenieAgent#sql}
   */
   readonly sql: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#synonyms GenieAgent#synonyms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#synonyms GenieAgent#synonyms}
   */
   readonly synonyms?: string[];
 }
@@ -3326,26 +3326,26 @@ export class GenieAgentDefinitionInstructionsSqlSnippetsExpressionsList extends 
 }
 export interface GenieAgentDefinitionInstructionsSqlSnippetsFilters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#display_name GenieAgent#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#display_name GenieAgent#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#id GenieAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#id GenieAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#instruction GenieAgent#instruction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#instruction GenieAgent#instruction}
   */
   readonly instruction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#sql GenieAgent#sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#sql GenieAgent#sql}
   */
   readonly sql: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#synonyms GenieAgent#synonyms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#synonyms GenieAgent#synonyms}
   */
   readonly synonyms?: string[];
 }
@@ -3571,30 +3571,30 @@ export class GenieAgentDefinitionInstructionsSqlSnippetsFiltersList extends cdkt
 }
 export interface GenieAgentDefinitionInstructionsSqlSnippetsMeasures {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#alias GenieAgent#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#alias GenieAgent#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#display_name GenieAgent#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#display_name GenieAgent#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#id GenieAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#id GenieAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#instruction GenieAgent#instruction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#instruction GenieAgent#instruction}
   */
   readonly instruction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#sql GenieAgent#sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#sql GenieAgent#sql}
   */
   readonly sql: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#synonyms GenieAgent#synonyms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#synonyms GenieAgent#synonyms}
   */
   readonly synonyms?: string[];
 }
@@ -3849,15 +3849,15 @@ export class GenieAgentDefinitionInstructionsSqlSnippetsMeasuresList extends cdk
 }
 export interface GenieAgentDefinitionInstructionsSqlSnippets {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#expressions GenieAgent#expressions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#expressions GenieAgent#expressions}
   */
   readonly expressions?: GenieAgentDefinitionInstructionsSqlSnippetsExpressions[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#filters GenieAgent#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#filters GenieAgent#filters}
   */
   readonly filters?: GenieAgentDefinitionInstructionsSqlSnippetsFilters[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#measures GenieAgent#measures}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#measures GenieAgent#measures}
   */
   readonly measures?: GenieAgentDefinitionInstructionsSqlSnippetsMeasures[] | cdktn.IResolvable;
 }
@@ -4009,11 +4009,11 @@ export class GenieAgentDefinitionInstructionsSqlSnippetsOutputReference extends 
 }
 export interface GenieAgentDefinitionInstructionsTextInstructions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#content GenieAgent#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#content GenieAgent#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#id GenieAgent#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#id GenieAgent#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4155,23 +4155,23 @@ export class GenieAgentDefinitionInstructionsTextInstructionsList extends cdktn.
 }
 export interface GenieAgentDefinitionInstructions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#example_question_sqls GenieAgent#example_question_sqls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#example_question_sqls GenieAgent#example_question_sqls}
   */
   readonly exampleQuestionSqls?: GenieAgentDefinitionInstructionsExampleQuestionSqls[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#join_specs GenieAgent#join_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#join_specs GenieAgent#join_specs}
   */
   readonly joinSpecs?: GenieAgentDefinitionInstructionsJoinSpecs[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#sql_functions GenieAgent#sql_functions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#sql_functions GenieAgent#sql_functions}
   */
   readonly sqlFunctions?: GenieAgentDefinitionInstructionsSqlFunctions[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#sql_snippets GenieAgent#sql_snippets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#sql_snippets GenieAgent#sql_snippets}
   */
   readonly sqlSnippets?: GenieAgentDefinitionInstructionsSqlSnippets;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#text_instructions GenieAgent#text_instructions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#text_instructions GenieAgent#text_instructions}
   */
   readonly textInstructions?: GenieAgentDefinitionInstructionsTextInstructions[] | cdktn.IResolvable;
 }
@@ -4381,19 +4381,19 @@ export class GenieAgentDefinitionInstructionsOutputReference extends cdktn.Compl
 }
 export interface GenieAgentDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#benchmarks GenieAgent#benchmarks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#benchmarks GenieAgent#benchmarks}
   */
   readonly benchmarks?: GenieAgentDefinitionBenchmarks;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#config GenieAgent#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#config GenieAgent#config}
   */
   readonly config?: GenieAgentDefinitionConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#data_sources GenieAgent#data_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#data_sources GenieAgent#data_sources}
   */
   readonly dataSources?: GenieAgentDefinitionDataSources;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#instructions GenieAgent#instructions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#instructions GenieAgent#instructions}
   */
   readonly instructions?: GenieAgentDefinitionInstructions;
 }
@@ -4574,7 +4574,7 @@ export class GenieAgentDefinitionOutputReference extends cdktn.ComplexObject {
 }
 export interface GenieAgentProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#workspace_id GenieAgent#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#workspace_id GenieAgent#workspace_id}
   */
   readonly workspaceId?: string;
 }
@@ -4668,7 +4668,7 @@ export class GenieAgentProviderConfigOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent databricks_genie_agent}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent databricks_genie_agent}
 */
 export class GenieAgent extends cdktn.TerraformResource {
 
@@ -4684,7 +4684,7 @@ export class GenieAgent extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a GenieAgent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GenieAgent to import
-  * @param importFromId The id of the existing GenieAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GenieAgent that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GenieAgent to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4696,7 +4696,7 @@ export class GenieAgent extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/resources/genie_agent databricks_genie_agent} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/resources/genie_agent databricks_genie_agent} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4707,7 +4707,7 @@ export class GenieAgent extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_genie_agent',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.144.0',
+        providerVersion: '1.145.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

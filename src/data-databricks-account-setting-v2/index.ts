@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksAccountSettingV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#name DataDatabricksAccountSettingV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#name DataDatabricksAccountSettingV2#name}
   */
   readonly name: string;
 }
 export interface DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#access_policy_type DataDatabricksAccountSettingV2#access_policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#access_policy_type DataDatabricksAccountSettingV2#access_policy_type}
   */
   readonly accessPolicyType: string;
 }
@@ -100,7 +100,7 @@ export class DataDatabricksAccountSettingV2AibiDashboardEmbeddingAccessPolicyOut
 }
 export interface DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#approved_domains DataDatabricksAccountSettingV2#approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#approved_domains DataDatabricksAccountSettingV2#approved_domains}
   */
   readonly approvedDomains?: string[];
 }
@@ -184,7 +184,7 @@ export class DataDatabricksAccountSettingV2AibiDashboardEmbeddingApprovedDomains
 }
 export interface DataDatabricksAccountSettingV2AllowedAppsUserApiScopes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#allowed_scopes DataDatabricksAccountSettingV2#allowed_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#allowed_scopes DataDatabricksAccountSettingV2#allowed_scopes}
   */
   readonly allowedScopes?: string[];
 }
@@ -268,15 +268,15 @@ export class DataDatabricksAccountSettingV2AllowedAppsUserApiScopesOutputReferen
 }
 export interface DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#forced_for_compliance_mode DataDatabricksAccountSettingV2#forced_for_compliance_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#forced_for_compliance_mode DataDatabricksAccountSettingV2#forced_for_compliance_mode}
   */
   readonly forcedForComplianceMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#unavailable_for_disabled_entitlement DataDatabricksAccountSettingV2#unavailable_for_disabled_entitlement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#unavailable_for_disabled_entitlement DataDatabricksAccountSettingV2#unavailable_for_disabled_entitlement}
   */
   readonly unavailableForDisabledEntitlement?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksAccountSettingV2#unavailable_for_non_enterprise_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksAccountSettingV2#unavailable_for_non_enterprise_tier}
   */
   readonly unavailableForNonEnterpriseTier?: boolean | cdktn.IResolvable;
 }
@@ -428,11 +428,11 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceEnable
 }
 export interface DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#hours DataDatabricksAccountSettingV2#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#hours DataDatabricksAccountSettingV2#hours}
   */
   readonly hours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#minutes DataDatabricksAccountSettingV2#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#minutes DataDatabricksAccountSettingV2#minutes}
   */
   readonly minutes?: number;
 }
@@ -555,15 +555,15 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMainte
 }
 export interface DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#day_of_week DataDatabricksAccountSettingV2#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#day_of_week DataDatabricksAccountSettingV2#day_of_week}
   */
   readonly dayOfWeek?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#frequency DataDatabricksAccountSettingV2#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#frequency DataDatabricksAccountSettingV2#frequency}
   */
   readonly frequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#window_start_time DataDatabricksAccountSettingV2#window_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#window_start_time DataDatabricksAccountSettingV2#window_start_time}
   */
   readonly windowStartTime?: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime;
 }
@@ -715,7 +715,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMainte
 }
 export interface DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#week_day_based_schedule DataDatabricksAccountSettingV2#week_day_based_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#week_day_based_schedule DataDatabricksAccountSettingV2#week_day_based_schedule}
   */
   readonly weekDayBasedSchedule?: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule;
 }
@@ -809,23 +809,23 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMainte
 }
 export interface DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#can_toggle DataDatabricksAccountSettingV2#can_toggle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#can_toggle DataDatabricksAccountSettingV2#can_toggle}
   */
   readonly canToggle?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#enabled DataDatabricksAccountSettingV2#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#enabled DataDatabricksAccountSettingV2#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#enablement_details DataDatabricksAccountSettingV2#enablement_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#enablement_details DataDatabricksAccountSettingV2#enablement_details}
   */
   readonly enablementDetails?: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#maintenance_window DataDatabricksAccountSettingV2#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#maintenance_window DataDatabricksAccountSettingV2#maintenance_window}
   */
   readonly maintenanceWindow?: DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#restart_even_if_no_updates_available DataDatabricksAccountSettingV2#restart_even_if_no_updates_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#restart_even_if_no_updates_available DataDatabricksAccountSettingV2#restart_even_if_no_updates_available}
   */
   readonly restartEvenIfNoUpdatesAvailable?: boolean | cdktn.IResolvable;
 }
@@ -1025,7 +1025,7 @@ export class DataDatabricksAccountSettingV2AutomaticClusterUpdateWorkspaceOutput
 }
 export interface DataDatabricksAccountSettingV2BooleanVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: boolean | cdktn.IResolvable;
 }
@@ -1109,7 +1109,7 @@ export class DataDatabricksAccountSettingV2BooleanValOutputReference extends cdk
 }
 export interface DataDatabricksAccountSettingV2CollaborationPlatformConnectivity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#connectivity DataDatabricksAccountSettingV2#connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#connectivity DataDatabricksAccountSettingV2#connectivity}
   */
   readonly connectivity: string;
 }
@@ -1190,7 +1190,7 @@ export class DataDatabricksAccountSettingV2CollaborationPlatformConnectivityOutp
 }
 export interface DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#access_policy_type DataDatabricksAccountSettingV2#access_policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#access_policy_type DataDatabricksAccountSettingV2#access_policy_type}
   */
   readonly accessPolicyType: string;
 }
@@ -1271,7 +1271,7 @@ export class DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingAccess
 }
 export interface DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#approved_domains DataDatabricksAccountSettingV2#approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#approved_domains DataDatabricksAccountSettingV2#approved_domains}
   */
   readonly approvedDomains?: string[];
 }
@@ -1355,7 +1355,7 @@ export class DataDatabricksAccountSettingV2EffectiveAibiDashboardEmbeddingApprov
 }
 export interface DataDatabricksAccountSettingV2EffectiveAllowedAppsUserApiScopes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#allowed_scopes DataDatabricksAccountSettingV2#allowed_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#allowed_scopes DataDatabricksAccountSettingV2#allowed_scopes}
   */
   readonly allowedScopes?: string[];
 }
@@ -1439,15 +1439,15 @@ export class DataDatabricksAccountSettingV2EffectiveAllowedAppsUserApiScopesOutp
 }
 export interface DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#forced_for_compliance_mode DataDatabricksAccountSettingV2#forced_for_compliance_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#forced_for_compliance_mode DataDatabricksAccountSettingV2#forced_for_compliance_mode}
   */
   readonly forcedForComplianceMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#unavailable_for_disabled_entitlement DataDatabricksAccountSettingV2#unavailable_for_disabled_entitlement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#unavailable_for_disabled_entitlement DataDatabricksAccountSettingV2#unavailable_for_disabled_entitlement}
   */
   readonly unavailableForDisabledEntitlement?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksAccountSettingV2#unavailable_for_non_enterprise_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#unavailable_for_non_enterprise_tier DataDatabricksAccountSettingV2#unavailable_for_non_enterprise_tier}
   */
   readonly unavailableForNonEnterpriseTier?: boolean | cdktn.IResolvable;
 }
@@ -1599,11 +1599,11 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
 }
 export interface DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#hours DataDatabricksAccountSettingV2#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#hours DataDatabricksAccountSettingV2#hours}
   */
   readonly hours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#minutes DataDatabricksAccountSettingV2#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#minutes DataDatabricksAccountSettingV2#minutes}
   */
   readonly minutes?: number;
 }
@@ -1726,15 +1726,15 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
 }
 export interface DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#day_of_week DataDatabricksAccountSettingV2#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#day_of_week DataDatabricksAccountSettingV2#day_of_week}
   */
   readonly dayOfWeek?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#frequency DataDatabricksAccountSettingV2#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#frequency DataDatabricksAccountSettingV2#frequency}
   */
   readonly frequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#window_start_time DataDatabricksAccountSettingV2#window_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#window_start_time DataDatabricksAccountSettingV2#window_start_time}
   */
   readonly windowStartTime?: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime;
 }
@@ -1886,7 +1886,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
 }
 export interface DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#week_day_based_schedule DataDatabricksAccountSettingV2#week_day_based_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#week_day_based_schedule DataDatabricksAccountSettingV2#week_day_based_schedule}
   */
   readonly weekDayBasedSchedule?: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule;
 }
@@ -1980,23 +1980,23 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
 }
 export interface DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#can_toggle DataDatabricksAccountSettingV2#can_toggle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#can_toggle DataDatabricksAccountSettingV2#can_toggle}
   */
   readonly canToggle?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#enabled DataDatabricksAccountSettingV2#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#enabled DataDatabricksAccountSettingV2#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#enablement_details DataDatabricksAccountSettingV2#enablement_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#enablement_details DataDatabricksAccountSettingV2#enablement_details}
   */
   readonly enablementDetails?: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#maintenance_window DataDatabricksAccountSettingV2#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#maintenance_window DataDatabricksAccountSettingV2#maintenance_window}
   */
   readonly maintenanceWindow?: DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#restart_even_if_no_updates_available DataDatabricksAccountSettingV2#restart_even_if_no_updates_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#restart_even_if_no_updates_available DataDatabricksAccountSettingV2#restart_even_if_no_updates_available}
   */
   readonly restartEvenIfNoUpdatesAvailable?: boolean | cdktn.IResolvable;
 }
@@ -2196,7 +2196,7 @@ export class DataDatabricksAccountSettingV2EffectiveAutomaticClusterUpdateWorksp
 }
 export interface DataDatabricksAccountSettingV2EffectiveBooleanVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: boolean | cdktn.IResolvable;
 }
@@ -2280,7 +2280,7 @@ export class DataDatabricksAccountSettingV2EffectiveBooleanValOutputReference ex
 }
 export interface DataDatabricksAccountSettingV2EffectiveCollaborationPlatformConnectivity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#connectivity DataDatabricksAccountSettingV2#connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#connectivity DataDatabricksAccountSettingV2#connectivity}
   */
   readonly connectivity: string;
 }
@@ -2361,7 +2361,7 @@ export class DataDatabricksAccountSettingV2EffectiveCollaborationPlatformConnect
 }
 export interface DataDatabricksAccountSettingV2EffectiveIntegerVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: number;
 }
@@ -2445,7 +2445,7 @@ export class DataDatabricksAccountSettingV2EffectiveIntegerValOutputReference ex
 }
 export interface DataDatabricksAccountSettingV2EffectiveOperationalEmailCustomRecipient {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#email DataDatabricksAccountSettingV2#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#email DataDatabricksAccountSettingV2#email}
   */
   readonly email?: string;
 }
@@ -2529,7 +2529,7 @@ export class DataDatabricksAccountSettingV2EffectiveOperationalEmailCustomRecipi
 }
 export interface DataDatabricksAccountSettingV2EffectivePersonalCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: string;
 }
@@ -2613,11 +2613,11 @@ export class DataDatabricksAccountSettingV2EffectivePersonalComputeOutputReferen
 }
 export interface DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdmins {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#disable_gov_tag_creation DataDatabricksAccountSettingV2#disable_gov_tag_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#disable_gov_tag_creation DataDatabricksAccountSettingV2#disable_gov_tag_creation}
   */
   readonly disableGovTagCreation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#status DataDatabricksAccountSettingV2#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#status DataDatabricksAccountSettingV2#status}
   */
   readonly status: string;
 }
@@ -2727,7 +2727,7 @@ export class DataDatabricksAccountSettingV2EffectiveRestrictWorkspaceAdminsOutpu
 }
 export interface DataDatabricksAccountSettingV2EffectiveStringVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: string;
 }
@@ -2811,11 +2811,11 @@ export class DataDatabricksAccountSettingV2EffectiveStringValOutputReference ext
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -2938,11 +2938,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeAxisL
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -3065,11 +3065,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeCanva
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -3192,11 +3192,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -3319,11 +3319,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -3446,15 +3446,15 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
   */
   readonly end?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#mid DataDatabricksAccountSettingV2#mid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#mid DataDatabricksAccountSettingV2#mid}
   */
   readonly mid?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
   */
   readonly start?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart;
 }
@@ -3606,11 +3606,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -3733,11 +3733,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -3860,11 +3860,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
   */
   readonly end?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
   */
   readonly start?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart;
 }
@@ -3987,23 +3987,23 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#color DataDatabricksAccountSettingV2#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#color DataDatabricksAccountSettingV2#color}
   */
   readonly color?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#color_scheme DataDatabricksAccountSettingV2#color_scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#color_scheme DataDatabricksAccountSettingV2#color_scheme}
   */
   readonly colorScheme?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#custom_diverging DataDatabricksAccountSettingV2#custom_diverging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#custom_diverging DataDatabricksAccountSettingV2#custom_diverging}
   */
   readonly customDiverging?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#custom_sequential DataDatabricksAccountSettingV2#custom_sequential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#custom_sequential DataDatabricksAccountSettingV2#custom_sequential}
   */
   readonly customSequential?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#from_categorical_index DataDatabricksAccountSettingV2#from_categorical_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#from_categorical_index DataDatabricksAccountSettingV2#from_categorical_index}
   */
   readonly fromCategoricalIndex?: number;
 }
@@ -4213,11 +4213,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -4340,11 +4340,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -4467,11 +4467,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -4594,15 +4594,15 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
   */
   readonly end?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#mid DataDatabricksAccountSettingV2#mid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#mid DataDatabricksAccountSettingV2#mid}
   */
   readonly mid?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
   */
   readonly start?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart;
 }
@@ -4754,11 +4754,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -4881,11 +4881,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -5008,11 +5008,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
   */
   readonly end?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
   */
   readonly start?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart;
 }
@@ -5135,23 +5135,23 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#color DataDatabricksAccountSettingV2#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#color DataDatabricksAccountSettingV2#color}
   */
   readonly color?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#color_scheme DataDatabricksAccountSettingV2#color_scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#color_scheme DataDatabricksAccountSettingV2#color_scheme}
   */
   readonly colorScheme?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#custom_diverging DataDatabricksAccountSettingV2#custom_diverging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#custom_diverging DataDatabricksAccountSettingV2#custom_diverging}
   */
   readonly customDiverging?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#custom_sequential DataDatabricksAccountSettingV2#custom_sequential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#custom_sequential DataDatabricksAccountSettingV2#custom_sequential}
   */
   readonly customSequential?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightModeCustomSequential;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#from_categorical_index DataDatabricksAccountSettingV2#from_categorical_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#from_categorical_index DataDatabricksAccountSettingV2#from_categorical_index}
   */
   readonly fromCategoricalIndex?: number;
 }
@@ -5361,11 +5361,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark_mode DataDatabricksAccountSettingV2#dark_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark_mode DataDatabricksAccountSettingV2#dark_mode}
   */
   readonly darkMode?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientDarkMode;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light_mode DataDatabricksAccountSettingV2#light_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light_mode DataDatabricksAccountSettingV2#light_mode}
   */
   readonly lightMode?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradientLightMode;
 }
@@ -5488,11 +5488,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeConti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -5615,11 +5615,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontC
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -5742,31 +5742,31 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontS
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
   */
   readonly fontColor?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBaseFontColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
   */
   readonly fontFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
   */
   readonly fontSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
   */
   readonly fontStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
   */
   readonly fontWeight?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
   */
   readonly textCase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
   */
   readonly textDecoration?: string;
 }
@@ -6034,11 +6034,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontS
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -6161,31 +6161,31 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontS
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
   */
   readonly fontColor?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitleFontColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
   */
   readonly fontFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
   */
   readonly fontSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
   */
   readonly fontStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
   */
   readonly fontWeight?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
   */
   readonly textCase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
   */
   readonly textDecoration?: string;
 }
@@ -6453,11 +6453,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontS
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -6580,31 +6580,31 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontS
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
   */
   readonly fontColor?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValueFontColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
   */
   readonly fontFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
   */
   readonly fontSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
   */
   readonly fontStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
   */
   readonly fontWeight?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
   */
   readonly textCase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
   */
   readonly textDecoration?: string;
 }
@@ -6872,11 +6872,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontS
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -6999,31 +6999,31 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontS
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
   */
   readonly fontColor?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
   */
   readonly fontFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
   */
   readonly fontSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
   */
   readonly fontStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
   */
   readonly fontWeight?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
   */
   readonly textCase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
   */
   readonly textDecoration?: string;
 }
@@ -7291,11 +7291,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontS
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -7418,31 +7418,31 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontS
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
   */
   readonly fontColor?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitleFontColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
   */
   readonly fontFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
   */
   readonly fontSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
   */
   readonly fontStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
   */
   readonly fontWeight?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
   */
   readonly textCase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
   */
   readonly textDecoration?: string;
 }
@@ -7710,23 +7710,23 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontS
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#base DataDatabricksAccountSettingV2#base}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#base DataDatabricksAccountSettingV2#base}
   */
   readonly base?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsBase;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#field_title DataDatabricksAccountSettingV2#field_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#field_title DataDatabricksAccountSettingV2#field_title}
   */
   readonly fieldTitle?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldTitle;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#field_value DataDatabricksAccountSettingV2#field_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#field_value DataDatabricksAccountSettingV2#field_value}
   */
   readonly fieldValue?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsFieldValue;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_description DataDatabricksAccountSettingV2#widget_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_description DataDatabricksAccountSettingV2#widget_description}
   */
   readonly widgetDescription?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetDescription;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_title DataDatabricksAccountSettingV2#widget_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_title DataDatabricksAccountSettingV2#widget_title}
   */
   readonly widgetTitle?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettingsWidgetTitle;
 }
@@ -7936,11 +7936,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontS
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeGridLineColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -8063,11 +8063,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeGridL
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSelectionColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -8190,11 +8190,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSelec
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -8317,11 +8317,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSenti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -8444,11 +8444,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSenti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -8571,15 +8571,15 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSenti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#negative DataDatabricksAccountSettingV2#negative}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#negative DataDatabricksAccountSettingV2#negative}
   */
   readonly negative?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNegative;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#neutral DataDatabricksAccountSettingV2#neutral}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#neutral DataDatabricksAccountSettingV2#neutral}
   */
   readonly neutral?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsNeutral;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#positive DataDatabricksAccountSettingV2#positive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#positive DataDatabricksAccountSettingV2#positive}
   */
   readonly positive?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColorsPositive;
 }
@@ -8731,11 +8731,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSenti
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -8858,11 +8858,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeWidge
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -8985,155 +8985,155 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeWidge
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardTheme {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#axis_line_color DataDatabricksAccountSettingV2#axis_line_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#axis_line_color DataDatabricksAccountSettingV2#axis_line_color}
   */
   readonly axisLineColor?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeAxisLineColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#canvas_background_color DataDatabricksAccountSettingV2#canvas_background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#canvas_background_color DataDatabricksAccountSettingV2#canvas_background_color}
   */
   readonly canvasBackgroundColor?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeCanvasBackgroundColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#continuous_gradient DataDatabricksAccountSettingV2#continuous_gradient}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#continuous_gradient DataDatabricksAccountSettingV2#continuous_gradient}
   */
   readonly continuousGradient?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeContinuousGradient;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
   */
   readonly fontColor?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
   */
   readonly fontFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_settings DataDatabricksAccountSettingV2#font_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_settings DataDatabricksAccountSettingV2#font_settings}
   */
   readonly fontSettings?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeFontSettings;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#grid_line_color DataDatabricksAccountSettingV2#grid_line_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#grid_line_color DataDatabricksAccountSettingV2#grid_line_color}
   */
   readonly gridLineColor?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeGridLineColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#mark_corner_radius DataDatabricksAccountSettingV2#mark_corner_radius}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#mark_corner_radius DataDatabricksAccountSettingV2#mark_corner_radius}
   */
   readonly markCornerRadius?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#selection_color DataDatabricksAccountSettingV2#selection_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#selection_color DataDatabricksAccountSettingV2#selection_color}
   */
   readonly selectionColor?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSelectionColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#sentiment_colors DataDatabricksAccountSettingV2#sentiment_colors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#sentiment_colors DataDatabricksAccountSettingV2#sentiment_colors}
   */
   readonly sentimentColors?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeSentimentColors;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_box_vertical_align DataDatabricksAccountSettingV2#text_box_vertical_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_box_vertical_align DataDatabricksAccountSettingV2#text_box_vertical_align}
   */
   readonly textBoxVerticalAlign?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_01 DataDatabricksAccountSettingV2#visualization_color_01}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_01 DataDatabricksAccountSettingV2#visualization_color_01}
   */
   readonly visualizationColor01?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_02 DataDatabricksAccountSettingV2#visualization_color_02}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_02 DataDatabricksAccountSettingV2#visualization_color_02}
   */
   readonly visualizationColor02?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_03 DataDatabricksAccountSettingV2#visualization_color_03}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_03 DataDatabricksAccountSettingV2#visualization_color_03}
   */
   readonly visualizationColor03?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_04 DataDatabricksAccountSettingV2#visualization_color_04}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_04 DataDatabricksAccountSettingV2#visualization_color_04}
   */
   readonly visualizationColor04?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_05 DataDatabricksAccountSettingV2#visualization_color_05}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_05 DataDatabricksAccountSettingV2#visualization_color_05}
   */
   readonly visualizationColor05?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_06 DataDatabricksAccountSettingV2#visualization_color_06}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_06 DataDatabricksAccountSettingV2#visualization_color_06}
   */
   readonly visualizationColor06?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_07 DataDatabricksAccountSettingV2#visualization_color_07}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_07 DataDatabricksAccountSettingV2#visualization_color_07}
   */
   readonly visualizationColor07?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_08 DataDatabricksAccountSettingV2#visualization_color_08}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_08 DataDatabricksAccountSettingV2#visualization_color_08}
   */
   readonly visualizationColor08?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_09 DataDatabricksAccountSettingV2#visualization_color_09}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_09 DataDatabricksAccountSettingV2#visualization_color_09}
   */
   readonly visualizationColor09?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_10 DataDatabricksAccountSettingV2#visualization_color_10}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_10 DataDatabricksAccountSettingV2#visualization_color_10}
   */
   readonly visualizationColor10?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_11 DataDatabricksAccountSettingV2#visualization_color_11}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_11 DataDatabricksAccountSettingV2#visualization_color_11}
   */
   readonly visualizationColor11?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_12 DataDatabricksAccountSettingV2#visualization_color_12}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_12 DataDatabricksAccountSettingV2#visualization_color_12}
   */
   readonly visualizationColor12?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_13 DataDatabricksAccountSettingV2#visualization_color_13}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_13 DataDatabricksAccountSettingV2#visualization_color_13}
   */
   readonly visualizationColor13?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_14 DataDatabricksAccountSettingV2#visualization_color_14}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_14 DataDatabricksAccountSettingV2#visualization_color_14}
   */
   readonly visualizationColor14?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_15 DataDatabricksAccountSettingV2#visualization_color_15}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_15 DataDatabricksAccountSettingV2#visualization_color_15}
   */
   readonly visualizationColor15?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_16 DataDatabricksAccountSettingV2#visualization_color_16}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_16 DataDatabricksAccountSettingV2#visualization_color_16}
   */
   readonly visualizationColor16?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_17 DataDatabricksAccountSettingV2#visualization_color_17}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_17 DataDatabricksAccountSettingV2#visualization_color_17}
   */
   readonly visualizationColor17?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_18 DataDatabricksAccountSettingV2#visualization_color_18}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_18 DataDatabricksAccountSettingV2#visualization_color_18}
   */
   readonly visualizationColor18?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_19 DataDatabricksAccountSettingV2#visualization_color_19}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_19 DataDatabricksAccountSettingV2#visualization_color_19}
   */
   readonly visualizationColor19?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_20 DataDatabricksAccountSettingV2#visualization_color_20}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_20 DataDatabricksAccountSettingV2#visualization_color_20}
   */
   readonly visualizationColor20?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_background_color DataDatabricksAccountSettingV2#widget_background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_background_color DataDatabricksAccountSettingV2#widget_background_color}
   */
   readonly widgetBackgroundColor?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBackgroundColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_border_color DataDatabricksAccountSettingV2#widget_border_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_border_color DataDatabricksAccountSettingV2#widget_border_color}
   */
   readonly widgetBorderColor?: DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeWidgetBorderColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_corner_radius DataDatabricksAccountSettingV2#widget_corner_radius}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_corner_radius DataDatabricksAccountSettingV2#widget_corner_radius}
   */
   readonly widgetCornerRadius?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_header_alignment DataDatabricksAccountSettingV2#widget_header_alignment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_header_alignment DataDatabricksAccountSettingV2#widget_header_alignment}
   */
   readonly widgetHeaderAlignment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_margin DataDatabricksAccountSettingV2#widget_margin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_margin DataDatabricksAccountSettingV2#widget_margin}
   */
   readonly widgetMargin?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_padding DataDatabricksAccountSettingV2#widget_padding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_padding DataDatabricksAccountSettingV2#widget_padding}
   */
   readonly widgetPadding?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_shadow DataDatabricksAccountSettingV2#widget_shadow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_shadow DataDatabricksAccountSettingV2#widget_shadow}
   */
   readonly widgetShadow?: number;
 }
@@ -10290,11 +10290,11 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceDashboardThemeOutpu
 }
 export interface DataDatabricksAccountSettingV2EffectiveWorkspaceLabel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#color DataDatabricksAccountSettingV2#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#color DataDatabricksAccountSettingV2#color}
   */
   readonly color?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#label DataDatabricksAccountSettingV2#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#label DataDatabricksAccountSettingV2#label}
   */
   readonly label?: string;
 }
@@ -10407,7 +10407,7 @@ export class DataDatabricksAccountSettingV2EffectiveWorkspaceLabelOutputReferenc
 }
 export interface DataDatabricksAccountSettingV2IntegerVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: number;
 }
@@ -10491,7 +10491,7 @@ export class DataDatabricksAccountSettingV2IntegerValOutputReference extends cdk
 }
 export interface DataDatabricksAccountSettingV2OperationalEmailCustomRecipient {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#email DataDatabricksAccountSettingV2#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#email DataDatabricksAccountSettingV2#email}
   */
   readonly email?: string;
 }
@@ -10575,7 +10575,7 @@ export class DataDatabricksAccountSettingV2OperationalEmailCustomRecipientOutput
 }
 export interface DataDatabricksAccountSettingV2PersonalCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: string;
 }
@@ -10659,11 +10659,11 @@ export class DataDatabricksAccountSettingV2PersonalComputeOutputReference extend
 }
 export interface DataDatabricksAccountSettingV2RestrictWorkspaceAdmins {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#disable_gov_tag_creation DataDatabricksAccountSettingV2#disable_gov_tag_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#disable_gov_tag_creation DataDatabricksAccountSettingV2#disable_gov_tag_creation}
   */
   readonly disableGovTagCreation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#status DataDatabricksAccountSettingV2#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#status DataDatabricksAccountSettingV2#status}
   */
   readonly status: string;
 }
@@ -10773,7 +10773,7 @@ export class DataDatabricksAccountSettingV2RestrictWorkspaceAdminsOutputReferenc
 }
 export interface DataDatabricksAccountSettingV2StringVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#value DataDatabricksAccountSettingV2#value}
   */
   readonly value?: string;
 }
@@ -10857,11 +10857,11 @@ export class DataDatabricksAccountSettingV2StringValOutputReference extends cdkt
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeAxisLineColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -10984,11 +10984,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeAxisLineColorO
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeCanvasBackgroundColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -11111,11 +11111,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeCanvasBackgrou
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -11238,11 +11238,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -11365,11 +11365,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -11492,15 +11492,15 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
   */
   readonly end?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingEnd;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#mid DataDatabricksAccountSettingV2#mid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#mid DataDatabricksAccountSettingV2#mid}
   */
   readonly mid?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingMid;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
   */
   readonly start?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDivergingStart;
 }
@@ -11652,11 +11652,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -11779,11 +11779,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -11906,11 +11906,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
   */
   readonly end?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialEnd;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
   */
   readonly start?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequentialStart;
 }
@@ -12033,23 +12033,23 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#color DataDatabricksAccountSettingV2#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#color DataDatabricksAccountSettingV2#color}
   */
   readonly color?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#color_scheme DataDatabricksAccountSettingV2#color_scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#color_scheme DataDatabricksAccountSettingV2#color_scheme}
   */
   readonly colorScheme?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#custom_diverging DataDatabricksAccountSettingV2#custom_diverging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#custom_diverging DataDatabricksAccountSettingV2#custom_diverging}
   */
   readonly customDiverging?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomDiverging;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#custom_sequential DataDatabricksAccountSettingV2#custom_sequential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#custom_sequential DataDatabricksAccountSettingV2#custom_sequential}
   */
   readonly customSequential?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkModeCustomSequential;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#from_categorical_index DataDatabricksAccountSettingV2#from_categorical_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#from_categorical_index DataDatabricksAccountSettingV2#from_categorical_index}
   */
   readonly fromCategoricalIndex?: number;
 }
@@ -12259,11 +12259,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -12386,11 +12386,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -12513,11 +12513,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -12640,15 +12640,15 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
   */
   readonly end?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingEnd;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#mid DataDatabricksAccountSettingV2#mid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#mid DataDatabricksAccountSettingV2#mid}
   */
   readonly mid?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingMid;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
   */
   readonly start?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDivergingStart;
 }
@@ -12800,11 +12800,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -12927,11 +12927,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -13054,11 +13054,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#end DataDatabricksAccountSettingV2#end}
   */
   readonly end?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialEnd;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#start DataDatabricksAccountSettingV2#start}
   */
   readonly start?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequentialStart;
 }
@@ -13181,23 +13181,23 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#color DataDatabricksAccountSettingV2#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#color DataDatabricksAccountSettingV2#color}
   */
   readonly color?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#color_scheme DataDatabricksAccountSettingV2#color_scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#color_scheme DataDatabricksAccountSettingV2#color_scheme}
   */
   readonly colorScheme?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#custom_diverging DataDatabricksAccountSettingV2#custom_diverging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#custom_diverging DataDatabricksAccountSettingV2#custom_diverging}
   */
   readonly customDiverging?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomDiverging;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#custom_sequential DataDatabricksAccountSettingV2#custom_sequential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#custom_sequential DataDatabricksAccountSettingV2#custom_sequential}
   */
   readonly customSequential?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightModeCustomSequential;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#from_categorical_index DataDatabricksAccountSettingV2#from_categorical_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#from_categorical_index DataDatabricksAccountSettingV2#from_categorical_index}
   */
   readonly fromCategoricalIndex?: number;
 }
@@ -13407,11 +13407,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradient {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark_mode DataDatabricksAccountSettingV2#dark_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark_mode DataDatabricksAccountSettingV2#dark_mode}
   */
   readonly darkMode?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientDarkMode;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light_mode DataDatabricksAccountSettingV2#light_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light_mode DataDatabricksAccountSettingV2#light_mode}
   */
   readonly lightMode?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradientLightMode;
 }
@@ -13534,11 +13534,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGrad
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -13661,11 +13661,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontColorOutpu
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -13788,31 +13788,31 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsBa
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsBase {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
   */
   readonly fontColor?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsBaseFontColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
   */
   readonly fontFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
   */
   readonly fontSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
   */
   readonly fontStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
   */
   readonly fontWeight?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
   */
   readonly textCase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
   */
   readonly textDecoration?: string;
 }
@@ -14080,11 +14080,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsBa
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -14207,31 +14207,31 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsFi
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
   */
   readonly fontColor?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitleFontColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
   */
   readonly fontFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
   */
   readonly fontSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
   */
   readonly fontStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
   */
   readonly fontWeight?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
   */
   readonly textCase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
   */
   readonly textDecoration?: string;
 }
@@ -14499,11 +14499,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsFi
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -14626,31 +14626,31 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsFi
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
   */
   readonly fontColor?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValueFontColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
   */
   readonly fontFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
   */
   readonly fontSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
   */
   readonly fontStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
   */
   readonly fontWeight?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
   */
   readonly textCase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
   */
   readonly textDecoration?: string;
 }
@@ -14918,11 +14918,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsFi
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -15045,31 +15045,31 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsWi
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
   */
   readonly fontColor?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescriptionFontColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
   */
   readonly fontFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
   */
   readonly fontSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
   */
   readonly fontStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
   */
   readonly fontWeight?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
   */
   readonly textCase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
   */
   readonly textDecoration?: string;
 }
@@ -15337,11 +15337,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsWi
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -15464,31 +15464,31 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsWi
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
   */
   readonly fontColor?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitleFontColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
   */
   readonly fontFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_size DataDatabricksAccountSettingV2#font_size}
   */
   readonly fontSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_style DataDatabricksAccountSettingV2#font_style}
   */
   readonly fontStyle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_weight DataDatabricksAccountSettingV2#font_weight}
   */
   readonly fontWeight?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_case DataDatabricksAccountSettingV2#text_case}
   */
   readonly textCase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_decoration DataDatabricksAccountSettingV2#text_decoration}
   */
   readonly textDecoration?: string;
 }
@@ -15756,23 +15756,23 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsWi
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#base DataDatabricksAccountSettingV2#base}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#base DataDatabricksAccountSettingV2#base}
   */
   readonly base?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsBase;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#field_title DataDatabricksAccountSettingV2#field_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#field_title DataDatabricksAccountSettingV2#field_title}
   */
   readonly fieldTitle?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsFieldTitle;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#field_value DataDatabricksAccountSettingV2#field_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#field_value DataDatabricksAccountSettingV2#field_value}
   */
   readonly fieldValue?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsFieldValue;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_description DataDatabricksAccountSettingV2#widget_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_description DataDatabricksAccountSettingV2#widget_description}
   */
   readonly widgetDescription?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetDescription;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_title DataDatabricksAccountSettingV2#widget_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_title DataDatabricksAccountSettingV2#widget_title}
   */
   readonly widgetTitle?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsWidgetTitle;
 }
@@ -15982,11 +15982,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettingsOu
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeGridLineColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -16109,11 +16109,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeGridLineColorO
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeSelectionColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -16236,11 +16236,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeSelectionColor
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeSentimentColorsNegative {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -16363,11 +16363,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeSentimentColor
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeSentimentColorsNeutral {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -16490,11 +16490,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeSentimentColor
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeSentimentColorsPositive {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -16617,15 +16617,15 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeSentimentColor
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeSentimentColors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#negative DataDatabricksAccountSettingV2#negative}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#negative DataDatabricksAccountSettingV2#negative}
   */
   readonly negative?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeSentimentColorsNegative;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#neutral DataDatabricksAccountSettingV2#neutral}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#neutral DataDatabricksAccountSettingV2#neutral}
   */
   readonly neutral?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeSentimentColorsNeutral;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#positive DataDatabricksAccountSettingV2#positive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#positive DataDatabricksAccountSettingV2#positive}
   */
   readonly positive?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeSentimentColorsPositive;
 }
@@ -16777,11 +16777,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeSentimentColor
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeWidgetBackgroundColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -16904,11 +16904,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeWidgetBackgrou
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardThemeWidgetBorderColor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#dark DataDatabricksAccountSettingV2#dark}
   */
   readonly dark?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#light DataDatabricksAccountSettingV2#light}
   */
   readonly light?: string;
 }
@@ -17031,155 +17031,155 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeWidgetBorderCo
 }
 export interface DataDatabricksAccountSettingV2WorkspaceDashboardTheme {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#axis_line_color DataDatabricksAccountSettingV2#axis_line_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#axis_line_color DataDatabricksAccountSettingV2#axis_line_color}
   */
   readonly axisLineColor?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeAxisLineColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#canvas_background_color DataDatabricksAccountSettingV2#canvas_background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#canvas_background_color DataDatabricksAccountSettingV2#canvas_background_color}
   */
   readonly canvasBackgroundColor?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeCanvasBackgroundColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#continuous_gradient DataDatabricksAccountSettingV2#continuous_gradient}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#continuous_gradient DataDatabricksAccountSettingV2#continuous_gradient}
   */
   readonly continuousGradient?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeContinuousGradient;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_color DataDatabricksAccountSettingV2#font_color}
   */
   readonly fontColor?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_family DataDatabricksAccountSettingV2#font_family}
   */
   readonly fontFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#font_settings DataDatabricksAccountSettingV2#font_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#font_settings DataDatabricksAccountSettingV2#font_settings}
   */
   readonly fontSettings?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeFontSettings;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#grid_line_color DataDatabricksAccountSettingV2#grid_line_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#grid_line_color DataDatabricksAccountSettingV2#grid_line_color}
   */
   readonly gridLineColor?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeGridLineColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#mark_corner_radius DataDatabricksAccountSettingV2#mark_corner_radius}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#mark_corner_radius DataDatabricksAccountSettingV2#mark_corner_radius}
   */
   readonly markCornerRadius?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#selection_color DataDatabricksAccountSettingV2#selection_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#selection_color DataDatabricksAccountSettingV2#selection_color}
   */
   readonly selectionColor?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeSelectionColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#sentiment_colors DataDatabricksAccountSettingV2#sentiment_colors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#sentiment_colors DataDatabricksAccountSettingV2#sentiment_colors}
   */
   readonly sentimentColors?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeSentimentColors;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#text_box_vertical_align DataDatabricksAccountSettingV2#text_box_vertical_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#text_box_vertical_align DataDatabricksAccountSettingV2#text_box_vertical_align}
   */
   readonly textBoxVerticalAlign?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_01 DataDatabricksAccountSettingV2#visualization_color_01}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_01 DataDatabricksAccountSettingV2#visualization_color_01}
   */
   readonly visualizationColor01?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_02 DataDatabricksAccountSettingV2#visualization_color_02}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_02 DataDatabricksAccountSettingV2#visualization_color_02}
   */
   readonly visualizationColor02?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_03 DataDatabricksAccountSettingV2#visualization_color_03}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_03 DataDatabricksAccountSettingV2#visualization_color_03}
   */
   readonly visualizationColor03?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_04 DataDatabricksAccountSettingV2#visualization_color_04}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_04 DataDatabricksAccountSettingV2#visualization_color_04}
   */
   readonly visualizationColor04?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_05 DataDatabricksAccountSettingV2#visualization_color_05}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_05 DataDatabricksAccountSettingV2#visualization_color_05}
   */
   readonly visualizationColor05?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_06 DataDatabricksAccountSettingV2#visualization_color_06}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_06 DataDatabricksAccountSettingV2#visualization_color_06}
   */
   readonly visualizationColor06?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_07 DataDatabricksAccountSettingV2#visualization_color_07}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_07 DataDatabricksAccountSettingV2#visualization_color_07}
   */
   readonly visualizationColor07?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_08 DataDatabricksAccountSettingV2#visualization_color_08}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_08 DataDatabricksAccountSettingV2#visualization_color_08}
   */
   readonly visualizationColor08?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_09 DataDatabricksAccountSettingV2#visualization_color_09}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_09 DataDatabricksAccountSettingV2#visualization_color_09}
   */
   readonly visualizationColor09?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_10 DataDatabricksAccountSettingV2#visualization_color_10}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_10 DataDatabricksAccountSettingV2#visualization_color_10}
   */
   readonly visualizationColor10?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_11 DataDatabricksAccountSettingV2#visualization_color_11}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_11 DataDatabricksAccountSettingV2#visualization_color_11}
   */
   readonly visualizationColor11?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_12 DataDatabricksAccountSettingV2#visualization_color_12}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_12 DataDatabricksAccountSettingV2#visualization_color_12}
   */
   readonly visualizationColor12?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_13 DataDatabricksAccountSettingV2#visualization_color_13}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_13 DataDatabricksAccountSettingV2#visualization_color_13}
   */
   readonly visualizationColor13?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_14 DataDatabricksAccountSettingV2#visualization_color_14}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_14 DataDatabricksAccountSettingV2#visualization_color_14}
   */
   readonly visualizationColor14?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_15 DataDatabricksAccountSettingV2#visualization_color_15}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_15 DataDatabricksAccountSettingV2#visualization_color_15}
   */
   readonly visualizationColor15?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_16 DataDatabricksAccountSettingV2#visualization_color_16}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_16 DataDatabricksAccountSettingV2#visualization_color_16}
   */
   readonly visualizationColor16?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_17 DataDatabricksAccountSettingV2#visualization_color_17}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_17 DataDatabricksAccountSettingV2#visualization_color_17}
   */
   readonly visualizationColor17?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_18 DataDatabricksAccountSettingV2#visualization_color_18}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_18 DataDatabricksAccountSettingV2#visualization_color_18}
   */
   readonly visualizationColor18?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_19 DataDatabricksAccountSettingV2#visualization_color_19}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_19 DataDatabricksAccountSettingV2#visualization_color_19}
   */
   readonly visualizationColor19?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#visualization_color_20 DataDatabricksAccountSettingV2#visualization_color_20}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#visualization_color_20 DataDatabricksAccountSettingV2#visualization_color_20}
   */
   readonly visualizationColor20?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_background_color DataDatabricksAccountSettingV2#widget_background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_background_color DataDatabricksAccountSettingV2#widget_background_color}
   */
   readonly widgetBackgroundColor?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeWidgetBackgroundColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_border_color DataDatabricksAccountSettingV2#widget_border_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_border_color DataDatabricksAccountSettingV2#widget_border_color}
   */
   readonly widgetBorderColor?: DataDatabricksAccountSettingV2WorkspaceDashboardThemeWidgetBorderColor;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_corner_radius DataDatabricksAccountSettingV2#widget_corner_radius}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_corner_radius DataDatabricksAccountSettingV2#widget_corner_radius}
   */
   readonly widgetCornerRadius?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_header_alignment DataDatabricksAccountSettingV2#widget_header_alignment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_header_alignment DataDatabricksAccountSettingV2#widget_header_alignment}
   */
   readonly widgetHeaderAlignment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_margin DataDatabricksAccountSettingV2#widget_margin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_margin DataDatabricksAccountSettingV2#widget_margin}
   */
   readonly widgetMargin?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_padding DataDatabricksAccountSettingV2#widget_padding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_padding DataDatabricksAccountSettingV2#widget_padding}
   */
   readonly widgetPadding?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#widget_shadow DataDatabricksAccountSettingV2#widget_shadow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#widget_shadow DataDatabricksAccountSettingV2#widget_shadow}
   */
   readonly widgetShadow?: number;
 }
@@ -18336,11 +18336,11 @@ export class DataDatabricksAccountSettingV2WorkspaceDashboardThemeOutputReferenc
 }
 export interface DataDatabricksAccountSettingV2WorkspaceLabel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#color DataDatabricksAccountSettingV2#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#color DataDatabricksAccountSettingV2#color}
   */
   readonly color?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#label DataDatabricksAccountSettingV2#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#label DataDatabricksAccountSettingV2#label}
   */
   readonly label?: string;
 }
@@ -18453,7 +18453,7 @@ export class DataDatabricksAccountSettingV2WorkspaceLabelOutputReference extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2}
 */
 export class DataDatabricksAccountSettingV2 extends cdktn.TerraformDataSource {
 
@@ -18469,7 +18469,7 @@ export class DataDatabricksAccountSettingV2 extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksAccountSettingV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAccountSettingV2 to import
-  * @param importFromId The id of the existing DataDatabricksAccountSettingV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAccountSettingV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAccountSettingV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -18481,7 +18481,7 @@ export class DataDatabricksAccountSettingV2 extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.144.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.145.0/docs/data-sources/account_setting_v2 databricks_account_setting_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -18492,7 +18492,7 @@ export class DataDatabricksAccountSettingV2 extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_account_setting_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.144.0',
+        providerVersion: '1.145.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
